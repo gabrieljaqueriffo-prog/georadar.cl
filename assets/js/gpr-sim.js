@@ -8,6 +8,8 @@
     var distance = sim.querySelector('.sim-distance');
     var markers = sim.querySelectorAll('.sim-marker');
     var defaultLabel = callout ? callout.textContent : '';
+    var report = sim.parentElement.querySelector('[data-sim-report]');
+    var reportItems = report ? report.querySelectorAll('[data-report-trigger]') : [];
 
     function update(value) {
       veil.style.width = (100 - value) + '%';
@@ -33,11 +35,41 @@
       } else {
         callout.classList.remove('is-active');
       }
+
+      reportItems.forEach(function (item) {
+        var trigger = parseFloat(item.dataset.reportTrigger);
+        if (value >= trigger) {
+          item.classList.add('is-found');
+        }
+      });
+      if (report && value >= 98) {
+        report.classList.add('is-complete');
+      }
     }
 
     slider.addEventListener('input', function () {
       update(parseFloat(slider.value));
     });
     update(parseFloat(slider.value));
+  });
+
+  var quizOptions = document.querySelectorAll('.quiz-option');
+  quizOptions.forEach(function (option) {
+    option.addEventListener('click', function () {
+      var question = option.closest('.quiz-question');
+      var options = question.querySelectorAll('.quiz-option');
+      var feedback = question.querySelector('.quiz-feedback');
+      options.forEach(function (opt) {
+        opt.disabled = true;
+        if (opt.dataset.correct === 'true') {
+          opt.classList.add('is-correct');
+        } else {
+          opt.classList.add('is-wrong');
+        }
+      });
+      if (feedback) {
+        feedback.classList.add('is-visible');
+      }
+    });
   });
 })();
