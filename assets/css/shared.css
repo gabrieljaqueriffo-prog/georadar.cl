@@ -307,6 +307,77 @@ footer a{color:var(--hueso-oscuro);}
   transform:translateY(0);
 }
 
+/* Simulador GPR interactivo */
+.gpr-sim{}
+.sim-wrap{
+  position:relative;
+  border:1px solid var(--borde);
+  border-radius:4px;
+  overflow:hidden;
+  background:var(--hueso-oscuro);
+  touch-action:none;
+}
+.sim-radargram{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.sim-callout{
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--siena);
+  color:var(--hueso);
+  font-size:13px;
+  font-weight:600;
+  padding:8px 14px;
+  border-radius:4px;
+  opacity:0;
+  transition:opacity .25s ease;
+  pointer-events:none;
+  white-space:nowrap;
+  max-width:90%;
+}
+.sim-callout.is-active{opacity:1;}
+.sim-slider{
+  width:100%;
+  margin:18px 0 6px;
+  height:44px;
+  -webkit-appearance:none;
+  appearance:none;
+  background:transparent;
+  cursor:pointer;
+}
+.sim-slider::-webkit-slider-runnable-track{
+  height:6px;
+  background:var(--borde);
+  border-radius:3px;
+}
+.sim-slider::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:36px;
+  height:36px;
+  border-radius:4px;
+  background:var(--terracota);
+  border:2px solid var(--siena);
+  margin-top:-15px;
+  cursor:grab;
+}
+.sim-slider::-moz-range-track{
+  height:6px;
+  background:var(--borde);
+  border-radius:3px;
+}
+.sim-slider::-moz-range-thumb{
+  width:36px;
+  height:36px;
+  border-radius:4px;
+  background:var(--terracota);
+  border:2px solid var(--siena);
+  cursor:grab;
+}
+
 @media (prefers-reduced-motion: reduce){
   .reveal{opacity:1;transform:none;transition:none;}
   html{scroll-behavior:auto;}
