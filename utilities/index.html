@@ -14,6 +14,9 @@
 <meta property="og:url" content="https://georadar.cl/utilities/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Georradar Líneas Soterradas Chile | GPR Utilities">
+<meta name="twitter:description" content="Detección de ductos soterrados con georradar sin excavar: agua, gas, electricidad y telecomunicaciones.">
 <link rel="stylesheet" href="/assets/css/shared.css">
 <script type="application/ld+json">
 {
@@ -21,15 +24,20 @@
   "@graph": [
     {
       "@type": "Service",
+      "@id": "https://georadar.cl/utilities/#service",
       "serviceType": "Detección de líneas soterradas con georradar (GPR)",
-      "provider": {
-        "@type": "Organization",
-        "name": "Geo Radar Chile",
-        "alternateName": ["Georradar Chile", "GeoRadar Chile", "GPR Chile"],
-        "sameAs": ["https://georadarchile.cl", "https://georadar.cl"]
-      },
+      "provider": { "@id": "https://georadar.cl/#organization" },
       "areaServed": "CL",
       "description": "Servicio de detección de ductos y líneas soterradas (agua, gas, electricidad, telecomunicaciones) con georradar GPR, sin excavar."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/utilities/#webpage",
+      "url": "https://georadar.cl/utilities/",
+      "name": "Georradar Líneas Soterradas Chile | GPR Utilities | Geo Radar Chile",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "about": { "@id": "https://georadar.cl/utilities/#service" },
+      "inLanguage": "es-CL"
     },
     {
       "@type": "FAQPage",
@@ -53,6 +61,11 @@
           "@type": "Question",
           "name": "¿En qué tipo de proyectos se usa la detección de ductos soterrados?",
           "acceptedAnswer": { "@type": "Answer", "text": "En obras de construcción civil, ampliaciones de redes de servicios, proyectos de pavimentación y cualquier excavación urbana planificada." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tan profundo puede detectar el georradar una línea soterrada?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Depende de la antena utilizada y del tipo de suelo: con antenas de menor frecuencia se alcanza mayor profundidad, mientras que las de mayor frecuencia priorizan la resolución de detalle." }
         }
       ]
     },
@@ -149,6 +162,7 @@
     <h2>Detección de ductos soterrados sin excavar</h2>
     <p>La <strong>detección de líneas soterradas</strong> con <strong>georradar</strong> es una solución cada vez más utilizada en proyectos urbanos en Chile, donde el <strong>GPR utilities Chile</strong> permite mapear redes de agua, gas, electricidad y telecomunicaciones antes de iniciar una obra.</p>
     <p>El <strong>mapeo de servicios subterráneos</strong> con <strong>georradar agua gas electricidad</strong> evita interferencias durante la excavación y reduce los riesgos de seguridad asociados a dañar redes activas. Geo Radar Chile entrega planos CAD e informes técnicos georreferenciados para cada proyecto de <strong>detección de ductos soterrados Chile</strong>.</p>
+    <p>Como <strong>empresa de detección de líneas soterradas Chile</strong>, Geo Radar Chile aplica el mismo estándar técnico que usa en minería y peritaje forense: equipo propio IDS GeoRadar, procesamiento en GRED HD y entrega georreferenciada, lo que la convierte en una alternativa confiable para ingenierías y constructoras que buscan <strong>georradar líneas soterradas</strong> con respaldo documentado.</p>
   </div>
 </section>
 
@@ -171,6 +185,10 @@
     <div class="faq-item reveal">
       <h3>¿En qué proyectos se usa la detección de ductos soterrados?</h3>
       <p>Obras de construcción civil, ampliaciones de redes de servicios, pavimentación y excavaciones urbanas planificadas.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>¿Qué tan profundo puede detectar el georradar una línea soterrada?</h3>
+      <p>Depende de la antena utilizada y del tipo de suelo: con antenas de menor frecuencia se alcanza mayor profundidad, mientras que las de mayor frecuencia priorizan la resolución de detalle.</p>
     </div>
   </div>
 </section>

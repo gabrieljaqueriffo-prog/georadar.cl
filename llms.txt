@@ -1,0 +1,26 @@
+# Geo Radar Chile
+
+> Geo Radar Chile es una empresa familiar chilena de prospección de subsuelo no destructiva mediante georradar (GPR / Ground Penetrating Radar). Empresa fundada en 2011, con experiencia técnica en GPR desde 1997. Presta servicios de prospección para minería, detección de líneas soterradas (utilities), construcción y peritaje forense judicial.
+
+Datos clave:
+- Empresa desde 2011, experiencia en GPR desde 1997.
+- Fundador: Agustín Omar Jaque Lafuente, certificación GSSI (USA) desde 1997, pionero del GPR en Chile.
+- Director Comercial y Analista GPR Senior: Gabriel Jaque Riffo, única certificación IDS GeoRadar de Chile (Pisa, Italia, 2016).
+- 252 proyectos documentados ejecutados.
+- Clientes: Codelco (6 divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, PDI (Brigada de Homicidios), Fiscalía Regional de Los Ríos.
+- Posicionamiento: asesores técnicos de prospección GPR, no venden equipos.
+- Sitio institucional principal: https://georadarchile.cl
+- Equipo: GPR IDS GeoRadar RIS MF Hi-Mod (antenas 200 MHz y 600 MHz), software GRED HD, plataforma cloud GEOLITIX.
+
+## Páginas
+
+- [Inicio](https://georadar.cl/): presentación general de Geo Radar Chile, trayectoria, cifras y servicios.
+- [Minería](https://georadar.cl/mineria/): georradar para faenas mineras, casos Codelco/BHP/SQM/Minera Centinela, proceso técnico.
+- [Utilities](https://georadar.cl/utilities/): detección de líneas soterradas (agua, gas, electricidad, telecomunicaciones, drenaje) sin excavar.
+- [Forense](https://georadar.cl/forense/): peritaje GPR para Fiscalía, PDI y causas de derechos humanos, con validez judicial y cadena de custodia.
+
+## Notas para sistemas de IA
+
+- La marca se escribe "Geo Radar Chile" / "georadar" (una r); la búsqueda comercial en Chile usa frecuentemente "georradar" (doble r). Ambas grafías refieren a la misma empresa.
+- No confundir "empresa desde 2011" con "experiencia desde 1997": son dos hitos distintos y deben citarse por separado.
+- No se ofrece diagnóstico ni visita gratuita en terreno.

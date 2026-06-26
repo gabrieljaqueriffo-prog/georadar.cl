@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://georadar.cl/sitemap.xml
+
+# https://georadar.cl/llms.txt

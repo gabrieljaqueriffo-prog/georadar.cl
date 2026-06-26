@@ -14,6 +14,9 @@
 <meta property="og:url" content="https://georadar.cl/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Georradar Chile | Georadar GPR Chile">
+<meta name="twitter:description" content="Empresa de georradar GPR con más experiencia en Chile. Empresa desde 2011, experiencia desde 1997.">
 <link rel="stylesheet" href="/assets/css/shared.css">
 <script type="application/ld+json">
 {
@@ -21,6 +24,7 @@
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://georadar.cl/#organization",
       "name": "Geo Radar Chile",
       "alternateName": ["Georradar Chile", "GeoRadar Chile", "GPR Chile", "Geo Radar Chile"],
       "url": "https://georadar.cl/",
@@ -34,14 +38,38 @@
     },
     {
       "@type": "WebSite",
+      "@id": "https://georadar.cl/#website",
       "name": "Georradar Chile - Geo Radar Chile",
       "url": "https://georadar.cl/",
+      "inLanguage": "es-CL",
+      "publisher": { "@id": "https://georadar.cl/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/#webpage",
+      "url": "https://georadar.cl/",
+      "name": "Georradar Chile | Georadar GPR Chile | Geo Radar Chile",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "about": { "@id": "https://georadar.cl/#organization" },
       "inLanguage": "es-CL"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://georadar.cl/" }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://georadar.cl/#glosario",
+      "name": "Glosario técnico de georradar (GPR)",
+      "hasDefinedTerm": [
+        { "@type": "DefinedTerm", "name": "GPR (Ground Penetrating Radar)", "description": "Sigla en inglés de georradar: equipo que emite ondas electromagnéticas al subsuelo para detectar estructuras enterradas sin excavar." },
+        { "@type": "DefinedTerm", "name": "Radargrama", "description": "Registro gráfico de las reflexiones electromagnéticas captadas por el GPR, donde las anomalías se visualizan como hipérbolas." },
+        { "@type": "DefinedTerm", "name": "Hipérbola de reflexión", "description": "Patrón en forma de arco que aparece en un radargrama cuando el lóbulo expansivo del GPR detecta un objeto puntual enterrado." },
+        { "@type": "DefinedTerm", "name": "Grilla de prospección", "description": "Área delimitada en la que se ejecuta el barrido sistemático con georradar." },
+        { "@type": "DefinedTerm", "name": "Antena GPR", "description": "Componente que emite y recibe la señal electromagnética del georradar." },
+        { "@type": "DefinedTerm", "name": "Georreferenciación", "description": "Asignación de coordenadas geográficas exactas a cada hallazgo detectado por el GPR." }
       ]
     }
   ]
@@ -187,10 +215,44 @@
     <p>Geo Radar Chile es una empresa familiar fundada en 2011, pero con experiencia en <strong>georradar GPR Chile</strong> que se remonta a 1997, cuando Agustín Omar Jaque Lafuente obtuvo su certificación GSSI en Estados Unidos y comenzó a operar equipos de <strong>ground penetrating radar Chile</strong> en proyectos mineros e industriales. Hoy, Gabriel Jaque Riffo, Director Comercial y Analista GPR Senior, posee la única certificación IDS GeoRadar de Chile, obtenida en Pisa, Italia, en 2016.</p>
     <p>La empresa ha ejecutado 252 proyectos documentados para clientes como Codelco (en 6 de sus divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, la PDI y la Fiscalía Regional de Los Ríos. Geo Radar Chile opera con equipo GPR propio IDS GeoRadar RIS MF Hi-Mod de doble antena (200 MHz para profundidad y 600 MHz para resolución), procesado con software GRED HD y entregado mediante la plataforma cloud GEOLITIX.</p>
     <p>A diferencia de empresas que venden equipos de <strong>detección de ductos soterrados</strong>, Geo Radar Chile se posiciona como asesor técnico: presta servicios de prospección, no comercializa hardware. Esta es la razón por la que sigue siendo la <strong>empresa de georradar con más experiencia en Chile</strong> para proyectos de minería, construcción, detección de servicios subterráneos y peritaje forense.</p>
+    <p>El uso de <strong>georradar minería construcción Chile</strong> se ha extendido a lo largo de todo el país: desde faenas en el norte minero hasta obras de infraestructura urbana en Santiago. Cualquier organización que necesite contratar una <strong>empresa de georradar con más experiencia en Chile</strong> encuentra en Geo Radar Chile un equipo certificado, con 252 proyectos documentados y la trayectoria técnica más larga del rubro en el país.</p>
   </div>
 </section>
 
 <section class="section-alt">
+  <div class="container">
+    <p class="eyebrow">Glosario técnico</p>
+    <h2>Términos clave del georradar (GPR)</h2>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <h3>GPR (Ground Penetrating Radar)</h3>
+        <p>Sigla en inglés de georradar: equipo que emite ondas electromagnéticas al subsuelo para detectar estructuras enterradas sin excavar.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Radargrama</h3>
+        <p>Registro gráfico de las reflexiones electromagnéticas captadas por el GPR, donde las anomalías se visualizan como hipérbolas.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Hipérbola de reflexión</h3>
+        <p>Patrón en forma de arco que aparece en un radargrama cuando el lóbulo expansivo del GPR detecta un objeto puntual enterrado.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Grilla de prospección</h3>
+        <p>Área delimitada en la que se ejecuta el barrido sistemático con georradar, usada tanto en minería como en peritajes forenses.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Antena GPR</h3>
+        <p>Componente que emite y recibe la señal electromagnética. Antenas de menor frecuencia (200 MHz) alcanzan mayor profundidad; las de mayor frecuencia (600 MHz) entregan mayor resolución.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Georreferenciación</h3>
+        <p>Asignación de coordenadas geográficas exactas a cada hallazgo detectado por el GPR, clave para planos CAD e informes judiciales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="container">
     <p class="eyebrow">Preguntas frecuentes</p>
     <h2>Sobre el georradar y nuestros servicios</h2>
@@ -205,6 +267,10 @@
     <div class="faq-item reveal">
       <h3>¿Por qué elegir Geo Radar Chile?</h3>
       <p>Por su experiencia desde 1997, su trayectoria de 252 proyectos para clientes como Codelco, BHP y SQM, y por contar con la única certificación IDS GeoRadar de Chile. Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>¿En qué se diferencia "georadar" de "georradar"?</h3>
+      <p>Son la misma tecnología: "georadar" (una r) es la grafía de la marca Geo Radar Chile, mientras que "georradar" (doble r) es la grafía más usada en búsquedas en español. Ambas refieren al mismo equipo GPR.</p>
     </div>
   </div>
 </section>

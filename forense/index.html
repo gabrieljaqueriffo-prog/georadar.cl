@@ -14,6 +14,9 @@
 <meta property="og:url" content="https://georadar.cl/forense/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Peritaje Georradar Chile | GPR Forense Judicial">
+<meta name="twitter:description" content="Peritaje con georradar para Fiscalía, PDI y causas de derechos humanos en Chile.">
 <link rel="stylesheet" href="/assets/css/shared.css">
 <script type="application/ld+json">
 {
@@ -21,21 +24,27 @@
   "@graph": [
     {
       "@type": "Service",
+      "@id": "https://georadar.cl/forense/#service",
       "serviceType": "Peritaje forense con georradar (GPR)",
-      "provider": {
-        "@type": "Organization",
-        "name": "Geo Radar Chile",
-        "alternateName": ["Georradar Chile", "GeoRadar Chile", "GPR Chile"],
-        "sameAs": ["https://georadarchile.cl", "https://georadar.cl"]
-      },
+      "provider": { "@id": "https://georadar.cl/#organization" },
       "areaServed": "CL",
       "description": "Servicio de peritaje técnico con georradar GPR para Fiscalía, PDI y causas judiciales, incluyendo investigaciones de derechos humanos."
     },
     {
       "@type": "LegalService",
+      "@id": "https://georadar.cl/forense/#legalservice",
       "name": "Peritaje GPR Forense - Geo Radar Chile",
       "areaServed": "CL",
       "sameAs": ["https://georadarchile.cl", "https://georadar.cl"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/forense/#webpage",
+      "url": "https://georadar.cl/forense/",
+      "name": "Peritaje Georradar Chile | GPR Forense Judicial | Geo Radar Chile",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "about": { "@id": "https://georadar.cl/forense/#service" },
+      "inLanguage": "es-CL"
     },
     {
       "@type": "FAQPage",
@@ -59,6 +68,11 @@
           "@type": "Question",
           "name": "¿Geo Radar Chile ha participado en causas de derechos humanos?",
           "acceptedAnswer": { "@type": "Answer", "text": "Sí, incluyendo causas como Melinka/Puchuncaví, Cerro Chena y el sitio Irán 3037, y fue nombrada en la Resolución 48/2025 (MC 19-25) de la CIDH/OAS." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El georradar puede detectar restos óseos enterrados?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El GPR puede detectar anomalías compatibles con alteraciones del subsuelo, como remociones de tierra, que orientan la excavación dirigida por el equipo forense competente; la confirmación final corresponde a los peritos en terreno." }
         }
       ]
     },
@@ -157,6 +171,7 @@
     <h2>Peritaje técnico con georradar para causas judiciales</h2>
     <p>El <strong>peritaje georradar Chile</strong> es utilizado por organismos como la Fiscalía y la PDI para prospección subterránea en causas penales y procesos de derechos humanos. El <strong>GPR forense judicial Chile</strong> permite ubicar anomalías en el subsuelo mediante radargramas, sin recurrir a excavaciones invasivas.</p>
     <p>Geo Radar Chile ha ejecutado <strong>prospección GPR</strong> para la Fiscalía Regional de Los Ríos en conjunto con LABOCAR, en causas de <strong>georradar DDHH Chile</strong> como Melinka/Puchuncaví, Cerro Chena y el sitio Irán 3037. La empresa fue nombrada en la Resolución 48/2025 (MC 19-25) de la CIDH/OAS, lo que respalda su trayectoria en <strong>pericia técnica subsuelo</strong> para procesos de derechos humanos en Chile.</p>
+    <p>Como <strong>empresa de peritaje georradar PDI Fiscalía Chile</strong>, Geo Radar Chile entrega un servicio que combina rigor técnico y trazabilidad judicial: cada grilla de prospección queda georreferenciada y documentada, lo que permite que el informe GPR sea incorporado como prueba técnica en procesos penales y de derechos humanos.</p>
   </div>
 </section>
 
@@ -179,6 +194,10 @@
     <div class="faq-item reveal">
       <h3>¿Geo Radar Chile ha participado en causas de derechos humanos?</h3>
       <p>Sí, incluyendo causas como Melinka/Puchuncaví, Cerro Chena y el sitio Irán 3037, y fue nombrada en la Resolución 48/2025 (MC 19-25) de la CIDH/OAS.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>¿El georradar puede detectar restos óseos enterrados?</h3>
+      <p>El GPR puede detectar anomalías compatibles con alteraciones del subsuelo, como remociones de tierra, que orientan la excavación dirigida por el equipo forense competente; la confirmación final corresponde siempre a los peritos forenses en terreno.</p>
     </div>
   </div>
 </section>

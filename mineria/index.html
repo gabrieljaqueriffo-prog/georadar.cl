@@ -14,6 +14,9 @@
 <meta property="og:url" content="https://georadar.cl/mineria/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Georradar Minería Chile | GPR Faenas Mineras">
+<meta name="twitter:description" content="Georradar para minería en Chile: GPR para faenas mineras de Codelco, BHP y SQM.">
 <link rel="stylesheet" href="/assets/css/shared.css">
 <script type="application/ld+json">
 {
@@ -21,15 +24,20 @@
   "@graph": [
     {
       "@type": "Service",
+      "@id": "https://georadar.cl/mineria/#service",
       "serviceType": "Georradar para minería (GPR)",
-      "provider": {
-        "@type": "Organization",
-        "name": "Geo Radar Chile",
-        "alternateName": ["Georradar Chile", "GeoRadar Chile", "GPR Chile"],
-        "sameAs": ["https://georadarchile.cl", "https://georadar.cl"]
-      },
+      "provider": { "@id": "https://georadar.cl/#organization" },
       "areaServed": "CL",
       "description": "Servicio de prospección subterránea con georradar GPR para faenas mineras en Chile."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/mineria/#webpage",
+      "url": "https://georadar.cl/mineria/",
+      "name": "Georradar Minería Chile | GPR Faenas Mineras | Geo Radar Chile",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "about": { "@id": "https://georadar.cl/mineria/#service" },
+      "inLanguage": "es-CL"
     },
     {
       "@type": "FAQPage",
@@ -53,6 +61,11 @@
           "@type": "Question",
           "name": "¿Qué entregables recibe la faena minera tras el estudio?",
           "acceptedAnswer": { "@type": "Answer", "text": "Informe técnico con radargramas procesados en GRED HD, planos georreferenciados y acceso a la plataforma cloud GEOLITIX." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El georradar funciona en cualquier tipo de terreno minero?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El GPR se adapta a distintos tipos de suelo y roca, aunque la profundidad y resolución de detección varían según la conductividad del terreno." }
         }
       ]
     },
@@ -166,6 +179,7 @@
     <h2>Por qué la minería chilena confía en Geo Radar Chile</h2>
     <p>El <strong>georradar minería Chile</strong> es una herramienta crítica para anticipar riesgos en faenas: la prospección con <strong>GPR faenas mineras</strong> permite detectar ductos, cables y estructuras enterradas antes de ejecutar excavaciones o voladuras, reduciendo riesgos operacionales y de seguridad.</p>
     <p>Geo Radar Chile ha trabajado en 6 divisiones de Codelco, además de BHP, SQM, Albemarle y Minera Centinela, posicionándose como la empresa de referencia en <strong>georradar Codelco</strong> y <strong>georradar BHP SQM</strong>. La <strong>prospección subterránea mina</strong> se ejecuta con equipo propio IDS GeoRadar RIS MF Hi-Mod y se entrega mediante informes técnicos georreferenciados.</p>
+    <p>Para una <strong>empresa GPR minería Codelco BHP</strong>, la trayectoria importa tanto como el equipo: Geo Radar Chile combina la experiencia de Agustín Omar Jaque Lafuente desde 1997 con la certificación IDS GeoRadar de Gabriel Jaque Riffo, entregando a cada faena un estándar técnico difícil de replicar por otros proveedores de <strong>georradar minería Chile</strong>.</p>
   </div>
 </section>
 
@@ -188,6 +202,10 @@
     <div class="faq-item reveal">
       <h3>¿Qué entregables recibe la faena minera tras el estudio?</h3>
       <p>Informe técnico con radargramas procesados en GRED HD, planos georreferenciados y acceso a la plataforma cloud GEOLITIX.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>¿El georradar funciona en cualquier tipo de terreno minero?</h3>
+      <p>El GPR se adapta a distintos tipos de suelo y roca, aunque la profundidad y resolución de detección varían según la conductividad del terreno. Por eso el equipo evalúa cada faena antes de definir las antenas a utilizar.</p>
     </div>
   </div>
 </section>
