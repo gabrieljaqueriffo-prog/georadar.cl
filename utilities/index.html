@@ -177,42 +177,14 @@
         <span class="sim-readout-value"><span class="sim-distance">0.0</span> m recorridos</span>
       </div>
       <div class="sim-screen">
-        <svg class="sim-radargram" viewBox="0 0 600 220" preserveAspectRatio="none" role="img" aria-label="Simulación de radargrama GPR">
-          <defs>
-            <filter id="gprNoise2" x="-5%" y="-5%" width="110%" height="110%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.9 0.045" numOctaves="3" seed="13" stitchTiles="stitch" result="n"/>
-              <feColorMatrix in="n" type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0" result="gray"/>
-              <feComponentTransfer in="gray">
-                <feFuncR type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
-                <feFuncG type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
-                <feFuncB type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
-              </feComponentTransfer>
-            </filter>
-          </defs>
-          <rect x="0" y="0" width="600" height="220" fill="#E9E5DC"/>
-          <rect x="0" y="0" width="600" height="220" fill="#fff" filter="url(#gprNoise2)" opacity="0.45"/>
-          <g stroke="#85371B" stroke-width="1" opacity="0.18">
-            <line x1="0" y1="20" x2="600" y2="20"/><line x1="0" y1="75" x2="600" y2="75"/>
-            <line x1="0" y1="130" x2="600" y2="130"/><line x1="0" y1="185" x2="600" y2="185"/>
-          </g>
-          <g font-family="ui-monospace, monospace" font-size="9" fill="#85371B" opacity="0.8">
-            <text x="4" y="14">0m</text>
-            <text x="4" y="69">1m</text>
-            <text x="4" y="124">2m</text>
-            <text x="4" y="179">3m</text>
-          </g>
-          <clipPath id="simClip2"><rect class="sim-clip-rect" x="0" y="0" width="0" height="220"/></clipPath>
-          <g clip-path="url(#simClip2)">
-            <rect x="0" y="0" width="600" height="220" fill="#fff" filter="url(#gprNoise2)" opacity="0.95"/>
-            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="11" fill="none" opacity="0.12"/>
-            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="6" fill="none" opacity="0.22"/>
-            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="2.5" fill="none" opacity="0.45"/>
-          </g>
-          <g class="sim-antenna">
-            <line x1="0" y1="0" x2="0" y2="220" stroke="#A65325" stroke-width="1.5" opacity="0.9"/>
-            <polygon points="-7,0 7,0 0,12" fill="#A65325"/>
-          </g>
-        </svg>
+        <div class="sim-stage">
+          <img class="sim-radargram-img" src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR real con dos anomalías hiperbólicas detectadas" width="1400" height="460">
+          <div class="sim-axis">
+            <span>0m</span><span>1m</span><span>2m</span><span>3m</span>
+          </div>
+          <div class="sim-veil"></div>
+          <div class="sim-antenna"></div>
+        </div>
         <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
       </div>
     </div>

@@ -2,18 +2,16 @@
   var sims = document.querySelectorAll('[data-gpr-sim]');
   sims.forEach(function (sim) {
     var slider = sim.parentElement.querySelector('.sim-slider');
-    var clipRect = sim.querySelector('.sim-clip-rect');
+    var veil = sim.querySelector('.sim-veil');
     var antenna = sim.querySelector('.sim-antenna');
     var callout = sim.querySelector('.sim-callout');
     var distance = sim.querySelector('.sim-distance');
-    var width = 600;
     var targetStart = parseFloat(sim.dataset.targetStart || '55');
     var targetEnd = parseFloat(sim.dataset.targetEnd || '72');
 
     function update(value) {
-      var x = (value / 100) * width;
-      clipRect.setAttribute('width', x);
-      antenna.setAttribute('transform', 'translate(' + x + ',0)');
+      veil.style.width = (100 - value) + '%';
+      antenna.style.left = value + '%';
       if (distance) {
         distance.textContent = ((value / 100) * 10).toFixed(1);
       }

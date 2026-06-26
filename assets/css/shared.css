@@ -340,10 +340,58 @@ footer a{color:var(--hueso-oscuro);}
   border-radius:2px;
   overflow:hidden;
 }
-.sim-radargram{
+.sim-stage{
+  position:relative;
+  overflow:hidden;
+}
+.sim-radargram-img{
   width:100%;
   height:auto;
   display:block;
+}
+.sim-axis{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:4px 0 8px 4px;
+  font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size:9px;
+  color:#1A1A1A;
+  background:linear-gradient(to right, rgba(245,240,235,.55), rgba(245,240,235,0));
+  pointer-events:none;
+}
+.sim-veil{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  background:#1E130C;
+  pointer-events:none;
+}
+.sim-antenna{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:2px;
+  background:var(--terracota);
+  pointer-events:none;
+}
+.sim-antenna::after{
+  content:'';
+  position:absolute;
+  top:-1px;
+  left:50%;
+  transform:translateX(-50%);
+  border-left:7px solid transparent;
+  border-right:7px solid transparent;
+  border-top:10px solid var(--terracota);
 }
 .sim-callout{
   position:absolute;
