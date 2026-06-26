@@ -348,6 +348,25 @@ footer a{color:var(--hueso-oscuro);}
   width:100%;
   height:auto;
   display:block;
+  position:relative;
+  z-index:1;
+}
+.sim-marker{
+  position:absolute;
+  z-index:2;
+  width:24px;
+  height:24px;
+  border:2px solid #E8A06A;
+  border-radius:50%;
+  transform:translate(-50%,-50%) scale(.6);
+  opacity:0;
+  transition:opacity .3s ease, transform .3s ease;
+  box-shadow:0 0 0 3px rgba(232,160,106,.22);
+  pointer-events:none;
+}
+.sim-marker.is-found{
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
 }
 .sim-axis{
   position:absolute;
@@ -355,6 +374,7 @@ footer a{color:var(--hueso-oscuro);}
   left:0;
   bottom:0;
   width:28px;
+  z-index:3;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -371,6 +391,7 @@ footer a{color:var(--hueso-oscuro);}
   right:0;
   bottom:0;
   width:100%;
+  z-index:4;
   background:#1E130C;
   pointer-events:none;
 }
@@ -380,6 +401,7 @@ footer a{color:var(--hueso-oscuro);}
   bottom:0;
   left:0;
   width:22px;
+  z-index:5;
   transform:translateX(-50%);
   background:linear-gradient(to bottom, rgba(166,83,37,.6), rgba(166,83,37,0) 75%);
   pointer-events:none;
