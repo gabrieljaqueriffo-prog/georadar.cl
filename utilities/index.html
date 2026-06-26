@@ -176,19 +176,22 @@
         <span>GEOLITIX &middot; Simulador GPR</span>
         <span class="sim-readout-value"><span class="sim-distance">0.0</span> m recorridos</span>
       </div>
+      <div class="sim-surface">
+        <div class="sim-surface-track"></div>
+        <input type="range" class="sim-slider" min="0" max="100" value="0" aria-label="Deslice para mover la antena del georradar sobre el subsuelo y revelar el radargrama">
+      </div>
       <div class="sim-screen">
         <div class="sim-stage">
-          <img class="sim-radargram-img" src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR real con dos anomalías hiperbólicas detectadas" width="1400" height="460">
+          <div class="sim-beam"></div>
+          <img class="sim-radargram-img" src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR real con múltiples anomalías hiperbólicas detectadas" width="1400" height="460">
           <div class="sim-axis">
             <span>0m</span><span>1m</span><span>2m</span><span>3m</span>
           </div>
           <div class="sim-veil"></div>
-          <div class="sim-antenna"></div>
         </div>
         <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
       </div>
     </div>
-    <input type="range" class="sim-slider" min="0" max="100" value="0" aria-label="Deslice para mover la antena del georradar y revelar el radargrama">
     <p class="caption">Arrastre el control para simular el barrido del GPR sobre una línea soterrada.</p>
   </div>
 </section>

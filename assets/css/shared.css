@@ -374,24 +374,31 @@ footer a{color:var(--hueso-oscuro);}
   background:#1E130C;
   pointer-events:none;
 }
-.sim-antenna{
+.sim-beam{
   position:absolute;
   top:0;
   bottom:0;
   left:0;
-  width:2px;
-  background:var(--terracota);
+  width:22px;
+  transform:translateX(-50%);
+  background:linear-gradient(to bottom, rgba(166,83,37,.6), rgba(166,83,37,0) 75%);
   pointer-events:none;
 }
-.sim-antenna::after{
-  content:'';
+.sim-surface{
+  position:relative;
+  height:36px;
+  margin-bottom:10px;
+}
+.sim-surface-track{
   position:absolute;
-  top:-1px;
-  left:50%;
-  transform:translateX(-50%);
-  border-left:7px solid transparent;
-  border-right:7px solid transparent;
-  border-top:10px solid var(--terracota);
+  left:7px;
+  right:7px;
+  top:50%;
+  height:5px;
+  transform:translateY(-50%);
+  background:repeating-linear-gradient(90deg, var(--terracota) 0 10px, transparent 10px 20px);
+  border-radius:3px;
+  opacity:.7;
 }
 .sim-callout{
   position:absolute;
@@ -412,43 +419,44 @@ footer a{color:var(--hueso-oscuro);}
 }
 .sim-callout.is-active{opacity:1;}
 .sim-slider{
+  position:absolute;
+  left:0;
+  top:0;
   width:100%;
-  margin:16px 0 4px;
-  height:44px;
+  height:36px;
+  margin:0;
   -webkit-appearance:none;
   appearance:none;
   background:transparent;
   cursor:pointer;
 }
 .sim-slider::-webkit-slider-runnable-track{
-  height:6px;
-  background:var(--siena);
-  border-radius:3px;
+  height:36px;
+  background:transparent;
 }
 .sim-slider::-webkit-slider-thumb{
   -webkit-appearance:none;
-  width:34px;
-  height:24px;
-  border-radius:4px;
+  width:30px;
+  height:22px;
+  border-radius:3px;
   background:var(--terracota);
   border:2px solid var(--hueso);
-  margin-top:-9px;
+  box-shadow:0 0 0 1px var(--siena), 0 0 0 5px rgba(166,83,37,.18);
   cursor:grab;
-  box-shadow:0 0 0 1px var(--siena);
 }
 .sim-slider::-moz-range-track{
-  height:6px;
-  background:var(--siena);
-  border-radius:3px;
+  height:36px;
+  background:transparent;
+  border:none;
 }
 .sim-slider::-moz-range-thumb{
-  width:34px;
-  height:24px;
-  border-radius:4px;
+  width:30px;
+  height:22px;
+  border-radius:3px;
   background:var(--terracota);
   border:2px solid var(--hueso);
+  box-shadow:0 0 0 1px var(--siena), 0 0 0 5px rgba(166,83,37,.18);
   cursor:grab;
-  box-shadow:0 0 0 1px var(--siena);
 }
 
 @media (prefers-reduced-motion: reduce){
