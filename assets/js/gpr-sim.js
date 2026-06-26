@@ -8,8 +8,6 @@
     var distance = sim.querySelector('.sim-distance');
     var markers = sim.querySelectorAll('.sim-marker');
     var defaultLabel = callout ? callout.textContent : '';
-    var report = sim.parentElement.querySelector('[data-sim-report]');
-    var reportItems = report ? report.querySelectorAll('[data-report-trigger]') : [];
 
     function update(value) {
       veil.style.width = (100 - value) + '%';
@@ -34,16 +32,6 @@
         callout.classList.add('is-active');
       } else {
         callout.classList.remove('is-active');
-      }
-
-      reportItems.forEach(function (item) {
-        var trigger = parseFloat(item.dataset.reportTrigger);
-        if (value >= trigger) {
-          item.classList.add('is-found');
-        }
-      });
-      if (report && value >= 98) {
-        report.classList.add('is-complete');
       }
     }
 
