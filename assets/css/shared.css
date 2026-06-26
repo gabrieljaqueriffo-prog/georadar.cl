@@ -311,11 +311,34 @@ footer a{color:var(--hueso-oscuro);}
 .gpr-sim{}
 .sim-wrap{
   position:relative;
-  border:1px solid var(--borde);
+  border:1px solid var(--siena);
   border-radius:4px;
-  overflow:hidden;
-  background:var(--hueso-oscuro);
+  padding:14px 14px 6px;
+  background:#1E130C;
   touch-action:none;
+}
+.sim-readout{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#C9B8A8;
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+.sim-readout-value{
+  color:#E8A06A;
+  font-weight:700;
+  font-size:13px;
+  text-transform:none;
+  letter-spacing:0;
+}
+.sim-screen{
+  position:relative;
+  border-radius:2px;
+  overflow:hidden;
 }
 .sim-radargram{
   width:100%;
@@ -324,25 +347,25 @@ footer a{color:var(--hueso-oscuro);}
 }
 .sim-callout{
   position:absolute;
-  top:10px;
-  left:50%;
-  transform:translateX(-50%);
-  background:var(--siena);
+  top:8px;
+  left:8px;
+  right:8px;
+  background:var(--terracota);
   color:var(--hueso);
-  font-size:13px;
+  font-size:12px;
   font-weight:600;
-  padding:8px 14px;
+  padding:7px 10px;
   border-radius:4px;
   opacity:0;
   transition:opacity .25s ease;
   pointer-events:none;
-  white-space:nowrap;
-  max-width:90%;
+  white-space:normal;
+  text-align:center;
 }
 .sim-callout.is-active{opacity:1;}
 .sim-slider{
   width:100%;
-  margin:18px 0 6px;
+  margin:16px 0 4px;
   height:44px;
   -webkit-appearance:none;
   appearance:none;
@@ -351,31 +374,33 @@ footer a{color:var(--hueso-oscuro);}
 }
 .sim-slider::-webkit-slider-runnable-track{
   height:6px;
-  background:var(--borde);
+  background:var(--siena);
   border-radius:3px;
 }
 .sim-slider::-webkit-slider-thumb{
   -webkit-appearance:none;
-  width:36px;
-  height:36px;
+  width:34px;
+  height:24px;
   border-radius:4px;
   background:var(--terracota);
-  border:2px solid var(--siena);
-  margin-top:-15px;
+  border:2px solid var(--hueso);
+  margin-top:-9px;
   cursor:grab;
+  box-shadow:0 0 0 1px var(--siena);
 }
 .sim-slider::-moz-range-track{
   height:6px;
-  background:var(--borde);
+  background:var(--siena);
   border-radius:3px;
 }
 .sim-slider::-moz-range-thumb{
-  width:36px;
-  height:36px;
+  width:34px;
+  height:24px;
   border-radius:4px;
   background:var(--terracota);
-  border:2px solid var(--siena);
+  border:2px solid var(--hueso);
   cursor:grab;
+  box-shadow:0 0 0 1px var(--siena);
 }
 
 @media (prefers-reduced-motion: reduce){
