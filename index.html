@@ -134,7 +134,7 @@
     <p class="eyebrow">Trayectoria en cifras</p>
     <div class="stats-grid">
       <div class="stat-card reveal">
-        <div class="stat-num">252</div>
+        <div class="stat-num">+220</div>
         <div class="stat-label">Proyectos documentados</div>
       </div>
       <div class="stat-card reveal">
@@ -194,41 +194,39 @@
       </div>
       <div class="sim-screen">
         <svg class="sim-radargram" viewBox="0 0 600 220" preserveAspectRatio="none" role="img" aria-label="Simulación de radargrama GPR">
-          <rect x="0" y="0" width="600" height="220" fill="#1E130C"/>
-          <g stroke="#F5F0EB" stroke-width="1" opacity="0.1">
-            <line x1="60" y1="0" x2="60" y2="220"/><line x1="120" y1="0" x2="120" y2="220"/>
-            <line x1="180" y1="0" x2="180" y2="220"/><line x1="240" y1="0" x2="240" y2="220"/>
-            <line x1="300" y1="0" x2="300" y2="220"/><line x1="360" y1="0" x2="360" y2="220"/>
-            <line x1="420" y1="0" x2="420" y2="220"/><line x1="480" y1="0" x2="480" y2="220"/>
-            <line x1="540" y1="0" x2="540" y2="220"/>
+          <defs>
+            <filter id="gprNoise" x="-5%" y="-5%" width="110%" height="110%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.9 0.045" numOctaves="3" seed="7" stitchTiles="stitch" result="n"/>
+              <feColorMatrix in="n" type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0" result="gray"/>
+              <feComponentTransfer in="gray">
+                <feFuncR type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
+                <feFuncG type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
+                <feFuncB type="gamma" amplitude="1.7" exponent="3.4" offset="-0.3"/>
+              </feComponentTransfer>
+            </filter>
+          </defs>
+          <rect x="0" y="0" width="600" height="220" fill="#E9E5DC"/>
+          <rect x="0" y="0" width="600" height="220" fill="#fff" filter="url(#gprNoise)" opacity="0.45"/>
+          <g stroke="#85371B" stroke-width="1" opacity="0.18">
             <line x1="0" y1="20" x2="600" y2="20"/><line x1="0" y1="75" x2="600" y2="75"/>
             <line x1="0" y1="130" x2="600" y2="130"/><line x1="0" y1="185" x2="600" y2="185"/>
           </g>
-          <g font-family="ui-monospace, monospace" font-size="9" fill="#C9B8A8">
+          <g font-family="ui-monospace, monospace" font-size="9" fill="#85371B" opacity="0.8">
             <text x="4" y="14">0m</text>
             <text x="4" y="69">1m</text>
             <text x="4" y="124">2m</text>
             <text x="4" y="179">3m</text>
           </g>
-          <g class="sim-soil" stroke="#F5F0EB" stroke-width="1" fill="none" opacity="0.18">
-            <path d="M0,40 Q15,34 30,40 T60,40 T90,40 T120,40 T150,40 T180,40 T210,40 T240,40 T270,40 T300,40 T330,40 T360,40 T390,40 T420,40 T450,40 T480,40 T510,40 T540,40 T570,40 T600,40"/>
-            <path d="M0,100 Q15,93 30,100 T60,100 T90,100 T120,100 T150,100 T180,100 T210,100 T240,100 T270,100 T300,100 T330,100 T360,100 T390,100 T420,100 T450,100 T480,100 T510,100 T540,100 T570,100 T600,100"/>
-            <path d="M0,160 Q15,153 30,160 T60,160 T90,160 T120,160 T150,160 T180,160 T210,160 T240,160 T270,160 T300,160 T330,160 T360,160 T390,160 T420,160 T450,160 T480,160 T510,160 T540,160 T570,160 T600,160"/>
-          </g>
           <clipPath id="simClip"><rect class="sim-clip-rect" x="0" y="0" width="0" height="220"/></clipPath>
           <g clip-path="url(#simClip)">
-            <g stroke="#E8A06A" stroke-width="1.1" fill="none" opacity="0.85">
-              <path d="M0,40 Q15,34 30,40 T60,40 T90,40 T120,40 T150,40 T180,40 T210,40 T240,40 T270,40 T300,40 T330,40 T360,40 T390,40 T420,40 T450,40 T480,40 T510,40 T540,40 T570,40 T600,40"/>
-              <path d="M0,100 Q15,93 30,100 T60,100 T90,100 T120,100 T150,100 T180,100 T210,100 T240,100 T270,100 T300,100 T330,100 T360,100 T390,100 T420,100 T450,100 T480,100 T510,100 T540,100 T570,100 T600,100"/>
-              <path d="M0,160 Q15,153 30,160 T60,160 T90,160 T120,160 T150,160 T180,160 T210,160 T240,160 T270,160 T300,160 T330,160 T360,160 T390,160 T420,160 T450,160 T480,160 T510,160 T540,160 T570,160 T600,160"/>
-            </g>
-            <path d="M260,130 Q380,200 500,130" stroke="#E8A06A" stroke-width="7" fill="none" opacity="0.18"/>
-            <path d="M260,130 Q380,200 500,130" stroke="#E8A06A" stroke-width="4" fill="none" opacity="0.35"/>
-            <path d="M260,130 Q380,200 500,130" stroke="#F5F0EB" stroke-width="1.8" fill="none" opacity="0.95"/>
+            <rect x="0" y="0" width="600" height="220" fill="#fff" filter="url(#gprNoise)" opacity="0.95"/>
+            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="11" fill="none" opacity="0.12"/>
+            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="6" fill="none" opacity="0.22"/>
+            <path d="M260,135 Q380,205 500,135" stroke="#1A1A1A" stroke-width="2.5" fill="none" opacity="0.45"/>
           </g>
           <g class="sim-antenna">
-            <line x1="0" y1="0" x2="0" y2="220" stroke="#F5F0EB" stroke-width="1.5" opacity="0.85"/>
-            <polygon points="-7,0 7,0 0,12" fill="#F5F0EB"/>
+            <line x1="0" y1="0" x2="0" y2="220" stroke="#A65325" stroke-width="1.5" opacity="0.9"/>
+            <polygon points="-7,0 7,0 0,12" fill="#A65325"/>
           </g>
         </svg>
         <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
@@ -258,7 +256,7 @@
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-year">Hoy</div>
-        <div class="timeline-text">252 proyectos documentados para minería, utilities, construcción y peritaje forense.</div>
+        <div class="timeline-text">+220 proyectos documentados para minería, utilities, construcción y peritaje forense.</div>
       </div>
     </div>
   </div>
@@ -270,9 +268,9 @@
     <h2>Qué es el georradar y por qué Geo Radar Chile es el referente</h2>
     <p>El <strong>georradar</strong> (también escrito <strong>georadar</strong>, del inglés Ground Penetrating Radar o GPR) es una tecnología de prospección subterránea no destructiva que permite detectar estructuras, ductos y anomalías bajo la superficie sin necesidad de excavar. En Chile, la demanda de <strong>georradar Chile</strong> ha crecido junto con la minería, la construcción de infraestructura urbana y los procesos judiciales que requieren peritaje técnico del subsuelo.</p>
     <p>Geo Radar Chile es una empresa familiar fundada en 2011, pero con experiencia en <strong>georradar GPR Chile</strong> que se remonta a 1997, cuando Agustín Omar Jaque Lafuente obtuvo su certificación GSSI en Estados Unidos y comenzó a operar equipos de <strong>ground penetrating radar Chile</strong> en proyectos mineros e industriales. Hoy, Gabriel Jaque Riffo, Director Comercial y Analista GPR Senior, posee la única certificación IDS GeoRadar de Chile, obtenida en Pisa, Italia, en 2016.</p>
-    <p>La empresa ha ejecutado 252 proyectos documentados para clientes como Codelco (en 6 de sus divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, la PDI y la Fiscalía Regional de Los Ríos. Geo Radar Chile opera con equipo GPR propio IDS GeoRadar RIS MF Hi-Mod de doble antena (200 MHz para profundidad y 600 MHz para resolución), procesado con software GRED HD y entregado mediante la plataforma cloud GEOLITIX.</p>
+    <p>La empresa ha ejecutado +220 proyectos documentados para clientes como Codelco (en 6 de sus divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, la PDI y la Fiscalía Regional de Los Ríos. Geo Radar Chile opera con equipo GPR propio IDS GeoRadar RIS MF Hi-Mod de doble antena (200 MHz para profundidad y 600 MHz para resolución), procesado con software GRED HD y entregado mediante la plataforma cloud GEOLITIX.</p>
     <p>A diferencia de empresas que venden equipos de <strong>detección de ductos soterrados</strong>, Geo Radar Chile se posiciona como asesor técnico: presta servicios de prospección, no comercializa hardware. Esta es la razón por la que sigue siendo la <strong>empresa de georradar con más experiencia en Chile</strong> para proyectos de minería, construcción, detección de servicios subterráneos y peritaje forense.</p>
-    <p>El uso de <strong>georradar minería construcción Chile</strong> se ha extendido a lo largo de todo el país: desde faenas en el norte minero hasta obras de infraestructura urbana en Santiago. Cualquier organización que necesite contratar una <strong>empresa de georradar con más experiencia en Chile</strong> encuentra en Geo Radar Chile un equipo certificado, con 252 proyectos documentados y la trayectoria técnica más larga del rubro en el país.</p>
+    <p>El uso de <strong>georradar minería construcción Chile</strong> se ha extendido a lo largo de todo el país: desde faenas en el norte minero hasta obras de infraestructura urbana en Santiago. Cualquier organización que necesite contratar una <strong>empresa de georradar con más experiencia en Chile</strong> encuentra en Geo Radar Chile un equipo certificado, con +220 proyectos documentados y la trayectoria técnica más larga del rubro en el país.</p>
   </div>
 </section>
 
@@ -323,7 +321,7 @@
     </div>
     <div class="faq-item reveal">
       <h3>¿Por qué elegir Geo Radar Chile?</h3>
-      <p>Por su experiencia desde 1997, su trayectoria de 252 proyectos para clientes como Codelco, BHP y SQM, y por contar con la única certificación IDS GeoRadar de Chile. Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
+      <p>Por su experiencia desde 1997, su trayectoria de +220 proyectos para clientes como Codelco, BHP y SQM, y por contar con la única certificación IDS GeoRadar de Chile. Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
     </div>
     <div class="faq-item reveal">
       <h3>¿En qué se diferencia "georadar" de "georradar"?</h3>
