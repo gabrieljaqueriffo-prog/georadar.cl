@@ -21,8 +21,6 @@
         var trigger = parseFloat(marker.dataset.trigger);
         if (value >= trigger) {
           marker.classList.add('is-found');
-        } else {
-          marker.classList.remove('is-found');
         }
         if (value >= trigger && value <= trigger + 9) {
           activeLabel = marker.dataset.label || defaultLabel;
