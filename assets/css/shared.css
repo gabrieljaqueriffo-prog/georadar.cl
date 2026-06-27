@@ -500,6 +500,41 @@ footer a{color:var(--hueso-oscuro);}
   color:#F0DCC9;
   transition:opacity .2s ease;
 }
+.sim-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:8px;
+}
+.sim-tab{
+  border:1px solid rgba(245,240,235,.25);
+  background:transparent;
+  color:#C9B8A8;
+  border-radius:4px;
+  padding:6px 12px;
+  font-size:12px;
+  cursor:pointer;
+}
+.sim-tab:hover{border-color:var(--terracota);color:var(--hueso);}
+.sim-tab.is-active{background:var(--terracota);border-color:var(--terracota);color:var(--hueso);}
+.sim-tab-panel{display:none;margin-top:12px;}
+.sim-tab-panel.is-active{display:block;}
+.sim-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.sim-compare-col p{margin:0 0 0;font-size:14px;color:#F0DCC9;}
+.sim-compare-label{
+  font-weight:700;
+  color:var(--hueso);
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  margin:0 0 6px;
+}
+.sim-cases{margin:0;padding:0 0 0 18px;font-size:14px;color:#F0DCC9;}
+.sim-cases li{margin-bottom:8px;}
+.sim-cases strong{color:var(--hueso);}
+.sim-glossary{margin:0;font-size:14px;color:#F0DCC9;}
+.sim-glossary dt{font-weight:700;color:var(--hueso);margin-top:8px;}
+.sim-glossary dd{margin:2px 0 0;}
 
 .sim-quiz,
 .sim-cta-interpret{
@@ -553,4 +588,5 @@ footer a{color:var(--hueso-oscuro);}
   .stats-grid,.cards-grid,.timeline,.steps,.footer-grid{grid-template-columns:1fr;}
   .nav-links{display:none;}
   .hero{padding:64px 0 48px;}
+  .sim-compare{grid-template-columns:1fr;}
 }

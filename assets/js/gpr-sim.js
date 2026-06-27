@@ -57,6 +57,21 @@
     update(parseFloat(slider.value));
   });
 
+  var tabs = document.querySelectorAll('.sim-tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var edu = tab.closest('.sim-edu');
+      var name = tab.dataset.tab;
+      edu.querySelectorAll('.sim-tab').forEach(function (t) {
+        t.classList.toggle('is-active', t === tab);
+        t.setAttribute('aria-selected', t === tab ? 'true' : 'false');
+      });
+      edu.querySelectorAll('.sim-tab-panel').forEach(function (panel) {
+        panel.classList.toggle('is-active', panel.dataset.tabPanel === name);
+      });
+    });
+  });
+
   var quizOptions = document.querySelectorAll('.quiz-option');
   quizOptions.forEach(function (option) {
     option.addEventListener('click', function () {
