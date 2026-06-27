@@ -8,12 +8,28 @@
     var distance = sim.querySelector('.sim-distance');
     var markers = sim.querySelectorAll('.sim-marker');
     var defaultLabel = callout ? callout.textContent : '';
+    var eduText = sim.querySelector('.sim-edu-text');
+    var eduDefault = eduText ? eduText.dataset.default : '';
+    var eduStages = [
+      { min: 0, max: 15, text: 'La antena emite pulsos de energía electromagnética hacia el subsuelo y registra el tiempo que demora en volver cada eco.' },
+      { min: 15, max: 35, text: 'Cuando la onda choca con un material distinto al suelo circundante (un ducto, una roca, un vacío), parte de la energía rebota hacia la antena.' },
+      { min: 35, max: 55, text: 'La forma de hipérbola aparece porque la antena detecta el mismo objeto desde varias posiciones: antes, justo encima y después de pasar sobre él.' },
+      { min: 55, max: 75, text: 'El tiempo que tarda en volver la señal, junto con la velocidad de propagación del suelo, permite estimar la profundidad real del objetivo.' },
+      { min: 75, max: 100, text: 'Una curva nítida y simétrica suele ser un objetivo real. Si se ve borrosa, irregular o mezclada con el fondo, probablemente es ruido o relleno.' }
+    ];
 
     function update(value) {
       veil.style.width = (100 - value) + '%';
       beam.style.left = value + '%';
       if (distance) {
         distance.textContent = ((value / 100) * 10).toFixed(1);
+      }
+
+      if (eduText) {
+        var stage = eduStages.find(function (s) {
+          return value >= s.min && value <= s.max;
+        });
+        eduText.textContent = stage ? stage.text : eduDefault;
       }
 
       var activeLabel = '';

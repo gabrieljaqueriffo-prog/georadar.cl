@@ -487,6 +487,20 @@ footer a{color:var(--hueso-oscuro);}
   color:#C9B8A8;
   margin:10px 0 0;
 }
+.sim-edu{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid rgba(245,240,235,.14);
+  min-height:54px;
+}
+.sim-edu .eyebrow{color:#E8A06A;}
+.sim-edu-text{
+  margin:4px 0 0;
+  font-size:14px;
+  color:#F0DCC9;
+  transition:opacity .2s ease;
+}
+
 .sim-quiz,
 .sim-cta-interpret{
   margin-top:18px;
