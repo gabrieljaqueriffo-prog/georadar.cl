@@ -71,34 +71,38 @@ Tipos de deuda de contenido en Georadar:
 deuda junto a tareas de creación. Un backlog que solo crea y nunca mejora
 acumula deuda hasta que el coste de mantenimiento supera el valor del activo.
 
-### 1.5 Tres niveles de conocimiento (y qué se publica)
+### 1.5 Conocimiento vs. know-how: qué se publica y qué no
 
-No todo el conocimiento de Geo Radar Chile es publicable, y la decisión de
-qué publicar no es estética: es estratégica.
+No todo lo que Geo Radar Chile sabe es publicable, y la decisión de qué
+publicar no es estética: es estratégica. La distinción no es por
+profundidad técnica, sino por **qué genera la ventaja competitiva real**.
 
 | Nivel | Qué es | Ejemplo | ¿Se publica? |
 |-------|--------|---------|---------------|
-| 1. Información pública | Lo que cualquiera puede aprender en un manual o paper | Qué es una hipérbola, qué frecuencia penetra más | Sí, siempre |
-| 2. Comprensión del problema | Cómo se traduce esa información a una decisión de proyecto | Qué preguntas hacer antes de romper una losa, cuándo conviene prospectar | Sí, es el corazón de la Biblioteca |
-| 3. Criterio de decisión experto | El razonamiento multi-señal que convierte una lectura en una conclusión | "Por la continuidad del reflector, el comportamiento lateral y la amplitud, descartamos una tubería y priorizamos cavidad" | **Nunca.** Es el activo intelectual de 29 años de experiencia |
+| **A. Conocimiento público** | Lo que cualquiera puede aprender en un manual o paper | Qué es un radargrama, qué es una hipérbola, por qué la humedad afecta la señal, cuándo conviene 400 vs. 900 MHz a nivel conceptual | Sí, siempre — es literatura técnica, no tiene valor competitivo |
+| **B. Experiencia acumulada** | Lo que ocurrió, documentado como evidencia | "En este proyecto se detectó una anomalía que la excavación posterior confirmó como cavidad" | Sí — es el corazón de la Biblioteca y de los casos reales. Es evidencia, no metodología |
+| **C. Criterio profesional** | El razonamiento que convierte una lectura en una conclusión: qué señales se ponderaron, qué hipótesis se descartaron, cómo se combinan GPR + LEM + experiencia | "Por la continuidad del reflector, el comportamiento lateral y la amplitud, descartamos una tubería y priorizamos cavidad" | **Nunca.** Es la propiedad intelectual de 29 años de experiencia — el verdadero motivo por el que un cliente contrata a Geo Radar Chile |
 
-**Principio editorial:** publicamos conocimiento suficiente para que el
-cliente comprenda el problema y tome mejores decisiones. La metodología de
-interpretación que constituye la ventaja competitiva de Geo Radar Chile
-permanece como conocimiento propietario.
+**Principio editorial:** Geo Radar Chile vende la ejecución. Georadar.cl
+demuestra el criterio, pero nunca enseña el proceso mental que lo hace
+posible. Se comparte conocimiento (A), se demuestra experiencia (B), se
+protege el criterio profesional (C).
 
 Esto no reduce la ambición de Georadar: la convierte en la fuente de
 referencia en español para **comprender el subsuelo y tomar decisiones antes
-de intervenirlo** — no en un manual de cómo razona el especialista. El
-GPR es el núcleo tecnológico; el criterio profesional es el producto que
-realmente se vende, y no se regala.
+de intervenirlo** — no en una escuela que forma operadores capaces de
+interpretar como un especialista. El GPR es el núcleo tecnológico; el
+criterio profesional es el producto que realmente se vende, y no se regala.
 
-**Aplicación práctica:** un caso real nunca narra la cadena de señales que
-llevó a la conclusión ("observamos reflexión múltiple, inversión de fase y
-cambio de amplitud, por lo tanto..."). Narra el problema de ingeniería:
-qué escenarios eran posibles, qué incertidumbre existía, qué decisión
-permitió tomar la investigación. El protagonista de un caso real es la
-decisión, no el radar ni el proceso mental que la sustenta.
+**Aplicación práctica en un caso real:** la estructura es Problema → riesgo
+→ método general → qué se encontró → cómo cambió la decisión de obra →
+resultado. Nunca se narra la cadena de señales que llevó a la conclusión
+("se observa continuidad, la amplitud aumenta, la frecuencia cambia, por lo
+tanto..."). El radargrama se muestra como **evidencia de que el caso
+ocurrió** —igual que una radiografía en un artículo médico no está ahí
+para enseñar radiología, sino para respaldar el caso clínico. El
+protagonista de un caso real es la decisión de obra, no el radar ni el
+proceso mental que la sustenta.
 
 ---
 
@@ -510,12 +514,13 @@ nodo crítico.
 
 El Canon inicial de Georadar:
 
-1. **Guía completa para comprender el subsuelo y decidir antes de intervenirlo**
+1. **Cómo tomar decisiones correctas antes de intervenir el subsuelo**
    (anteriormente "Guía de interpretación de radargramas") — el activo de mayor
    autoridad posible; nadie en español lo tiene bien hecho. Enseña qué es un
-   radargrama, sus límites y qué preguntas debe responder un proyecto antes de
-   intervenir — nunca el razonamiento multi-señal que constituye el criterio
-   profesional (ver `§1.5`).
+   radargrama, sus límites, cuándo un estudio GPR es realmente necesario y qué
+   preguntas debe responder un proyecto antes de intervenir — nunca el
+   razonamiento multi-señal que constituye el criterio profesional (Nivel C,
+   ver `§1.5`). Forma clientes inteligentes, no operadores.
 2. **Calculadora de profundidad GPR** — herramienta de uso más frecuente.
 3. **Glosario GPR en español** — vocabulario de referencia del dominio.
 4. **Caso real: detección en minería** — prueba en el sector de mayor valor.

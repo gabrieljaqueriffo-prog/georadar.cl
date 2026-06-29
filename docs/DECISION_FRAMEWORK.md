@@ -130,12 +130,22 @@ Comparador de antenas
         ↓
 Visualizador de radargramas
         ↓
-Interpretador asistido
+Árbol de decisión "¿Necesito GPR?" / Checklist antes de perforar
 ```
 
 Cada herramienta facilita construir la siguiente. Ese efecto acumulativo es una
 ventaja competitiva que un competidor no puede copiar de un día para otro: no solo
 necesita la herramienta, necesita todos los activos que la sustentan.
+
+**Sobre el último eslabón:** se elimina deliberadamente la idea de un
+"interpretador asistido". Una herramienta que automatiza el razonamiento
+multi-señal regalaría en forma de producto el criterio profesional que
+`CONTENT_STRATEGY.md §1.5` protege como activo propietario (Nivel C) — y
+rompería el modelo de negocio, porque automatizaría precisamente aquello por
+lo que un cliente contrata a Geo Radar Chile. El arco de herramientas termina
+en utilidades que **preparan al cliente para pedir una lectura profesional**
+(árbol de decisión, checklist, estimador de cobertura, selector conceptual de
+antena), nunca en una que sustituya al especialista.
 
 **Señal de alarma:** si una nueva pieza no enlaza con nada existente ni alimenta
 nada futuro, probablemente es una página aislada. Replantearlo antes de construir.
