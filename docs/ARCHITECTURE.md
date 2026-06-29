@@ -307,33 +307,46 @@ reutilización y facilita el enlazado interno automático.
    antes de conocer la solución)
 ─ Método: cómo se aplicó GPR, qué antena, qué configuración
 ─ Qué buscábamos / qué encontramos (puente narrativo antes de la evidencia)
-─ Evidencia geofísica: nunca el radargrama completo. Un recorte anotado
-   (flechas, círculos, profundidad, comentario corto) de la zona relevante,
-   al estilo de cómo un médico muestra una resonancia: solo la parte que
-   sustenta la interpretación, no el estudio completo. El resto del material
-   colapsado bajo "Ver análisis técnico completo"
-─ Interpretación: qué se encontró y por qué importa
-─ Nivel de confianza / validación de la interpretación
-─ Decisión que permitió tomar el estudio (no solo el hallazgo)
+─ Evidencia del estudio (nunca "Radargramas" ni "Evidencia geofísica" como
+   título de sección — ver más abajo por qué): como máximo uno o dos
+   registros representativos, nunca una galería de cada escenario posible.
+   Acompañados siempre de la frase de protección de criterio (ver abajo).
+   Nunca el dataset completo, nunca agrupados como si fueran una lección de
+   interpretación
+─ Decisión que permitió tomar el estudio: qué se encontró, qué riesgo evitó,
+   qué hizo posible decidir — no el razonamiento técnico que llevó ahí
 ─ Resultado
-─ ¿Qué aprendimos? (3–4 bullets — convierte el caso en contenido educativo)
+─ ¿Qué aprendimos? (3–4 bullets — convierte el caso en contenido educativo,
+   nunca con lenguaje de interpretación: "la amplitud disminuye porque...",
+   "descartamos X porque..." no se publican bajo ninguna circunstancia)
 ─ Sector y tipo de problema (etiquetas para filtro)
 ─ Enlaces a términos de glosario y artículos técnicos relacionados (→ Biblioteca)
 ─ CTA específico al síntoma del caso (no genérico)
 ```
 
-**Principio rector:** cada sección debe responder a "¿cómo pasó Geo Radar Chile
-de un problema en terreno a una decisión técnica confiable?". El radargrama no
-es el protagonista: es una de las evidencias que sustentan una interpretación
-profesional. Un competidor puede publicar imágenes similares; no puede copiar
-el proceso de razonamiento respaldado por la experiencia del equipo.
+**Principio rector:** la pregunta que valida cada sección no es "¿estoy
+mostrando demasiado?" sino "¿qué está aprendiendo el cliente después de ver
+esta página?". Si la respuesta es "a reconocer un patrón en un radargrama",
+la sección está mal escrita — eso es exactamente lo que protege
+`CONTENT_STRATEGY.md §1.5`. Si la respuesta es "qué decisión tomar y por qué
+confiar en el equipo que la tomó", está alineada. El protagonista de un caso
+real es la decisión, nunca el radargrama. Georadar.cl no escribe como
+analista GPR que explica un hallazgo; escribe como arquitecto de decisiones
+que demuestra que un problema real se resolvió bien.
 
-**Sobre la evidencia visual:** el verdadero activo no es la imagen del
-radargrama, es la interpretación. Se publica solo el recorte anotado
-suficiente para enseñar el razonamiento (qué línea es la armadura, dónde
-desaparece, dónde aumenta la amplitud, por qué eso implica una cavidad).
-Nunca el dataset completo. Esto enseña principios sin regalar el criterio
-experto que es el verdadero diferencial del servicio.
+**Sobre la evidencia visual:** el radargrama es evidencia de que el caso
+ocurrió, no material didáctico. Se publica como máximo uno o dos registros
+representativos (nunca una galería completa de "tipos de anomalía"), sin
+referencias a perfil/grilla específicos ni descripciones de continuidad,
+amplitud o reflexión — ese vocabulario es el razonamiento mismo, no la
+evidencia. Cada imagen va acompañada de una variación de esta frase de
+protección de criterio: *"La imagen corresponde a uno de los registros
+obtenidos durante la campaña. La interpretación final no depende de un único
+radargrama, sino del análisis conjunto de cientos de perfiles, las
+condiciones del terreno y la experiencia del equipo."* Esa frase no es
+decorativa: explica por qué el lector no puede ni debe intentar replicar la
+lectura a partir de la imagen, y por eso protege el criterio profesional
+mejor que cualquier omisión silenciosa.
 
 ### Patrón: Herramienta / Calculadora
 ```
