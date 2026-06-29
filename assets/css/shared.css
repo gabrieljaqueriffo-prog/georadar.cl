@@ -569,6 +569,11 @@ footer a{color:var(--hueso-oscuro);}
 .sim-cases{margin:0;padding:0 0 0 18px;font-size:14px;color:#F0DCC9;}
 .sim-cases li{margin-bottom:8px;}
 .sim-cases strong{color:var(--hueso);}
+
+/* Listas de lecciones sobre fondo claro (.section-alt), p.ej. "¿Qué aprendimos?" en casos reales */
+.lessons-list{margin:0;padding:0 0 0 18px;font-size:14px;color:var(--texto-suave);}
+.lessons-list li{margin-bottom:8px;}
+.lessons-list strong{color:var(--texto);}
 .sim-glossary{margin:0;font-size:14px;color:#F0DCC9;}
 .sim-glossary dt{font-weight:700;color:var(--hueso);margin-top:8px;}
 .sim-glossary dd{margin:2px 0 0;}
