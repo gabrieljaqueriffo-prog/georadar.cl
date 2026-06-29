@@ -319,7 +319,9 @@ reutilización y facilita el enlazado interno automático.
 ─ ¿Qué aprendimos? (3–4 bullets — convierte el caso en contenido educativo,
    nunca con lenguaje de interpretación: "la amplitud disminuye porque...",
    "descartamos X porque..." no se publican bajo ninguna circunstancia)
-─ Sector y tipo de problema (etiquetas para filtro)
+─ Sector y tipo de problema: componente `.case-tags` (chips `.case-tag`) en el
+   header, justo bajo el eyebrow — no como texto plano dentro del eyebrow.
+   Habilita una futura página índice de casos filtrable sin reescribir markup.
 ─ Enlaces a términos de glosario y artículos técnicos relacionados (→ Biblioteca)
 ─ CTA específico al síntoma del caso (no genérico)
 ```

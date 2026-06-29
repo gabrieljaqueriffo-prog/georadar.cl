@@ -245,6 +245,20 @@ section{padding:64px 0;}
 }
 .card-links a:hover{text-decoration:underline;}
 
+/* Case tags (sector + tipo de problema, casos reales) */
+.case-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.case-tag{
+  display:inline-block;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.02em;
+  color:var(--siena);
+  background:var(--hueso-oscuro);
+  border:1px solid var(--borde);
+  border-radius:999px;
+  padding:4px 12px;
+}
+
 /* Timeline */
 .timeline-section{
   background:var(--siena);
