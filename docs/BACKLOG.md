@@ -9,20 +9,19 @@
 
 ### Caso real — Detección de socavones en Espesador T5
 
-- **Estado:** REVISIÓN
+- **Estado:** PUBLICADO
 - **Tipo:** Caso real (`ARCHITECTURE.md §7`, patrón revisado)
 - **Sector:** mineria
 - **Taxonomía:** deteccion-cavidades
 - **Nivel de pirámide de evidencia:** 5
 - **Ubicación:** `/mineria/casos/socavones-espesador-t5/index.html`
 - **Enlaces entrantes:** `mineria/index.html` (card en "Casos en minería"), `index.html` (card de Minería en "Prospección GPR por industria")
-- **Enlaces salientes:** `/mineria/` (servicio correspondiente), `/glosario/#socavon`, `/glosario/#espesador`, `/glosario/#antena`, `/glosario/#hiperbola`
+- **Enlaces salientes:** `/mineria/` (servicio correspondiente), `/glosario/#socavon`, `/glosario/#espesador`, `/glosario/#antena`, `/glosario/#hiperbola`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/` (artículo Canon)
 - **Reestructurado** según el patrón "Caso real" actualizado en `ARCHITECTURE.md §7`: agrega puente "Qué buscábamos / qué encontramos", sección "Evidencia geofísica" (radargrama destacado + 3 condiciones colapsadas bajo `<details>`), bloque de "Nivel de confianza / validación", sección "Decisión que permitió tomar el estudio", lista "¿Qué aprendimos?" y CTA específico al síntoma.
 - **Interpretación reescrita** conforme al principio editorial de `CONTENT_STRATEGY.md §1.5` (tres niveles de conocimiento): se eliminó la descripción del razonamiento multi-señal ("tres señales simultáneas...") que exponía criterio de decisión propietario (Nivel 3). Ahora narra los escenarios de riesgo y la decisión, no el proceso mental que llevó a la conclusión.
 - **Imágenes de radargrama (resuelto):** las 4 imágenes reales (A, B, C, D) fueron entregadas y wireadas en `assets/img/casos/socavones-espesador-t5/radargrama-{a,b,c,d}.jpg`, reemplazando los placeholders `[RADARGRAMA-A]`...`[RADARGRAMA-D]`. Verificado con Playwright: las 4 cargan sin errores y respetan el patrón destacado + 3 colapsadas bajo `<details>`.
-- **Por qué no está en PUBLICADO:**
-  1. `DEFINITION_OF_DONE.md` exige enlace a artículos técnicos relacionados de la Biblioteca; no existe todavía ningún artículo de Nivel 3 sobre detección de cavidades con GPR al que enlazar.
-- **Próximo paso para pasar a PUBLICADO:** crear o enlazar un artículo técnico de Biblioteca sobre interpretación de cavidades, o que el usuario apruebe una excepción puntual para publicar sin ese enlace.
+- **Enlace a Biblioteca (resuelto):** se creó la sección Biblioteca técnica (`/biblioteca/`) y su primer artículo Canon, y el caso enlaza a él desde "¿Qué aprendimos?". Ambos blockers de `DEFINITION_OF_DONE.md` quedaron resueltos; el caso pasa a PUBLICADO.
+- **Fusionado a `main`** el 2026-06-29 (fast-forward, sin conflictos).
 
 ### Glosario GPR
 
@@ -35,11 +34,22 @@
 - **Por qué no es Canon MADURO todavía:** `DEFINITION_OF_DONE.md` exige mínimo 5 enlaces entrantes para activos Canon; este activo cuenta hoy con 2 páginas que enlazan hacia él (aunque el caso real aporta 4 enlaces puntuales a anclas distintas, son enlaces entrantes desde una sola página). Falta además alcanzar estado EXPANDIDO de contenido antes de poder declararlo MADURO.
 - **Próximo paso:** sumar enlaces entrantes desde nuevos activos (artículos de Biblioteca, futuros casos reales) hasta llegar a 5 páginas distintas que enlacen al glosario, y expandir términos a medida que se publiquen nuevos casos.
 
+### Biblioteca técnica (módulo nuevo)
+
+- **Estado:** DISEÑO/REVISIÓN — primer activo Canon publicado
+- **Tipo:** Módulo + Activo Canon (`CONTENT_STRATEGY.md §13`, ítem 1)
+- **Ubicación landing:** `/biblioteca/index.html`
+- **Artículos publicados:**
+  1. **Cómo tomar decisiones correctas antes de intervenir el subsuelo** (`/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`) — Canon #1. Cubre Nivel A (qué es un GPR, qué puede/no puede detectar, cuándo es necesario, qué preguntas responder antes de contratar un estudio). No enseña razonamiento multi-señal (Nivel C, protegido por `CONTENT_STRATEGY.md §1.5`).
+- **Enlaces entrantes:** nav y footer de todas las páginas del sitio (Minería, Utilities, Forense, Glosario, Inicio, caso Espesador T5); enlace contextual desde `glosario/index.html` ("Para seguir aprendiendo") y desde el caso real de Espesador T5 ("¿Qué aprendimos?").
+- **Enlaces salientes:** `/glosario/` (términos técnicos), caso real de Espesador T5 (aplicación práctica), CTA a `georadarchile.cl` / WhatsApp.
+- **Por qué no es Canon MADURO todavía:** un solo artículo publicado; `DEFINITION_OF_DONE.md` exige profundidad y volumen mínimo de Canon antes de declarar MADURO.
+- **Próximo paso:** publicar el resto del Canon (`CONTENT_STRATEGY.md §13`, ítems 2–7) y artículos que respalden los demás casos reales y sectores. Considerar agregar el árbol de decisión "¿Necesito GPR?" (`DECISION_FRAMEWORK.md` Bloque 3) como siguiente activo del módulo.
+
 ---
 
 ## Deuda de contenido
 
-- **Biblioteca técnica de Nivel 3 inexistente.** No hay ningún artículo técnico publicado sobre interpretación de radargramas ni sobre detección de cavidades. Esto bloquea el criterio de enlace saliente a Biblioteca exigido por `DEFINITION_OF_DONE.md` para casos reales. Afecta directamente al caso "Detección de socavones en Espesador T5" registrado arriba.
 - **Cards de "Casos en minería" sin evidencia.** Las cards de Codelco División Andina, BHP Spence, SQM y Minera Centinela (`mineria/index.html`) no tienen enlace ni caso real documentado detrás — son afirmaciones sin respaldo verificable. Quedan como deuda hasta que existan casos reales para cada una o se reformulen como testimoniales sin pretensión de evidencia.
 
 ---
