@@ -262,8 +262,14 @@ section{padding:64px 0;}
   border-bottom:1px solid var(--borde);
   padding:20px 0;
 }
-.faq-item h3{font-size:18px;margin-bottom:.4em;}
-.faq-item p{color:var(--texto-suave);margin:0;}
+.faq-item h2,.faq-item h3{font-size:18px;margin-bottom:.4em;}
+.faq-item p{color:var(--texto-suave);margin:0 0 .6em;}
+.faq-item p:last-child{margin-bottom:0;}
+
+.case-evidence-detail{margin-top:16px;}
+.case-evidence-detail summary{cursor:pointer;font-weight:600;color:var(--siena);padding:8px 0;}
+.case-evidence-detail summary:hover{text-decoration:underline;}
+.case-evidence-detail .cards-grid{margin-top:16px;}
 
 /* Process steps */
 .steps{

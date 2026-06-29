@@ -303,13 +303,24 @@ reutilización y facilita el enlazado interno automático.
 ─ Título: [Sector] — [Problema resuelto]
 ─ Contexto: qué se necesitaba saber antes de intervenir
 ─ Método: cómo se aplicó GPR, qué antena, qué configuración
-─ Radargrama anotado (activo estratégico)
+─ Qué buscábamos / qué encontramos (puente narrativo antes de la evidencia)
+─ Evidencia geofísica (radargrama destacado + comparación simplificada;
+   el resto del material colapsado bajo "Ver análisis técnico completo")
 ─ Interpretación: qué se encontró y por qué importa
-─ Resultado: qué decisión permitió tomar
+─ Nivel de confianza / validación de la interpretación
+─ Decisión que permitió tomar el estudio (no solo el hallazgo)
+─ Resultado
+─ ¿Qué aprendimos? (3–4 bullets — convierte el caso en contenido educativo)
 ─ Sector y tipo de problema (etiquetas para filtro)
-─ Artículos técnicos relacionados (→ Biblioteca)
-─ CTA: "¿Tienes un proyecto similar?"
+─ Enlaces a términos de glosario y artículos técnicos relacionados (→ Biblioteca)
+─ CTA específico al síntoma del caso (no genérico)
 ```
+
+**Principio rector:** cada sección debe responder a "¿cómo pasó Geo Radar Chile
+de un problema en terreno a una decisión técnica confiable?". El radargrama no
+es el protagonista: es una de las evidencias que sustentan una interpretación
+profesional. Un competidor puede publicar imágenes similares; no puede copiar
+el proceso de razonamiento respaldado por la experiencia del equipo.
 
 ### Patrón: Herramienta / Calculadora
 ```
