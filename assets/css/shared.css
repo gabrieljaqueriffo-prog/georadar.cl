@@ -292,6 +292,8 @@ section{padding:64px 0;}
 }
 .cta-final h2{color:var(--hueso);}
 .cta-final p{color:var(--hueso);opacity:.92;max-width:600px;margin:0 auto 24px;}
+.cta-final .btn-outline{border-color:var(--hueso);color:var(--hueso);}
+.cta-final .btn-outline:hover{background:var(--hueso);color:var(--terracota);}
 
 /* Footer */
 footer{
