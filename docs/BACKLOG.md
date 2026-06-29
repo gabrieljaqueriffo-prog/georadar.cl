@@ -19,6 +19,18 @@
 - **Sitemap:** agregada con prioridad 0.9 (mismo nivel que las landings de servicio).
 - **Nuevo ítem de navegación:** "Herramientas" agregado al nav principal y footer de todo el sitio — decisión de estructura aprobada explícitamente por el cliente antes de implementar (`DECISION_FRAMEWORK.md` Bloque 0).
 
+### ¿Necesito un estudio GPR? (árbol de decisión + checklist)
+
+- **Estado:** PUBLICADO
+- **Tipo:** Herramienta (`ARCHITECTURE.md §7`, patrón "Herramienta / Calculadora"); último eslabón del arco de crecimiento compuesto de herramientas (`DECISION_FRAMEWORK.md` Bloque 3)
+- **Ubicación:** `/herramientas/necesito-gpr/`
+- **Enlaces entrantes:** `/herramientas/calculadora-profundidad/` (sección "Herramientas relacionadas"), `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/` (sección "Cuándo un estudio GPR es realmente necesario"), `/glosario/#georradar`
+- **Enlaces salientes:** `/herramientas/calculadora-profundidad/`, `/glosario/#georradar`, `/glosario/#georreferenciacion`, `/mineria/casos/socavones-espesador-t5/`, `georadarchile.cl` (CTA)
+- **Diseño:** 4 preguntas (qué necesita resolver, acceso a la superficie, material del objetivo, para qué usará el resultado) → árbol de decisión categórico (no score numérico) con 3 resultados posibles, más un checklist siempre visible de qué preparar antes de contactar a un especialista. Reutiliza íntegramente los componentes CSS `.tool-layout`/`.tool-form`/`.tool-result`/`.tool-result-tier` ya existentes — no se creó CSS nuevo.
+- **Por qué se construyó ahora:** cierra el arco de herramientas descrito en `DECISION_FRAMEWORK.md` Bloque 3 ("Árbol de decisión '¿Necesito GPR?' / Checklist antes de perforar"), que ya tenía la calculadora de viabilidad como paso previo construido. Sin esta pieza, un visitante que no sabe si necesita GPR caía directo en una calculadora de viabilidad que asume que ya lo sabe.
+- **Cumple test de `NORTH_STAR.md`:** orienta la decisión sin sustituir la planificación de un especialista; termina en checklist, no en automatización del criterio profesional (Nivel C, `CONTENT_STRATEGY.md §1.5`).
+- **Pendiente:** agregar a `sitemap.xml` y evaluar si el nav "Herramientas" debe pasar a apuntar a un índice de herramientas en vez de directo a la calculadora, ahora que existen dos piezas (cambio de navegación: requiere aprobación explícita antes de ejecutar, `CLAUDE.md §3`).
+
 ### Caso real — Detección de socavones en Espesador T5
 
 - **Estado:** PUBLICADO

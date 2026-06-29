@@ -133,6 +133,9 @@ Visualizador de radargramas
 Árbol de decisión "¿Necesito GPR?" / Checklist antes de perforar
 ```
 
+**Estado (2026-06-29):** publicado en `/herramientas/necesito-gpr/`, cerrando
+este arco. Ver `BACKLOG.md` para detalle de diseño y enlaces.
+
 Cada herramienta facilita construir la siguiente. Ese efecto acumulativo es una
 ventaja competitiva que un competidor no puede copiar de un día para otro: no solo
 necesita la herramienta, necesita todos los activos que la sustentan.
