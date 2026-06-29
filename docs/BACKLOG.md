@@ -19,10 +19,10 @@
 - **Enlaces salientes:** `/mineria/` (servicio correspondiente), `/glosario/#socavon`, `/glosario/#espesador`, `/glosario/#antena`, `/glosario/#hiperbola`
 - **Reestructurado** según el patrón "Caso real" actualizado en `ARCHITECTURE.md §7`: agrega puente "Qué buscábamos / qué encontramos", sección "Evidencia geofísica" (radargrama destacado + 3 condiciones colapsadas bajo `<details>`), bloque de "Nivel de confianza / validación", sección "Decisión que permitió tomar el estudio", lista "¿Qué aprendimos?" y CTA específico al síntoma.
 - **Interpretación reescrita** conforme al principio editorial de `CONTENT_STRATEGY.md §1.5` (tres niveles de conocimiento): se eliminó la descripción del razonamiento multi-señal ("tres señales simultáneas...") que exponía criterio de decisión propietario (Nivel 3). Ahora narra los escenarios de riesgo y la decisión, no el proceso mental que llevó a la conclusión.
+- **Imágenes de radargrama (resuelto):** las 4 imágenes reales (A, B, C, D) fueron entregadas y wireadas en `assets/img/casos/socavones-espesador-t5/radargrama-{a,b,c,d}.jpg`, reemplazando los placeholders `[RADARGRAMA-A]`...`[RADARGRAMA-D]`. Verificado con Playwright: las 4 cargan sin errores y respetan el patrón destacado + 3 colapsadas bajo `<details>`.
 - **Por qué no está en PUBLICADO:**
-  1. Las 4 imágenes de radargramas (A, B, C, D) están pendientes de entrega y marcadas como `[RADARGRAMA-A]`...`[RADARGRAMA-D]` en el HTML.
-  2. `DEFINITION_OF_DONE.md` exige enlace a artículos técnicos relacionados de la Biblioteca; no existe todavía ningún artículo de Nivel 3 sobre detección de cavidades con GPR al que enlazar.
-- **Próximo paso para pasar a PUBLICADO:** reemplazar los placeholders de radargrama por las imágenes reales y, cuando exista, enlazar un artículo técnico de Biblioteca sobre interpretación de cavidades.
+  1. `DEFINITION_OF_DONE.md` exige enlace a artículos técnicos relacionados de la Biblioteca; no existe todavía ningún artículo de Nivel 3 sobre detección de cavidades con GPR al que enlazar.
+- **Próximo paso para pasar a PUBLICADO:** crear o enlazar un artículo técnico de Biblioteca sobre interpretación de cavidades, o que el usuario apruebe una excepción puntual para publicar sin ese enlace.
 
 ### Glosario GPR
 
