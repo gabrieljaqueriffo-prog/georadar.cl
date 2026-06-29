@@ -71,6 +71,35 @@ Tipos de deuda de contenido en Georadar:
 deuda junto a tareas de creación. Un backlog que solo crea y nunca mejora
 acumula deuda hasta que el coste de mantenimiento supera el valor del activo.
 
+### 1.5 Tres niveles de conocimiento (y qué se publica)
+
+No todo el conocimiento de Geo Radar Chile es publicable, y la decisión de
+qué publicar no es estética: es estratégica.
+
+| Nivel | Qué es | Ejemplo | ¿Se publica? |
+|-------|--------|---------|---------------|
+| 1. Información pública | Lo que cualquiera puede aprender en un manual o paper | Qué es una hipérbola, qué frecuencia penetra más | Sí, siempre |
+| 2. Comprensión del problema | Cómo se traduce esa información a una decisión de proyecto | Qué preguntas hacer antes de romper una losa, cuándo conviene prospectar | Sí, es el corazón de la Biblioteca |
+| 3. Criterio de decisión experto | El razonamiento multi-señal que convierte una lectura en una conclusión | "Por la continuidad del reflector, el comportamiento lateral y la amplitud, descartamos una tubería y priorizamos cavidad" | **Nunca.** Es el activo intelectual de 29 años de experiencia |
+
+**Principio editorial:** publicamos conocimiento suficiente para que el
+cliente comprenda el problema y tome mejores decisiones. La metodología de
+interpretación que constituye la ventaja competitiva de Geo Radar Chile
+permanece como conocimiento propietario.
+
+Esto no reduce la ambición de Georadar: la convierte en la fuente de
+referencia en español para **comprender el subsuelo y tomar decisiones antes
+de intervenirlo** — no en un manual de cómo razona el especialista. El
+GPR es el núcleo tecnológico; el criterio profesional es el producto que
+realmente se vende, y no se regala.
+
+**Aplicación práctica:** un caso real nunca narra la cadena de señales que
+llevó a la conclusión ("observamos reflexión múltiple, inversión de fase y
+cambio de amplitud, por lo tanto..."). Narra el problema de ingeniería:
+qué escenarios eran posibles, qué incertidumbre existía, qué decisión
+permitió tomar la investigación. El protagonista de un caso real es la
+decisión, no el radar ni el proceso mental que la sustenta.
+
 ---
 
 ## 2. Mapa de dominio GPR (Knowledge Map)
@@ -481,8 +510,12 @@ nodo crítico.
 
 El Canon inicial de Georadar:
 
-1. **Guía completa de interpretación de radargramas** — el activo de mayor
-   autoridad posible; nadie en español lo tiene bien hecho.
+1. **Guía completa para comprender el subsuelo y decidir antes de intervenirlo**
+   (anteriormente "Guía de interpretación de radargramas") — el activo de mayor
+   autoridad posible; nadie en español lo tiene bien hecho. Enseña qué es un
+   radargrama, sus límites y qué preguntas debe responder un proyecto antes de
+   intervenir — nunca el razonamiento multi-señal que constituye el criterio
+   profesional (ver `§1.5`).
 2. **Calculadora de profundidad GPR** — herramienta de uso más frecuente.
 3. **Glosario GPR en español** — vocabulario de referencia del dominio.
 4. **Caso real: detección en minería** — prueba en el sector de mayor valor.
