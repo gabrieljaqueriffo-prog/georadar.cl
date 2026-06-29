@@ -94,6 +94,39 @@ de intervenirlo** — no en una escuela que forma operadores capaces de
 interpretar como un especialista. El GPR es el núcleo tecnológico; el
 criterio profesional es el producto que realmente se vende, y no se regala.
 
+### 1.6 Arquitectura de dos dominios: Geo Radar Chile vs. Georadar.cl (ATLAS)
+
+Decisión registrada en `ADR-004-arquitectura-dos-dominios.md`. El ecosistema
+tiene dos dominios con responsabilidades distintas y no intercambiables:
+
+- **Geo Radar Chile (georadarchile.cl) = Empresa.** Responde "¿por qué
+  contratar Geo Radar Chile?". Vende servicios, publica noticias
+  corporativas, novedades, certificaciones y proyectos recientes. Tono:
+  empresa ("Ejecutamos…", "Prospectamos…", "Entregamos…", "Nuestro equipo…").
+- **Georadar.cl (ATLAS) = Centro de conocimiento.** Responde "¿cómo
+  comprender el problema antes de intervenir el subsuelo?". Publica
+  herramientas, casos reales en profundidad, glosario, calculadoras y
+  biblioteca técnica. Tono: profesor ("¿Qué ocurre cuando…?", "¿Por
+  qué…?", "¿Cómo afecta…?", "¿Qué limitaciones tiene…?").
+
+**Reglas absolutas de cruce entre dominios:**
+
+1. **ATLAS no replica contenido de Geo Radar Chile. Lo complementa.** Cada
+   tema existe una sola vez en el ecosistema. Si ATLAS explica "¿qué es un
+   radargrama?", esa explicación nunca se repite en Geo Radar Chile, y
+   viceversa con "cómo usamos GPR en el proyecto X".
+2. **Todo enlace entre ambos sitios debe aportar contexto nuevo al usuario,
+   nunca duplicar información.** Geo Radar Chile puede cerrar una noticia de
+   proyecto con "Ver caso técnico completo en Georadar.cl"; ATLAS puede
+   cerrar un caso técnico con "¿Necesitas un estudio similar? → Geo Radar
+   Chile". El enlace nunca repite lo que el usuario ya leyó.
+
+Los enlaces cruzados forman un grafo de conocimiento, no una red de enlaces
+por SEO: Geo Radar Chile convierte la confianza en negocio; ATLAS construye
+esa confianza mediante conocimiento y herramientas. Antes de publicar un
+activo nuevo en ATLAS, se verifica que el tema no esté ya cubierto en Geo
+Radar Chile en el mismo nivel de detalle.
+
 **Aplicación práctica en un caso real:** la estructura es Problema → riesgo
 → método general → qué se encontró → cómo cambió la decisión de obra →
 resultado. Nunca se narra la cadena de señales que llevó a la conclusión

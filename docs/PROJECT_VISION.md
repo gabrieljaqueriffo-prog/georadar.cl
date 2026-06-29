@@ -32,7 +32,7 @@ El modelo mental de referencia no es "web de empresa de ingeniería". Es **MDN, 
 
 Definir lo que *no* somos frena más decisiones equivocadas que definir lo que sí somos.
 
-- **No es un clon del sitio corporativo** (georadarchile.cl). Ese sitio existe para cotizar, demostrar experiencia y mantener autoridad SEO corporativa, y debe permanecer estable. Georadar.cl es la plataforma de conocimiento.
+- **No es un clon del sitio corporativo** (georadarchile.cl). Ese sitio existe para cotizar, demostrar experiencia y mantener autoridad SEO corporativa, y debe permanecer estable. Georadar.cl es la plataforma de conocimiento. La separación de responsabilidades entre ambos dominios y las reglas de cruce sin duplicación están registradas en `docs/adr/ADR-004-arquitectura-dos-dominios.md` y `CONTENT_STRATEGY.md §1.6`.
 - **No es un catálogo de escaneos.** No vendemos "pasar una antena por el suelo".
 - **No es otra web de empresa de ingeniería tradicional.** Si al entrar se siente como una empresa tradicional, fallamos.
 - **No es una fintech.** Buscamos modernidad e innovación tecnológica, pero conservando la identidad ligada a la geociencia y al subsuelo. Tecnología especializada en geociencias, no startup genérica.
