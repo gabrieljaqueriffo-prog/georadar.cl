@@ -300,12 +300,18 @@ reutilización y facilita el enlazado interno automático.
 
 ### Patrón: Caso real
 ```
-─ Título: [Sector] — [Problema resuelto]
-─ Contexto: qué se necesitaba saber antes de intervenir
+─ Título: orientado al problema y su resolución, no a la técnica
+   (ej. "Cómo se detectó X sin Y", no solo "Detección de X en Y")
+─ Contexto: se abre con el problema/riesgo desde la perspectiva del cliente,
+   antes de nombrar al equipo o al método (el lector se reconoce en el riesgo
+   antes de conocer la solución)
 ─ Método: cómo se aplicó GPR, qué antena, qué configuración
 ─ Qué buscábamos / qué encontramos (puente narrativo antes de la evidencia)
-─ Evidencia geofísica (radargrama destacado + comparación simplificada;
-   el resto del material colapsado bajo "Ver análisis técnico completo")
+─ Evidencia geofísica: nunca el radargrama completo. Un recorte anotado
+   (flechas, círculos, profundidad, comentario corto) de la zona relevante,
+   al estilo de cómo un médico muestra una resonancia: solo la parte que
+   sustenta la interpretación, no el estudio completo. El resto del material
+   colapsado bajo "Ver análisis técnico completo"
 ─ Interpretación: qué se encontró y por qué importa
 ─ Nivel de confianza / validación de la interpretación
 ─ Decisión que permitió tomar el estudio (no solo el hallazgo)
@@ -321,6 +327,13 @@ de un problema en terreno a una decisión técnica confiable?". El radargrama no
 es el protagonista: es una de las evidencias que sustentan una interpretación
 profesional. Un competidor puede publicar imágenes similares; no puede copiar
 el proceso de razonamiento respaldado por la experiencia del equipo.
+
+**Sobre la evidencia visual:** el verdadero activo no es la imagen del
+radargrama, es la interpretación. Se publica solo el recorte anotado
+suficiente para enseñar el razonamiento (qué línea es la armadura, dónde
+desaparece, dónde aumenta la amplitud, por qué eso implica una cavidad).
+Nunca el dataset completo. Esto enseña principios sin regalar el criterio
+experto que es el verdadero diferencial del servicio.
 
 ### Patrón: Herramienta / Calculadora
 ```
