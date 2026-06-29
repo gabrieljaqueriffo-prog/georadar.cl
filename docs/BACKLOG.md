@@ -29,7 +29,15 @@
 - **Diseño:** 4 preguntas (qué necesita resolver, acceso a la superficie, material del objetivo, para qué usará el resultado) → árbol de decisión categórico (no score numérico) con 3 resultados posibles, más un checklist siempre visible de qué preparar antes de contactar a un especialista. Reutiliza íntegramente los componentes CSS `.tool-layout`/`.tool-form`/`.tool-result`/`.tool-result-tier` ya existentes — no se creó CSS nuevo.
 - **Por qué se construyó ahora:** cierra el arco de herramientas descrito en `DECISION_FRAMEWORK.md` Bloque 3 ("Árbol de decisión '¿Necesito GPR?' / Checklist antes de perforar"), que ya tenía la calculadora de viabilidad como paso previo construido. Sin esta pieza, un visitante que no sabe si necesita GPR caía directo en una calculadora de viabilidad que asume que ya lo sabe.
 - **Cumple test de `NORTH_STAR.md`:** orienta la decisión sin sustituir la planificación de un especialista; termina en checklist, no en automatización del criterio profesional (Nivel C, `CONTENT_STRATEGY.md §1.5`).
-- **Pendiente:** agregar a `sitemap.xml` y evaluar si el nav "Herramientas" debe pasar a apuntar a un índice de herramientas en vez de directo a la calculadora, ahora que existen dos piezas (cambio de navegación: requiere aprobación explícita antes de ejecutar, `CLAUDE.md §3`).
+### Índice de Herramientas
+
+- **Estado:** PUBLICADO
+- **Tipo:** Página índice (`ARCHITECTURE.md §7`, mismo patrón que `/biblioteca/`)
+- **Ubicación:** `/herramientas/`
+- **Decisión (2026-06-29, aprobada por el cliente):** el nav "Herramientas" dejó de apuntar directo a `/herramientas/calculadora-profundidad/` y ahora apunta a este índice, que lista ambas herramientas (calculadora de viabilidad y árbol de decisión "¿Necesito un estudio GPR?"). Cambio de navegación aprobado explícitamente antes de ejecutar (`CLAUDE.md §3`).
+- **Enlaces entrantes:** nav y footer de todas las páginas del sitio.
+- **Enlaces salientes:** `/herramientas/calculadora-profundidad/`, `/herramientas/necesito-gpr/`, `/glosario/`, `/biblioteca/`, caso real de Espesador T5.
+- Se agregó a `sitemap.xml`.
 
 ### Caso real — Detección de socavones en Espesador T5
 
