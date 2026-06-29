@@ -47,6 +47,20 @@
 - **Enlaces salientes:** `/#gpr-sim` (simulador interactivo), caso real de Espesador T5
 - **Por qué no es Canon MADURO todavía:** `DEFINITION_OF_DONE.md` exige mínimo 5 enlaces entrantes para activos Canon; este activo cuenta hoy con 2 páginas que enlazan hacia él (aunque el caso real aporta 4 enlaces puntuales a anclas distintas, son enlaces entrantes desde una sola página). Falta además alcanzar estado EXPANDIDO de contenido antes de poder declararlo MADURO.
 - **Próximo paso:** sumar enlaces entrantes desde nuevos activos (artículos de Biblioteca, futuros casos reales) hasta llegar a 5 páginas distintas que enlacen al glosario, y expandir términos a medida que se publiquen nuevos casos.
+- **Actualización (2026-06-29):** el término "Antena (GPR)" ahora enlaza también al nuevo artículo Canon de frecuencia de antena y a la calculadora de viabilidad GPR; sigue contando como una sola página entrante (el glosario), no suma hacia el mínimo de 5.
+
+### Artículo Canon — Cómo influye la frecuencia de una antena GPR en los resultados
+
+- **Estado:** PUBLICADO
+- **Tipo:** Artículo de biblioteca técnica (`ARCHITECTURE.md §7`, Canon — `CONTENT_STRATEGY.md §13` ítem 7, reenfocado)
+- **Ubicación:** `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`
+- **Enlaces entrantes:** `/biblioteca/` (card de artículos), `/herramientas/calculadora-profundidad/` (sección "El concepto detrás de esta estimación"), `/glosario/#antena`
+- **Enlaces salientes:** `/glosario/#antena`, `/glosario/#atenuacion`, `/glosario/#velocidad-propagacion`, `/herramientas/calculadora-profundidad/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`, CTA a `georadarchile.cl`
+- **Reenfoque editorial (aprobado por el cliente):** el ítem Canon original era "Guía de selección de antena", pero se reescribió como explicación de física pública ("cómo influye la frecuencia") en lugar de una guía prescriptiva ("qué antena usar"), evitando regalar el criterio de selección que un especialista aplica caso por caso. Cierra explícitamente con que la selección final depende de variables del sitio y la debe hacer un especialista.
+
+### Calculadora de viabilidad GPR (actualización)
+
+- Ahora enlaza al nuevo artículo de frecuencia de antena desde su sección educativa, sumando un enlace saliente adicional.
 
 ### Biblioteca técnica (módulo nuevo)
 
