@@ -7,6 +7,18 @@
 
 ## Activos de contenido
 
+### Calculadora de viabilidad GPR
+
+- **Estado:** PUBLICADO
+- **Tipo:** Herramienta / Calculadora (`ARCHITECTURE.md §7`, Canon — `CONTENT_STRATEGY.md §13` ítem 2)
+- **Ubicación:** `/herramientas/calculadora-profundidad/`
+- **Enlaces entrantes:** nav y footer de las 8 páginas del sitio (`index.html`, `mineria/`, `utilities/`, `forense/`, `biblioteca/` x2, `glosario/`, `mineria/casos/socavones-espesador-t5/`); además el caso Espesador T5 la referencia desde "Casos de uso típicos"
+- **Enlaces salientes:** `/glosario/#antena`, `/glosario/#atenuacion`, `/glosario/#velocidad-propagacion`, `/mineria/casos/socavones-espesador-t5/`, `georadarchile.cl` (CTA)
+- **Diseño:** evolución del ítem canonizado "Calculadora de profundidad GPR" hacia un "Asistente de viabilidad" (propuesta del cliente, aprobada): 5 inputs (objetivo, profundidad, terreno, agua, precisión requerida) → resultado narrativo de viabilidad (Alta/Media/Baja) con explicación de factores, sin recomendar antena ni revelar criterio de interpretación. Lógica de cálculo determinística basada en física pública (atenuación por terreno, compromiso profundidad/resolución) — Nivel A/B de `CONTENT_STRATEGY.md §1.5`, nunca Nivel C.
+- **Cumple test de `NORTH_STAR.md`:** no pide correo ni registro para usarse.
+- **Sitemap:** agregada con prioridad 0.9 (mismo nivel que las landings de servicio).
+- **Nuevo ítem de navegación:** "Herramientas" agregado al nav principal y footer de todo el sitio — decisión de estructura aprobada explícitamente por el cliente antes de implementar (`DECISION_FRAMEWORK.md` Bloque 0).
+
 ### Caso real — Detección de socavones en Espesador T5
 
 - **Estado:** PUBLICADO

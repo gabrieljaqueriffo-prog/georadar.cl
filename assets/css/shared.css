@@ -333,6 +333,58 @@ footer a{color:var(--hueso-oscuro);}
   opacity:.85;
 }
 
+/* Herramienta interactiva (formulario) */
+.tool-form{
+  border:1px solid var(--borde);
+  border-radius:4px;
+  padding:28px;
+  background:var(--hueso);
+}
+.tool-field{margin-bottom:18px;}
+.tool-field:last-of-type{margin-bottom:0;}
+.tool-field label{
+  display:block;
+  font-size:13px;
+  font-weight:600;
+  color:var(--texto);
+  margin-bottom:6px;
+}
+.tool-field select{
+  width:100%;
+  padding:10px 12px;
+  font-size:14px;
+  font-family:var(--font-body);
+  color:var(--texto);
+  background:var(--hueso);
+  border:1px solid var(--borde);
+  border-radius:4px;
+}
+.tool-form .btn-primary{
+  margin-top:8px;
+  width:100%;
+  border:none;
+  font-size:15px;
+}
+.tool-result{
+  border:1px solid var(--borde);
+  border-radius:4px;
+  padding:24px;
+  background:var(--hueso);
+  margin-top:24px;
+}
+.tool-result[hidden]{display:none;}
+.tool-result-tier{
+  font-family:var(--font-display);
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.tool-result-tier.tier-alta{color:#2F6B3C;}
+.tool-result-tier.tier-media{color:var(--terracota);}
+.tool-result-tier.tier-baja{color:var(--siena);}
+.tool-result p{color:var(--texto-suave);margin:0 0 .6em;}
+.tool-result p:last-child{margin-bottom:0;}
+
 /* Reveal animation */
 .reveal{
   opacity:0;
