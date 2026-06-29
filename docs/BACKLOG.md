@@ -41,15 +41,16 @@
 
 ### Glosario GPR
 
-- **Estado:** DISEÑO/REVISIÓN rumbo a Canon
+- **Estado:** REVISIÓN rumbo a MADURO (criterio de enlaces entrantes ya cumplido)
 - **Tipo:** Activo Canon (`CONTENT_STRATEGY.md §13`)
 - **Ubicación:** `/glosario/index.html`
-- **Términos publicados:** Socavón, Hipérbola, Antena (GPR), Atenuación, Velocidad de propagación, Espesador (industrial)
-- **Enlaces entrantes actuales:** `index.html` (tab "Glosario" del simulador GPR), `mineria/casos/socavones-espesador-t5/index.html` (4 enlaces a términos específicos)
-- **Enlaces salientes:** `/#gpr-sim` (simulador interactivo), caso real de Espesador T5
-- **Por qué no es Canon MADURO todavía:** `DEFINITION_OF_DONE.md` exige mínimo 5 enlaces entrantes para activos Canon; este activo cuenta hoy con 2 páginas que enlazan hacia él (aunque el caso real aporta 4 enlaces puntuales a anclas distintas, son enlaces entrantes desde una sola página). Falta además alcanzar estado EXPANDIDO de contenido antes de poder declararlo MADURO.
-- **Próximo paso:** sumar enlaces entrantes desde nuevos activos (artículos de Biblioteca, futuros casos reales) hasta llegar a 5 páginas distintas que enlacen al glosario, y expandir términos a medida que se publiquen nuevos casos.
-- **Actualización (2026-06-29):** el término "Antena (GPR)" ahora enlaza también al nuevo artículo Canon de frecuencia de antena y a la calculadora de viabilidad GPR; sigue contando como una sola página entrante (el glosario), no suma hacia el mínimo de 5.
+- **Términos publicados:** Georradar (GPR), Radargrama, Socavón, Hipérbola, Antena (GPR), Atenuación, Velocidad de propagación, Espesador (industrial), Grilla de prospección, Georreferenciación.
+- **Enlaces entrantes actuales (6 páginas distintas):** `index.html` (cards del mini-glosario de la página de inicio, ahora consolidadas como enlaces a `/glosario/#ancla` en lugar de duplicar definiciones), `mineria/casos/socavones-espesador-t5/index.html`, `biblioteca/index.html`, `biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/index.html`, `biblioteca/como-influye-la-frecuencia-de-antena-gpr/index.html`, `herramientas/calculadora-profundidad/index.html`.
+- **Enlaces salientes:** `/#gpr-sim` (simulador interactivo), caso real de Espesador T5, artículo de frecuencia de antena, calculadora de viabilidad GPR.
+- **Actualización (2026-06-29):** se agregaron 4 términos nuevos (Georradar, Radargrama, Grilla de prospección, Georreferenciación) para dar contexto a los enlaces entrantes recién creados. Se eliminó la duplicación de contenido: la página de inicio tenía un mini-glosario propio con definiciones repetidas; ahora esas cards enlazan al glosario canónico en lugar de duplicar el texto, siguiendo `CLAUDE.md §5` (priorizar reducir deuda de Canon sobre crear contenido nuevo).
+- **Corrección de conteo:** el registro anterior de este documento subestimaba los enlaces entrantes (indicaba 2 páginas). Al revisar el repositorio se confirmaron 6 páginas distintas que enlazan a `/glosario/`, superando el mínimo de 5 exigido por `DEFINITION_OF_DONE.md` para activos Canon.
+- **Por qué no es Canon MADURO todavía:** aunque el criterio de enlaces entrantes ya se cumple, falta verificar el resto del checklist Canon de `DEFINITION_OF_DONE.md` (estado de contenido EXPANDIDO, ser el mejor recurso disponible en español, plan de actualización anual anotado).
+- **Próximo paso:** evaluar el checklist Canon completo y, si corresponde, declarar el activo MADURO; seguir expandiendo términos a medida que se publiquen nuevos casos reales o artículos.
 
 ### Artículo Canon — Cómo influye la frecuencia de una antena GPR en los resultados
 
