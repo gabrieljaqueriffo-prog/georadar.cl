@@ -60,6 +60,18 @@ Esta frase define el límite de lo que publicamos libremente y lo que es el núc
 
 **Contenido Tipo B — protegido:** criterio experto acumulado en terreno. Cómo interpretar una anomalía específica, por qué se descartó una hipótesis, qué metodología se eligió para un suelo con interferencias. Esto es el producto. No se hace contenido exhaustivo sobre ello.
 
+### Filtro de tres niveles
+
+La frontera no depende de cuánto se muestra. Depende de qué se muestra. Un radargrama completo puede publicarse sin riesgo si no hay razonamiento debajo. Un párrafo de tres líneas puede regalar el negocio si explica el criterio de descarte. La variable crítica es la **profundidad del razonamiento**, no la cantidad de contenido.
+
+| Nivel | Contenido | Regla |
+|-------|-----------|-------|
+| **1 — Hechos** | Frecuencia, velocidad, profundidad, limitaciones, resolución, física del método | Se publica siempre |
+| **2 — Buenas prácticas** | Cuándo usar GPR, cuándo no sirve, errores comunes, cómo planificar una campaña, criterios generales de aplicabilidad | Se publica |
+| **3 — Juicio profesional** | Por qué se descartó una anomalía, cómo se priorizaron hipótesis, cómo se interpretaron varias señales simultáneamente, qué peso tuvo cada evidencia, por qué se eligió excavar allí | Nunca se publica |
+
+**Regla de acción:** no "reducir detalle" — **eliminar razonamiento, mantener evidencia**. El trabajo se muestra. El criterio que llevó a la conclusión no.
+
 ### Test operativo antes de publicar cualquier activo
 
 Antes de publicar cualquier página, artículo, herramienta o caso, pregunta:
