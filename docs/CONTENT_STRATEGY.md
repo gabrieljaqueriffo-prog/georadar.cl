@@ -407,6 +407,9 @@ Todo activo editorial debe cumplir antes de pasar a estado PUBLICADO:
 - [ ] Al menos un enlace saliente hacia activo estratégico.
 - [ ] Deuda de contenido evaluada: ¿qué necesitará en su próxima evolución?
 - [ ] Estado inicial asignado en BACKLOG.
+- [ ] Sin rayas de interrupción tipo "—X—" o "&mdash;X&mdash;" dentro de una frase (ver nota debajo).
+
+**Nota sobre rayas de interrupción (2026-06-30):** el patrón "frase &mdash;aclaración o lista&mdash; resto de la frase" es un tic reconocible de texto generado por IA y está prohibido en este sitio. Cuando se necesite una aclaración o un inciso, se reescribe como oración con coma, dos puntos, o se separa en dos oraciones. La raya larga (&mdash;) solo se permite al final de una frase para introducir una idea que la cierra, nunca en pares para encerrar un inciso a mitad de oración.
 
 ### 8.3 Cadencia
 
