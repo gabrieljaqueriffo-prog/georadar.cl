@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://georadar.cl/mentoria/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://georadar.cl/herramientas/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
