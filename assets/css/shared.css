@@ -446,7 +446,35 @@ footer a:hover{color:var(--hueso);text-decoration-thickness:2px;}
 .tool-result-tier.tier-media{color:var(--terracota);}
 .tool-result-tier.tier-baja{color:var(--siena);}
 .tool-result p{color:var(--texto-suave);margin:0 0 .6em;}
-.tool-result p:last-child{margin-bottom:0;}
+.tool-checklist{
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid var(--borde);
+}
+.tool-checklist-label{
+  font-size:13px;
+  font-weight:600;
+  color:var(--texto);
+  margin:0 0 10px;
+}
+.tool-checklist ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.tool-checklist li{
+  font-size:13px;
+  color:var(--texto-suave);
+  padding:5px 0 5px 20px;
+  position:relative;
+}
+.tool-checklist li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--terracota);
+  font-weight:700;
+}
 
 /* Reveal animation */
 .reveal{
