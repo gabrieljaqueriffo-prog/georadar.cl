@@ -110,7 +110,18 @@
 - **Contexto:** Subsecretaría de Derechos Humanos, causas ROL N°23-2018 y ROL N°549-2023. Autorización de mención pública confirmada por el cliente el 2026-06-30 (ver `docs/REGISTRO_EXPERIENCIA.md`).
 - **Tratamiento editorial:** dado lo sensible del caso, la página describe únicamente contexto institucional y método (prospección no invasiva, georreferenciada, trazable), sin publicar hallazgos, interpretación ni resultados de la investigación — esos corresponden al Ministerio Público y a la causa judicial, no a este sitio. La sección de evidencia usa un diagrama SVG esquemático genérico (no identificable, sin coordenadas reales) en lugar de cualquier radargrama o fotografía real, decidido junto con el cliente antes de implementar.
 - **Cumple el Principio editorial (`CONTENT_STRATEGY.md`):** enseña criterio institucional sobre cuándo recurrir a un método no invasivo, no interpretación técnica (Nivel C, `CONTENT_STRATEGY.md §1.5`).
-- **Deuda de contenido relacionada (pendiente, no resuelta en esta tarea):** los otros dos casos forenses mencionados solo como card sin página propia — Sitio Irán 3037 "Venda Sexy" (2024) y Cementerio Río Chico, Puerto Montt — quedan como deuda de contenido hasta que se decida construir su propia página de caso o se confirme que la card basta.
+- **Deuda de contenido relacionada:** Cementerio Río Chico, Puerto Montt sigue documentado solo como card sin página propia. Sitio Irán 3037 "Venda Sexy" ya tiene página de caso propia (ver entrada siguiente). El cliente indicó que la cobertura actual de forense es suficiente por ahora ("Ya tenemos en forense", 2026-06-30) — no se construyen más páginas de caso forense hasta nueva indicación.
+
+### Caso real — Sitio de Memoria Irán 3037 "Venda Sexy"
+
+- **Estado:** PUBLICADO
+- **Tipo:** Caso real (`ARCHITECTURE.md §7`, patrón "Caso real", adaptado a sensibilidad de sitio de memoria)
+- **Sector:** forense
+- **Ubicación:** `/forense/casos/sitio-iran-3037-venda-sexy/index.html`
+- **Enlaces entrantes:** `forense/index.html` (card "Sitio Irán 3037 'Venda Sexy', 2024")
+- **Enlaces salientes:** `/forense/` (servicio correspondiente)
+- **Contexto:** Asociación de Memoria y Derechos Humanos Venda Sexy, financiado por la Secretaría de Derechos Humanos (2024). Autorización de mención pública confirmada por el cliente el 2026-06-30.
+- **Tratamiento editorial:** mismo criterio aplicado a CIP San Joaquín y Cerro Chena — solo contexto institucional y método, sin hallazgos ni evidencia visual real, diagrama esquemático genérico en vez de radargrama.
 
 ---
 
