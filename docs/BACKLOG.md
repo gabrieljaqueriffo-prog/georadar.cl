@@ -157,10 +157,24 @@
 
 ---
 
+### Página de servicio por sector — Construcción
+
+- **Estado:** PUBLICADO
+- **Tipo:** Página de servicio por sector (`ARCHITECTURE.md §7`, patrón "Página de servicio por sector")
+- **Sector:** construcción / obras civiles
+- **Ubicación:** `/construccion/index.html`
+- **Motivo:** la card "Construcción" del home (`index.html`, sección `#servicios`) era la única de las 4 cards de servicio que enlazaba a un dominio externo (`georadarchile.cl`) en lugar de una página propia del sitio — inconsistencia detectada por el cliente (2026-06-30) y confirmada por auditoría del repositorio. Se resolvió construyendo la página de sector correspondiente, igual que Minería/Utilities/Forense, en vez de mantener el enlace externo.
+- **Enlaces entrantes:** card "Construcción" en `index.html`, más el ítem "Construcción" agregado al `<nav>` y al footer "Servicios" de las 8 páginas índice del sitio (`index.html`, `mineria/`, `utilities/`, `forense/`, `biblioteca/`, `mentoria/`, `herramientas/`, `glosario/`) y de las 4 páginas de caso real existentes — 13 enlaces entrantes en total.
+- **Enlaces salientes:** `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/` (artículo Canon, paso 3 del proceso técnico).
+- **Contexto:** evidencia tomada de `docs/REGISTRO_EXPERIENCIA.md`, sección "Infraestructura civil y aeroportuaria" — Aeropuerto Arturo Merino Benítez (4 proyectos 2011-2025), Aeródromo Chacalluta, Aeródromo Tobalaba, Vespucio Oriente, Costanera Puerto Montt, Planta Desaladora Aguas Pacífico, edificación en Las Condes (Clínica Bupa, Edificio El Golf 280).
+
+---
+
 ## Deuda de contenido
 
 - **Cards de "Casos en minería" — estado actualizado (2026-06-30).** Las cards de Codelco División Andina, BHP, SQM, Minera Centinela, Albemarle y Minera Collahuasi en `mineria/index.html` ya incluyen detalle verificado del registro de experiencia del cliente (`docs/REGISTRO_EXPERIENCIA.md`), pero siguen sin enlace a una página de caso real propia (patrón completo de `ARCHITECTURE.md §7`) — solo el caso Espesador T5 tiene página dedicada. Queda como deuda hasta que se prioricen nuevas páginas de caso para alguno de estos clientes.
 - **Casos forenses sin página propia.** Sitio Irán 3037 "Venda Sexy" (2024) y Cementerio Río Chico, Puerto Montt — documentados solo como card en `forense/index.html`, sin página de caso dedicada como la de CIP San Joaquín y Cerro Chena.
+- **Construcción sin página de caso real propia.** `/construccion/index.html` es una página de servicio por sector con cards de obras atendidas, pero ninguna tiene el patrón completo de "Caso real" (`ARCHITECTURE.md §7`: contexto → método → evidencia → decisión → resultado). Queda como deuda hasta que se priorice una página de caso para alguna obra civil (candidatas: Costanera Puerto Montt, Aeródromo Chacalluta).
 
 ---
 
