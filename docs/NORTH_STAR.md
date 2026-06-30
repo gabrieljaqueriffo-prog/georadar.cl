@@ -50,6 +50,27 @@ El orden importa: nunca sacrifiques el nivel 1 por el nivel 4.
 
 ---
 
+## Frontera del conocimiento
+
+> **Enseñamos la ciencia del GPR. Vendemos la experiencia de aplicarla.**
+
+Esta frase define el límite de lo que publicamos libremente y lo que es el núcleo de nuestro negocio.
+
+**Contenido Tipo A — publicable:** física, frecuencias, atenuación, principios del método. Todo lo que cualquier manual de GPR podría enseñar. Publicarlo construye autoridad sin ceder ventaja competitiva.
+
+**Contenido Tipo B — protegido:** criterio experto acumulado en terreno. Cómo interpretar una anomalía específica, por qué se descartó una hipótesis, qué metodología se eligió para un suelo con interferencias. Esto es el producto. No se hace contenido exhaustivo sobre ello.
+
+### Test operativo antes de publicar cualquier activo
+
+Antes de publicar cualquier página, artículo, herramienta o caso, pregunta:
+
+1. **¿Esto ayuda a comprender el método?** → Si sí, publicar.
+2. **¿Esto enseña el criterio experto acumulado en terreno?** → Si sí, el contenido debe replantearse.
+
+Si la segunda respuesta es sí, el activo no se publica en su forma actual. Puede transformarse: mostrar *que existe* ese criterio y *por qué importa*, sin entregarlo como tutorial.
+
+---
+
 ## La regla inquebrantable
 
 **Nunca cambiamos confianza de largo plazo por conversión de corto plazo.**
