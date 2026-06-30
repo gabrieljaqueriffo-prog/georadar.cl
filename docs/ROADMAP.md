@@ -14,25 +14,22 @@
 
 ## Ahora
 
-1. **Resto del Canon de Biblioteca técnica** (`CONTENT_STRATEGY.md §13`,
-   ítems 2-7). Solo el ítem 1 ("Cómo tomar decisiones antes de intervenir el
-   subsuelo") está publicado. `CLAUDE.md §5` prioriza reducir deuda de Canon
-   sobre crear contenido nuevo fuera de él.
-2. **Checklist Canon completo para el Glosario GPR** (`DEFINITION_OF_DONE.md`):
-   ya cumple el mínimo de enlaces entrantes; falta verificar contenido
-   EXPANDIDO, comparación con el mejor recurso en español disponible, y
-   anotar plan de actualización anual antes de declararlo MADURO.
+1. **Checklist Canon MADURO completo** para el módulo de Biblioteca técnica
+   y para el Glosario GPR (`DEFINITION_OF_DONE.md`). Los 7 ítems del Canon
+   (`CONTENT_STRATEGY.md §13`) ya están cubiertos (completado 2026-06-30);
+   falta verificar profundidad, volumen y comparación con el mejor recurso
+   disponible en español antes de declarar ambos activos MADURO.
 
 ## Próximo
 
-3. **Página índice de casos reales, filtrable por sector/tipo de problema.**
+2. **Página índice de casos reales, filtrable por sector/tipo de problema.**
    `ARCHITECTURE.md §7` (Sprint 3, componente `.case-tags`) dejó la base de
    datos lista para esto, pero requiere ADR de estructura/navegación antes
    de construirse (afecta navegación del sitio, `CLAUDE.md §3`).
 
 ## Más adelante
 
-4. **Evaluar Fase 2 de Academia** (cohortes o curso grabado), solo si la
+3. **Evaluar Fase 2 de Academia** (cohortes o curso grabado), solo si la
    demanda de mentoría 1:1 supera la capacidad de atención del experto — es
    la señal documentada en `ADR-003-mentorias-premium-1a1.md` para evaluar
    este paso, no una fecha fija.

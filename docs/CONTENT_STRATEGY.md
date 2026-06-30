@@ -593,7 +593,13 @@ El Canon inicial de Georadar:
 3. **Glosario GPR en español** — vocabulario de referencia del dominio.
 4. **Caso real: detección en minería** — prueba en el sector de mayor valor.
 5. **Caso real: localización de servicios utilities** — prueba en el sector más frecuente.
-6. **Caso real: arqueología no invasiva** — prueba en el sector más visual y difundible.
+6. **Caso real: estudio no invasivo en sitio patrimonial o de memoria** —
+   reformulado el 2026-06-30 desde "arqueología no invasiva": el sitio no
+   tiene un sector de arqueología propio ni evidencia de proyectos de ese
+   tipo en `docs/REGISTRO_EXPERIENCIA.md`. El ítem se satisface evolucionando
+   el caso real ya publicado de `/forense/casos/sitio-iran-3037-venda-sexy/`
+   (estudio de subsuelo no invasivo en un sitio de memoria protegido), en
+   vez de crear contenido nuevo sin evidencia (`CLAUDE.md §6`).
 7. **Guía de selección de antena** — herramienta de decisión que todos los
    técnicos necesitan.
 

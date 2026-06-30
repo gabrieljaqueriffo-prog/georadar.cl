@@ -87,15 +87,24 @@
 
 ### Biblioteca técnica (módulo nuevo)
 
-- **Estado:** DISEÑO/REVISIÓN — primer activo Canon publicado
-- **Tipo:** Módulo + Activo Canon (`CONTENT_STRATEGY.md §13`, ítem 1)
+- **Estado:** DISEÑO/REVISIÓN — Canon completo según `CONTENT_STRATEGY.md §13`, actualizado 2026-06-30
+- **Tipo:** Módulo + Activo Canon (`CONTENT_STRATEGY.md §13`)
 - **Ubicación landing:** `/biblioteca/index.html`
 - **Artículos publicados:**
   1. **Cómo tomar decisiones correctas antes de intervenir el subsuelo** (`/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`) — Canon #1. Cubre Nivel A (qué es un GPR, qué puede/no puede detectar, cuándo es necesario, qué preguntas responder antes de contratar un estudio). No enseña razonamiento multi-señal (Nivel C, protegido por `CONTENT_STRATEGY.md §1.5`).
-- **Enlaces entrantes:** nav y footer de todas las páginas del sitio (Minería, Utilities, Forense, Glosario, Inicio, caso Espesador T5); enlace contextual desde `glosario/index.html` ("Para seguir aprendiendo") y desde el caso real de Espesador T5 ("¿Qué aprendimos?").
-- **Enlaces salientes:** `/glosario/` (términos técnicos), caso real de Espesador T5 (aplicación práctica), CTA a `georadarchile.cl` / WhatsApp.
-- **Por qué no es Canon MADURO todavía:** un solo artículo publicado; `DEFINITION_OF_DONE.md` exige profundidad y volumen mínimo de Canon antes de declarar MADURO.
-- **Próximo paso:** publicar el resto del Canon (`CONTENT_STRATEGY.md §13`, ítems 2–7) y artículos que respalden los demás casos reales y sectores. Considerar agregar el árbol de decisión "¿Necesito GPR?" (`DECISION_FRAMEWORK.md` Bloque 3) como siguiente activo del módulo.
+- **Estado de los 7 ítems del Canon (`CONTENT_STRATEGY.md §13`), verificado 2026-06-30:**
+  1. Artículo "Cómo tomar decisiones..." — PUBLICADO.
+  2. Calculadora de viabilidad GPR — PUBLICADO (`/herramientas/calculadora-profundidad/`).
+  3. Glosario GPR — PUBLICADO, en revisión rumbo a MADURO (ver entrada propia).
+  4. Caso real minería — PUBLICADO (`/mineria/casos/socavones-espesador-t5/`).
+  5. Caso real utilities — **PUBLICADO 2026-06-30** (`/utilities/casos/accesos-metro-de-santiago/`, ver entrada propia).
+  6. Caso real arqueología no invasiva — **reformulado 2026-06-30** a "estudio no invasivo en sitio patrimonial/de memoria"; se satisface con el caso ya publicado `/forense/casos/sitio-iran-3037-venda-sexy/` en vez de crear un sector nuevo sin evidencia. Decisión registrada en `CONTENT_STRATEGY.md §13` y `DECISIONS.md`.
+  7. Guía de selección de antena — PUBLICADO, reenfocado como "Cómo influye la frecuencia de antena GPR en los resultados" (física pública, no criterio de selección propietario).
+- **Canon completo:** con el ítem 5 publicado y el ítem 6 resuelto por reformulación, los 7 ítems del Canon quedan cubiertos por primera vez.
+- **Enlaces entrantes:** nav y footer de todas las páginas del sitio (Minería, Utilities, Forense, Glosario, Inicio, casos reales); enlace contextual desde `glosario/index.html` ("Para seguir aprendiendo") y desde los casos reales de Espesador T5 y Metro de Santiago.
+- **Enlaces salientes:** `/glosario/` (términos técnicos), casos reales de Espesador T5 y Metro de Santiago (aplicación práctica), CTA a `georadarchile.cl` / WhatsApp.
+- **Por qué no es Canon MADURO todavía:** `DEFINITION_OF_DONE.md` exige, además de cobertura de los 7 ítems, profundidad y volumen mínimo verificado por activo antes de declarar MADURO — pendiente de evaluación formal.
+- **Próximo paso:** evaluar el checklist Canon MADURO completo del módulo; considerar agregar el árbol de decisión "¿Necesito GPR?" como activo adicional del módulo si se detecta deuda de profundidad.
 
 ---
 
@@ -122,6 +131,18 @@
 - **Enlaces salientes:** `/forense/` (servicio correspondiente)
 - **Contexto:** Asociación de Memoria y Derechos Humanos Venda Sexy, financiado por la Secretaría de Derechos Humanos (2024). Autorización de mención pública confirmada por el cliente el 2026-06-30.
 - **Tratamiento editorial:** mismo criterio aplicado a CIP San Joaquín y Cerro Chena — solo contexto institucional y método, sin hallazgos ni evidencia visual real, diagrama esquemático genérico en vez de radargrama.
+- **Reutilización adicional (2026-06-30):** este caso satisface también el ítem 6 del Canon ("estudio no invasivo en sitio patrimonial/de memoria", reformulado desde "arqueología no invasiva" en `CONTENT_STRATEGY.md §13`).
+
+### Caso real — Localización de servicios en accesos de Metro de Santiago
+
+- **Estado:** PUBLICADO
+- **Tipo:** Caso real (`ARCHITECTURE.md §7`, patrón "Caso real" estándar)
+- **Sector:** utilities
+- **Ubicación:** `/utilities/casos/accesos-metro-de-santiago/index.html`
+- **Enlaces entrantes:** `utilities/index.html` (card "Metro de Santiago"); `biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/index.html` (sección "Véalo en un caso real")
+- **Enlaces salientes:** `/utilities/` (servicio correspondiente), `/glosario/#antena`, `/glosario/#georreferenciacion`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`
+- **Contexto:** proyectos sucesivos 2017-2018, accesos de más de 13 estaciones de Metro de Santiago, prospección con antena GPR + LEM. Evidencia tomada de `docs/REGISTRO_EXPERIENCIA.md`.
+- **Cumple Canon ítem 5** (`CONTENT_STRATEGY.md §13`): primer caso real de utilities con página propia.
 
 ---
 
