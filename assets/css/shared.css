@@ -208,7 +208,7 @@ section{padding:64px 0;}
   .client-name{font-size:18px;}
 }
 @media (min-width:1024px){
-  .clients-strip{grid-template-columns:repeat(8,1fr);}
+  .clients-strip{grid-template-columns:repeat(6,1fr);}
 }
 
 /* Stats */
