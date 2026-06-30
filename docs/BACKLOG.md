@@ -99,12 +99,28 @@
 
 ---
 
+### Caso real — CIP San Joaquín y Cerro Chena
+
+- **Estado:** PUBLICADO
+- **Tipo:** Caso real (`ARCHITECTURE.md §7`, patrón "Caso real", adaptado a sensibilidad judicial/DDHH)
+- **Sector:** forense
+- **Ubicación:** `/forense/casos/cip-san-joaquin-cerro-chena/index.html`
+- **Enlaces entrantes:** `forense/index.html` (card "CIP San Joaquín y Cerro Chena, 2025")
+- **Enlaces salientes:** `/forense/` (servicio correspondiente)
+- **Contexto:** Subsecretaría de Derechos Humanos, causas ROL N°23-2018 y ROL N°549-2023. Autorización de mención pública confirmada por el cliente el 2026-06-30 (ver `docs/REGISTRO_EXPERIENCIA.md`).
+- **Tratamiento editorial:** dado lo sensible del caso, la página describe únicamente contexto institucional y método (prospección no invasiva, georreferenciada, trazable), sin publicar hallazgos, interpretación ni resultados de la investigación — esos corresponden al Ministerio Público y a la causa judicial, no a este sitio. La sección de evidencia usa un diagrama SVG esquemático genérico (no identificable, sin coordenadas reales) en lugar de cualquier radargrama o fotografía real, decidido junto con el cliente antes de implementar.
+- **Cumple el Principio editorial (`CONTENT_STRATEGY.md`):** enseña criterio institucional sobre cuándo recurrir a un método no invasivo, no interpretación técnica (Nivel C, `CONTENT_STRATEGY.md §1.5`).
+- **Deuda de contenido relacionada (pendiente, no resuelta en esta tarea):** los otros dos casos forenses mencionados solo como card sin página propia — Sitio Irán 3037 "Venda Sexy" (2024) y Cementerio Río Chico, Puerto Montt — quedan como deuda de contenido hasta que se decida construir su propia página de caso o se confirme que la card basta.
+
+---
+
 ## Deuda de contenido
 
-- **Cards de "Casos en minería" sin evidencia.** Las cards de Codelco División Andina, BHP Spence, SQM y Minera Centinela (`mineria/index.html`) no tienen enlace ni caso real documentado detrás — son afirmaciones sin respaldo verificable. Quedan como deuda hasta que existan casos reales para cada una o se reformulen como testimoniales sin pretensión de evidencia.
+- **Cards de "Casos en minería" — estado actualizado (2026-06-30).** Las cards de Codelco División Andina, BHP, SQM, Minera Centinela, Albemarle y Minera Collahuasi en `mineria/index.html` ya incluyen detalle verificado del registro de experiencia del cliente (`docs/REGISTRO_EXPERIENCIA.md`), pero siguen sin enlace a una página de caso real propia (patrón completo de `ARCHITECTURE.md §7`) — solo el caso Espesador T5 tiene página dedicada. Queda como deuda hasta que se prioricen nuevas páginas de caso para alguno de estos clientes.
+- **Casos forenses sin página propia.** Sitio Irán 3037 "Venda Sexy" (2024) y Cementerio Río Chico, Puerto Montt — documentados solo como card en `forense/index.html`, sin página de caso dedicada como la de CIP San Joaquín y Cerro Chena.
 
 ---
 
 ## Deuda técnica
 
-- **`docs/adr/` incompleto.** `ARCHITECTURE.md §5/§9` referencia 3 ADR (ADR-001-css-vanilla, ADR-002-whatsapp-primario, ADR-003-mentorias-premium-1a1) que documentarían decisiones ya tomadas. **ADR-003 ya se creó (2026-06-30)**, documentando retroactivamente el modelo de mentoría 1:1 que respalda `/mentoria/`. Quedan pendientes ADR-001 (CSS vanilla) y ADR-002 (WhatsApp como canal primario).
+- **`docs/adr/` — resuelto (2026-06-30).** `ARCHITECTURE.md §5/§9` referenciaba 3 ADR (ADR-001-css-vanilla, ADR-002-whatsapp-primario, ADR-003-mentorias-premium-1a1) que documentarían decisiones ya tomadas. Los tres ADR ya existen: ADR-003 (2026-06-30, mentoría 1:1), y ADR-001 (CSS vanilla) y ADR-002 (WhatsApp como canal primario), creados en esta tarea, documentando retroactivamente decisiones de tecnología y canal de contacto ya implementadas en todo el sitio.
