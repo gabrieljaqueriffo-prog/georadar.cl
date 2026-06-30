@@ -181,21 +181,34 @@ section{padding:64px 0;}
 
 /* Clients strip */
 .clients-strip{
-  display:flex;
-  flex-wrap:wrap;
-  gap:32px;
-  justify-content:space-between;
-  align-items:center;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
   padding:32px 0;
   border-top:1px solid var(--borde);
   border-bottom:1px solid var(--borde);
 }
 .client-name{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
   font-family:var(--font-display);
-  font-size:18px;
+  font-size:16px;
   color:var(--texto-suave);
   font-weight:700;
   letter-spacing:.02em;
+  background:var(--hueso-oscuro);
+  border:1px solid var(--borde);
+  border-radius:8px;
+  padding:14px 10px;
+}
+@media (min-width:640px){
+  .clients-strip{grid-template-columns:repeat(4,1fr);gap:16px;}
+  .client-name{font-size:18px;}
+}
+@media (min-width:1024px){
+  .clients-strip{grid-template-columns:repeat(8,1fr);}
 }
 
 /* Stats */
