@@ -14,22 +14,14 @@
 
 ## Ahora
 
-1. **Checklist Canon MADURO completo** para el módulo de Biblioteca técnica
-   y para el Glosario GPR (`DEFINITION_OF_DONE.md`). Los 7 ítems del Canon
-   (`CONTENT_STRATEGY.md §13`) ya están cubiertos (completado 2026-06-30);
-   falta verificar profundidad, volumen y comparación con el mejor recurso
-   disponible en español antes de declarar ambos activos MADURO.
-
-## Próximo
-
-2. **Página índice de casos reales, filtrable por sector/tipo de problema.**
+1. **Página índice de casos reales, filtrable por sector/tipo de problema.**
    `ARCHITECTURE.md §7` (Sprint 3, componente `.case-tags`) dejó la base de
    datos lista para esto, pero requiere ADR de estructura/navegación antes
    de construirse (afecta navegación del sitio, `CLAUDE.md §3`).
 
 ## Más adelante
 
-3. **Evaluar Fase 2 de Academia** (cohortes o curso grabado), solo si la
+2. **Evaluar Fase 2 de Academia** (cohortes o curso grabado), solo si la
    demanda de mentoría 1:1 supera la capacidad de atención del experto — es
    la señal documentada en `ADR-003-mentorias-premium-1a1.md` para evaluar
    este paso, no una fecha fija.
@@ -46,6 +38,18 @@
   suficiente ("Ya tenemos en forense", 2026-06-30) tras publicarse CIP San
   Joaquín/Cerro Chena y Sitio Irán 3037/Venda Sexy. No se construyen más
   páginas de caso para este sector hasta nueva indicación.
+
+## Esperando validación del cliente
+
+- **Declarar MADURO el Glosario GPR y los artículos Canon de Biblioteca
+  técnica** (`/glosario/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`,
+  `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`): el checklist
+  Canon de `DEFINITION_OF_DONE.md` se evaluó completo el 2026-06-30 — enlaces
+  entrantes, plan de actualización anual y cobertura de los 7 ítems del Canon
+  ya están cerrados. Queda un solo criterio pendiente: confirmar que cada
+  activo es el mejor recurso disponible en español sobre su tema, comparación
+  que requiere criterio humano externo y no puede auto-certificarse desde el
+  repositorio. Ver detalle por activo en `BACKLOG.md`.
 
 ---
 

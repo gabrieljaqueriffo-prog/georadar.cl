@@ -61,25 +61,31 @@
 
 ### Glosario GPR
 
-- **Estado:** REVISIÓN rumbo a MADURO (criterio de enlaces entrantes ya cumplido)
+- **Estado:** OPTIMIZACIÓN (no MADURO — ver veredicto del checklist Canon, 2026-06-30)
 - **Tipo:** Activo Canon (`CONTENT_STRATEGY.md §13`)
 - **Ubicación:** `/glosario/index.html`
-- **Términos publicados:** Georradar (GPR), Radargrama, Socavón, Hipérbola, Antena (GPR), Atenuación, Velocidad de propagación, Espesador (industrial), Grilla de prospección, Georreferenciación.
-- **Enlaces entrantes actuales (6 páginas distintas):** `index.html` (cards del mini-glosario de la página de inicio, ahora consolidadas como enlaces a `/glosario/#ancla` en lugar de duplicar definiciones), `mineria/casos/socavones-espesador-t5/index.html`, `biblioteca/index.html`, `biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/index.html`, `biblioteca/como-influye-la-frecuencia-de-antena-gpr/index.html`, `herramientas/calculadora-profundidad/index.html`.
+- **Términos publicados (10):** Georradar (GPR), Radargrama, Socavón, Hipérbola, Antena (GPR), Atenuación, Velocidad de propagación, Espesador (industrial), Grilla de prospección, Georreferenciación.
+- **Enlaces entrantes actuales (10 páginas distintas, verificado 2026-06-30):** `index.html`, `mineria/casos/socavones-espesador-t5/index.html`, `biblioteca/index.html`, `biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/index.html`, `biblioteca/como-influye-la-frecuencia-de-antena-gpr/index.html`, `herramientas/calculadora-profundidad/index.html`, `herramientas/index.html`, `herramientas/necesito-gpr/index.html`, `mentoria/index.html`, `utilities/casos/accesos-metro-de-santiago/index.html`.
 - **Enlaces salientes:** `/#gpr-sim` (simulador interactivo), caso real de Espesador T5, artículo de frecuencia de antena, calculadora de viabilidad GPR.
-- **Actualización (2026-06-29):** se agregaron 4 términos nuevos (Georradar, Radargrama, Grilla de prospección, Georreferenciación) para dar contexto a los enlaces entrantes recién creados. Se eliminó la duplicación de contenido: la página de inicio tenía un mini-glosario propio con definiciones repetidas; ahora esas cards enlazan al glosario canónico en lugar de duplicar el texto, siguiendo `CLAUDE.md §5` (priorizar reducir deuda de Canon sobre crear contenido nuevo).
-- **Corrección de conteo:** el registro anterior de este documento subestimaba los enlaces entrantes (indicaba 2 páginas). Al revisar el repositorio se confirmaron 6 páginas distintas que enlazan a `/glosario/`, superando el mínimo de 5 exigido por `DEFINITION_OF_DONE.md` para activos Canon.
-- **Por qué no es Canon MADURO todavía:** aunque el criterio de enlaces entrantes ya se cumple, falta verificar el resto del checklist Canon de `DEFINITION_OF_DONE.md` (estado de contenido EXPANDIDO, ser el mejor recurso disponible en español, plan de actualización anual anotado).
-- **Próximo paso:** evaluar el checklist Canon completo y, si corresponde, declarar el activo MADURO; seguir expandiendo términos a medida que se publiquen nuevos casos reales o artículos.
+- **Plan de actualización anual (anotado 2026-06-30, cierra criterio Canon faltante):** revisión cada marzo, a cargo de Gabriel Jaque (criterio técnico) + Claude (auditoría de enlaces y vigencia). Criterios de desactualización: término técnico nuevo usado en un caso real o artículo publicado sin entrada propia; enlace entrante o saliente roto; más de 12 meses sin revisión (señal ya definida en `DEFINITION_OF_DONE.md`, tabla de deuda de contenido).
+- **Veredicto checklist Canon MADURO (`DEFINITION_OF_DONE.md`, evaluado 2026-06-30):**
+  - [x] ≥5 enlaces entrantes (10, supera el mínimo).
+  - [x] Plan de actualización anual anotado (ver arriba).
+  - [ ] Estado OPTIMIZACIÓN confirmado, pero **no MADURO**: con 10 términos, el glosario cubre lo necesario para los activos enlazados hoy, pero no se ha hecho la comparación formal con el mejor recurso GPR disponible en español (criterio de profundidad técnica) — requiere revisión humana externa, no solo auditoría de repositorio.
+  - [ ] No se declara MADURO mientras ese criterio quede sin verificar; declarar MADURO sin esto sería deuda intencionada (`DEFINITION_OF_DONE.md`, sección de gates).
+- **Deuda de contenido registrada:** verificación externa de "mejor recurso en español" pendiente (requiere criterio humano/comparación con fuentes reales, no asumible por el agente). Volumen de términos (10) es funcional pero modesto; expandir a medida que se publiquen nuevos casos o artículos, no de forma artificial.
+- **Próximo paso:** mantener en OPTIMIZACIÓN; pedir al cliente la validación de "mejor recurso en español" cuando tenga tiempo de comparar con alternativas reales, antes de declarar MADURO.
 
 ### Artículo Canon — Cómo influye la frecuencia de una antena GPR en los resultados
 
-- **Estado:** PUBLICADO
+- **Estado:** OPTIMIZACIÓN (no MADURO — ver veredicto checklist Canon, 2026-06-30)
 - **Tipo:** Artículo de biblioteca técnica (`ARCHITECTURE.md §7`, Canon — `CONTENT_STRATEGY.md §13` ítem 7, reenfocado)
 - **Ubicación:** `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`
-- **Enlaces entrantes:** `/biblioteca/` (card de artículos), `/herramientas/calculadora-profundidad/` (sección "El concepto detrás de esta estimación"), `/glosario/#antena`
+- **Enlaces entrantes (5, verificado 2026-06-30, antes 3 — deuda cerrada):** `/biblioteca/` (card de artículos), `/herramientas/calculadora-profundidad/` (sección "El concepto detrás de esta estimación"), `/glosario/#antena`, `/mineria/` (paso 3 del proceso técnico), `/utilities/` (FAQ de profundidad de detección).
 - **Enlaces salientes:** `/glosario/#antena`, `/glosario/#atenuacion`, `/glosario/#velocidad-propagacion`, `/herramientas/calculadora-profundidad/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`, CTA a `georadarchile.cl`
 - **Reenfoque editorial (aprobado por el cliente):** el ítem Canon original era "Guía de selección de antena", pero se reescribió como explicación de física pública ("cómo influye la frecuencia") en lugar de una guía prescriptiva ("qué antena usar"), evitando regalar el criterio de selección que un especialista aplica caso por caso. Cierra explícitamente con que la selección final depende de variables del sitio y la debe hacer un especialista.
+- **Plan de actualización anual:** mismo ciclo que el Glosario (marzo, Gabriel Jaque + Claude); criterio de desactualización propio: cambios en equipos/antenas usadas en terreno que vuelvan obsoleta la explicación de física.
+- **Veredicto checklist Canon MADURO:** enlaces entrantes ya cumple (5/5 mínimo); falta el mismo criterio que el Glosario (comparación externa con mejor recurso en español) — no se declara MADURO todavía.
 
 ### Calculadora de viabilidad GPR (actualización)
 
@@ -103,8 +109,13 @@
 - **Canon completo:** con el ítem 5 publicado y el ítem 6 resuelto por reformulación, los 7 ítems del Canon quedan cubiertos por primera vez.
 - **Enlaces entrantes:** nav y footer de todas las páginas del sitio (Minería, Utilities, Forense, Glosario, Inicio, casos reales); enlace contextual desde `glosario/index.html` ("Para seguir aprendiendo") y desde los casos reales de Espesador T5 y Metro de Santiago.
 - **Enlaces salientes:** `/glosario/` (términos técnicos), casos reales de Espesador T5 y Metro de Santiago (aplicación práctica), CTA a `georadarchile.cl` / WhatsApp.
-- **Por qué no es Canon MADURO todavía:** `DEFINITION_OF_DONE.md` exige, además de cobertura de los 7 ítems, profundidad y volumen mínimo verificado por activo antes de declarar MADURO — pendiente de evaluación formal.
-- **Próximo paso:** evaluar el checklist Canon MADURO completo del módulo; considerar agregar el árbol de decisión "¿Necesito GPR?" como activo adicional del módulo si se detecta deuda de profundidad.
+- **Veredicto checklist Canon MADURO del módulo (evaluado 2026-06-30, ver entradas individuales de Glosario y artículo de frecuencia de antena para el detalle por activo):**
+  - [x] Cobertura de los 7 ítems del Canon: completa.
+  - [x] Enlaces entrantes ≥5 por activo individual con ese requisito (Glosario: 10; artículo "Cómo tomar decisiones...": 5; artículo de frecuencia: 5, cerrado hoy con 2 enlaces nuevos desde `mineria/index.html` y `utilities/index.html`).
+  - [x] Plan de actualización anual anotado para Glosario y artículo de frecuencia.
+  - [ ] **No MADURO:** queda pendiente la verificación externa de "mejor recurso disponible en español" para los activos de referencia (Glosario, ambos artículos). Es un criterio que requiere comparación humana con fuentes reales — no se puede auto-certificar desde el repositorio, y declarar MADURO sin esto sería deuda intencionada (`DEFINITION_OF_DONE.md`).
+- **Por qué no es Canon MADURO todavía:** un solo criterio pendiente y compartido por los tres activos de referencia: comparación externa con el mejor recurso GPR en español. El resto del checklist Canon (enlaces, plan de actualización, cobertura) ya está cerrado.
+- **Próximo paso:** pedir al cliente que valide la comparación con el mejor recurso disponible en español cuando tenga tiempo; mientras tanto, los activos quedan en OPTIMIZACIÓN (estado correcto y honesto, no un bloqueo). Considerar agregar el árbol de decisión "¿Necesito GPR?" como activo adicional del módulo si en esa revisión se detecta deuda de profundidad.
 
 ---
 
