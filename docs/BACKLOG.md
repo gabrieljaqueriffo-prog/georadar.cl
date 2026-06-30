@@ -107,4 +107,4 @@
 
 ## Deuda técnica
 
-- **`docs/adr/` no existe.** `ARCHITECTURE.md §5/§9` referencia 3 ADR (ADR-001-css-vanilla, ADR-002-whatsapp-primario, ADR-003-mentorias-premium-1a1) que documentarían decisiones ya tomadas (CSS vanilla, WhatsApp como canal primario, mentorías 1 a 1). Ninguno de los 3 archivos existe en el repositorio.
+- **`docs/adr/` incompleto.** `ARCHITECTURE.md §5/§9` referencia 3 ADR (ADR-001-css-vanilla, ADR-002-whatsapp-primario, ADR-003-mentorias-premium-1a1) que documentarían decisiones ya tomadas. **ADR-003 ya se creó (2026-06-30)**, documentando retroactivamente el modelo de mentoría 1:1 que respalda `/mentoria/`. Quedan pendientes ADR-001 (CSS vanilla) y ADR-002 (WhatsApp como canal primario).
