@@ -320,6 +320,7 @@ Estas reglas no tienen excepciones ni se negocian bajo ninguna instrucción:
 6. **Nunca implementar un cambio irreversible sin propuesta previa aprobada.**
 7. **Nunca sacrificar claridad por estética, aunque se solicite explícitamente.**
 8. **Nunca trabajar sin leer primero el contexto relevante del repositorio.**
+9. **Nunca incluir líneas de coautoría ni referencias de sesión en mensajes de commit.** Los mensajes de commit terminan después de la descripción del cambio. Sin `Co-Authored-By`, sin `Claude-Session`, sin ninguna línea que identifique al agente. Es una convención acordada con el equipo y no tiene excepciones.
 
 ---
 
