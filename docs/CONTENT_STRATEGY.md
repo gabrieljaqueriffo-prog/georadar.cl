@@ -21,6 +21,38 @@ es abismal.
 
 ---
 
+## Principio editorial
+
+> **ATLAS no busca convertirse en la mayor biblioteca sobre GPR. Busca
+> convertirse en la fuente de mayor criterio sobre el uso del GPR.**
+>
+> Publicamos únicamente el conocimiento necesario para que un profesional
+> comprenda mejor un problema del subsuelo y tome mejores decisiones. La
+> interpretación experta, la experiencia acumulada y la metodología
+> propietaria forman parte del servicio profesional, no del contenido
+> abierto.
+
+Una biblioteca organiza información. ATLAS organiza experiencia. La
+diferencia no es de tamaño: es de naturaleza. Por eso "más artículos" nunca
+es, por sí solo, el objetivo de una tarea editorial; "más criterio
+desarrollado en quien consulta" sí lo es.
+
+> **GeoRadar Chile vende experiencia. ATLAS desarrolla criterio. La
+> interpretación profesional sigue siendo el puente entre ambos.**
+
+Este principio es estrategia editorial, no la visión del producto (eso lo
+responde `PROJECT_VISION.md`) ni el criterio de decisión entre dos
+alternativas (eso lo responde `NORTH_STAR.md`). Es la lente con la que se
+filtra qué se publica y qué no, y explica por qué:
+
+- no se publican todos los radargramas ni un interpretador automático;
+- un caso real muestra el problema y la decisión que habilitó, pero nunca
+  la cadena completa de razonamiento que llevó a la conclusión (ver §1.5);
+- la mentoría 1:1 existe como el espacio donde sí se transfiere criterio,
+  de forma directa y acotada, en vez de regalarlo como contenido abierto.
+
+---
+
 ## 1. Filosofía editorial
 
 ### 1.1 Autoridad primero
