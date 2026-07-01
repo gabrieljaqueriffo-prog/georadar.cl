@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo se forma la hipérbola GPR | Demostración interactiva | Geo Radar Chile</title>
+<meta name="description" content="Demostración interactiva que muestra cómo un objeto puntual en el subsuelo produce una hipérbola en el radargrama GPR. Controla profundidad y velocidad en tiempo real.">
+<link rel="canonical" href="https://georadar.cl/herramientas/formacion-hiperbola/">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="es_CL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cómo se forma la hipérbola GPR | Demostración interactiva">
+<meta property="og:description" content="Demostración interactiva: vea cómo un objeto puntual en el subsuelo produce una hipérbola en el radargrama GPR.">
+<meta property="og:url" content="https://georadar.cl/herramientas/formacion-hiperbola/">
+<meta name="geo.region" content="CL">
+<meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cómo se forma la hipérbola GPR | Demostración interactiva">
+<meta name="twitter:description" content="Demostración interactiva de la formación de hipérbola en radargrama GPR. Sin registro, basada en física real.">
+<link rel="stylesheet" href="/assets/css/shared.css?v=7">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://georadar.cl/herramientas/formacion-hiperbola/#app",
+      "name": "Formación de hipérbola GPR",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "url": "https://georadar.cl/herramientas/formacion-hiperbola/",
+      "inLanguage": "es-CL"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/herramientas/formacion-hiperbola/#webpage",
+      "url": "https://georadar.cl/herramientas/formacion-hiperbola/",
+      "name": "Cómo se forma la hipérbola GPR | Demostración interactiva",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "inLanguage": "es-CL"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://georadar.cl/" },
+        { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://georadar.cl/herramientas/" },
+        { "@type": "ListItem", "position": 3, "name": "Formación de hipérbola GPR", "item": "https://georadar.cl/herramientas/formacion-hiperbola/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+.demo-wrap {
+  background: #0f1923;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  color: #e2e8f0;
+}
+.demo-subtitle {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+.demo-panels { position: relative; }
+.demo-panel-label {
+  position: absolute; font-size: 0.65rem; text-transform: uppercase;
+  letter-spacing: 0.07em; color: #64748b; z-index: 1; left: 10px; top: 7px;
+}
+.demo-panel-label.radar-label { top: 237px; }
+canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
+#physCanvas { border-radius: 6px 6px 0 0; background: #1a2744; border-bottom: 2px solid #1e3a5f; }
+#radarCanvas { border-radius: 0 0 6px 6px; background: #050d1a; }
+.demo-controls {
+  margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;
+}
+.demo-btn {
+  padding: 0.45rem 1.1rem; border: none; border-radius: 5px;
+  cursor: pointer; font-size: 0.88rem; font-weight: 600; transition: background 0.15s;
+}
+.demo-btn-play { background: #2563eb; color: white; }
+.demo-btn-play:hover { background: #1d4ed8; }
+.demo-btn-reset { background: #1e3a5f; color: #94a3b8; }
+.demo-btn-reset:hover { background: #2d4f78; color: #e2e8f0; }
+.demo-ctrl { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #94a3b8; }
+.demo-ctrl input[type=range] { width: 90px; accent-color: #2563eb; cursor: pointer; }
+.demo-legend { margin-top: 1rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.demo-leg { font-size: 0.75rem; color: #94a3b8; display: flex; align-items: center; gap: 0.35rem; }
+.demo-leg-swatch { width: 22px; height: 3px; border-radius: 2px; }
+.demo-insight {
+  margin-top: 1rem; padding: 0.8rem 1rem;
+  background: rgba(37, 99, 235, 0.1); border-left: 3px solid #2563eb;
+  border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #94a3b8; line-height: 1.55;
+}
+.demo-insight strong { color: #93c5fd; }
+</style>
+</head>
+<body>
+
+<div class="topbar">Sitio oficial: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a> &middot; Empresa desde 2011, experiencia desde 1997</div>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="container">
+    <a href="/" class="logo" aria-label="Ir al inicio de GeoRadar.cl">GeoRadar.cl</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="/mineria/" aria-label="Ir a minería">Minería</a></li>
+      <li><a href="/utilities/" aria-label="Ir a utilities">Utilities</a></li>
+      <li><a href="/construccion/" aria-label="Ir a construcción">Construcción</a></li>
+      <li><a href="/forense/" aria-label="Ir a forense">Forense</a></li>
+      <li><a href="/biblioteca/" aria-label="Ir a biblioteca técnica">Biblioteca</a></li>
+      <li><a href="/mentoria/" aria-label="Ir a mentorías">Mentorías</a></li>
+      <li><a href="/herramientas/" aria-label="Ir a herramientas" aria-current="page">Herramientas</a></li>
+      <li><a href="https://georadarchile.cl" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Solicitar estudio GPR">Solicitar estudio GPR</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-content">
+    <p class="eyebrow">Herramientas &middot; Demostración interactiva</p>
+    <h1>Cómo se forma la hipérbola en un radargrama GPR</h1>
+    <p class="lead">La antena se desplaza sobre la superficie emitiendo pulsos en cada posición. El tiempo de viaje de cada reflexión dibuja una <a href="/glosario/#hiperbola">hipérbola</a> en el <a href="/glosario/#radargrama">radargrama</a>, aunque el objeto sea puntual. Esta demostración muestra la física en tiempo real.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+
+    <div class="demo-wrap">
+      <div class="demo-panels">
+        <span class="demo-panel-label">Sección transversal — física real</span>
+        <span class="demo-panel-label radar-label">Radargrama — lo que registra el equipo</span>
+        <canvas id="physCanvas" width="760" height="220" aria-label="Sección transversal física con antena GPR y objeto enterrado"></canvas>
+        <canvas id="radarCanvas" width="760" height="220" aria-label="Radargrama construyéndose en tiempo real"></canvas>
+      </div>
+
+      <div class="demo-controls">
+        <button class="demo-btn demo-btn-play" id="playBtn" aria-label="Iniciar o pausar animación">▶ Iniciar</button>
+        <button class="demo-btn demo-btn-reset" id="resetBtn" aria-label="Reiniciar animación">⟳ Reiniciar</button>
+        <div class="demo-ctrl">
+          <label for="depthSlider">Profundidad</label>
+          <input type="range" id="depthSlider" min="15" max="72" value="38" aria-label="Control de profundidad del objeto">
+          <span id="depthVal">moderada</span>
+        </div>
+        <div class="demo-ctrl">
+          <label for="speedSlider">Velocidad</label>
+          <input type="range" id="speedSlider" min="1" max="5" value="2" aria-label="Control de velocidad de animación">
+        </div>
+      </div>
+
+      <div class="demo-legend">
+        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#4a90d9; height:10px; width:10px; border-radius:50%;"></div>Objeto real</div>
+        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#64c8ff;"></div>Pulso emitido</div>
+        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#fbbf24;"></div>Señal reflejada</div>
+        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#00e87a;"></div>Hipérbola en radargrama</div>
+      </div>
+
+      <div class="demo-insight" id="insight" role="status" aria-live="polite">
+        Presione <strong>Iniciar</strong> para ver cómo cada reflexión contribuye a la hipérbola. Use el control de <strong>Profundidad</strong> para ver cómo cambia la curvatura.
+      </div>
+    </div>
+
+    <h2>Por qué importa entender la hipérbola</h2>
+    <p>El <a href="/glosario/#georradar">georradar (GPR)</a> emite ondas electromagnéticas hacia el subsuelo y registra cómo regresan. Cuando la <a href="/glosario/#antena">antena</a> se desplaza sobre la superficie, emite pulsos electromagnéticos en todas direcciones. Un objeto puntual —un ducto, una roca, una cavidad pequeña— refleja esa señal cada vez que un pulso lo alcanza, independientemente de dónde esté la antena en ese momento.</p>
+    <p>El resultado es que el mismo objeto genera reflexiones desde muchas posiciones de la antena: cuando está lejos, el camino de ida y vuelta es más largo, así que el objeto "parece" más profundo de lo que realmente es. Cuando la antena está justo sobre él, el camino es mínimo: ahí está el vértice de la hipérbola. La fórmula que describe esto es:</p>
+    <p><strong>d<sub>aparente</sub> = √(dx² + d²)</strong></p>
+    <p>Donde <em>dx</em> es la distancia horizontal entre la antena y el objeto, y <em>d</em> es la profundidad real. Esa relación produce exactamente la forma de una hipérbola.</p>
+
+    <h2>Qué le dice la curvatura al especialista</h2>
+    <p>La apertura de la hipérbola no es solo una forma: es información. Una hipérbola muy abierta indica un objeto más profundo; una más cerrada, uno más superficial. Además, al ajustar la <a href="/glosario/#velocidad-propagacion">velocidad de propagación</a> correcta del material, el especialista puede convertir esa forma en una profundidad real con precisión.</p>
+    <p>Por eso una hipérbola no se interpreta de forma aislada: se analiza en el contexto de cientos de perfiles y con el criterio del equipo que conoce el material y el sitio.</p>
+
+    <div class="cards-grid" style="margin-top: 2.5rem;">
+      <div class="card">
+        <h3>Glosario: Hipérbola</h3>
+        <p>Definición técnica del patrón hiperbólico en el radargrama y por qué su interpretación requiere múltiples pasadas y criterio especializado.</p>
+        <a href="/glosario/#hiperbola">Ver definición &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Glosario: Radargrama</h3>
+        <p>Qué es el registro gráfico que produce el georradar y cómo se lee la evidencia técnica detrás de cada hallazgo.</p>
+        <a href="/glosario/#radargrama">Ver definición &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Selector de antena GPR</h3>
+        <p>Determina el rango de frecuencia de antena compatible con su objetivo de detección, profundidad estimada y tipo de material.</p>
+        <a href="/herramientas/selector-antena/">Usar herramienta &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <p class="eyebrow">¿Quiere ver esto aplicado en un proyecto real?</p>
+    <h2>Casos con detección de hipérbolas</h2>
+    <p>En la <a href="/mineria/casos/socavones-espesador-t5/">detección de socavones en el Espesador T5 de Chuquicamata</a>, el análisis de hipérbolas en los radargramas fue parte del proceso que identificó vacíos bajo la losa sin necesidad de excavar. El mismo principio físico que muestra esta demostración, aplicado en condiciones reales de minería.</p>
+    <p style="margin-top: 1rem;"><a href="https://georadarchile.cl" target="_blank" rel="noopener">Solicitar un estudio GPR &rarr;</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="footer-logo">GeoRadar.cl</p>
+    <div class="footer-grid">
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/mineria/">Minería</a></li>
+          <li><a href="/utilities/">Utilities</a></li>
+          <li><a href="/construccion/">Construcción</a></li>
+          <li><a href="/forense/">Forense</a></li>
+          <li><a href="/biblioteca/">Biblioteca</a></li>
+          <li><a href="/mentoria/">Mentorías</a></li>
+          <li><a href="/herramientas/">Herramientas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sitio oficial</h4>
+        <ul>
+          <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Geo Radar Chile</h4>
+        <ul>
+          <li>Empresa desde 2011</li>
+          <li>Experiencia desde 1997</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">Solicitar cotización</a></li>
+          <li><a href="https://wa.me/56975909836" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">WhatsApp: +56 9 7590 9836</a></li>
+          <li><a href="mailto:gabriel@georadarchile.cl">gabriel@georadarchile.cl</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Geo Radar Chile. Herramientas GPR.</div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+(function () {
+  var physC = document.getElementById('physCanvas');
+  var radarC = document.getElementById('radarCanvas');
+  if (!physC || !radarC) return;
+  var pc = physC.getContext('2d');
+  var rc = radarC.getContext('2d');
+  var playBtn = document.getElementById('playBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var depthSlider = document.getElementById('depthSlider');
+  var speedSlider = document.getElementById('speedSlider');
+  var depthVal = document.getElementById('depthVal');
+  var insightEl = document.getElementById('insight');
+
+  var W = 760, PH = 220, RH = 220;
+  var SURF_Y = 50;
+  var MARGIN = 30;
+  var OBJ_NX = 0.5;
+
+  var t = 0, playing = false, animId = null;
+  var pulses = [];
+  var lastPulseAt = -999;
+
+  function nx(v) { return MARGIN + v * (W - 2 * MARGIN); }
+  function physY(normDepth) { return SURF_Y + normDepth * (PH - SURF_Y - 15); }
+  function getDepth() { return parseInt(depthSlider.value) / 100; }
+  function getSpeed() { return parseInt(speedSlider.value) * 0.0018; }
+
+  function depthLabel(d) {
+    if (d < 0.25) return 'superficial';
+    if (d < 0.45) return 'moderada';
+    if (d < 0.60) return 'media';
+    return 'profunda';
+  }
+
+  function initRadar() {
+    rc.fillStyle = '#050d1a';
+    rc.fillRect(0, 0, W, RH);
+    rc.strokeStyle = 'rgba(255,255,255,0.04)';
+    rc.lineWidth = 1;
+    for (var i = 1; i < 5; i++) {
+      var y = i * (RH / 5);
+      rc.beginPath(); rc.moveTo(0, y); rc.lineTo(W, y); rc.stroke();
+    }
+    rc.font = '10px system-ui';
+    rc.fillStyle = 'rgba(255,255,255,0.25)';
+    rc.textAlign = 'left';
+    rc.fillText('tiempo →', 4, 14);
+    rc.save();
+    rc.translate(12, RH - 10);
+    rc.textAlign = 'left';
+    rc.fillText('profundidad aparente ↓', 0, 0);
+    rc.restore();
+  }
+
+  function drawPhys(t) {
+    pc.clearRect(0, 0, W, PH);
+
+    var surfGrad = pc.createLinearGradient(0, 0, 0, SURF_Y);
+    surfGrad.addColorStop(0, '#c4a882');
+    surfGrad.addColorStop(1, '#a0845c');
+    pc.fillStyle = surfGrad;
+    pc.fillRect(0, 0, W, SURF_Y);
+
+    var subGrad = pc.createLinearGradient(0, SURF_Y, 0, PH);
+    subGrad.addColorStop(0, '#1c2d45');
+    subGrad.addColorStop(1, '#0c1828');
+    pc.fillStyle = subGrad;
+    pc.fillRect(0, SURF_Y, W, PH - SURF_Y);
+
+    pc.fillStyle = 'rgba(255,255,255,0.03)';
+    for (var i = 0; i < 100; i++) {
+      var sx = MARGIN + (i * 83 % (W - 2 * MARGIN));
+      var sy = SURF_Y + 5 + (i * 61 % (PH - SURF_Y - 15));
+      pc.beginPath(); pc.arc(sx, sy, 1.5, 0, Math.PI * 2); pc.fill();
+    }
+
+    pc.strokeStyle = '#c4a882';
+    pc.lineWidth = 2;
+    pc.beginPath(); pc.moveTo(0, SURF_Y); pc.lineTo(W, SURF_Y); pc.stroke();
+
+    var d = getDepth();
+    var objPixX = nx(OBJ_NX);
+    var objPixY = physY(d);
+    var antennaX = nx(t);
+
+    pc.save();
+    pc.beginPath();
+    pc.rect(0, SURF_Y, W, PH - SURF_Y);
+    pc.clip();
+
+    var maxDist = Math.sqrt(Math.pow(W, 2) + Math.pow(PH, 2));
+
+    for (var p = 0; p < pulses.length; p++) {
+      var pulse = pulses[p];
+      var age = t - pulse.t;
+      if (age < 0) continue;
+      var r = age * (W - 2 * MARGIN) * 2.2;
+      if (r > maxDist) continue;
+      var alpha = Math.max(0, 0.55 - age * 3.5);
+      if (alpha < 0.01) continue;
+
+      var px = nx(pulse.xt);
+      var dToObj = Math.sqrt(Math.pow(px - objPixX, 2) + Math.pow(SURF_Y - objPixY, 2));
+
+      pc.beginPath();
+      pc.arc(px, SURF_Y, r, 0, Math.PI);
+      pc.strokeStyle = 'rgba(100, 200, 255, ' + (alpha * 0.9) + ')';
+      pc.lineWidth = 1.5;
+      pc.stroke();
+
+      var hit = Math.abs(r - dToObj);
+      if (hit < 12) {
+        var hitIntensity = Math.max(0, 1 - hit / 12);
+        pc.beginPath();
+        pc.arc(objPixX, objPixY, 20, 0, Math.PI * 2);
+        pc.fillStyle = 'rgba(255, 200, 50, ' + (hitIntensity * 0.5) + ')';
+        pc.fill();
+        pc.beginPath();
+        pc.moveTo(objPixX, objPixY);
+        pc.lineTo(px, SURF_Y);
+        pc.strokeStyle = 'rgba(251, 191, 36, ' + (alpha * hitIntensity * 1.2) + ')';
+        pc.lineWidth = 1.5;
+        pc.setLineDash([4, 4]);
+        pc.stroke();
+        pc.setLineDash([]);
+      }
+    }
+    pc.restore();
+
+    pc.strokeStyle = 'rgba(255,255,255,0.12)';
+    pc.lineWidth = 1;
+    pc.setLineDash([3, 6]);
+    pc.beginPath();
+    pc.moveTo(objPixX, SURF_Y + 4);
+    pc.lineTo(objPixX, objPixY - 12);
+    pc.stroke();
+    pc.setLineDash([]);
+
+    var glow = pc.createRadialGradient(objPixX, objPixY, 0, objPixX, objPixY, 28);
+    glow.addColorStop(0, 'rgba(74, 144, 217, 0.35)');
+    glow.addColorStop(1, 'rgba(74, 144, 217, 0)');
+    pc.fillStyle = glow;
+    pc.beginPath(); pc.arc(objPixX, objPixY, 28, 0, Math.PI * 2); pc.fill();
+
+    pc.beginPath(); pc.arc(objPixX, objPixY, 10, 0, Math.PI * 2);
+    pc.fillStyle = '#2563eb'; pc.fill();
+    pc.strokeStyle = '#7ab3e8'; pc.lineWidth = 2; pc.stroke();
+    pc.font = '10px system-ui'; pc.fillStyle = 'rgba(255,255,255,0.5)';
+    pc.textAlign = 'center';
+    pc.fillText('ducto', objPixX, objPixY + 24);
+
+    var aw = 28, ah = 14;
+    pc.fillStyle = '#f8fafc';
+    pc.fillRect(antennaX - aw/2, SURF_Y - ah - 4, aw, ah);
+    pc.strokeStyle = '#94a3b8'; pc.lineWidth = 1;
+    pc.strokeRect(antennaX - aw/2, SURF_Y - ah - 4, aw, ah);
+    pc.fillStyle = '#ef4444';
+    pc.fillRect(antennaX - 4, SURF_Y - 4, 8, 4);
+    pc.font = 'bold 10px system-ui'; pc.fillStyle = '#1e293b';
+    pc.textAlign = 'center';
+    pc.fillText('GPR', antennaX, SURF_Y - 11);
+
+    if (t < 0.95) {
+      pc.strokeStyle = 'rgba(255,255,255,0.5)'; pc.lineWidth = 1.5;
+      var ax2 = antennaX + 18;
+      pc.beginPath();
+      pc.moveTo(ax2, SURF_Y - 18);
+      pc.lineTo(ax2 + 8, SURF_Y - 18);
+      pc.moveTo(ax2 + 5, SURF_Y - 21);
+      pc.lineTo(ax2 + 8, SURF_Y - 18);
+      pc.lineTo(ax2 + 5, SURF_Y - 15);
+      pc.stroke();
+    }
+  }
+
+  function addRadarScan(t) {
+    var d = getDepth();
+    var dx = t - OBJ_NX;
+    var dApparent = Math.sqrt(dx * dx + d * d);
+    var yNorm = dApparent / 0.9;
+    var reflY = Math.min(yNorm * (RH - 20) + 8, RH - 4);
+    var pixX = Math.round(nx(t));
+
+    rc.fillStyle = '#050d1a';
+    rc.fillRect(pixX - 1, 0, 3, RH);
+
+    var sigma2 = 60;
+    var span = 22;
+    for (var y = Math.max(0, reflY - span); y < Math.min(RH, reflY + span); y++) {
+      var dist2 = (y - reflY) * (y - reflY);
+      var intensity = Math.exp(-dist2 / sigma2);
+      if (intensity < 0.02) continue;
+      var g = Math.round(232 * intensity);
+      var b = Math.round(122 * intensity);
+      rc.fillStyle = 'rgba(0,' + g + ',' + b + ',' + Math.min(intensity * 1.1, 1) + ')';
+      rc.fillRect(pixX - 1, y, 3, 1);
+    }
+  }
+
+  function updateInsight(t) {
+    var d = getDepth();
+    if (t < 0.1) {
+      insightEl.innerHTML = 'La antena inicia el barrido desde el extremo izquierdo. El objeto está en el centro, a profundidad <strong>' + depthLabel(d) + '</strong>.';
+    } else if (t < 0.35) {
+      insightEl.innerHTML = 'La antena se aproxima al objeto. La reflexión ocurre pero el camino ida+vuelta es <strong>largo</strong>: la hipérbola empieza por los brazos.';
+    } else if (t > 0.48 && t < 0.56) {
+      insightEl.innerHTML = '🎯 <strong>La antena está sobre el objeto.</strong> El camino es el más corto posible: aquí aparece el <strong>vértice</strong> de la hipérbola (menor tiempo de viaje).';
+    } else if (t > 0.55 && t < 0.9) {
+      insightEl.innerHTML = 'La antena ya pasó el objeto. La señal sigue llegando porque el pulso radia en todas direcciones, pero el camino es cada vez más largo: la hipérbola se abre.';
+    } else if (t >= 0.9) {
+      insightEl.innerHTML = '<strong>Hipérbola completa.</strong> El objeto es puntual, pero en el radargrama ocupa una “U” completa. Por eso interpretar una imagen aislada no es suficiente: se necesita el contexto de todo el barrido.';
+    }
+  }
+
+  function frame() {
+    if (!playing) return;
+    t += getSpeed();
+
+    if (t - lastPulseAt > 0.038) {
+      pulses.push({ xt: t, t: t });
+      lastPulseAt = t;
+      if (pulses.length > 20) pulses.shift();
+    }
+
+    if (t >= 1) {
+      t = 1;
+      playing = false;
+      playBtn.textContent = '▶ Reiniciar';
+      drawPhys(1);
+      updateInsight(1);
+      return;
+    }
+
+    drawPhys(t);
+    addRadarScan(t);
+    updateInsight(t);
+    animId = requestAnimationFrame(frame);
+  }
+
+  function doReset() {
+    if (animId) cancelAnimationFrame(animId);
+    playing = false; t = 0; pulses.length = 0; lastPulseAt = -999;
+    playBtn.textContent = '▶ Iniciar';
+    initRadar();
+    drawPhys(0);
+    insightEl.innerHTML = 'Presione <strong>Iniciar</strong> para ver cómo cada reflexión contribuye a la hipérbola. Use el control de <strong>Profundidad</strong> para ver cómo cambia la curvatura.';
+  }
+
+  playBtn.addEventListener('click', function () {
+    if (!playing && t >= 1) { doReset(); return; }
+    playing = !playing;
+    playBtn.textContent = playing ? '⏸ Pausar' : '▶ Continuar';
+    if (playing) frame();
+  });
+
+  resetBtn.addEventListener('click', doReset);
+
+  depthSlider.addEventListener('input', function () {
+    depthVal.textContent = depthLabel(getDepth());
+    doReset();
+  });
+
+  initRadar();
+  drawPhys(0);
+})();
+</script>
+</body>
+</html>
