@@ -85,23 +85,23 @@
   padding: 0.45rem 1.1rem; border: none; border-radius: 5px;
   cursor: pointer; font-size: 0.88rem; font-weight: 600; transition: background 0.15s;
 }
-.demo-btn-play { background: #2563eb; color: white; }
-.demo-btn-play:hover { background: #1d4ed8; }
-.demo-btn-reset { background: #1e3a5f; color: #94a3b8; }
-.demo-btn-reset:hover { background: #2d4f78; color: #e2e8f0; }
+.demo-btn-play { background: #C8723A; color: #fff; }
+.demo-btn-play:hover { background: #b05e2c; }
+.demo-btn-reset { background: #2a1e0e; color: #C9B8A8; }
+.demo-btn-reset:hover { background: #3d2a12; color: #e2d5c4; }
 .demo-ctrl { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #94a3b8; }
-.demo-ctrl input[type=range] { width: 100px; accent-color: #2563eb; cursor: pointer; }
+.demo-ctrl input[type=range] { width: 100px; accent-color: #C8723A; cursor: pointer; }
 .demo-legend { margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 .demo-leg { font-size: 0.75rem; color: #94a3b8; display: flex; align-items: center; gap: 0.35rem; }
 .demo-leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 .demo-leg-line { width: 20px; height: 3px; border-radius: 2px; flex-shrink: 0; }
 .demo-insight {
   margin-top: 1rem; padding: 0.8rem 1rem;
-  background: rgba(37, 99, 235, 0.1); border-left: 3px solid #2563eb;
-  border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #94a3b8; line-height: 1.6;
+  background: rgba(200,114,58,0.08); border-left: 3px solid #C8723A;
+  border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #C9B8A8; line-height: 1.6;
   min-height: 3.5rem;
 }
-.demo-insight strong { color: #93c5fd; }
+.demo-insight strong { color: #E8A06A; }
 </style>
 </head>
 <body>
@@ -159,10 +159,10 @@
       </div>
 
       <div class="demo-legend">
-        <div class="demo-leg"><div class="demo-leg-dot" style="background:#4a90d9;"></div>Objeto real</div>
-        <div class="demo-leg"><div class="demo-leg-line" style="background:#64c8ff;"></div>Pulso emitido</div>
-        <div class="demo-leg"><div class="demo-leg-line" style="background:#fbbf24;"></div>Señal reflejada</div>
-        <div class="demo-leg"><div class="demo-leg-line" style="background:#00e87a;"></div>Hipérbola en radargrama</div>
+        <div class="demo-leg"><div class="demo-leg-dot" style="background:#E8A06A;"></div>Objeto real</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:rgba(210,170,100,0.7);"></div>Pulso emitido</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:#E8A06A;"></div>Señal reflejada</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:#C8723A;"></div>Hipérbola en radargrama</div>
       </div>
 
       <div class="demo-insight" id="insight" role="status" aria-live="polite">
@@ -284,92 +284,99 @@
   }
 
   function initRadar() {
-    rc.fillStyle = '#050d1a';
+    rc.fillStyle = '#120d08';
     rc.fillRect(0, 0, W, RH);
-    rc.strokeStyle = 'rgba(255,255,255,0.04)';
-    rc.lineWidth = 1;
-    for (var i = 1; i < 5; i++) {
-      var y = i * (RH / 5);
-      rc.beginPath(); rc.moveTo(0, y); rc.lineTo(W, y); rc.stroke();
+    // Subtle horizontal ground-return bands
+    for (var i = 0; i < RH; i++) {
+      var band = (Math.sin(i * 0.18) * 0.5 + 0.5) * 0.07 + 0.02;
+      rc.fillStyle = 'rgba(180,150,100,' + band + ')';
+      rc.fillRect(0, i, W, 1);
     }
+    // Depth axis labels
     rc.font = '10px system-ui';
-    rc.fillStyle = 'rgba(255,255,255,0.25)';
+    rc.fillStyle = 'rgba(200,160,100,0.5)';
     rc.textAlign = 'left';
-    rc.fillText('tiempo →', 4, 14);
-    rc.save();
-    rc.translate(12, RH - 10);
-    rc.textAlign = 'left';
-    rc.fillText('profundidad aparente ↓', 0, 0);
-    rc.restore();
+    var depthLabels = ['0 m', '1 m', '2 m', '3 m'];
+    for (var d = 0; d < depthLabels.length; d++) {
+      var ly = 10 + d * ((RH - 14) / 3);
+      rc.fillText(depthLabels[d], 4, ly);
+      rc.strokeStyle = 'rgba(200,160,100,0.08)';
+      rc.lineWidth = 1;
+      rc.beginPath(); rc.moveTo(28, ly - 3); rc.lineTo(W, ly - 3); rc.stroke();
+    }
   }
 
   function drawPhys(t) {
     pc.clearRect(0, 0, W, PH);
 
-    var surfGrad = pc.createLinearGradient(0, 0, 0, SURF_Y);
-    surfGrad.addColorStop(0, '#c4a882');
-    surfGrad.addColorStop(1, '#a0845c');
+    // Dark warm subsurface background
+    pc.fillStyle = '#1a1208';
+    pc.fillRect(0, 0, W, PH);
+
+    // Ground surface band
+    var surfGrad = pc.createLinearGradient(0, SURF_Y - 10, 0, SURF_Y + 6);
+    surfGrad.addColorStop(0, '#6b4f2e');
+    surfGrad.addColorStop(1, '#3d2a12');
     pc.fillStyle = surfGrad;
-    pc.fillRect(0, 0, W, SURF_Y);
+    pc.fillRect(0, SURF_Y - 10, W, 16);
 
-    var subGrad = pc.createLinearGradient(0, SURF_Y, 0, PH);
-    subGrad.addColorStop(0, '#1c2d45');
-    subGrad.addColorStop(1, '#0c1828');
+    // Subsurface texture
+    var subGrad = pc.createLinearGradient(0, SURF_Y + 6, 0, PH);
+    subGrad.addColorStop(0, '#2a1e0e');
+    subGrad.addColorStop(1, '#120d06');
     pc.fillStyle = subGrad;
-    pc.fillRect(0, SURF_Y, W, PH - SURF_Y);
+    pc.fillRect(0, SURF_Y + 6, W, PH - SURF_Y - 6);
 
-    pc.fillStyle = 'rgba(255,255,255,0.03)';
-    for (var i = 0; i < 100; i++) {
-      var sx = MARGIN + (i * 83 % (W - 2 * MARGIN));
-      var sy = SURF_Y + 5 + (i * 61 % (PH - SURF_Y - 15));
-      pc.beginPath(); pc.arc(sx, sy, 1.5, 0, Math.PI * 2); pc.fill();
+    // Subtle grain
+    pc.fillStyle = 'rgba(180,130,60,0.04)';
+    for (var i = 0; i < 80; i++) {
+      var sx = MARGIN + (i * 97 % (W - 2 * MARGIN));
+      var sy = SURF_Y + 12 + (i * 71 % (PH - SURF_Y - 20));
+      pc.beginPath(); pc.arc(sx, sy, 1.2, 0, Math.PI * 2); pc.fill();
     }
 
-    pc.strokeStyle = '#c4a882';
-    pc.lineWidth = 2;
-    pc.beginPath(); pc.moveTo(0, SURF_Y); pc.lineTo(W, SURF_Y); pc.stroke();
+    // Dashed antenna track line
+    pc.strokeStyle = 'rgba(200,114,58,0.45)';
+    pc.lineWidth = 1.5;
+    pc.setLineDash([6, 5]);
+    pc.beginPath(); pc.moveTo(MARGIN, SURF_Y - 18); pc.lineTo(W - MARGIN, SURF_Y - 18); pc.stroke();
+    pc.setLineDash([]);
 
     var d = getDepth();
     var objPixX = nx(OBJ_NX);
     var objPixY = physY(d);
     var antennaX = nx(t);
 
+    // Pulse arcs
     pc.save();
-    pc.beginPath();
-    pc.rect(0, SURF_Y, W, PH - SURF_Y);
-    pc.clip();
-
-    var maxDist = Math.sqrt(Math.pow(W, 2) + Math.pow(PH, 2));
-
+    pc.beginPath(); pc.rect(0, SURF_Y + 6, W, PH - SURF_Y - 6); pc.clip();
+    var maxDist = Math.sqrt(W * W + PH * PH);
     for (var p = 0; p < pulses.length; p++) {
       var pulse = pulses[p];
       var age = t - pulse.t;
       if (age < 0) continue;
       var r = age * (W - 2 * MARGIN) * 2.2;
       if (r > maxDist) continue;
-      var alpha = Math.max(0, 0.55 - age * 3.5);
+      var alpha = Math.max(0, 0.45 - age * 3.0);
       if (alpha < 0.01) continue;
-
       var px = nx(pulse.xt);
       var dToObj = Math.sqrt(Math.pow(px - objPixX, 2) + Math.pow(SURF_Y - objPixY, 2));
-
       pc.beginPath();
-      pc.arc(px, SURF_Y, r, 0, Math.PI);
-      pc.strokeStyle = 'rgba(100, 200, 255, ' + (alpha * 0.9) + ')';
-      pc.lineWidth = 1.5;
+      pc.arc(px, SURF_Y + 6, r, 0, Math.PI);
+      pc.strokeStyle = 'rgba(210,170,100,' + (alpha * 0.7) + ')';
+      pc.lineWidth = 1.2;
       pc.stroke();
-
       var hit = Math.abs(r - dToObj);
-      if (hit < 12) {
-        var hitIntensity = Math.max(0, 1 - hit / 12);
+      if (hit < 14) {
+        var hi = Math.max(0, 1 - hit / 14);
         pc.beginPath();
-        pc.arc(objPixX, objPixY, 20, 0, Math.PI * 2);
-        pc.fillStyle = 'rgba(255, 200, 50, ' + (hitIntensity * 0.5) + ')';
+        pc.arc(objPixX, objPixY, 22, 0, Math.PI * 2);
+        pc.fillStyle = 'rgba(232,160,80,' + (hi * 0.4) + ')';
         pc.fill();
         pc.beginPath();
         pc.moveTo(objPixX, objPixY);
-        pc.lineTo(px, SURF_Y);
-        pc.strokeStyle = 'rgba(251, 191, 36, ' + (alpha * hitIntensity * 1.2) + ')';
+        pc.lineTo(px, SURF_Y + 6);
+        pc.strokeStyle = 'rgba(232,160,80,' + (alpha * hi * 1.3) + ')';
         pc.lineWidth = 1.5;
         pc.setLineDash([4, 4]);
         pc.stroke();
@@ -378,72 +385,76 @@
     }
     pc.restore();
 
-    pc.strokeStyle = 'rgba(255,255,255,0.12)';
+    // Vertical depth guide
+    pc.strokeStyle = 'rgba(200,160,100,0.15)';
     pc.lineWidth = 1;
-    pc.setLineDash([3, 6]);
+    pc.setLineDash([2, 5]);
     pc.beginPath();
-    pc.moveTo(objPixX, SURF_Y + 4);
-    pc.lineTo(objPixX, objPixY - 12);
+    pc.moveTo(objPixX, SURF_Y + 8);
+    pc.lineTo(objPixX, objPixY - 14);
     pc.stroke();
     pc.setLineDash([]);
 
-    var glow = pc.createRadialGradient(objPixX, objPixY, 0, objPixX, objPixY, 28);
-    glow.addColorStop(0, 'rgba(74, 144, 217, 0.35)');
-    glow.addColorStop(1, 'rgba(74, 144, 217, 0)');
+    // Object: orange concentric rings (like the sim markers)
+    var glow = pc.createRadialGradient(objPixX, objPixY, 0, objPixX, objPixY, 30);
+    glow.addColorStop(0, 'rgba(232,160,80,0.3)');
+    glow.addColorStop(1, 'rgba(232,160,80,0)');
     pc.fillStyle = glow;
-    pc.beginPath(); pc.arc(objPixX, objPixY, 28, 0, Math.PI * 2); pc.fill();
+    pc.beginPath(); pc.arc(objPixX, objPixY, 30, 0, Math.PI * 2); pc.fill();
 
-    pc.beginPath(); pc.arc(objPixX, objPixY, 10, 0, Math.PI * 2);
-    pc.fillStyle = '#2563eb'; pc.fill();
-    pc.strokeStyle = '#7ab3e8'; pc.lineWidth = 2; pc.stroke();
-    pc.font = '10px system-ui'; pc.fillStyle = 'rgba(255,255,255,0.5)';
+    pc.beginPath(); pc.arc(objPixX, objPixY, 14, 0, Math.PI * 2);
+    pc.strokeStyle = '#C8723A'; pc.lineWidth = 2; pc.stroke();
+    pc.beginPath(); pc.arc(objPixX, objPixY, 7, 0, Math.PI * 2);
+    pc.fillStyle = '#E8A06A'; pc.fill();
+
+    pc.font = '10px system-ui'; pc.fillStyle = 'rgba(200,160,100,0.6)';
     pc.textAlign = 'center';
-    pc.fillText('ducto', objPixX, objPixY + 24);
+    pc.fillText('ducto', objPixX, objPixY + 28);
 
-    var aw = 28, ah = 14;
-    pc.fillStyle = '#f8fafc';
-    pc.fillRect(antennaX - aw/2, SURF_Y - ah - 4, aw, ah);
-    pc.strokeStyle = '#94a3b8'; pc.lineWidth = 1;
-    pc.strokeRect(antennaX - aw/2, SURF_Y - ah - 4, aw, ah);
-    pc.fillStyle = '#ef4444';
-    pc.fillRect(antennaX - 4, SURF_Y - 4, 8, 4);
-    pc.font = 'bold 10px system-ui'; pc.fillStyle = '#1e293b';
-    pc.textAlign = 'center';
-    pc.fillText('GPR', antennaX, SURF_Y - 11);
-
-    if (t < 0.95) {
-      pc.strokeStyle = 'rgba(255,255,255,0.5)'; pc.lineWidth = 1.5;
-      var ax2 = antennaX + 18;
-      pc.beginPath();
-      pc.moveTo(ax2, SURF_Y - 18);
-      pc.lineTo(ax2 + 8, SURF_Y - 18);
-      pc.moveTo(ax2 + 5, SURF_Y - 21);
-      pc.lineTo(ax2 + 8, SURF_Y - 18);
-      pc.lineTo(ax2 + 5, SURF_Y - 15);
-      pc.stroke();
-    }
+    // Antenna: amber square (like the sim)
+    var aw = 22, ah = 16;
+    pc.fillStyle = '#C8723A';
+    pc.fillRect(antennaX - aw/2, SURF_Y - 18 - ah/2, aw, ah);
+    pc.strokeStyle = '#E8A06A'; pc.lineWidth = 1.5;
+    pc.strokeRect(antennaX - aw/2, SURF_Y - 18 - ah/2, aw, ah);
   }
 
   function addRadarScan(t) {
     var d = getDepth();
     var dx = t - OBJ_NX;
     var dApparent = Math.sqrt(dx * dx + d * d);
-    var yNorm = dApparent / 0.9;
-    var reflY = Math.min(yNorm * (RH - 20) + 8, RH - 4);
+    // Normalize so vertex always appears near top, arms spread to bottom
+    var dMin = d;
+    var dMax = Math.sqrt(0.25 + d * d);
+    var norm = Math.min((dApparent - dMin) / (dMax - dMin), 1);
+    var reflY = 18 + norm * (RH - 32);
+
     var pixX = Math.round(nx(t));
 
-    rc.fillStyle = '#050d1a';
+    // Column background wash
+    rc.fillStyle = 'rgba(18,13,8,0.96)';
     rc.fillRect(pixX - 1, 0, 3, RH);
 
-    var sigma2 = 60;
-    var span = 22;
-    for (var y = Math.max(0, reflY - span); y < Math.min(RH, reflY + span); y++) {
+    // Subtle horizontal band noise
+    for (var i = 0; i < 3; i++) {
+      var ny2 = Math.floor(reflY - 30 + i * 22 + (pixX % 7));
+      if (ny2 > 0 && ny2 < RH) {
+        rc.fillStyle = 'rgba(180,140,80,0.04)';
+        rc.fillRect(pixX - 1, ny2, 3, 2);
+      }
+    }
+
+    // Hyperbola mark in amber/orange
+    var sigma2 = 52;
+    var span = 20;
+    for (var y = Math.max(0, Math.floor(reflY) - span); y < Math.min(RH, Math.floor(reflY) + span); y++) {
       var dist2 = (y - reflY) * (y - reflY);
       var intensity = Math.exp(-dist2 / sigma2);
-      if (intensity < 0.02) continue;
-      var g = Math.round(232 * intensity);
-      var b = Math.round(122 * intensity);
-      rc.fillStyle = 'rgba(0,' + g + ',' + b + ',' + Math.min(intensity * 1.1, 1) + ')';
+      if (intensity < 0.025) continue;
+      var r = Math.round(232 * intensity + 60 * (1 - intensity));
+      var g = Math.round(140 * intensity + 20 * (1 - intensity));
+      var b = Math.round(40 * intensity);
+      rc.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + Math.min(intensity * 1.3, 1) + ')';
       rc.fillRect(pixX - 1, y, 3, 1);
     }
   }
