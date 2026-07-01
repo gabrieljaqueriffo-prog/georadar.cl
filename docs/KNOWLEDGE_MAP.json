@@ -140,14 +140,6 @@
       "footer_keyword": "Selector de antena GPR"
     },
     {
-      "path": "/herramientas/formacion-hiperbola/",
-      "file": "herramientas/formacion-hiperbola/index.html",
-      "title": "Formación de hipérbola GPR",
-      "section": "herramientas",
-      "type": "tool",
-      "footer_keyword": "Herramientas GPR"
-    },
-    {
       "path": "/glosario/",
       "file": "glosario/index.html",
       "title": "Glosario GPR",
