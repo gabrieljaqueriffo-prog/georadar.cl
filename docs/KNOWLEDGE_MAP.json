@@ -132,6 +132,14 @@
       "footer_keyword": "Calculadora de viabilidad GPR"
     },
     {
+      "path": "/herramientas/selector-antena/",
+      "file": "herramientas/selector-antena/index.html",
+      "title": "Selector de antena GPR",
+      "section": "herramientas",
+      "type": "tool",
+      "footer_keyword": "Selector de antena GPR"
+    },
+    {
       "path": "/glosario/",
       "file": "glosario/index.html",
       "title": "Glosario GPR",
@@ -168,7 +176,12 @@
     { "from": "/mentoria/", "to": "/glosario/", "note": "mentoría menciona términos técnicos" },
     { "from": "/mentoria/", "to": "/biblioteca/", "note": "mentoría remite a recursos previos" },
     { "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/", "to": "/glosario/", "note": "artículo usa términos del glosario" },
-    { "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/", "to": "/herramientas/necesito-gpr/", "note": "artículo debe remitir a herramienta de decisión" }
+    { "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/", "to": "/herramientas/necesito-gpr/", "note": "artículo debe remitir a herramienta de decisión" },
+    { "from": "/herramientas/selector-antena/", "to": "/glosario/", "note": "herramienta usa términos del glosario" },
+    { "from": "/herramientas/selector-antena/", "to": "/herramientas/calculadora-profundidad/", "note": "herramientas complementarias" },
+    { "from": "/herramientas/calculadora-profundidad/", "to": "/herramientas/selector-antena/", "note": "herramientas complementarias" },
+    { "from": "/glosario/", "to": "/herramientas/selector-antena/", "note": "glosario debe enlazar a herramienta de antena" },
+    { "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/", "to": "/herramientas/selector-antena/", "note": "artículo sobre frecuencia debe enlazar al selector" }
   ],
 
   "min_incoming_links": {
