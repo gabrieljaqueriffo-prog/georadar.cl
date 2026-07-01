@@ -55,25 +55,29 @@
 .demo-wrap {
   background: #0f1923;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   margin: 2rem 0;
   color: #e2e8f0;
 }
-.demo-subtitle {
-  font-size: 0.9rem;
-  color: #94a3b8;
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
+.demo-panel-tag {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #475569;
+  margin: 0 0 4px;
+  padding-left: 2px;
 }
-.demo-panels { position: relative; }
-.demo-panel-label {
-  position: absolute; font-size: 0.65rem; text-transform: uppercase;
-  letter-spacing: 0.07em; color: #64748b; z-index: 1; left: 10px; top: 7px;
+.demo-canvas-wrap { position: relative; }
+#physCanvas {
+  display: block; width: 100%; aspect-ratio: 760 / 200;
+  border-radius: 6px 6px 0 0; background: #1a2744;
+  border-bottom: 2px solid #1e3a5f;
 }
-.demo-panel-label.radar-label { top: 237px; }
-canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
-#physCanvas { border-radius: 6px 6px 0 0; background: #1a2744; border-bottom: 2px solid #1e3a5f; }
-#radarCanvas { border-radius: 0 0 6px 6px; background: #050d1a; }
+#radarCanvas {
+  display: block; width: 100%; aspect-ratio: 760 / 200;
+  border-radius: 0 0 6px 6px; background: #050d1a;
+  margin-bottom: 0;
+}
 .demo-controls {
   margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;
 }
@@ -86,14 +90,16 @@ canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
 .demo-btn-reset { background: #1e3a5f; color: #94a3b8; }
 .demo-btn-reset:hover { background: #2d4f78; color: #e2e8f0; }
 .demo-ctrl { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #94a3b8; }
-.demo-ctrl input[type=range] { width: 90px; accent-color: #2563eb; cursor: pointer; }
-.demo-legend { margin-top: 1rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.demo-ctrl input[type=range] { width: 100px; accent-color: #2563eb; cursor: pointer; }
+.demo-legend { margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 .demo-leg { font-size: 0.75rem; color: #94a3b8; display: flex; align-items: center; gap: 0.35rem; }
-.demo-leg-swatch { width: 22px; height: 3px; border-radius: 2px; }
+.demo-leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.demo-leg-line { width: 20px; height: 3px; border-radius: 2px; flex-shrink: 0; }
 .demo-insight {
   margin-top: 1rem; padding: 0.8rem 1rem;
   background: rgba(37, 99, 235, 0.1); border-left: 3px solid #2563eb;
-  border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #94a3b8; line-height: 1.55;
+  border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #94a3b8; line-height: 1.6;
+  min-height: 3.5rem;
 }
 .demo-insight strong { color: #93c5fd; }
 </style>
@@ -133,11 +139,13 @@ canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
   <div class="container">
 
     <div class="demo-wrap">
-      <div class="demo-panels">
-        <span class="demo-panel-label">Sección transversal — física real</span>
-        <span class="demo-panel-label radar-label">Radargrama — lo que registra el equipo</span>
-        <canvas id="physCanvas" width="760" height="220" aria-label="Sección transversal física con antena GPR y objeto enterrado"></canvas>
-        <canvas id="radarCanvas" width="760" height="220" aria-label="Radargrama construyéndose en tiempo real"></canvas>
+      <p class="demo-panel-tag">Sección transversal — física real</p>
+      <div class="demo-canvas-wrap">
+        <canvas id="physCanvas" width="760" height="200" aria-label="Sección transversal física con antena GPR y objeto enterrado"></canvas>
+      </div>
+      <p class="demo-panel-tag" style="margin-top:6px;">Radargrama — lo que registra el equipo</p>
+      <div class="demo-canvas-wrap">
+        <canvas id="radarCanvas" width="760" height="200" aria-label="Radargrama construyéndose en tiempo real"></canvas>
       </div>
 
       <div class="demo-controls">
@@ -148,17 +156,13 @@ canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
           <input type="range" id="depthSlider" min="15" max="72" value="38" aria-label="Control de profundidad del objeto">
           <span id="depthVal">moderada</span>
         </div>
-        <div class="demo-ctrl">
-          <label for="speedSlider">Velocidad</label>
-          <input type="range" id="speedSlider" min="1" max="5" value="2" aria-label="Control de velocidad de animación">
-        </div>
       </div>
 
       <div class="demo-legend">
-        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#4a90d9; height:10px; width:10px; border-radius:50%;"></div>Objeto real</div>
-        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#64c8ff;"></div>Pulso emitido</div>
-        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#fbbf24;"></div>Señal reflejada</div>
-        <div class="demo-leg"><div class="demo-leg-swatch" style="background:#00e87a;"></div>Hipérbola en radargrama</div>
+        <div class="demo-leg"><div class="demo-leg-dot" style="background:#4a90d9;"></div>Objeto real</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:#64c8ff;"></div>Pulso emitido</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:#fbbf24;"></div>Señal reflejada</div>
+        <div class="demo-leg"><div class="demo-leg-line" style="background:#00e87a;"></div>Hipérbola en radargrama</div>
       </div>
 
       <div class="demo-insight" id="insight" role="status" aria-live="polite">
@@ -260,23 +264,22 @@ canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
   var playBtn = document.getElementById('playBtn');
   var resetBtn = document.getElementById('resetBtn');
   var depthSlider = document.getElementById('depthSlider');
-  var speedSlider = document.getElementById('speedSlider');
   var depthVal = document.getElementById('depthVal');
   var insightEl = document.getElementById('insight');
 
-  var W = 760, PH = 220, RH = 220;
-  var SURF_Y = 50;
+  var W = 760, PH = 200, RH = 200;
+  var SURF_Y = 46;
   var MARGIN = 30;
   var OBJ_NX = 0.5;
+  var SPEED = 0.0014;
 
   var t = 0, playing = false, animId = null;
   var pulses = [];
   var lastPulseAt = -999;
 
   function nx(v) { return MARGIN + v * (W - 2 * MARGIN); }
-  function physY(normDepth) { return SURF_Y + normDepth * (PH - SURF_Y - 15); }
+  function physY(normDepth) { return SURF_Y + normDepth * (PH - SURF_Y - 12); }
   function getDepth() { return parseInt(depthSlider.value) / 100; }
-  function getSpeed() { return parseInt(speedSlider.value) * 0.0018; }
 
   function depthLabel(d) {
     if (d < 0.25) return 'superficial';
@@ -467,7 +470,7 @@ canvas { display: block; width: 100%; aspect-ratio: 760 / 220; }
 
   function frame() {
     if (!playing) return;
-    t += getSpeed();
+    t += SPEED;
 
     if (t - lastPulseAt > 0.038) {
       pulses.push({ xt: t, t: t });
