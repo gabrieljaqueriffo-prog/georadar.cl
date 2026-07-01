@@ -285,12 +285,15 @@
   }
 
   function reflY(antennaT, d) {
-    var dx = antennaT - OBJ_NX;
-    var dApparent = Math.sqrt(dx * dx + d * d);
-    var dMin = d;
-    var dMax = Math.sqrt(0.25 + d * d);
-    var norm = Math.min((dApparent - dMin) / (dMax - dMin), 1);
-    return 18 + norm * (RH - 32);
+    var dx = antennaT - OBJ_NX; // -0.5 … +0.5
+    // Unit hyperbola: h(x) = sqrt((x/d)^2 + 1), always >= 1 at vertex
+    var r = dx / d;
+    var h = Math.sqrt(r * r + 1);
+    // Normalize so vertex=0, edges=1 (preserves curvature variation with depth)
+    var hMax = Math.sqrt((0.5 / d) * (0.5 / d) + 1);
+    var norm = Math.min((h - 1) / (hMax - 1), 1);
+    // Vertex at 22% height, arms open down to 88%
+    return 0.22 * RH + norm * 0.66 * RH;
   }
 
   function drawDepthLabels() {
