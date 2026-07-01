@@ -292,8 +292,8 @@
     // Normalize so vertex=0, edges=1 (preserves curvature variation with depth)
     var hMax = Math.sqrt((0.5 / d) * (0.5 / d) + 1);
     var norm = Math.min((h - 1) / (hMax - 1), 1);
-    // Vertex at 22% height, arms open down to 88%
-    return 0.22 * RH + norm * 0.66 * RH;
+    // Vertex at 8% height, arms open down to 88%
+    return 0.08 * RH + norm * 0.80 * RH;
   }
 
   function drawDepthLabels() {
