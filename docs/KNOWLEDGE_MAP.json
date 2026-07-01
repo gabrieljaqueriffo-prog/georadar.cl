@@ -1,0 +1,178 @@
+{
+  "version": "1",
+  "description": "Mapa estructurado del sitio georadar.cl. Usado por scripts/audit.js para validar integridad de links, cobertura del glosario y conexiones requeridas entre páginas. Actualizar cuando se agregue cualquier página nueva.",
+
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Inicio",
+      "section": "home",
+      "type": "landing",
+      "footer_keyword": "Georradar GPR Chile"
+    },
+    {
+      "path": "/mineria/",
+      "file": "mineria/index.html",
+      "title": "Minería",
+      "section": "mineria",
+      "type": "service",
+      "footer_keyword": "Georradar minería Chile"
+    },
+    {
+      "path": "/mineria/casos/socavones-espesador-t5/",
+      "file": "mineria/casos/socavones-espesador-t5/index.html",
+      "title": "Socavones Espesador T5",
+      "section": "mineria",
+      "type": "case",
+      "footer_keyword": "Georradar minería Chile"
+    },
+    {
+      "path": "/utilities/",
+      "file": "utilities/index.html",
+      "title": "Utilities",
+      "section": "utilities",
+      "type": "service",
+      "footer_keyword": "líneas soterradas"
+    },
+    {
+      "path": "/utilities/casos/accesos-metro-de-santiago/",
+      "file": "utilities/casos/accesos-metro-de-santiago/index.html",
+      "title": "Accesos Metro de Santiago",
+      "section": "utilities",
+      "type": "case",
+      "footer_keyword": "líneas soterradas"
+    },
+    {
+      "path": "/construccion/",
+      "file": "construccion/index.html",
+      "title": "Construcción",
+      "section": "construccion",
+      "type": "service",
+      "footer_keyword": "Georradar construcción Chile"
+    },
+    {
+      "path": "/forense/",
+      "file": "forense/index.html",
+      "title": "Forense",
+      "section": "forense",
+      "type": "service",
+      "footer_keyword": "Peritaje georradar Chile"
+    },
+    {
+      "path": "/forense/casos/cip-san-joaquin-cerro-chena/",
+      "file": "forense/casos/cip-san-joaquin-cerro-chena/index.html",
+      "title": "CIP San Joaquín y Cerro Chena",
+      "section": "forense",
+      "type": "case",
+      "footer_keyword": "Georradar forense Chile"
+    },
+    {
+      "path": "/forense/casos/sitio-iran-3037-venda-sexy/",
+      "file": "forense/casos/sitio-iran-3037-venda-sexy/index.html",
+      "title": "Sitio Irán 3037 / Venda Sexy",
+      "section": "forense",
+      "type": "case",
+      "footer_keyword": "Georradar forense Chile"
+    },
+    {
+      "path": "/biblioteca/",
+      "file": "biblioteca/index.html",
+      "title": "Biblioteca técnica",
+      "section": "biblioteca",
+      "type": "index",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
+      "path": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "file": "biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/index.html",
+      "title": "Cómo tomar decisiones antes de intervenir el subsuelo",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
+      "path": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/",
+      "file": "biblioteca/como-influye-la-frecuencia-de-antena-gpr/index.html",
+      "title": "Cómo influye la frecuencia de antena GPR",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
+      "path": "/mentoria/",
+      "file": "mentoria/index.html",
+      "title": "Mentoría GPR",
+      "section": "mentoria",
+      "type": "service",
+      "footer_keyword": "Mentoría GPR especializada"
+    },
+    {
+      "path": "/herramientas/",
+      "file": "herramientas/index.html",
+      "title": "Herramientas",
+      "section": "herramientas",
+      "type": "index",
+      "footer_keyword": "Herramientas GPR"
+    },
+    {
+      "path": "/herramientas/necesito-gpr/",
+      "file": "herramientas/necesito-gpr/index.html",
+      "title": "¿Necesito un estudio GPR?",
+      "section": "herramientas",
+      "type": "tool",
+      "footer_keyword": "Necesito un estudio GPR"
+    },
+    {
+      "path": "/herramientas/calculadora-profundidad/",
+      "file": "herramientas/calculadora-profundidad/index.html",
+      "title": "Calculadora de viabilidad GPR",
+      "section": "herramientas",
+      "type": "tool",
+      "footer_keyword": "Calculadora de viabilidad GPR"
+    },
+    {
+      "path": "/glosario/",
+      "file": "glosario/index.html",
+      "title": "Glosario GPR",
+      "section": "glosario",
+      "type": "glossary",
+      "footer_keyword": "Glosario GPR"
+    }
+  ],
+
+  "glosario_terms": {
+    "georradar": { "anchor": "#georradar", "patterns": ["georradar", "GPR"] },
+    "radargrama": { "anchor": "#radargrama", "patterns": ["radargrama", "radargramas"] },
+    "socavon": { "anchor": "#socavon", "patterns": ["socavón", "socavones"] },
+    "hiperbola": { "anchor": "#hiperbola", "patterns": ["hipérbola", "hipérbolas"] },
+    "antena": { "anchor": "#antena", "patterns": ["antena GPR", "antenas GPR"] },
+    "atenuacion": { "anchor": "#atenuacion", "patterns": ["atenuación"] },
+    "velocidad-propagacion": { "anchor": "#velocidad-propagacion", "patterns": ["velocidad de propagación"] },
+    "espesador": { "anchor": "#espesador", "patterns": ["espesador", "espesadores"] },
+    "grilla-prospeccion": { "anchor": "#grilla-prospeccion", "patterns": ["grilla de prospección", "grillas de prospección"] },
+    "georreferenciacion": { "anchor": "#georreferenciacion", "patterns": ["georreferenciación", "georreferenciada", "georreferenciadas", "georreferenciados"] },
+    "cadena-de-custodia": { "anchor": "#cadena-de-custodia", "patterns": ["cadena de custodia"] }
+  },
+
+  "required_connections": [
+    { "from": "/mineria/casos/socavones-espesador-t5/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
+    { "from": "/utilities/casos/accesos-metro-de-santiago/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
+    { "from": "/forense/casos/cip-san-joaquin-cerro-chena/", "to": "/forense/casos/sitio-iran-3037-venda-sexy/", "note": "casos forenses deben enlazarse entre sí" },
+    { "from": "/forense/casos/sitio-iran-3037-venda-sexy/", "to": "/forense/casos/cip-san-joaquin-cerro-chena/", "note": "casos forenses deben enlazarse entre sí" },
+    { "from": "/forense/casos/cip-san-joaquin-cerro-chena/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
+    { "from": "/forense/casos/sitio-iran-3037-venda-sexy/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
+    { "from": "/glosario/", "to": "/mineria/casos/socavones-espesador-t5/", "note": "glosario debe enlazar a casos reales" },
+    { "from": "/glosario/", "to": "/forense/casos/cip-san-joaquin-cerro-chena/", "note": "glosario debe enlazar a casos reales" },
+    { "from": "/glosario/", "to": "/forense/casos/sitio-iran-3037-venda-sexy/", "note": "glosario debe enlazar a casos reales" },
+    { "from": "/mentoria/", "to": "/glosario/", "note": "mentoría menciona términos técnicos" },
+    { "from": "/mentoria/", "to": "/biblioteca/", "note": "mentoría remite a recursos previos" },
+    { "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/", "to": "/glosario/", "note": "artículo usa términos del glosario" },
+    { "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/", "to": "/herramientas/necesito-gpr/", "note": "artículo debe remitir a herramienta de decisión" }
+  ],
+
+  "min_incoming_links": {
+    "default": 2,
+    "exceptions": ["/", "/404.html"]
+  }
+}
