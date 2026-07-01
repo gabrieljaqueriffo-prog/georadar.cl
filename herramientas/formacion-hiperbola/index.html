@@ -313,50 +313,49 @@
 
     // Subtle horizontal ground-return bands
     for (var i = 0; i < RH; i++) {
-      var band = (Math.sin(i * 0.18) * 0.5 + 0.5) * 0.07 + 0.02;
+      var band = (Math.sin(i * 0.18) * 0.5 + 0.5) * 0.06 + 0.015;
       rc.fillStyle = 'rgba(180,150,100,' + band + ')';
       rc.fillRect(0, i, W, 1);
     }
 
     // Horizontal grid lines
-    rc.strokeStyle = 'rgba(200,160,100,0.08)';
+    rc.strokeStyle = 'rgba(200,160,100,0.07)';
     rc.lineWidth = 1;
     for (var g = 0; g < 4; g++) {
-      var gy = 10 + g * ((RH - 14) / 3) - 3;
+      var gy = Math.round(10 + g * ((RH - 14) / 3)) - 3;
       rc.beginPath(); rc.moveTo(32, gy); rc.lineTo(W, gy); rc.stroke();
     }
 
-    // Draw FULL hyperbola across all antenna positions
-    // 5 wavelet cycles: core bright + fading halos
+    // Draw FULL hyperbola using Gaussian blobs per column (GPR-authentic look)
+    // Each column gets a vertical smear centered on the reflection point
+    // 3 wavelet cycles: negative / main / positive
+    var cycleOffsets = [-7, 0, 7];
+    var cycleAlphas  = [0.5, 1.0, 0.5]; // side cycles dimmer
+    var sigma2 = 38;
+    var span = 22;
+
     var steps = W - 2 * MARGIN;
-    var offsets  = [-10, -5, 0, 5, 10];
-    var alphas   = [0.18, 0.42, 1.0, 0.42, 0.18];
-    var widths   = [1.0,  1.5, 2.5, 1.5, 1.0];
+    for (var s = 0; s <= steps; s++) {
+      var aT = s / steps;
+      var pixX = Math.round(nx(aT));
+      var centerY = reflY(aT, d);
 
-    for (var ci = 0; ci < offsets.length; ci++) {
-      var pathAlpha = alphas[ci];
-      var lw = widths[ci];
-      var yOffset = offsets[ci];
+      for (var ci = 0; ci < cycleOffsets.length; ci++) {
+        var cycY = centerY + cycleOffsets[ci];
+        var cAlpha = cycleAlphas[ci];
 
-      rc.beginPath();
-      var started = false;
-      for (var s = 0; s <= steps; s++) {
-        var aT = s / steps;
-        var pixX = Math.round(nx(aT));
-        var ry = reflY(aT, d) + yOffset;
-        if (ry < 2 || ry > RH - 2) { started = false; continue; }
-        if (!started) { rc.moveTo(pixX, ry); started = true; }
-        else { rc.lineTo(pixX, ry); }
+        for (var y = Math.max(0, Math.floor(cycY) - span);
+                 y < Math.min(RH, Math.floor(cycY) + span); y++) {
+          var dist2 = (y - cycY) * (y - cycY);
+          var gauss = Math.exp(-dist2 / sigma2) * cAlpha;
+          if (gauss < 0.02) continue;
+          var rv = Math.round(232 * gauss + 18 * (1 - gauss));
+          var gv = Math.round(140 * gauss + 10 * (1 - gauss));
+          var bv = Math.round(40  * gauss);
+          rc.fillStyle = 'rgba(' + rv + ',' + gv + ',' + bv + ',' + Math.min(gauss * 1.4, 1) + ')';
+          rc.fillRect(pixX, y, 2, 1);
+        }
       }
-
-      // Color: amber/orange for core, warm dim for halos
-      var isCore = (ci === 2);
-      var r = isCore ? 232 : 180;
-      var g2 = isCore ? 140 : 100;
-      var b = isCore ? 40 : 20;
-      rc.strokeStyle = 'rgba(' + r + ',' + g2 + ',' + b + ',' + pathAlpha + ')';
-      rc.lineWidth = lw;
-      rc.stroke();
     }
 
     // Depth labels on top
