@@ -60,6 +60,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://georadar.cl/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://georadar.cl/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
