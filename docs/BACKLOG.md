@@ -103,6 +103,8 @@
 
 - **Cards de "Casos en minería" sin evidencia.** Las cards de Codelco División Andina, BHP Spence, SQM y Minera Centinela (`mineria/index.html`) no tienen enlace ni caso real documentado detrás — son afirmaciones sin respaldo verificable. Quedan como deuda hasta que existan casos reales para cada una o se reformulen como testimoniales sin pretensión de evidencia.
 
+- **Candidato a artículo Canon — Detección de fugas/tuberías con GPR: qué puede y qué no puede hacer.** Surge de un lead real registrado en BEDROCK (Andrius Marcano / Todo en orden SpA, 2026-07-02, ver `Documents/bedrock/DOMAIN/checklist-deteccion-fugas.md`): el punto central es que el agua atenúa fuertemente la señal electromagnética (`/glosario/#atenuacion`), por lo que un sitio saturado por la fuga puede impedir detectar el ducto mismo, no solo confirmar la fuga. No se crea todavía — con 1 solo lead no cumple la "regla del tercer activo" de `CLAUDE.md §6` (debe representar un patrón repetido, no un caso único). Posiblemente no requiera artículo aparte: podría evolucionar el artículo existente `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/` en vez de crear uno nuevo (`CLAUDE.md §5`: priorizar reducir deuda de Canon sobre crear contenido nuevo). Revisar cuando se acumulen más de los 30 leads que Gabriel está registrando en BEDROCK y este patrón (tuberías/fugas) se repita.
+
 ---
 
 ## Deuda técnica
