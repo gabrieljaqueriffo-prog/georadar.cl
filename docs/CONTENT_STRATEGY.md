@@ -441,7 +441,16 @@ Todo activo editorial debe cumplir antes de pasar a estado PUBLICADO:
 - [ ] Estado inicial asignado en BACKLOG.
 - [ ] Sin rayas de interrupción tipo "—X—" o "&mdash;X&mdash;" dentro de una frase (ver nota debajo).
 
-**Nota sobre rayas de interrupción (2026-06-30):** el patrón "frase &mdash;aclaración o lista&mdash; resto de la frase" es un tic reconocible de texto generado por IA y está prohibido en este sitio. Cuando se necesite una aclaración o un inciso, se reescribe como oración con coma, dos puntos, o se separa en dos oraciones. La raya larga (&mdash;) solo se permite al final de una frase para introducir una idea que la cierra, nunca en pares para encerrar un inciso a mitad de oración.
+**Nota sobre rayas de interrupción y patrones de escritura IA (2026-06-30, ampliado 2026-07-03):**
+
+Patrones prohibidos porque son marcas reconocibles de texto generado por IA:
+
+1. **Raya de inciso doble:** "frase &mdash;aclaración&mdash; resto" → reescribir con coma o separar en dos oraciones.
+2. **Raya de remate explicativo:** "descripción &mdash; y eso X" / "descripción &mdash; lo que significa X" / "descripción &mdash; esto cambia X" → el guión largo seguido de una consecuencia que explica lo anterior. Reescribir como oración separada o con punto y seguido.
+3. **Estructura "no es X: es Y"** usada para rematar con la verdad revelada: "no es una limitación: es información crítica". Permitida solo si la tensión es genuina y no decorativa.
+4. **Tricolon con consecuencia:** tres elementos paralelos seguidos de una frase que los sintetiza introduced por "eso significa que" o "en definitiva". Separar o eliminar la síntesis si es obvia.
+
+La prueba de cualquier frase: ¿sonaría raro en una conversación técnica real entre especialistas? Si sí, reescribir.
 
 ### 8.3 Cadencia
 
