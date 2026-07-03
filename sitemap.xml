@@ -48,6 +48,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://georadar.cl/construccion/casos/prospeccion-aeropuerto-chacalluta/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://georadar.cl/biblioteca/</loc>

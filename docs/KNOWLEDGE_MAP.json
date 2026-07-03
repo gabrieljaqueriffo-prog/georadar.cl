@@ -76,6 +76,14 @@
       "footer_keyword": "Georradar forense Chile"
     },
     {
+      "path": "/construccion/casos/prospeccion-aeropuerto-chacalluta/",
+      "file": "construccion/casos/prospeccion-aeropuerto-chacalluta/index.html",
+      "title": "Prospección subterránea en Aeropuerto Chacalluta",
+      "section": "construccion",
+      "type": "case",
+      "footer_keyword": "Georradar construcción Chile"
+    },
+    {
       "path": "/biblioteca/",
       "file": "biblioteca/index.html",
       "title": "Biblioteca técnica",
