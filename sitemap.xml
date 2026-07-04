@@ -79,6 +79,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://georadar.cl/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://georadar.cl/glosario/</loc>

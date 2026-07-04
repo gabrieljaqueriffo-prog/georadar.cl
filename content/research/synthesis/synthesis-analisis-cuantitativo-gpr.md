@@ -138,7 +138,7 @@ Si un cliente menciona que necesita "medir" algo con el GPR —espesor de capa, 
 
 ## Aprobación de publicación
 
-- **Revisado por Gabriel:** pendiente
-- **Fecha de aprobación:** —
-- **Activo público creado:** —
-- **Notas de la revisión:** —
+- **Revisado por Gabriel:** sí
+- **Fecha de aprobación:** 2026-07-04
+- **Activo público creado:** `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`
+- **Notas de la revisión:** aprobado sin cambios
