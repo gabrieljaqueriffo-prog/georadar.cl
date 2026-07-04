@@ -273,6 +273,78 @@ georadar.cl/
     └── mentorship/
 ```
 
+**Nota importante:** el árbol anterior es la arquitectura objetivo y el patrón conceptual del sistema. No representa la estructura física actual del repositorio. Las carpetas `components/`, `content/services/`, `content/library/`, `content/cases/`, `content/tools/`, `content/mentorship/` y `pages/` no existen en disco. Crear esas carpetas sin una tarea explícita aprobada es un error de ejecución.
+
+### 5.1 Estructura actual del repositorio
+
+Esta es la estructura física real a 2026-07-04:
+
+```
+georadar.cl/
+│
+├── CLAUDE.md
+├── index.html                          ← Inicio
+├── robots.txt
+├── sitemap.xml
+├── favicon.svg
+├── favicon.png
+│
+├── docs/                               ← Documentos de gobernanza del GPOS
+│   ├── PROJECT_VISION.md
+│   ├── NORTH_STAR.md
+│   ├── DECISION_FRAMEWORK.md
+│   ├── ARCHITECTURE.md
+│   ├── DESIGN_SYSTEM.md
+│   ├── CONTENT_STRATEGY.md
+│   ├── ROADMAP.md
+│   ├── BACKLOG.md
+│   ├── DECISIONS.md
+│   ├── CHANGELOG.md
+│   ├── KNOWLEDGE_MAP.json              ← Mapa de rutas para audit.js
+│   └── adr/
+│
+├── content/
+│   └── research/                       ← Evidencia Técnica (sistema ATLAS interno)
+│       ├── intake/
+│       ├── papers/
+│       ├── themes/
+│       └── synthesis/
+│
+├── assets/
+│   ├── css/
+│   │   └── shared.css
+│   └── js/
+│       └── main.js
+│
+├── scripts/
+│   └── audit.js                        ← Pre-commit: valida links, glosario, KNOWLEDGE_MAP
+│
+├── mineria/
+│   └── casos/socavones-espesador-t5/
+├── utilities/
+│   └── casos/accesos-metro-de-santiago/
+├── construccion/
+│   └── casos/prospeccion-aeropuerto-chacalluta/
+├── forense/
+│   ├── casos/cip-san-joaquin-cerro-chena/
+│   └── casos/sitio-iran-3037-venda-sexy/
+├── biblioteca/
+│   ├── como-tomar-decisiones-antes-de-intervenir-el-subsuelo/
+│   ├── como-influye-la-frecuencia-de-antena-gpr/
+│   ├── que-hace-que-un-suelo-sea-dificil-para-el-gpr/
+│   ├── por-que-la-profundidad-del-georradar-depende-del-terreno/
+│   ├── que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/
+│   └── como-afecta-la-humedad-al-georradar/
+├── glosario/
+├── herramientas/
+│   ├── calculadora-profundidad/
+│   ├── necesito-gpr/
+│   └── selector-antena/
+└── mentoria/
+```
+
+Cada ruta pública sirve un `index.html` estático. No hay build step ni generador de páginas. Todos los activos comparten `/assets/css/shared.css` y `/assets/js/main.js`.
+
 ---
 
 ## 6. Convenciones de nombres

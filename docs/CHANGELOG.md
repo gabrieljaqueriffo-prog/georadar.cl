@@ -7,6 +7,20 @@
 
 ---
 
+## 2026-07-04 (actualización)
+
+- **Corrección de gobernanza:** agregada subsección `§5.1 Estructura actual del
+  repositorio` en `ARCHITECTURE.md`. Documenta la estructura física real del
+  sitio estático (rutas públicas, assets, scripts, docs, content/research).
+  Aclara que el árbol en `§5` es arquitectura objetivo y patrón conceptual, no
+  estructura física obligatoria. Previene que una instancia de Claude cree
+  carpetas inexistentes por seguir el árbol conceptual como si fuera la
+  estructura real.
+- `robots.txt` y `sitemap.xml` verificados: completos y correctos, sin cambios
+  necesarios. El sitemap cubre las 22 rutas públicas actuales del sitio.
+
+---
+
 ## 2026-07-04
 
 - **Nuevo:** capacidad de soporte Evidencia Técnica — estructura `content/research/`
