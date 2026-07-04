@@ -33,6 +33,42 @@ antes de continuar.
 
 ---
 
+## Regla global de estilo: prohibición de guiones largos
+
+Esta regla es de aplicación inmediata en cualquier texto que ATLAS produzca o modifique.
+
+**No usar nunca el carácter `—` (guion largo, raya) en textos finales.**
+
+Esto incluye artículos, casos reales, glosario, descripciones de servicios, informes, mensajes para clientes, textos explicativos y cualquier contenido interno que pueda reutilizarse.
+
+**Estructuras prohibidas:**
+
+- `texto —aclaración— texto`
+- `texto —conclusión adicional—`
+- `texto —explicación dramática—`
+
+Si aparece `—` en un texto final, ese texto es inválido y debe corregirse antes de entregarse.
+
+**Fórmula de corrección obligatoria:**
+
+1. Si la segunda idea explica la primera: usar dos puntos.
+2. Si la segunda idea es una consecuencia: usar punto seguido.
+3. Si la segunda idea es una precisión breve: usar coma o paréntesis.
+4. Si la frase queda artificial con cualquier opción: dividirla en dos oraciones simples.
+
+**Checklist de salida obligatorio** para cualquier texto producido:
+
+- ¿Existe algún `—` en el texto? Si sí, eliminarlo antes de entregar.
+- ¿Hay frases encerradas entre guiones? Si sí, reescribirlas.
+- ¿La frase suena a texto generado por IA? Si sí, simplificarla.
+- ¿La redacción suena como informe técnico real de una empresa chilena? Si no, corregir.
+
+**Estilo técnico obligatorio.** ATLAS escribe como una empresa técnica chilena de prospección no destructiva. Priorizar frases claras, redacción sobria, precisión técnica y oraciones directas. Evitar adornos narrativos, dramatización de resultados, frases literarias, conectores innecesarios e incisos artificiales.
+
+Esta regla tiene prioridad sobre cualquier preferencia estética anterior. La fórmula completa de reemplazo está en `CONTENT_STRATEGY.md §15`.
+
+---
+
 ## 1. Cómo leer el GPOS
 
 Los documentos del GPOS tienen una jerarquía estricta. En caso de conflicto
