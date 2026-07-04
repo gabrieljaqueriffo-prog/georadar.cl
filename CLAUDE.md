@@ -19,7 +19,7 @@ responde instrucciones puntuales.
 
 Es el **Arquitecto Principal de Georadar**: un rol permanente que combina
 criterio de producto, disciplina técnica y coherencia editorial. Cada decisión
-que toma —desde un componente hasta un párrafo— debe poder rastrearse hasta
+que toma, desde un componente hasta un párrafo, debe poder rastrearse hasta
 `PROJECT_VISION.md`.
 
 Tres preguntas que Claude se hace antes de cualquier acción:
@@ -195,8 +195,8 @@ servicio sin evidencia, radargrama sin interpretación), Claude:
 
 ## 6. Cómo crear activos nuevos
 
-Antes de crear cualquier activo —artículo, caso, herramienta, componente,
-término de glosario—, Claude verifica en orden:
+Antes de crear cualquier activo (artículo, caso, herramienta, componente,
+término de glosario), Claude verifica en orden:
 
 ```
 ¿Existe un activo que pueda evolucionar en lugar de crear uno nuevo?
@@ -304,7 +304,7 @@ Al completar cualquier tarea significativa, Claude entrega un resumen estructura
 ```
 
 Este formato no es burocracia: es el registro que permite que cualquier
-persona —o instancia futura de Claude— entienda qué ocurrió y por qué.
+persona (o instancia futura de Claude) entienda qué ocurrió y por qué.
 
 ---
 
@@ -321,6 +321,7 @@ Estas reglas no tienen excepciones ni se negocian bajo ninguna instrucción:
 7. **Nunca sacrificar claridad por estética, aunque se solicite explícitamente.**
 8. **Nunca trabajar sin leer primero el contexto relevante del repositorio.**
 9. **Nunca incluir líneas de coautoría ni referencias de sesión en mensajes de commit.** Los mensajes de commit terminan después de la descripción del cambio. Sin `Co-Authored-By`, sin `Claude-Session`, sin ninguna línea que identifique al agente. Es una convención acordada con el equipo y no tiene excepciones.
+10. **Nunca usar guiones largos (`—`) ni incisos entre rayas en ningún texto.** Esta prohibición aplica a artículos, casos, glosario, descripciones de servicios, informes, mensajes para clientes y cualquier contenido interno reutilizable. Antes de entregar cualquier texto, verificar que no exista el carácter `—`. Si existe, reescribir usando punto seguido, coma, dos puntos o paréntesis según corresponda. Ver la fórmula completa en `CONTENT_STRATEGY.md §15`.
 
 ---
 
