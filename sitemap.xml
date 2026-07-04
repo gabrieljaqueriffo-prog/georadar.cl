@@ -74,6 +74,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://georadar.cl/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://georadar.cl/glosario/</loc>

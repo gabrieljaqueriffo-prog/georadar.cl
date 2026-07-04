@@ -129,7 +129,7 @@ Si en el proceso de contacto inicial un cliente menciona características del te
 
 ## Aprobación de publicación
 
-- **Revisado por Gabriel:** pendiente
-- **Fecha de aprobación:**
-- **Activo público creado:**
-- **Notas de la revisión:**
+- **Revisado por Gabriel:** sí
+- **Fecha de aprobación:** 2026-07-04
+- **Activo público creado:** `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`
+- **Notas de la revisión:** aprobado sin cambios
