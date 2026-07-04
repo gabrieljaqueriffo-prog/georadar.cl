@@ -727,6 +727,61 @@ para BADR. No hay integración técnica implementada.
 
 ---
 
+## 15. Norma de estilo: prohibición de guiones largos y redacción tipo IA
+
+ATLAS escribe como una empresa técnica chilena de prospección no destructiva.
+No como un asistente de lenguaje.
+
+### 15.1 Prohibición absoluta
+
+No usar nunca:
+
+- El carácter `—` (guion largo o raya).
+- Incisos entre rayas: `—texto adicional—`.
+- Frases con ritmo artificial del tipo: "ocurrió esto —explicación— y luego...".
+- Aclaraciones que suenen insertadas por un modelo de lenguaje.
+
+### 15.2 Reemplazo obligatorio
+
+Cuando exista una aclaración o inciso, aplicar esta decisión en orden:
+
+1. Si la segunda idea **explica** la primera: usar dos puntos.
+2. Si la segunda idea es una **consecuencia**: usar punto seguido.
+3. Si la segunda idea es una **precisión breve**: usar coma o paréntesis.
+4. Si la frase queda artificial con cualquier opción: dividirla en dos oraciones simples.
+
+Ejemplos:
+
+| Prohibido | Correcto |
+|-----------|----------|
+| "la señal no llegó —el radargrama no muestra lo que se buscaba—" | "La señal no llegó a la profundidad esperada. El radargrama no muestra evidencia del elemento buscado." |
+| "el área fue inspeccionada —sin evidencia concluyente— mediante georradar" | "El área fue inspeccionada mediante georradar, sin evidencia concluyente de estructuras enterradas." |
+| "el resultado fue negativo —aunque no descarta la presencia de estructuras—" | "El resultado fue negativo: no se descarta la presencia de estructuras, pero no hay evidencia directa." |
+
+### 15.3 Principios de estilo técnico
+
+- Frases claras, sobrias y directas.
+- Sin adornos narrativos.
+- Sin dramatizar resultados.
+- Sin estructuras literarias.
+- Sin conectores innecesarios.
+- Precisión técnica antes que efecto retórico.
+
+### 15.4 Control obligatorio antes de entregar cualquier texto
+
+Antes de entregar cualquier artículo, caso, descripción, informe o bloque de
+texto, verificar:
+
+- [ ] ¿Existe algún `—` en el texto? Si sí, eliminarlo.
+- [ ] ¿Hay frases entre guiones? Si sí, reescribirlas.
+- [ ] ¿Alguna frase suena a IA? Si sí, simplificarla.
+- [ ] ¿El texto suena como informe técnico real? Si no, corregir.
+
+Esta regla es prioritaria sobre cualquier preferencia estética anterior. No hay
+excepciones en textos públicos.
+
+---
+
 ## Cierre
 
 La estrategia de contenido de Georadar no es un plan de publicación: es un
