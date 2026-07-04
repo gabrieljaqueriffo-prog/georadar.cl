@@ -117,14 +117,16 @@
             <option value="arena">Suelo arenoso o grava</option>
             <option value="arcilla">Suelo arcilloso</option>
             <option value="roca">Roca</option>
+            <option value="sales">Suelo con sales o minerales conductivos</option>
             <option value="mixto">Material mixto o desconocido</option>
           </select>
         </div>
         <div class="tool-field">
-          <label for="agua">¿Hay agua o humedad alta en el sitio?</label>
+          <label for="agua">¿Hay agua o humedad en el sitio?</label>
           <select id="agua" name="agua">
             <option value="no">No, o nivel bajo</option>
-            <option value="si">Sí, humedad o saturación alta</option>
+            <option value="media">Moderada (lluvia reciente, nivel freático profundo)</option>
+            <option value="alta">Alta (saturación, nivel freático superficial)</option>
           </select>
         </div>
         <div class="tool-field">
@@ -181,7 +183,7 @@
     </div>
     <div class="faq-item reveal">
       <h3>Influencia del terreno</h3>
-      <p>La <a href="/glosario/#atenuacion">atenuación</a> de la señal varía según el material: el agua y la arcilla absorben energía electromagnética con más fuerza que la roca seca o el hormigón. Un mismo equipo, en dos sitios distintos, puede alcanzar profundidades de detección muy diferentes.</p>
+      <p>La <a href="/glosario/#atenuacion">atenuación</a> de la señal varía según el material: el agua y la arcilla absorben energía electromagnética con más fuerza que la roca seca o el hormigón. La <a href="/glosario/#conductividad">conductividad</a> del suelo —no solo la humedad— es el factor decisivo: un suelo con sales disueltas puede limitar la señal mucho más que uno simplemente mojado. Un mismo equipo, en dos sitios distintos, puede alcanzar profundidades de detección muy diferentes. Vea el detalle en <a href="/biblioteca/como-afecta-la-humedad-al-georradar/">Cómo afecta la humedad del suelo a un estudio con georradar</a>.</p>
     </div>
     <div class="faq-item reveal">
       <h3>Limitaciones del método</h3>
@@ -271,17 +273,18 @@
   var textEl = document.getElementById('result-text');
   var factorsEl = document.getElementById('result-factors');
 
-  var ATTEN = { hormigon: 1, arena: 1, roca: 1.2, mixto: 1.5, arcilla: 2 };
+  var ATTEN = { hormigon: 1, arena: 1, roca: 1.2, mixto: 1.5, arcilla: 2, sales: 2.5 };
+  var AGUA_PENALTY = { no: 0, media: 0.6, alta: 1.4 };
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     var profundidad = parseFloat(form.profundidad.value);
     var terreno = form.terreno.value;
-    var agua = form.agua.value === 'si';
+    var agua = form.agua.value;
     var precision = form.precision.value;
 
-    var attenIndex = ATTEN[terreno] + (agua ? 1 : 0);
+    var attenIndex = ATTEN[terreno] + AGUA_PENALTY[agua];
     var score = 100 - profundidad * 6 - attenIndex * 12;
 
     var contradiccion = precision === 'precision' && profundidad > 3;
@@ -305,8 +308,10 @@
     }
 
     var factores = [];
-    if (agua) factores.push('la humedad o saturación del sitio');
+    if (agua === 'alta') factores.push('la saturación o nivel freático superficial del sitio');
+    else if (agua === 'media') factores.push('la humedad moderada del terreno');
     if (terreno === 'arcilla') factores.push('la atenuación propia de suelos arcillosos');
+    if (terreno === 'sales') factores.push('la alta conductividad de suelos con sales o minerales disueltos');
     if (contradiccion) factores.push('la combinación de alta precisión con profundidad elevada, que son objetivos en tensión');
     if (profundidad >= 6) factores.push('la profundidad solicitada, cercana al límite habitual del método');
 

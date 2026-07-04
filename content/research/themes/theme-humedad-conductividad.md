@@ -26,7 +26,7 @@ Además, tiene alto potencial SEO: preguntas como "¿el georradar funciona en su
 
 ## Estado editorial del tema
 
-- **Estado:** listo para síntesis
+- **Estado:** sintetizado y publicado — `/biblioteca/como-afecta-la-humedad-al-georradar/` (2026-07-04)
 - **Prioridad:** alta
 - **Fecha de apertura:** 2026-07-04
 
