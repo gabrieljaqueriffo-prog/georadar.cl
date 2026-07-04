@@ -83,6 +83,34 @@ Si la segunda respuesta es sí, el activo no se publica en su forma actual. Pued
 
 ---
 
+## Sobre la evidencia científica
+
+La literatura técnica externa (papers, tesis, informes) puede fortalecer la
+confianza de ATLAS cuando se usa para clarificar el método: explicar física
+pública, contextualizar limitaciones, respaldar explicaciones con fuentes.
+
+Pero la evidencia científica nunca debe usarse para:
+
+- **Aparentar autoridad que no existe.** Citar un paper no reemplaza experiencia
+  de terreno. ATLAS cita fuentes para respaldar explicaciones propias, no para
+  tomar prestada la credibilidad de los autores.
+- **Revelar criterio propietario.** Un paper puede enseñar cómo afecta la
+  humedad a la señal GPR (Nivel 1-2). Usarlo para inferir y publicar cómo
+  Geo Radar Chile interpreta esas condiciones en campo (Nivel 3-4) rompe la
+  frontera de conocimiento.
+- **Exagerar conclusiones.** Un hallazgo de un estudio en un suelo específico
+  no es una regla universal. Toda cita debe contextualizarse y limitarse.
+
+La pregunta de validación no cambia:
+
+> **¿Esto ayuda a alguien a comprender mejor el subsuelo antes de intervenirlo,
+> y por tanto a confiar más en nosotros?**
+
+Si la respuesta es "ayuda a aparentar autoridad" en lugar de "ayuda a comprender",
+el uso de esa fuente está desalineado.
+
+---
+
 ## La regla inquebrantable
 
 **Nunca cambiamos confianza de largo plazo por conversión de corto plazo.**

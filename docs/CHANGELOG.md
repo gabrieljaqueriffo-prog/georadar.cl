@@ -7,6 +7,30 @@
 
 ---
 
+## 2026-07-04
+
+- **Nuevo:** capacidad de soporte Evidencia Técnica — estructura `content/research/`
+  con cuatro subcapas: `intake/` (entradas crudas), `papers/` (fichas editoriales),
+  `themes/` (mapas temáticos) y `synthesis/` (síntesis originales listas para
+  publicación). Incluye README de protocolo y template de trabajo para cada capa.
+- **Nuevo:** `docs/adr/ADR-005-evidencia-tecnica.md`, documentando la decisión
+  de crear `content/` y la subcapacidad de soporte.
+- **Definido:** flujo editorial Evidencia Técnica en `CONTENT_STRATEGY.md §14`:
+  fuente → intake → papers → themes → synthesis → contenido público. Reglas de
+  copyright por tipo de fuente, clasificación de niveles de frontera (1–4) y
+  principio rector ("ATLAS no republica papers — transforma literatura técnica
+  en explicación original, citada y útil").
+- **Definido:** subcapacidad de soporte §1.6 en `ARCHITECTURE.md`, con relaciones
+  hacia Biblioteca, Herramientas, Casos Reales y BADR (futuro). Estructura de
+  archivos actualizada en `§5`. Matriz de relaciones actualizada en `§3`.
+- **Definido:** nota sobre uso de evidencia científica en `NORTH_STAR.md` —
+  la literatura técnica fortalece confianza cuando aclara el método; no se usa
+  para aparentar autoridad ni revelar criterio propietario.
+- **Definido:** criterio 7 en `DECISION_FRAMEWORK.md §Bloque 1` — tres preguntas
+  de evaluación para fuentes científicas antes de incorporarlas al sistema.
+
+---
+
 ## 2026-06-30
 
 - **Nuevo:** caso real forense — `CIP San Joaquín y Cerro Chena`

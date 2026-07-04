@@ -78,6 +78,19 @@ siguientes. Si no puedes imaginar cómo crece, no está bien diseñado.
 Tres filtros. Con que cumpla uno basta, pero si no cumple ninguno, la idea no pertenece
 al producto —sin importar lo interesante que parezca o cuánto tiempo llevaría.
 
+**7. Las fuentes científicas se evalúan con tres preguntas antes de usarse.**
+Antes de incorporar un paper, tesis o informe al sistema de Evidencia Técnica:
+
+1. ¿Esta fuente aporta autoridad, claridad o utilidad real al lector?  
+   → Si no, no ingresa.
+2. ¿Puede usarse sin infringir derechos de autor ni revelar know-how propietario?  
+   → Si no, queda solo como referencia interna (nivel 3–4) o se descarta.
+3. ¿Debe quedar interna (síntesis de nivel 3–4) o puede convertirse en contenido público (síntesis de nivel 1–2)?  
+   → La respuesta determina el techo del flujo editorial para esa fuente.
+
+Estas tres preguntas aplican solo a material de `content/research/`. Para activos
+de producto (artículos, herramientas, casos), aplica el filtro estándar de `NORTH_STAR`.
+
 ---
 
 ## Bloque 2 — Sistema de preferencias

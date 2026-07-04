@@ -71,6 +71,27 @@ una función dentro del ecosistema.
 - **Flujo de entrada:** Desde biblioteca técnica y herramientas (confianza previa).
 - **Flujo de salida:** Formulario de contacto para mentoría.
 
+### 1.6 Subcapacidad de soporte: Evidencia Técnica
+- **Objetivo:** Incorporar literatura científica externa (papers, tesis, informes) como
+  fuente de conocimiento sin republicar material protegido ni revelar criterio propietario.
+- **Naturaleza:** Interna. No es una capacidad pública por sí misma. Es la capa de
+  investigación que alimenta la Capacidad Conocimiento (§1.2) con fundamentos técnicos
+  trazables y clasificados.
+- **Módulos:** intake / papers / themes / synthesis (ver `content/research/`).
+- **Flujo de entrada:** Papers, DOIs, tesis, informes, PDFs internos, notas de Gabriel.
+- **Flujo de salida:** Síntesis originales → artículos de biblioteca, FAQ, mejoras de
+  herramientas, términos de glosario, futura sección `/evidencia-tecnica/`.
+- **Relación con Biblioteca técnica:** la Biblioteca publica; Evidencia Técnica investiga.
+  Un artículo de biblioteca puede citar síntesis de Evidencia Técnica, pero Evidencia
+  Técnica no genera contenido público directamente.
+- **Relación con Casos Reales:** Evidencia Técnica puede contextualizar el método sin
+  revelar razonamiento propietario. Un caso puede mencionar que condiciones de humedad
+  afectan la señal "como también describe la literatura técnica", con cita, sin tutorial.
+- **Relación con Herramientas:** síntesis de nivel 1-2 pueden alimentar advertencias,
+  variables de entrada o explicaciones educativas en calculadoras.
+- **Relación con BADR:** no hay integración técnica todavía. Las síntesis incluyen un
+  campo de anotación de intención para cuando BADR esté operativo. Ver `ADR-005`.
+
 ---
 
 ## 2. Flujo de navegación y enlaces internos
@@ -127,6 +148,7 @@ interno y garantiza que cada nuevo activo sepa exactamente a qué red pertenece.
 | **Glosario** | Biblioteca técnica, Herramientas |
 | **Academia / Mentorías** | Biblioteca técnica, Herramientas |
 | **Servicios** | Casos reales, Biblioteca técnica *(solo como respaldo técnico)* |
+| **Evidencia Técnica** | Biblioteca técnica, Herramientas, Glosario *(solo como input, nunca público directo)* |
 
 **Lectura de la matriz:** los Servicios son destino principal de conversión, no
 origen de exploración técnica. Un artículo de biblioteca puede enlazar a un
@@ -225,8 +247,17 @@ georadar.cl/
 │   │   └── by-problem/
 │   ├── tools/                       ← Capacidad: Herramientas
 │   │   └── calculators/
-│   └── mentorship/                  ← Capacidad: Academia
-│       └── resources/
+│   ├── mentorship/                  ← Capacidad: Academia
+│   │   └── resources/
+│   └── research/                    ← Subcapacidad: Evidencia Técnica (§1.6)
+│       ├── intake/                  ← Entradas crudas: links, DOIs, abstracts, PDFs
+│       │   └── templates/
+│       ├── papers/                  ← Fichas editoriales limpias por fuente
+│       │   └── templates/
+│       ├── themes/                  ← Agrupaciones temáticas (humedad, cavidades…)
+│       │   └── templates/
+│       └── synthesis/               ← Síntesis originales listas para publicación
+│           └── templates/
 │
 ├── assets/
 │   ├── images/

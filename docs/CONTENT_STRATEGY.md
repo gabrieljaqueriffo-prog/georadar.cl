@@ -619,6 +619,114 @@ emergencia editorial.
 
 ---
 
+## 14. Evidencia Técnica — flujo editorial desde literatura científica
+
+Esta sección define cómo ATLAS incorpora conocimiento científico externo
+(papers, tesis, informes institucionales, manuales técnicos) de forma segura,
+útil y coherente con el principio editorial de `§1.5`.
+
+### 14.1 Principio rector
+
+ATLAS no republica papers. ATLAS transforma literatura técnica en explicación
+original, citada y útil para decisiones reales.
+
+La diferencia no es cosmética: un paper tiene un propósito académico. Una
+síntesis de ATLAS tiene un propósito editorial específico: ayudar a alguien
+a comprender mejor el subsuelo antes de intervenirlo (`NORTH_STAR`).
+
+### 14.2 Flujo editorial
+
+```
+Fuente encontrada (paper, tesis, DOI, abstract, PDF)
+        │
+        ▼
+content/research/intake/        ← entrada cruda, sin procesar
+        │  triage: relevancia, licencia, nivel de riesgo
+        ▼
+content/research/papers/        ← ficha editorial limpia por fuente
+        │  clasificación obligatoria de nivel de frontera (1–4)
+        ▼
+content/research/themes/        ← agrupación por problema técnico
+        │  mapa de lo que se sabe colectivamente
+        ▼
+content/research/synthesis/     ← síntesis original de ATLAS
+        │  revisión de Gabriel → aprobación explícita
+        ▼
+Contenido público               ← artículo, FAQ, herramienta, glosario
+```
+
+**Regla absoluta:** solo desde `synthesis/` se genera contenido público.
+Nunca desde el paper crudo, nunca desde la ficha de intake.
+
+### 14.3 Clasificación de niveles de frontera
+
+Toda fuente científica que ingresa al sistema se clasifica en uno de estos
+niveles. El nivel determina qué puede hacerse públicamente con el material.
+
+| Nivel | Qué contiene | ¿Genera contenido público? |
+|-------|-------------|---------------------------|
+| **1 — Fundamento público** | Física del GPR, velocidad, frecuencia, atenuación, permitividad | Sí, sin restricción |
+| **2 — Aplicación técnica general** | Efecto de humedad, penetración por tipo de suelo, limitaciones generales | Sí, con explicación controlada |
+| **3 — Interpretación avanzada** | Reconocimiento de patrones, clasificación de anomalías, procesado avanzado | No — solo uso interno |
+| **4 — Know-how sensible** | Protocolos propietarios, heurísticas de campo, criterios de diagnóstico operativo | Nunca |
+
+Esta clasificación es idéntica a los niveles A/B/C de `§1.5`, expresada
+en términos del tipo de fuente externa.
+
+### 14.4 Reglas de copyright y uso permitido
+
+| Tipo de fuente | Regla de uso |
+|----------------|-------------|
+| Open Access con licencia CC BY | Citar, analizar y reutilizar con atribución y enlace al original |
+| Open Access sin licencia clara | Citar y enlazar. No copiar tablas, figuras ni texto extenso |
+| Paper en editorial cerrada / paywall | Solo referencia interna. No republicar nada |
+| Preprint (arXiv, repositorio universitario) | Enlazar al original. Verificar licencia antes de reutilizar |
+| Tesis o informe institucional | Verificar permisos. Citar y enlazar. No asumir libre reutilización |
+
+**Regla de seguridad:** si la licencia no es clara, tratar la fuente como
+material de referencia interna. "Disponible online" no equivale a "libre
+para reutilizar".
+
+**Lo que nunca hace ATLAS:**
+- Publicar PDFs de terceros.
+- Copiar párrafos, tablas o figuras sin licencia clara.
+- Traducir papers completos.
+- Publicar resúmenes que sustituyan al original.
+- Insinuar que autores externos respaldan a Geo Radar Chile.
+- Convertir hallazgos de un estudio específico en reglas universales.
+
+### 14.5 La página pública `/evidencia-tecnica/`
+
+Esta sección pública no existe todavía. Se creará cuando exista al menos una
+síntesis aprobada por Gabriel lista para publicar. Requiere una decisión
+separada de estructura y navegación (`CLAUDE.md §3`).
+
+Cuando se cree, contendrá explicaciones propias de ATLAS basadas en síntesis
+revisadas, con citas a fuentes originales. Nunca contendrá papers crudos ni
+resúmenes directos de terceros.
+
+### 14.6 Conexión futura con BADR
+
+ATLAS y BADR son sistemas separados con funciones distintas. ATLAS mira hacia
+afuera: construye autoridad y confianza pública. BADR mira hacia adentro:
+registra qué confianza se convirtió en oportunidad y qué aprendizaje debe
+volver a ATLAS.
+
+La conexión prevista:
+
+```
+Papers → Evidencia Técnica ATLAS → contenido público → confianza → leads → BADR
+                                                                        ↓
+                                                         aprendizaje operativo
+                                                                        ↓
+                                                          nuevas preguntas para ATLAS
+```
+
+En esta fase, las síntesis incluyen un campo de anotación de intención
+para BADR. No hay integración técnica implementada.
+
+---
+
 ## Cierre
 
 La estrategia de contenido de Georadar no es un plan de publicación: es un
