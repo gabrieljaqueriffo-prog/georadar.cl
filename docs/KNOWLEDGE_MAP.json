@@ -192,7 +192,11 @@
     "espesador": { "anchor": "#espesador", "patterns": ["espesador", "espesadores"] },
     "grilla-prospeccion": { "anchor": "#grilla-prospeccion", "patterns": ["grilla de prospección", "grillas de prospección"] },
     "georreferenciacion": { "anchor": "#georreferenciacion", "patterns": ["georreferenciación", "georreferenciada", "georreferenciadas", "georreferenciados"] },
-    "cadena-de-custodia": { "anchor": "#cadena-de-custodia", "patterns": ["cadena de custodia"] }
+    "cadena-de-custodia": { "anchor": "#cadena-de-custodia", "patterns": ["cadena de custodia"] },
+    "conductividad": { "anchor": "#conductividad", "patterns": ["conductividad eléctrica", "conductividad del suelo"] },
+    "frecuencia-dominante": { "anchor": "#frecuencia-dominante", "patterns": ["frecuencia dominante"] },
+    "permitividad": { "anchor": "#permitividad", "patterns": ["permitividad dieléctrica", "constante dieléctrica"] },
+    "resolucion-vertical": { "anchor": "#resolucion-vertical", "patterns": ["resolución vertical"] }
   },
 
   "required_connections": [

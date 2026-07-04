@@ -92,8 +92,10 @@
         <a href="#letra-A">A</a>
         <a href="#letra-C">C</a>
         <a href="#letra-E">E</a>
+        <a href="#letra-F">F</a>
         <a href="#letra-G">G</a>
         <a href="#letra-H">H</a>
+        <a href="#letra-P">P</a>
         <a href="#letra-R">R</a>
         <a href="#letra-S">S</a>
         <a href="#letra-V">V</a>
@@ -113,14 +115,21 @@
 
       <article id="atenuacion" class="faq-item reveal">
         <h3>Atenuación</h3>
-        <p>Pérdida de energía de la onda electromagnética a medida que avanza por el subsuelo. Varía según el tipo de material: la arcilla y el agua atenúan más que la roca seca o el hormigón.</p>
+        <p>Pérdida de energía de la onda electromagnética a medida que avanza por el subsuelo. Varía según el tipo de material: la arcilla y el agua atenúan más que la roca seca o el hormigón. La curva de atenuación de la señal a lo largo de un perfil también contiene información sobre las propiedades del medio, como el contenido de humedad.</p>
         <p><strong>Por qué importa:</strong> la atenuación limita la profundidad máxima de detección confiable. Un buen diagnóstico GPR siempre considera el material del sitio antes de prometer una profundidad de detección.</p>
-        <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a></p>
+        <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#conductividad">Conductividad eléctrica del suelo</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a></p>
       </article>
     </div>
 
     <div class="glossary-letter-group" id="grupo-C">
       <h2 class="glossary-letter-heading" id="letra-C">C</h2>
+
+      <article id="conductividad" class="faq-item reveal">
+        <h3>Conductividad eléctrica del suelo</h3>
+        <p>Capacidad de un material del subsuelo de permitir el paso de corriente eléctrica. En el contexto del georradar, determina en gran medida cuánta energía de la señal se disipa por unidad de distancia recorrida.</p>
+        <p><strong>Por qué importa:</strong> suelos con alta conductividad —arcillas húmedas, terrenos saturados, zonas con sales— absorben la señal GPR con rapidez, reduciendo la profundidad de penetración efectiva. Es el factor limitante más frecuente en estudios donde el terreno no es favorable. La conductividad del suelo también correlaciona con el contenido de humedad: a mayor humedad, mayor conductividad y mayor atenuación.</p>
+        <p>Relacionado: <a href="#atenuacion">Atenuación</a> &middot; <a href="#permitividad">Permitividad dieléctrica</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a> &middot; Artículo: <a href="/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/">Qué hace que un suelo sea difícil para el GPR</a></p>
+      </article>
 
       <article id="cadena-de-custodia" class="faq-item reveal">
         <h3>Cadena de custodia</h3>
@@ -138,6 +147,17 @@
         <p>Estructura de proceso minero usada para separar sólidos de líquidos por sedimentación, habitual en plantas concentradoras. Suele construirse sobre losas y fundaciones de hormigón sometidas a cargas y humedad constantes.</p>
         <p><strong>Por qué importa:</strong> la pérdida de material o filtraciones en un espesador puede generar socavones bajo la losa sin señales visibles en superficie, lo que hace crítica la prospección GPR antes de cualquier intervención estructural.</p>
         <p>Relacionado: <a href="#socavon">Socavón</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-F">
+      <h2 class="glossary-letter-heading" id="letra-F">F</h2>
+
+      <article id="frecuencia-dominante" class="faq-item reveal">
+        <h3>Frecuencia dominante</h3>
+        <p>Frecuencia central del espectro de la señal GPR en un punto o segmento del perfil. A diferencia de la frecuencia nominal de la antena, la frecuencia dominante varía según el material atravesado: en medios con mayor atenuación, las altas frecuencias se disipan antes, desplazando el espectro hacia valores más bajos.</p>
+        <p><strong>Por qué importa:</strong> el desplazamiento de la frecuencia dominante a lo largo de un perfil es un indicador de las propiedades eléctricas del terreno. Su análisis forma parte de la interpretación cuantitativa de señales GPR, complementando la lectura visual del radargrama.</p>
+        <p>Relacionado: <a href="#antena">Antena (GPR)</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a> &middot; Artículo: <a href="/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/">Qué puede decirnos una señal GPR además de una imagen</a></p>
       </article>
     </div>
 
@@ -177,14 +197,32 @@
       </article>
     </div>
 
+    <div class="glossary-letter-group" id="grupo-P">
+      <h2 class="glossary-letter-heading" id="letra-P">P</h2>
+
+      <article id="permitividad" class="faq-item reveal">
+        <h3>Permitividad dieléctrica</h3>
+        <p>Propiedad eléctrica de un material que describe su capacidad de almacenar energía electromagnética. En el georradar, junto con la conductividad, determina la velocidad a la que viaja la señal y el grado de reflexión que se produce en cada interfaz entre materiales distintos. También se denomina constante dieléctrica.</p>
+        <p><strong>Por qué importa:</strong> la permitividad del agua libre es muy alta (aproximadamente 80 veces mayor que la del aire), lo que hace que el contenido de humedad sea el factor que más modifica la velocidad de propagación de la señal en el subsuelo. Un suelo húmedo no solo atenúa más: también cambia la velocidad, lo que afecta la estimación de profundidades si no se calibra correctamente.</p>
+        <p>Relacionado: <a href="#conductividad">Conductividad eléctrica del suelo</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a></p>
+      </article>
+    </div>
+
     <div class="glossary-letter-group" id="grupo-R">
       <h2 class="glossary-letter-heading" id="letra-R">R</h2>
 
       <article id="radargrama" class="faq-item reveal">
         <h3>Radargrama</h3>
-        <p>Registro gráfico de las reflexiones electromagnéticas captadas por el georradar durante un barrido. Cada material del subsuelo refleja la onda de forma distinta, y esa diferencia es lo que el radargrama representa visualmente.</p>
+        <p>Registro gráfico de las reflexiones electromagnéticas captadas por el georradar durante un barrido. Cada material del subsuelo refleja la onda de forma distinta, y esa diferencia es lo que el radargrama representa visualmente. La señal también contiene parámetros cuantitativos —amplitud, distribución de frecuencias, curva de atenuación— que van más allá de la imagen visual.</p>
         <p><strong>Por qué importa:</strong> es la evidencia técnica detrás de cualquier hallazgo, pero su lectura correcta requiere el análisis conjunto de cientos de perfiles y la experiencia del equipo, no la interpretación de una sola imagen aislada.</p>
-        <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; <a href="#georradar">Georradar (GPR)</a></p>
+        <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; <a href="#georradar">Georradar (GPR)</a> &middot; Artículo: <a href="/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/">Qué puede decirnos una señal GPR además de una imagen</a></p>
+      </article>
+
+      <article id="resolucion-vertical" class="faq-item reveal">
+        <h3>Resolución vertical</h3>
+        <p>Distancia mínima entre dos interfaces o reflectores que el georradar puede distinguir como entidades separadas en el radargrama. Depende principalmente de la longitud de onda de la señal: a mayor frecuencia de antena, menor longitud de onda y mayor resolución vertical.</p>
+        <p><strong>Por qué importa:</strong> si dos capas o dos objetos están más próximos que la resolución vertical del equipo en ese material, aparecerán fusionados en el radargrama y no podrán diferenciarse. Este límite físico no se supera cambiando el equipo de marca: solo se modifica ajustando la frecuencia de la antena.</p>
+        <p>Relacionado: <a href="#antena">Antena (GPR)</a> &middot; <a href="#frecuencia-dominante">Frecuencia dominante</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a></p>
       </article>
     </div>
 
