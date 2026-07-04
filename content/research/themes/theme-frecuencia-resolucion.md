@@ -37,6 +37,7 @@ Ya existe el artículo "Cómo influye la frecuencia de una antena GPR en los res
 | Ficha | Nivel de frontera | Relevancia |
 |-------|-------------------|------------|
 | `papers/1995-lorenzo-gpr-obras-civiles-brief.md` | 1 | alta |
+| `papers/2024-paredes-gpr-analisis-cuantitativo-brief.md` | 1-2 con zonas 3 | media — aporta los conceptos de frecuencia dominante y ancho de banda como extensión natural del compromiso frecuencia/resolución |
 
 ---
 

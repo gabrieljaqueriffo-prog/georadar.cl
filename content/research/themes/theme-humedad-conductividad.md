@@ -37,6 +37,7 @@ Además, tiene alto potencial SEO: preguntas como "¿el georradar funciona en su
 | Ficha | Nivel de frontera | Relevancia |
 |-------|-------------------|------------|
 | `papers/1995-lorenzo-gpr-obras-civiles-brief.md` | 1-2 | muy alta |
+| `papers/2024-paredes-gpr-analisis-cuantitativo-brief.md` | 1-2 con zonas 3 | alta — extiende el tema con estimación cuantitativa de humedad desde la curva de atenuación de la señal |
 
 ---
 
