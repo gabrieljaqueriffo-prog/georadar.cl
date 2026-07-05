@@ -42,8 +42,9 @@
   - Aeropuerto Chacalluta (`/construccion/casos/prospeccion-aeropuerto-chacalluta/`) — localización de servicios subterraneos con GPR y LEM para Sacyr. Doble frecuencia, georreferenciacion GNSS.
   - **Enlaces entrantes:** `/construccion/`, `/index.html`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
   - **Enlaces salientes:** `/construccion/`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
-- **Deuda:** Costanera Puerto Montt, Aeródromo Tobalaba, edificacion Las Condes — sin pagina de caso propia.
-- **Deuda SEO:** keyword de `/construccion/` compite con `/mineria/` y `/utilities/` por terminos genericos. Prioridad 1 de `SEO_BASELINE.md`: diferenciar hacia "prospeccion GPR en obras civiles" o similar.
+- **Deuda:** Costanera Puerto Montt, edificacion Las Condes — sin pagina de caso propia. Aeródromo Tobalaba descartado temporalmente (sin material).
+- **Candidato prioritario:** Aeródromo Chacalluta como segundo caso o semi-caso. Estado: PENDIENTE MATERIAL DOCUMENTADO. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
+- **Deuda SEO:** diferenciacion aplicada 2026-07-05. Keyword "prospeccion GPR en obras civiles". Monitorear Search Console en 4 a 6 semanas.
 
 ---
 
@@ -145,11 +146,11 @@ Orden de prioridad (2026-07-05):
 **Prioridad 2 — Aeródromo Tobalaba: descartado temporalmente**
 Gabriel no dispone de informacion suficiente para desarrollarlo como caso o referencia. No usar en articulos ni en paginas de caso hasta tener material documentado. Registrado en `content/research/themes/theme-gpr-pavimentos.md`.
 
-**Prioridad 3 — Aeródromo Chacalluta como candidato principal de construccion**
-`content/research/themes/theme-gpr-pavimentos.md` en estado LISTO PARA ARTICULO BASE. El articulo de GPR en pavimentos usara Chacalluta como referencia principal de caso. Confirmar con Gabriel si hay material documentado suficiente para desarrollar un segundo caso o semi-caso de construccion a partir de Chacalluta. Si no, Costanera Puerto Montt es la siguiente opcion.
+**Prioridad 3 — Aeródromo Chacalluta: semi-caso candidato de construccion**
+Estado: PENDIENTE MATERIAL DOCUMENTADO. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`. Candidato principal para segundo caso o semi-caso dentro del vertical construccion. Desarrollo condicionado a que Gabriel confirme material documentado adicional (distinto del caso ya publicado en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`). Si el material es parcial, producir solo semi-caso sobrio sin radargramas ni resultados especificos. Si no hay material, Costanera Puerto Montt es la siguiente opcion. No crear pagina publica hasta completar el intake minimo del archivo de caso.
 
-**Prioridad 4 — Aprobar o rechazar ADR-006 (rename calculadora)**
-`docs/adr/ADR-006-rename-calculadora-profundidad.md` en estado Propuesto. Requiere decision de Gabriel. No ejecutar cambio de URL hasta aprobacion. El ADR documenta opciones de redirect, archivos a actualizar y riesgo SEO de corto plazo.
+**Prioridad 4 — Ejecutar ADR-006 (rename calculadora)**
+`docs/adr/ADR-006-rename-calculadora-profundidad.md` en estado Aprobado conceptualmente. Ejecucion pendiente de confirmacion explicita de Gabriel. No ejecutar cambio de URL hasta esa confirmacion. Crear rama separada, implementar redirect 301, actualizar enlaces internos, verificar ausencia de referencias a "profundidad garantizada" y preparar monitoreo en Search Console.
 
 **Prioridad 5 — Semi-caso Codelco Division Andina**
 Primer caso de mineria a desarrollar como pagina tipo semi-caso. Patron minimo: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado obtenido, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion de Gabriel.
