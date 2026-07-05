@@ -10,18 +10,32 @@
 
 ## Estado del benchmark
 
-**Estado actual:** PENDIENTE DE REVISIÓN HUMANA
+**Estado actual:** ESTRUCTURA CREADA — COMPARACIÓN PENDIENTE
 
-Este documento establece la estructura de evaluación y los criterios de
-comparación. Los activos de ATLAS que aplican a este benchmark son:
+**Lo que existe:** la matriz de evaluación, los 9 criterios y el criterio de
+aprobación están definidos en este documento.
 
-- Glosario GPR (`/glosario/`)
-- Artículo: Cómo influye la frecuencia de una antena GPR (`/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`)
-- Módulo Biblioteca completo (`/biblioteca/`)
+**Lo que falta:** Gabriel debe identificar los recursos reales en español sobre
+GPR que se usarán como comparación (sección "Recursos a evaluar") y completar
+los puntajes en cada criterio. Sin esa comparación, el benchmark no puede
+producir ningún veredicto.
 
-Mientras este documento no esté completado y validado por Gabriel, los activos
-anteriores permanecen en estado OPTIMIZACION. No corresponde declarar MADURO
-sin que esta comparación exista y sea afirmativa.
+**Consecuencia directa:** mientras este documento no esté completado y validado
+por Gabriel, los activos ATLAS relacionados permanecen en estado OPTIMIZACION.
+No corresponde declarar MADURO ningún activo sin que la comparación esté
+completa y sea afirmativa.
+
+**La frase "mejor recurso GPR en español" no debe aparecer en ninguna página
+pública de ATLAS hasta que este benchmark lo justifique.** No hay comparación
+hecha, por lo tanto no hay base para ese claim.
+
+Los activos afectados y su estado actual:
+
+| Activo | URL | Estado |
+|--------|-----|--------|
+| Glosario GPR | `/glosario/` | OPTIMIZACION |
+| Artículo de frecuencia de antena | `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/` | OPTIMIZACION |
+| Módulo Biblioteca | `/biblioteca/` | OPTIMIZACION |
 
 ---
 

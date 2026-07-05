@@ -108,8 +108,17 @@ El cruce al Nivel 3 ocurre al describir cómo se identifica una capa específica
 
 ---
 
+## Nota editorial sobre casos de referencia
+
+**Aeródromo Tobalaba:** descartado temporalmente como referencia o caso de construcción. Gabriel no dispone de información suficiente en este momento para desarrollarlo. No usar como referencia en el artículo ni en ningún activo público hasta que haya material documentado disponible.
+
+**Aeródromo Chacalluta:** candidato principal para el primer caso de construcción adicional (más allá del caso ya publicado en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`). Si Gabriel tiene material documentado suficiente, Chacalluta es la referencia de construcción a desarrollar. Si no, la alternativa es Costanera Puerto Montt. No crear página de caso sin material real.
+
+---
+
 ## Próximo paso
 
 - [ ] Redactar artículo base con el enfoque editorial definido en este documento.
 - [ ] El artículo debe tener al menos dos enlaces entrantes antes de publicarse: `/construccion/` y `/construccion/casos/prospeccion-aeropuerto-chacalluta/`.
-- [ ] Confirmar con Gabriel si el caso Aeródromo Tobalaba (pavimento de pistas, 2020) tiene material suficiente para ser referenciado en el artículo.
+- [ ] Confirmar con Gabriel si hay material documentado adicional de Chacalluta para desarrollar el caso de construcción (más allá de la página ya publicada).
+- [ ] No usar Aeródromo Tobalaba como referencia hasta nuevo aviso.

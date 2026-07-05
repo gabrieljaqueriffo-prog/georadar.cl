@@ -137,20 +137,31 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 
 ## Deuda de contenido
 
-1. **Articulo GPR en pavimentos** — `content/research/themes/theme-gpr-pavimentos.md` en estado LISTO PARA ARTICULO BASE. Enfoque editorial definido. Pendiente de confirmar con Gabriel si el caso Aeródromo Tobalaba (pavimento de pistas, 2020) tiene material suficiente para ser referenciado. Dos enlaces entrantes previstos: `/construccion/` y `/construccion/casos/prospeccion-aeropuerto-chacalluta/`.
+Orden de prioridad (2026-07-05):
 
-2. **Validacion Canon MADURO** — Glosario, articulo de frecuencia de antena y modulo Biblioteca en OPTIMIZACION. Benchmark creado en `docs/QUALITY_BENCHMARK_GPR_ES.md`. Requiere que Gabriel identifique los recursos comparables y complete la matriz de evaluacion. No es bloqueante para el sitio.
+**Prioridad 1 — Completar benchmark GPR en español**
+`docs/QUALITY_BENCHMARK_GPR_ES.md` — estructura creada, comparacion pendiente. Gabriel debe identificar los recursos GPR en espanol a comparar y completar la matriz de 9 criterios. Hasta que este documento este completo y aprobado, ninguno de los activos afectados (Glosario, articulo de frecuencia, modulo Biblioteca) puede declararse MADURO. No urgente para el sitio, pero es deuda declarada.
 
-3. **Caso forense Cementerio Rio Chico** — prioridad alta. Solo card en `/forense/`. URL propuesta: `/forense/casos/cementerio-rio-chico/`. Titulo: "Caso forense con georradar en Cementerio Rio Chico". Tono: sobrio, tecnico y pericial. No crear hasta tener contexto del encargo, objetivo de prospeccion, condiciones del sitio, metodologia y hallazgos documentados.
+**Prioridad 2 — Aeródromo Tobalaba: descartado temporalmente**
+Gabriel no dispone de informacion suficiente para desarrollarlo como caso o referencia. No usar en articulos ni en paginas de caso hasta tener material documentado. Registrado en `content/research/themes/theme-gpr-pavimentos.md`.
 
-4. **Casos de construccion adicionales:**
-   - `/construccion/casos/costanera-puerto-montt/` — segunda prioridad. 700 metros de paseo costero, deteccion de oquedades (2018). Tiene suficiente descripcion en la card para iniciar semi-caso.
-   - `/construccion/casos/aerodromo-tobalaba/` — tercera prioridad. Estudio de pavimento de pistas (2020). Confirmar material disponible con Gabriel.
+**Prioridad 3 — Aeródromo Chacalluta como candidato principal de construccion**
+`content/research/themes/theme-gpr-pavimentos.md` en estado LISTO PARA ARTICULO BASE. El articulo de GPR en pavimentos usara Chacalluta como referencia principal de caso. Confirmar con Gabriel si hay material documentado suficiente para desarrollar un segundo caso o semi-caso de construccion a partir de Chacalluta. Si no, Costanera Puerto Montt es la siguiente opcion.
 
-5. **Casos de mineria semi-caso (en orden de prioridad):**
-   - Prioridad 1: Codelco Division Andina — pagina tipo semi-caso. Patron: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion.
-   - Prioridad 2: SQM o BHP — definir cual tiene mejor documentacion antes de elegir.
-   - Prioridad 3: Centinela, Albemarle, Collahuasi — mantener como cards verificadas hasta tener evidencia suficiente para semi-caso.
+**Prioridad 4 — Aprobar o rechazar ADR-006 (rename calculadora)**
+`docs/adr/ADR-006-rename-calculadora-profundidad.md` en estado Propuesto. Requiere decision de Gabriel. No ejecutar cambio de URL hasta aprobacion. El ADR documenta opciones de redirect, archivos a actualizar y riesgo SEO de corto plazo.
+
+**Prioridad 5 — Semi-caso Codelco Division Andina**
+Primer caso de mineria a desarrollar como pagina tipo semi-caso. Patron minimo: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado obtenido, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion de Gabriel.
+
+**Prioridad 6 — Caso forense Cementerio Rio Chico**
+URL propuesta: `/forense/casos/cementerio-rio-chico/`. Titulo: "Caso forense con georradar en Cementerio Rio Chico". Tono: sobrio, tecnico y pericial, sin sensacionalismo. No crear hasta tener: contexto del encargo, objetivo de prospeccion, condiciones del sitio, metodologia y hallazgos o anomalias documentadas.
+
+**Prioridad 7 — Caso Costanera Puerto Montt**
+URL propuesta: `/construccion/casos/costanera-puerto-montt/`. 700 metros de paseo costero, deteccion de oquedades antes de intervenir (2018). Segunda opcion de construccion si Chacalluta no tiene material adicional suficiente.
+
+**Prioridad 8 — Segundo caso minero: SQM o BHP**
+Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como cards verificadas hasta tener evidencia suficiente para semi-caso. Centinela, Albemarle y Collahuasi quedan en espera detras de SQM/BHP.
 
 ---
 
