@@ -7,6 +7,20 @@
 
 ---
 
+## 2026-07-05 (actualización)
+
+- **Mejorado:** hero de `index.html` reposicionado para presentar ATLAS como
+  plataforma de conocimiento aplicado. H1 actualizado a "Conocimiento aplicado
+  sobre georradar GPR en Chile". Parrafo lead reescrito para distinguir
+  GeoRadar.cl (plataforma de conocimiento) de Geo Radar Chile (empresa
+  operadora), conservando todas las keywords SEO requeridas (georradar, GPR,
+  Chile, prospeccion no destructiva, mineria, utilities, construccion, peritaje
+  forense). El eyebrow y los CTAs no cambian.
+- **Corregido:** "pionea" en el hito historico de 1997 reemplazado por
+  "introduce el uso de GPR en Chile".
+
+---
+
 ## 2026-07-05
 
 - **Mejorado:** `assets/css/shared.css` normalizado para mejor mantenibilidad.
