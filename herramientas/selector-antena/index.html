@@ -5,20 +5,20 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selector de antena GPR | ¿Qué frecuencia necesito? | Geo Radar Chile</title>
-<meta name="description" content="Herramienta gratuita para determinar el rango de frecuencia de antena GPR según lo que quiere detectar, la profundidad y el material. Sin registro, basada en la física del método.">
+<title>Selector de antena georradar | Orientación inicial de frecuencia GPR | Geo Radar Chile</title>
+<meta name="description" content="Herramienta de orientación para estimar el rango de antena georradar según objetivo, profundidad esperada y condición de terreno. El resultado es orientación preliminar, no especificación de terreno. Sin registro.">
 <link rel="canonical" href="https://georadar.cl/herramientas/selector-antena/">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="es_CL">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Selector de antena GPR | ¿Qué frecuencia necesito?">
-<meta property="og:description" content="Determine el rango de frecuencia de antena GPR según objetivo, profundidad y material. Gratuita, sin registro, basada en la física del método.">
+<meta property="og:title" content="Selector de antena georradar | Orientación inicial de frecuencia GPR">
+<meta property="og:description" content="Orientación preliminar para elegir antena GPR según objetivo, profundidad esperada y condición de terreno. El resultado no reemplaza una evaluación técnica del sitio.">
 <meta property="og:url" content="https://georadar.cl/herramientas/selector-antena/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Selector de antena GPR | ¿Qué frecuencia necesito?">
-<meta name="twitter:description" content="Determine el rango de frecuencia de antena GPR según objetivo, profundidad y material. Gratuita, sin registro.">
+<meta name="twitter:title" content="Selector de antena georradar | Orientación inicial de frecuencia GPR">
+<meta name="twitter:description" content="Orientación preliminar para elegir antena GPR según objetivo, profundidad y terreno. No reemplaza evaluación técnica del sitio.">
 <link rel="stylesheet" href="/assets/css/shared.css?v=7">
 <script type="application/ld+json">
 {
@@ -27,18 +27,18 @@
     {
       "@type": "WebApplication",
       "@id": "https://georadar.cl/herramientas/selector-antena/#app",
-      "name": "Selector de antena GPR",
+      "name": "Selector de antena georradar",
       "applicationCategory": "UtilityApplication",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CLP" },
-      "description": "Herramienta que determina el rango de frecuencia de antena GPR adecuado según objetivo de detección, profundidad estimada y tipo de material.",
+      "description": "Herramienta de orientación preliminar para estimar el rango de antena georradar compatible con un objetivo de detección, profundidad esperada y condición de terreno. El resultado no reemplaza una evaluación técnica del sitio.",
       "inLanguage": "es-CL"
     },
     {
       "@type": "WebPage",
       "@id": "https://georadar.cl/herramientas/selector-antena/#webpage",
       "url": "https://georadar.cl/herramientas/selector-antena/",
-      "name": "Selector de antena GPR | ¿Qué frecuencia necesito?",
+      "name": "Selector de antena georradar | Orientación inicial de frecuencia GPR | Geo Radar Chile",
       "isPartOf": { "@id": "https://georadar.cl/#website" },
       "about": { "@id": "https://georadar.cl/herramientas/selector-antena/#app" },
       "inLanguage": "es-CL"
@@ -80,9 +80,9 @@
 
 <header class="hero">
   <div class="container hero-content">
-    <p class="eyebrow">Herramientas &middot; Selector de antena</p>
-    <h1>¿Qué frecuencia de antena necesito?</h1>
-    <p class="lead">La frecuencia de la antena no es una preferencia: la determinan el objetivo, la profundidad y el material. Responda tres preguntas sobre su trabajo y obtendrá el rango de frecuencia compatible con esas condiciones, con la explicación física detrás de la recomendación.</p>
+    <p class="eyebrow">Herramientas &middot; Selector de antena georradar</p>
+    <h1>Selector de antena georradar</h1>
+    <p class="lead">Responda tres preguntas sobre su objetivo, la profundidad estimada y el tipo de terreno, y obtendrá el rango de frecuencia de antena que podría ser razonable como orientación inicial. El resultado no reemplaza una evaluación técnica del sitio: la elección real depende de variables adicionales que esta herramienta no contempla. Para entender por qué la frecuencia es una restricción física y no una preferencia, lea el <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">artículo sobre frecuencia de antena GPR</a>.</p>
   </div>
 </header>
 
@@ -133,6 +133,7 @@
         <p id="result-limitacion"></p>
         <p id="result-nota"></p>
         <p><strong>El rango de frecuencia es la restricción física del problema. La antena específica, la metodología de adquisición y la cobertura de la grilla deben definirlas un especialista con información adicional del sitio que esta herramienta no contempla.</strong></p>
+        <p class="tool-disclaimer">Este selector no reemplaza una evaluación técnica. La elección real de antena depende del objetivo, material, humedad, conductividad, profundidad esperada, tamaño del blanco, ruido electromagnético y condiciones de acceso. El resultado debe entenderse como orientación preliminar, no como especificación de terreno. Para entender la física detrás de esta orientación, lea <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">cómo influye la frecuencia de una antena GPR en los resultados</a>.</p>
       </div>
 
     </div>
@@ -143,6 +144,7 @@
   <div class="container">
     <p class="eyebrow">La física detrás de la herramienta</p>
     <h2>Por qué la frecuencia es una restricción, no una preferencia</h2>
+    <p>Esta sección resume los principios físicos que determinan el resultado del selector. Para una explicación completa, con ejemplos y consecuencias prácticas, lea el artículo de la biblioteca: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">cómo influye la frecuencia de una antena GPR en los resultados</a>.</p>
     <div class="faq-item reveal">
       <h3>El compromiso físico inevitable</h3>
       <p>Toda <a href="/glosario/#antena">antena GPR</a> opera en una frecuencia determinada que fija simultáneamente dos variables: la profundidad máxima de penetración y la resolución mínima de la imagen. Aumentar una reduce la otra. No existe una antena que maximice ambas al mismo tiempo: es una consecuencia directa de la física electromagnética, no una limitación de diseño que los fabricantes puedan superar.</p>
@@ -222,7 +224,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">&copy; 2026 Geo Radar Chile. Selector de antena GPR.</div>
+    <div class="footer-bottom">&copy; 2026 Geo Radar Chile. Selector de antena georradar.</div>
   </div>
 </footer>
 
@@ -445,6 +447,7 @@
 .tier-condicionado { color: #7a4f00; background: #fff3cd; }
 .tier-critico      { color: #8b1a1a; background: #fdecea; }
 .tier-noaplica     { color: #444;    background: #f0f0f0; }
+.tool-disclaimer   { font-size: 0.88em; color: #555; border-left: 3px solid #ccc; padding-left: 0.75rem; margin-top: 1rem; }
 </style>
 </body>
 </html>

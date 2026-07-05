@@ -137,25 +137,32 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 
 ## Deuda de contenido
 
-1. **Articulo GPR en pavimentos** — `content/research/themes/theme-gpr-pavimentos.md` existe. Pendiente de material de caso de Gabriel para iniciar sintesis.
+1. **Articulo GPR en pavimentos** — `content/research/themes/theme-gpr-pavimentos.md` en estado LISTO PARA ARTICULO BASE. Enfoque editorial definido. Pendiente de confirmar con Gabriel si el caso Aeródromo Tobalaba (pavimento de pistas, 2020) tiene material suficiente para ser referenciado. Dos enlaces entrantes previstos: `/construccion/` y `/construccion/casos/prospeccion-aeropuerto-chacalluta/`.
 
-2. **Validacion Canon MADURO** — Glosario, articulo de frecuencia de antena y modulo Biblioteca en OPTIMIZACION. Requiere que Gabriel compare con el mejor recurso GPR en espanol disponible. No es bloqueante para el sitio, pero es deuda declarada.
+2. **Validacion Canon MADURO** — Glosario, articulo de frecuencia de antena y modulo Biblioteca en OPTIMIZACION. Benchmark creado en `docs/QUALITY_BENCHMARK_GPR_ES.md`. Requiere que Gabriel identifique los recursos comparables y complete la matriz de evaluacion. No es bloqueante para el sitio.
 
-3. **Cards de mineria sin pagina de caso propia** — Codelco Division Andina, BHP, SQM, Centinela, Albemarle, Collahuasi. Solo Espesador T5 tiene pagina de caso real completa.
+3. **Caso forense Cementerio Rio Chico** — prioridad alta. Solo card en `/forense/`. URL propuesta: `/forense/casos/cementerio-rio-chico/`. Titulo: "Caso forense con georradar en Cementerio Rio Chico". Tono: sobrio, tecnico y pericial. No crear hasta tener contexto del encargo, objetivo de prospeccion, condiciones del sitio, metodologia y hallazgos documentados.
 
-4. **Cementerio Rio Chico** — solo card en `/forense/`, sin pagina propia. El cliente indico que la cobertura actual de forense es suficiente.
+4. **Casos de construccion adicionales:**
+   - `/construccion/casos/costanera-puerto-montt/` — segunda prioridad. 700 metros de paseo costero, deteccion de oquedades (2018). Tiene suficiente descripcion en la card para iniciar semi-caso.
+   - `/construccion/casos/aerodromo-tobalaba/` — tercera prioridad. Estudio de pavimento de pistas (2020). Confirmar material disponible con Gabriel.
 
-5. **Casos de construccion adicionales** — Costanera Puerto Montt, Aeródromo Tobalaba sin pagina de caso propia.
+5. **Casos de mineria semi-caso (en orden de prioridad):**
+   - Prioridad 1: Codelco Division Andina — pagina tipo semi-caso. Patron: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion.
+   - Prioridad 2: SQM o BHP — definir cual tiene mejor documentacion antes de elegir.
+   - Prioridad 3: Centinela, Albemarle, Collahuasi — mantener como cards verificadas hasta tener evidencia suficiente para semi-caso.
 
 ---
 
 ## Deuda tecnica
 
-1. **Slug de calculadora** — `/herramientas/calculadora-profundidad/` no refleja la herramienta actual. Cambio de URL requiere ADR por impacto SEO.
+1. **Slug de calculadora** — `/herramientas/calculadora-profundidad/` no refleja la herramienta actual. ADR-006 propuesto en `docs/adr/ADR-006-rename-calculadora-profundidad.md`. Nueva URL propuesta: `/herramientas/calculadora-viabilidad-gpr/`. Requiere aprobacion de Gabriel antes de ejecutar. Archivos con enlaces internos a actualizar documentados en el ADR.
 
-2. **Workflow de deploy** — migrado a GitHub Actions el 2026-07-05 (`/.github/workflows/deploy.yml`). El sistema anterior (`pages-build-deployment`) dejaba de funcionar de forma intermitente por un error de infraestructura de GitHub Pages. El nuevo workflow es mas estable y controlable. Sin deuda activa.
+2. **Diferenciacion SEO `/construccion/`** — aplicada el 2026-07-05. Keyword principal cambiada a "prospeccion GPR en obras civiles". H1, lead, seo-text, title y meta description actualizados. Monitorear Search Console en 4-6 semanas.
 
-3. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) estan completos. Sin deuda activa.
+3. **Workflow de deploy** — migrado a GitHub Actions el 2026-07-05 (`/.github/workflows/deploy.yml`). El sistema anterior (`pages-build-deployment`) fallaba de forma intermitente. El nuevo workflow es mas estable. Sin deuda activa.
+
+4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) en estado Propuesto, pendiente de aprobacion.
 
 ---
 
@@ -165,3 +172,8 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 - `docs/INTERNAL_LINKING_AUDIT.md` — 23/23 paginas en cumplimiento (100%).
 - `docs/CHANGELOG.md` — normalizado con formato estructurado.
 - `docs/BACKLOG.md` — este archivo, auditado y actualizado.
+- `docs/QUALITY_BENCHMARK_GPR_ES.md` — benchmark creado. Recursos y puntajes pendientes de revision de Gabriel.
+- `docs/adr/ADR-006-rename-calculadora-profundidad.md` — propuesto, pendiente de aprobacion.
+- `content/research/themes/theme-gpr-pavimentos.md` — estado actualizado a LISTO PARA ARTICULO BASE.
+- `construccion/index.html` — diferenciacion SEO aplicada (keyword, H1, lead, seo-text).
+- `herramientas/selector-antena/index.html` — titulo, disclaimer y enlace cruzado al articulo de frecuencia actualizados.
