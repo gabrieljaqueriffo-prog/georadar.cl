@@ -7,6 +7,17 @@
 
 ---
 
+## 2026-07-05 (auditoria — actualizacion)
+
+- **Mejorado:** `docs/INTERNAL_LINKING_AUDIT.md` actualizado tras las correcciones
+  de enlazado. Las 5 paginas con estado "Revisar" pasaron a "Cumple": se
+  verifico la presencia real de cada enlace antes de actualizar el estado.
+  Agregada seccion "Correcciones aplicadas" con origen, destino y motivo
+  editorial de cada cambio. Resumen ejecutivo actualizado: 23/23 paginas
+  cumplen (100%). Seccion de acciones pendientes cerrada.
+
+---
+
 ## 2026-07-05 (enlazado)
 
 - **Mejorado:** correcciones de enlazado interno para las 5 paginas con debilidad
