@@ -1,7 +1,6 @@
 {
   "version": "1",
   "description": "Mapa estructurado del sitio georadar.cl. Usado por scripts/audit.js para validar integridad de links, cobertura del glosario y conexiones requeridas entre páginas. Actualizar cuando se agregue cualquier página nueva.",
-
   "pages": [
     {
       "path": "/",
@@ -49,7 +48,7 @@
       "title": "Construcción",
       "section": "construccion",
       "type": "service",
-      "footer_keyword": "Georradar construcción Chile"
+      "footer_keyword": "Prospección GPR en obras civiles"
     },
     {
       "path": "/forense/",
@@ -177,7 +176,7 @@
       "title": "Selector de antena GPR",
       "section": "herramientas",
       "type": "tool",
-      "footer_keyword": "Selector de antena GPR"
+      "footer_keyword": "Selector de antena georradar"
     },
     {
       "path": "/glosario/",
@@ -188,48 +187,207 @@
       "footer_keyword": "Glosario GPR"
     }
   ],
-
   "glosario_terms": {
-    "georradar": { "anchor": "#georradar", "patterns": ["georradar", "GPR"] },
-    "radargrama": { "anchor": "#radargrama", "patterns": ["radargrama", "radargramas"] },
-    "socavon": { "anchor": "#socavon", "patterns": ["socavón", "socavones"] },
-    "hiperbola": { "anchor": "#hiperbola", "patterns": ["hipérbola", "hipérbolas"] },
-    "antena": { "anchor": "#antena", "patterns": ["antena GPR", "antenas GPR"] },
-    "atenuacion": { "anchor": "#atenuacion", "patterns": ["atenuación"] },
-    "velocidad-propagacion": { "anchor": "#velocidad-propagacion", "patterns": ["velocidad de propagación"] },
-    "espesador": { "anchor": "#espesador", "patterns": ["espesador", "espesadores"] },
-    "grilla-prospeccion": { "anchor": "#grilla-prospeccion", "patterns": ["grilla de prospección", "grillas de prospección"] },
-    "georreferenciacion": { "anchor": "#georreferenciacion", "patterns": ["georreferenciación", "georreferenciada", "georreferenciadas", "georreferenciados"] },
-    "cadena-de-custodia": { "anchor": "#cadena-de-custodia", "patterns": ["cadena de custodia"] },
-    "conductividad": { "anchor": "#conductividad", "patterns": ["conductividad eléctrica", "conductividad del suelo"] },
-    "frecuencia-dominante": { "anchor": "#frecuencia-dominante", "patterns": ["frecuencia dominante"] },
-    "permitividad": { "anchor": "#permitividad", "patterns": ["permitividad dieléctrica", "constante dieléctrica"] },
-    "resolucion-vertical": { "anchor": "#resolucion-vertical", "patterns": ["resolución vertical"] }
+    "georradar": {
+      "anchor": "#georradar",
+      "patterns": [
+        "georradar",
+        "GPR"
+      ]
+    },
+    "radargrama": {
+      "anchor": "#radargrama",
+      "patterns": [
+        "radargrama",
+        "radargramas"
+      ]
+    },
+    "socavon": {
+      "anchor": "#socavon",
+      "patterns": [
+        "socavón",
+        "socavones"
+      ]
+    },
+    "hiperbola": {
+      "anchor": "#hiperbola",
+      "patterns": [
+        "hipérbola",
+        "hipérbolas"
+      ]
+    },
+    "antena": {
+      "anchor": "#antena",
+      "patterns": [
+        "antena GPR",
+        "antenas GPR"
+      ]
+    },
+    "atenuacion": {
+      "anchor": "#atenuacion",
+      "patterns": [
+        "atenuación"
+      ]
+    },
+    "velocidad-propagacion": {
+      "anchor": "#velocidad-propagacion",
+      "patterns": [
+        "velocidad de propagación"
+      ]
+    },
+    "espesador": {
+      "anchor": "#espesador",
+      "patterns": [
+        "espesador",
+        "espesadores"
+      ]
+    },
+    "grilla-prospeccion": {
+      "anchor": "#grilla-prospeccion",
+      "patterns": [
+        "grilla de prospección",
+        "grillas de prospección"
+      ]
+    },
+    "georreferenciacion": {
+      "anchor": "#georreferenciacion",
+      "patterns": [
+        "georreferenciación",
+        "georreferenciada",
+        "georreferenciadas",
+        "georreferenciados"
+      ]
+    },
+    "cadena-de-custodia": {
+      "anchor": "#cadena-de-custodia",
+      "patterns": [
+        "cadena de custodia"
+      ]
+    },
+    "conductividad": {
+      "anchor": "#conductividad",
+      "patterns": [
+        "conductividad eléctrica",
+        "conductividad del suelo"
+      ]
+    },
+    "frecuencia-dominante": {
+      "anchor": "#frecuencia-dominante",
+      "patterns": [
+        "frecuencia dominante"
+      ]
+    },
+    "permitividad": {
+      "anchor": "#permitividad",
+      "patterns": [
+        "permitividad dieléctrica",
+        "constante dieléctrica"
+      ]
+    },
+    "resolucion-vertical": {
+      "anchor": "#resolucion-vertical",
+      "patterns": [
+        "resolución vertical"
+      ]
+    }
   },
-
   "required_connections": [
-    { "from": "/mineria/casos/socavones-espesador-t5/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
-    { "from": "/utilities/casos/accesos-metro-de-santiago/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
-    { "from": "/forense/casos/cip-san-joaquin-cerro-chena/", "to": "/forense/casos/sitio-iran-3037-venda-sexy/", "note": "casos forenses deben enlazarse entre sí" },
-    { "from": "/forense/casos/sitio-iran-3037-venda-sexy/", "to": "/forense/casos/cip-san-joaquin-cerro-chena/", "note": "casos forenses deben enlazarse entre sí" },
-    { "from": "/forense/casos/cip-san-joaquin-cerro-chena/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
-    { "from": "/forense/casos/sitio-iran-3037-venda-sexy/", "to": "/glosario/", "note": "caso debe enlazar al glosario" },
-    { "from": "/glosario/", "to": "/mineria/casos/socavones-espesador-t5/", "note": "glosario debe enlazar a casos reales" },
-    { "from": "/glosario/", "to": "/forense/casos/cip-san-joaquin-cerro-chena/", "note": "glosario debe enlazar a casos reales" },
-    { "from": "/glosario/", "to": "/forense/casos/sitio-iran-3037-venda-sexy/", "note": "glosario debe enlazar a casos reales" },
-    { "from": "/mentoria/", "to": "/glosario/", "note": "mentoría menciona términos técnicos" },
-    { "from": "/mentoria/", "to": "/biblioteca/", "note": "mentoría remite a recursos previos" },
-    { "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/", "to": "/glosario/", "note": "artículo usa términos del glosario" },
-    { "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/", "to": "/herramientas/necesito-gpr/", "note": "artículo debe remitir a herramienta de decisión" },
-    { "from": "/herramientas/selector-antena/", "to": "/glosario/", "note": "herramienta usa términos del glosario" },
-    { "from": "/herramientas/selector-antena/", "to": "/herramientas/calculadora-profundidad/", "note": "herramientas complementarias" },
-    { "from": "/herramientas/calculadora-profundidad/", "to": "/herramientas/selector-antena/", "note": "herramientas complementarias" },
-    { "from": "/glosario/", "to": "/herramientas/selector-antena/", "note": "glosario debe enlazar a herramienta de antena" },
-    { "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/", "to": "/herramientas/selector-antena/", "note": "artículo sobre frecuencia debe enlazar al selector" }
+    {
+      "from": "/mineria/casos/socavones-espesador-t5/",
+      "to": "/glosario/",
+      "note": "caso debe enlazar al glosario"
+    },
+    {
+      "from": "/utilities/casos/accesos-metro-de-santiago/",
+      "to": "/glosario/",
+      "note": "caso debe enlazar al glosario"
+    },
+    {
+      "from": "/forense/casos/cip-san-joaquin-cerro-chena/",
+      "to": "/forense/casos/sitio-iran-3037-venda-sexy/",
+      "note": "casos forenses deben enlazarse entre sí"
+    },
+    {
+      "from": "/forense/casos/sitio-iran-3037-venda-sexy/",
+      "to": "/forense/casos/cip-san-joaquin-cerro-chena/",
+      "note": "casos forenses deben enlazarse entre sí"
+    },
+    {
+      "from": "/forense/casos/cip-san-joaquin-cerro-chena/",
+      "to": "/glosario/",
+      "note": "caso debe enlazar al glosario"
+    },
+    {
+      "from": "/forense/casos/sitio-iran-3037-venda-sexy/",
+      "to": "/glosario/",
+      "note": "caso debe enlazar al glosario"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/mineria/casos/socavones-espesador-t5/",
+      "note": "glosario debe enlazar a casos reales"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/forense/casos/cip-san-joaquin-cerro-chena/",
+      "note": "glosario debe enlazar a casos reales"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/forense/casos/sitio-iran-3037-venda-sexy/",
+      "note": "glosario debe enlazar a casos reales"
+    },
+    {
+      "from": "/mentoria/",
+      "to": "/glosario/",
+      "note": "mentoría menciona términos técnicos"
+    },
+    {
+      "from": "/mentoria/",
+      "to": "/biblioteca/",
+      "note": "mentoría remite a recursos previos"
+    },
+    {
+      "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/",
+      "to": "/glosario/",
+      "note": "artículo usa términos del glosario"
+    },
+    {
+      "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "to": "/herramientas/necesito-gpr/",
+      "note": "artículo debe remitir a herramienta de decisión"
+    },
+    {
+      "from": "/herramientas/selector-antena/",
+      "to": "/glosario/",
+      "note": "herramienta usa términos del glosario"
+    },
+    {
+      "from": "/herramientas/selector-antena/",
+      "to": "/herramientas/calculadora-profundidad/",
+      "note": "herramientas complementarias"
+    },
+    {
+      "from": "/herramientas/calculadora-profundidad/",
+      "to": "/herramientas/selector-antena/",
+      "note": "herramientas complementarias"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/herramientas/selector-antena/",
+      "note": "glosario debe enlazar a herramienta de antena"
+    },
+    {
+      "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/",
+      "to": "/herramientas/selector-antena/",
+      "note": "artículo sobre frecuencia debe enlazar al selector"
+    }
   ],
-
   "min_incoming_links": {
     "default": 2,
-    "exceptions": ["/", "/404.html"]
+    "exceptions": [
+      "/",
+      "/404.html"
+    ]
   }
 }
