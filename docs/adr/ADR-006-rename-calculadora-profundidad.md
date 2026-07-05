@@ -1,8 +1,10 @@
 # ADR-006: Renombrar calculadora-profundidad a calculadora-viabilidad-gpr
 
-**Estado:** Propuesto
+**Estado:** Aprobado conceptualmente. Ejecución pendiente.
 **Fecha:** 2026-07-05
-**Propuesto por:** ATLAS (pendiente de aprobación por Gabriel Jaque)
+**Aprobado:** 2026-07-05
+**Propuesto por:** ATLAS
+**Aprobado por:** Gabriel Jaque
 
 ---
 
@@ -53,10 +55,14 @@ en Search Console.
 
 ## Decisión
 
-Se propone la opción C.
+Se aprueba la opción C.
+
+Se aprueba el rename estratégico desde calculadora de profundidad hacia
+calculadora de viabilidad GPR porque la herramienta ya no evalúa solo
+profundidad, sino condiciones preliminares de factibilidad técnica.
 
 **URL actual:** `/herramientas/calculadora-profundidad/`
-**URL propuesta:** `/herramientas/calculadora-viabilidad-gpr/`
+**URL aprobada:** `/herramientas/calculadora-viabilidad-gpr/`
 
 **Título propuesto:** "Calculadora de viabilidad GPR"
 
@@ -113,12 +119,21 @@ en el futuro. Si no, usar la opción 1 como medida intermedia.
 
 ---
 
-## Condición de aprobación
+## Condiciones de ejecución
 
-Este ADR requiere aprobación explícita de Gabriel Jaque antes de ejecutar el
-cambio de URL. No implementar hasta contar con esa aprobación. El cambio de
-URL afecta SEO existente y es irreversible en la práctica (revertirlo requiere
-un segundo redirect y otro período de transición).
+El ADR está aprobado conceptualmente. El cambio de URL no se ejecuta en `main`
+hasta que Gabriel lo confirme explícitamente en una tarea posterior. Antes de
+ejecutar, se deben cumplir todas las condiciones siguientes en orden:
+
+1. Crear rama separada para el cambio.
+2. Implementar redirect 301 desde `/herramientas/calculadora-profundidad/` hacia
+   `/herramientas/calculadora-viabilidad-gpr/`.
+3. Actualizar todos los enlaces internos listados en la sección "Consecuencias".
+4. Actualizar title, H1, meta description y textos internos de la herramienta.
+5. Verificar que no queden referencias ambiguas a "profundidad garantizada".
+6. Preparar monitoreo en Search Console durante 4 a 6 semanas después de publicar.
+
+**Regla:** no ejecutar el cambio de slug hasta confirmación explícita de Gabriel.
 
 ---
 
