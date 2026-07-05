@@ -7,6 +7,23 @@
 
 ---
 
+## 2026-07-05 (auditoria)
+
+- **Nuevo:** `docs/INTERNAL_LINKING_AUDIT.md` — primera auditoria de enlazado
+  interno del sitio. Cubre las 23 URLs publicas del sitemap. Metodologia:
+  extraccion automatizada de todos los `href` internos, clasificados en
+  estructurales (nav/footer) y contextuales (cuerpo de contenido). Resultado:
+  18 paginas cumplen (78%), 5 en estado "Revisar" (22%), ninguna huerfana.
+  Paginas con debilidad contextual identificadas: `/mentoria/` (unica sin
+  enlaces de cuerpo, ni entrantes ni salientes), `/biblioteca/que-puede-decirnos-
+  una-senal-gpr-ademas-de-una-imagen/` (no referenciada desde servicios),
+  `/biblioteca/como-afecta-la-humedad-al-georradar/` (menos entrantes de la
+  biblioteca), `/utilities/casos/accesos-metro-de-santiago/` (un solo entrante
+  contextual), `/forense/casos/sitio-iran-3037-venda-sexy/` (ausente de home).
+  Recomendaciones especificas documentadas. Paginas de produccion sin cambios.
+
+---
+
 ## 2026-07-05 (actualización)
 
 - **Mejorado:** hero de `index.html` reposicionado para presentar ATLAS como
