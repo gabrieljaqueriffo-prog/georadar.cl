@@ -7,6 +7,19 @@
 
 ---
 
+## 2026-07-05
+
+- **Mejorado:** `assets/css/shared.css` normalizado para mejor mantenibilidad.
+  Reformateo completo: una propiedad por línea, 24 secciones numeradas con
+  encabezados explícitos (VARIABLES, RESET Y BASE, TIPOGRAFIA, LAYOUT,
+  TOPBAR, NAVEGACION, BOTONES, HERO, SECCIONES, CLIENTES, ESTADISTICAS,
+  CARDS, ETIQUETAS DE CASO, TIMELINE, TEXTO SEO, FAQ, PASOS DE PROCESO,
+  CTA FINAL, FOOTER, HERRAMIENTAS, ANIMACION REVEAL, SIMULADOR GPR,
+  ACCESIBILIDAD, RESPONSIVE). Sin cambios de valores, nombres de clase ni
+  variables. Auditoria: 0 errores tras el cambio.
+
+---
+
 ## 2026-07-04 (actualización)
 
 - **Corrección de gobernanza:** agregada subsección `§5.1 Estructura actual del
