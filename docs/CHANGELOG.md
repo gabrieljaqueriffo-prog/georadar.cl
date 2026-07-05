@@ -7,6 +7,22 @@
 
 ---
 
+## 2026-07-05 (SEO)
+
+- **Nuevo:** `docs/SEO_BASELINE.md` — linea base SEO del sitio antes de
+  iniciar nuevas optimizaciones. Cubre las 23 URLs publicas del sitemap.
+  Clasificacion por tipo de activo, capacidad, keyword principal, keywords
+  secundarias, intencion de busqueda, publico objetivo, CTA y estado editorial
+  recomendado. Estados: 11 Mantener, 7 Optimizar, 2 Expandir, 2 Revisar,
+  0 Fusionar. Riesgos de canibalizacion documentados: un par de riesgo medio
+  (`/herramientas/selector-antena/` vs. articulo de frecuencia de antena) y
+  dos pares de riesgo bajo. Ranking de 7 prioridades de optimizacion identificadas.
+  Metodologia sin acceso a GSC: criterio editorial basado en keyword y patron
+  de intencion. Sirve como referencia para toda decision de contenido o SEO
+  a partir de esta fecha.
+
+---
+
 ## 2026-07-05 (auditoria — actualizacion)
 
 - **Mejorado:** `docs/INTERNAL_LINKING_AUDIT.md` actualizado tras las correcciones
