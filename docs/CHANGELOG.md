@@ -7,6 +7,30 @@
 
 ---
 
+## 2026-07-05 (enlazado)
+
+- **Mejorado:** correcciones de enlazado interno para las 5 paginas con debilidad
+  contextual detectadas en `INTERNAL_LINKING_AUDIT.md`. Cambios aplicados:
+  - `/mentoria/`: agregado enlace saliente a `/biblioteca/como-influye-la-
+    frecuencia-de-antena-gpr/` en seccion "Que se trabaja" (seleccion de
+    antena). Agregado enlace entrante desde ese mismo articulo en su seccion
+    "Aplique este concepto", referenciando la mentoria para quienes quieren
+    desarrollar criterio con acompanamiento.
+  - `/utilities/`: agregado enlace a `/biblioteca/que-puede-decirnos-una-
+    senal-gpr-ademas-de-una-imagen/` en la FAQ de entregables.
+  - `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`:
+    agregado enlace a `/biblioteca/como-afecta-la-humedad-al-georradar/` en
+    la seccion "Para seguir aprendiendo".
+  - `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`:
+    agregado enlace al caso `/utilities/casos/accesos-metro-de-santiago/`
+    en la seccion "Para seguir aprendiendo".
+  - `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`:
+    agregado enlace al caso `/forense/casos/sitio-iran-3037-venda-sexy/`
+    en la seccion "Vealo en un caso real". Ningun cambio estructural ni de
+    diseno. Audit: 0 errores.
+
+---
+
 ## 2026-07-05 (auditoria)
 
 - **Nuevo:** `docs/INTERNAL_LINKING_AUDIT.md` — primera auditoria de enlazado
