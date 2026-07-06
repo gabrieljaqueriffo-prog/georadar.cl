@@ -117,7 +117,7 @@ detecte esa contradicción.
 | Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
 |----------|------|--------|-----|---------|--------|-----------------|
 | Herramientas | Índice | Herramientas GPR gratuitas | `/herramientas/` | `herramientas/index.html` | PUBLICADO | Ninguna bloqueante |
-| Herramientas | Herramienta | Calculadora de viabilidad GPR | `/herramientas/calculadora-profundidad/` | `herramientas/calculadora-profundidad/index.html` | PUBLICADO - REQUIERE DECISIÓN | ADR-006 aprobado conceptualmente. Rename a `/herramientas/calculadora-viabilidad-gpr/` con redirect 301. No ejecutar hasta confirmación explícita de Gabriel en tarea separada |
+| Herramientas | Herramienta | Calculadora de viabilidad GPR | `/herramientas/calculadora-viabilidad-gpr/` | `herramientas/calculadora-viabilidad-gpr/index.html` | PUBLICADO | ADR-006 ejecutado en rama. Redirect activo desde URL anterior. Pendiente merge a main y monitoreo Search Console 4-6 semanas. |
 | Herramientas | Herramienta | ¿Necesito un estudio GPR? (árbol de decisión) | `/herramientas/necesito-gpr/` | `herramientas/necesito-gpr/index.html` | PUBLICADO | Ninguna bloqueante |
 | Herramientas | Herramienta | Selector de antena georradar | `/herramientas/selector-antena/` | `herramientas/selector-antena/index.html` | PUBLICADO - REQUIERE AUDITORÍA | Verificar lenguaje no absoluto; confirmar que disclaimer es suficiente; verificar enlaces cruzados con artículo de frecuencia |
 
@@ -171,7 +171,7 @@ detecte esa contradicción.
 | Tipo | Nombre | Ruta | Estado | Acción pendiente |
 |------|--------|------|--------|-----------------|
 | Benchmark | Benchmark GPR en español | `docs/QUALITY_BENCHMARK_GPR_ES.md` | PRELIMINAR VALIDADO PARCIALMENTE | Ejecutar acciones derivadas; certificación de Gabriel para pasar activos a MADURO. No habilita claim "mejor recurso GPR en español". |
-| ADR | ADR-006 rename calculadora-profundidad | `docs/adr/ADR-006-rename-calculadora-profundidad.md` | APROBADO CONCEPTUALMENTE / EJECUCIÓN PENDIENTE | Requiere confirmación explícita de Gabriel. Ejecutar en rama separada con redirect 301. No modificar URL en main. |
+| ADR | ADR-006 rename calculadora-profundidad | `docs/adr/ADR-006-rename-calculadora-profundidad.md` | EJECUTADO EN RAMA | Ejecutado 2026-07-06 en rama `atlas/adr-006-calculadora-viabilidad-gpr`. Pendiente merge a main y monitoreo Search Console. |
 | Registro de caso | Aeródromo Chacalluta | `content/research/cases/case-construccion-aeropuerto-chacalluta.md` | AUDITORÍA APLICADA PARCIALMENTE | Ver deuda pendiente en el archivo: evaluar title con "GPR" explícito. |
 | Research theme | GPR en pavimentos | `content/research/themes/theme-gpr-pavimentos.md` | LISTO PARA ARTÍCULO BASE | Redactar artículo base. Chacalluta como referencia principal. |
 

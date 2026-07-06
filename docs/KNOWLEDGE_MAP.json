@@ -163,8 +163,8 @@
       "footer_keyword": "Necesito un estudio GPR"
     },
     {
-      "path": "/herramientas/calculadora-profundidad/",
-      "file": "herramientas/calculadora-profundidad/index.html",
+      "path": "/herramientas/calculadora-viabilidad-gpr/",
+      "file": "herramientas/calculadora-viabilidad-gpr/index.html",
       "title": "Calculadora de viabilidad GPR",
       "section": "herramientas",
       "type": "tool",
@@ -364,11 +364,11 @@
     },
     {
       "from": "/herramientas/selector-antena/",
-      "to": "/herramientas/calculadora-profundidad/",
+      "to": "/herramientas/calculadora-viabilidad-gpr/",
       "note": "herramientas complementarias"
     },
     {
-      "from": "/herramientas/calculadora-profundidad/",
+      "from": "/herramientas/calculadora-viabilidad-gpr/",
       "to": "/herramientas/selector-antena/",
       "note": "herramientas complementarias"
     },

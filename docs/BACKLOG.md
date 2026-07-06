@@ -123,8 +123,8 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 - **Estado:** PUBLICADO — `/herramientas/`
 
 #### Calculadora de viabilidad GPR
-- **Estado:** PUBLICADO — `/herramientas/calculadora-profundidad/`
-- **Deuda SEO:** el slug "calculadora-profundidad" no refleja lo que hace hoy (es una calculadora de viabilidad, no solo de profundidad). Cambiar la URL requiere ADR. Ver `SEO_BASELINE.md`.
+- **Estado:** PUBLICADO — `/herramientas/calculadora-viabilidad-gpr/` (URL anterior `/herramientas/calculadora-profundidad/` redirige con meta-refresh)
+- **ADR-006:** ejecutado en rama `atlas/adr-006-calculadora-viabilidad-gpr` el 2026-07-06. Pendiente merge a main por Gabriel. Monitorear Search Console 4-6 semanas después del merge.
 
 #### Necesito un estudio GPR (arbol de decision)
 - **Estado:** PUBLICADO — `/herramientas/necesito-gpr/`
@@ -168,13 +168,15 @@ Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como
 
 ## Deuda tecnica
 
-1. **Slug de calculadora** — `/herramientas/calculadora-profundidad/` no refleja la herramienta actual. ADR-006 propuesto en `docs/adr/ADR-006-rename-calculadora-profundidad.md`. Nueva URL propuesta: `/herramientas/calculadora-viabilidad-gpr/`. Requiere aprobacion de Gabriel antes de ejecutar. Archivos con enlaces internos a actualizar documentados en el ADR.
+1. **Slug de calculadora** — ADR-006 ejecutado en rama `atlas/adr-006-calculadora-viabilidad-gpr` el 2026-07-06. Nueva URL activa en rama: `/herramientas/calculadora-viabilidad-gpr/`. Redirect meta-refresh desde URL anterior. Pendiente merge a main por Gabriel y monitoreo Search Console 4-6 semanas.
 
 2. **Diferenciacion SEO `/construccion/`** — aplicada el 2026-07-05. Keyword principal cambiada a "prospeccion GPR en obras civiles". H1, lead, seo-text, title y meta description actualizados. Monitorear Search Console en 4-6 semanas.
 
 3. **Workflow de deploy** — migrado a GitHub Actions el 2026-07-05 (`/.github/workflows/deploy.yml`). El sistema anterior (`pages-build-deployment`) fallaba de forma intermitente. El nuevo workflow es mas estable. Sin deuda activa.
 
-4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) en estado Propuesto, pendiente de aprobacion.
+4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) ejecutado en rama, pendiente de merge.
+
+5. **Referencias históricas a calculadora-profundidad en docs internos** — `BACKLOG.md`, `ARCHITECTURE.md` y `SEO_BASELINE.md` contienen menciones a la URL `/herramientas/calculadora-profundidad/` en contexto histórico o descriptivo. No son operativas y no generan enlaces rotos. Revisar en tarea de mantenimiento posterior para aclarar que la URL fue reemplazada por `/herramientas/calculadora-viabilidad-gpr/`.
 
 ---
 
