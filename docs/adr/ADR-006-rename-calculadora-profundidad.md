@@ -1,8 +1,9 @@
 # ADR-006: Renombrar calculadora-profundidad a calculadora-viabilidad-gpr
 
-**Estado:** Aprobado conceptualmente. Ejecución pendiente.
+**Estado:** Ejecutado en rama `atlas/adr-006-calculadora-viabilidad-gpr`. Pendiente de merge a main por Gabriel.
 **Fecha:** 2026-07-05
 **Aprobado:** 2026-07-05
+**Ejecutado en rama:** 2026-07-06
 **Propuesto por:** ATLAS
 **Aprobado por:** Gabriel Jaque
 
