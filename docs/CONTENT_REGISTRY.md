@@ -76,7 +76,7 @@ detecte esa contradicción.
 | Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
 |----------|------|--------|-----|---------|--------|-----------------|
 | Construcción | Servicio | Prospección GPR en obras civiles | `/construccion/` | `construccion/index.html` | PUBLICADO - REQUIERE AUDITORÍA | Verificar coherencia con keyword nueva "prospección GPR en obras civiles"; monitorear Search Console 4-6 semanas |
-| Construcción | Caso real | Prospección subterránea en Aeropuerto Chacalluta, Arica | `/construccion/casos/prospeccion-aeropuerto-chacalluta/` | `construccion/casos/prospeccion-aeropuerto-chacalluta/index.html` | PUBLICADO - REQUIERE AUDITORÍA | Auditoría parcialmente aplicada 2026-07-06. Pendiente: evaluar si title incorpora "GPR" explícito. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md` |
+| Construcción | Caso real | Prospección GPR en Aeropuerto Chacalluta, Arica | `/construccion/casos/prospeccion-aeropuerto-chacalluta/` | `construccion/casos/prospeccion-aeropuerto-chacalluta/index.html` | PUBLICADO - REQUIERE AUDITORÍA | Auditoría aplicada 2026-07-06: footer, enlace a frecuencia, claims, title/H1 con "GPR". Sin deuda pendiente conocida. Certificación final de Gabriel requerida para cerrar estado. |
 
 ---
 

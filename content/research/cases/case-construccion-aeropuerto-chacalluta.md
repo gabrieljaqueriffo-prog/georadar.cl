@@ -72,13 +72,12 @@ Estado antes de la auditoría:
 
 ### Title y H1
 
-- **Title:** "Prospección subterránea en Aeropuerto Chacalluta | Caso real | Geo Radar Chile"
-- **H1:** "Prospección subterránea en Aeropuerto Chacalluta, Arica"
+- **Title:** "Prospección GPR en Aeropuerto Chacalluta | Caso real | Geo Radar Chile"
+- **H1:** "Prospección GPR en Aeropuerto Chacalluta, Arica"
 
-Observación pendiente: ni el title ni el H1 contienen "GPR" de forma explícita.
-Dado que el keyword del vertical es "prospección GPR en obras civiles", evaluar
-si corresponde ajustar el title para incluir "GPR". Cambio de bajo riesgo SEO,
-pero requiere decisión de Gabriel antes de ejecutar.
+Ajuste aplicado 2026-07-06: "subterránea" reemplazado por "GPR" en title, H1,
+og:title, twitter:title y JSON-LD headline/name. Alineación con keyword del
+vertical "prospección GPR en obras civiles". URL no modificada.
 
 ### CTA final
 
@@ -110,8 +109,7 @@ el H1. Se registra como deuda menor.
 
 ---
 
-## Deuda pendiente (no bloqueante)
+## Deuda pendiente
 
-- [ ] Evaluar si el title incorpora "GPR" para alineación con keyword del vertical.
-  Propuesta: "Prospección GPR en Aeropuerto Chacalluta | Caso real | Geo Radar Chile".
-  Requiere decisión de Gabriel.
+Ninguna bloqueante. Auditoría completa. Estado: PUBLICADO — REQUIERE AUDITORÍA
+hasta certificación final de Gabriel.
