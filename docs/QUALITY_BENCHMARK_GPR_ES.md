@@ -10,7 +10,7 @@
 
 ## Estado del benchmark
 
-**Estado actual:** PRELIMINAR VALIDADO
+**Estado actual:** PRELIMINAR VALIDADO PARCIALMENTE
 
 Los puntajes R1-R8 fueron revisados directamente contra recursos externos
 en español por Gabriel. La revisión cubre los 8 recursos sin incógnitas
@@ -18,11 +18,12 @@ de acceso pendientes. La matriz ya no tiene entradas provisionales.
 
 **Lo que existe:** lista de recursos definida, puntajes de R1-R8 corregidos por
 revisión directa de Gabriel. ATLAS Glosario (AG) y ATLAS Biblioteca (AB)
-evaluados desde el contenido publicado.
+evaluados desde el contenido publicado. Acciones editoriales derivadas definidas.
 
 **Lo que falta:** revisión editorial interna de los activos afectados antes de
 cambiar estado a MADURO. El benchmark validado es condición necesaria pero no
-suficiente para ese cambio.
+suficiente para ese cambio. Las acciones derivadas deben ejecutarse y evaluarse
+antes de certificar el resultado.
 
 **Consecuencia directa:** los activos ATLAS relacionados no cambian de estado
 en esta revisión. Permanecen en OPTIMIZACION o OPTIMIZACION AVANZADA según
@@ -335,6 +336,55 @@ resultados son favorables para ATLAS Biblioteca pero no para todos los activos.
 
 ---
 
+## Acciones derivadas del benchmark
+
+Las brechas identificadas en la matriz producen las siguientes acciones
+editoriales concretas. No son opcionales: son el trabajo que separa el
+estado actual (OPTIMIZACION) del estado MADURO. Ninguna de estas acciones
+crea páginas públicas nuevas.
+
+### Glosario
+
+- Agregar ejemplos de uso en terreno a los términos con menor contexto aplicado.
+- Agregar errores comunes de interpretación donde el término puede generar
+  expectativas incorrectas en el cliente o en el técnico no especialista.
+- Relacionar términos técnicos con decisiones reales de obra: qué implica ese
+  concepto para quien contrata o evalúa un estudio GPR.
+
+### Artículo de frecuencia de antena
+
+- Reforzar la explicación de la relación frecuencia vs profundidad vs resolución
+  con mayor precisión en los límites de cada variable.
+- Agregar tabla por rango de antena con indicaciones de profundidad típica,
+  resolución aproximada y tipos de objetivo adecuados.
+- Incluir advertencias explícitas por humedad, arcillas, sales y conductividad
+  elevada como factores que modifican la selección de frecuencia.
+- Conectar explícitamente con el selector de antena mediante enlace contextual
+  en la sección de orientación práctica.
+- Agregar ejemplos por tipo de objetivo: ductos, losas, pavimentos, vacíos y
+  armaduras.
+
+### Módulo Biblioteca
+
+- Reforzar rutas de lectura por perfil de usuario: obra civil, minería,
+  utilities y forense. El lector debe encontrar fácilmente cuáles artículos
+  le corresponden según su contexto.
+- Integrar mejor el glosario, los artículos, las herramientas y los casos
+  reales: la Biblioteca debe sentirse como un sistema, no como una colección
+  de piezas independientes.
+- Evitar que la Biblioteca funcione como blog genérico: cada artículo debe
+  enlazar hacia una decisión concreta o un caso real.
+
+---
+
+## Siguiente frente recomendado
+
+Aeródromo Chacalluta como candidato principal de construcción. Desarrollo
+condicionado a material documentado adicional de Gabriel. Ver
+`content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
+
+---
+
 ## Pasos para convertir esta evaluación en veredicto válido
 
 1. Contrastar el artículo de frecuencia de antena de ATLAS directamente con R4
@@ -356,3 +406,4 @@ resultados son favorables para ATLAS Biblioteca pero no para todos los activos.
 | 2026-07-05 | Lista de 8 recursos definida por Gabriel. Matriz completada con evaluación preliminar. Pendiente de validación directa por Gabriel. | ATLAS |
 | 2026-07-05 | Puntajes R1-R8 corregidos por revisión directa de Gabriel. Sección de validación externa añadida. Lectura de resultados revisada. Estado: PRELIMINAR VALIDADO PARCIALMENTE. | ATLAS |
 | 2026-07-05 | R7 revisado con página específica de GPR de Radartutorial. Puntaje corregido de provisional (9) a definitivo (17/27). Reclasificado como recurso GPR general accesible. Estado del benchmark actualizado a PRELIMINAR VALIDADO. | Gabriel + ATLAS |
+| 2026-07-05 | Sección "Acciones derivadas del benchmark" añadida con tareas editoriales concretas para Glosario, artículo de frecuencia y módulo Biblioteca. Siguiente frente definido. Estado cerrado como PRELIMINAR VALIDADO PARCIALMENTE. | Gabriel + ATLAS |
