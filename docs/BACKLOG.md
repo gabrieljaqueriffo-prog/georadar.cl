@@ -43,7 +43,7 @@
   - **Enlaces entrantes:** `/construccion/`, `/index.html`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
   - **Enlaces salientes:** `/construccion/`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
 - **Deuda:** Costanera Puerto Montt, edificacion Las Condes — sin pagina de caso propia. Aeródromo Tobalaba descartado temporalmente (sin material).
-- **Candidato prioritario:** Aeródromo Chacalluta como segundo caso o semi-caso. Estado: PENDIENTE MATERIAL DOCUMENTADO. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
+- **Chacalluta:** PUBLICADO — REQUIERE AUDITORÍA. Caso real publicado en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`. La tarea pendiente es auditoría editorial, técnica y SEO, no intake. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
 - **Deuda SEO:** diferenciacion aplicada 2026-07-05. Keyword "prospeccion GPR en obras civiles". Monitorear Search Console en 4 a 6 semanas.
 
 ---
@@ -146,8 +146,8 @@ Orden de prioridad (2026-07-05):
 **Prioridad 2 — Aeródromo Tobalaba: descartado temporalmente**
 Gabriel no dispone de informacion suficiente para desarrollarlo como caso o referencia. No usar en articulos ni en paginas de caso hasta tener material documentado. Registrado en `content/research/themes/theme-gpr-pavimentos.md`.
 
-**Prioridad 3 — Aeródromo Chacalluta: semi-caso candidato de construccion**
-Estado: PENDIENTE MATERIAL DOCUMENTADO. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`. Candidato principal para segundo caso o semi-caso dentro del vertical construccion. Desarrollo condicionado a que Gabriel confirme material documentado adicional (distinto del caso ya publicado en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`). Si el material es parcial, producir solo semi-caso sobrio sin radargramas ni resultados especificos. Si no hay material, Costanera Puerto Montt es la siguiente opcion. No crear pagina publica hasta completar el intake minimo del archivo de caso.
+**Prioridad 3 — Aeródromo Chacalluta: auditoría editorial, técnica y SEO**
+Estado: PUBLICADO — REQUIERE AUDITORÍA. Tipo: caso real de construcción. La página existe en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`. La tarea pendiente ya no es intake sino auditoría del caso publicado. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`. Ajustes aplicados 2026-07-06: footer actualizado a "Prospección GPR en obras civiles", enlace al artículo de frecuencia de antena añadido en sección de método. Pendiente: evaluar si el H1 y el title incorporan "GPR" de forma explícita para alineación con keyword del vertical.
 
 **Prioridad 4 — Ejecutar ADR-006 (rename calculadora)**
 `docs/adr/ADR-006-rename-calculadora-profundidad.md` en estado Aprobado conceptualmente. Ejecucion pendiente de confirmacion explicita de Gabriel. No ejecutar cambio de URL hasta esa confirmacion. Crear rama separada, implementar redirect 301, actualizar enlaces internos, verificar ausencia de referencias a "profundidad garantizada" y preparar monitoreo en Search Console.
