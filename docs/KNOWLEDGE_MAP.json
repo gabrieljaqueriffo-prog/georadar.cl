@@ -179,6 +179,14 @@
       "footer_keyword": "Selector de antena georradar"
     },
     {
+      "path": "/georadar/",
+      "file": "georadar/index.html",
+      "title": "Georadar: qué es, cómo funciona y cuándo usar GPR en Chile",
+      "section": "georadar",
+      "type": "pillar",
+      "footer_keyword": "Georadar GPR Chile"
+    },
+    {
       "path": "/glosario/",
       "file": "glosario/index.html",
       "title": "Glosario GPR",
@@ -381,6 +389,26 @@
       "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/",
       "to": "/herramientas/selector-antena/",
       "note": "artículo sobre frecuencia debe enlazar al selector"
+    },
+    {
+      "from": "/",
+      "to": "/georadar/",
+      "note": "home debe enlazar a la página pilar de georadar"
+    },
+    {
+      "from": "/georadar/",
+      "to": "/glosario/",
+      "note": "pilar enlaza al glosario"
+    },
+    {
+      "from": "/georadar/",
+      "to": "/biblioteca/",
+      "note": "pilar enlaza a la biblioteca técnica"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/georadar/",
+      "note": "glosario debe enlazar a la página pilar desde entrada #georradar"
     }
   ],
   "min_incoming_links": {

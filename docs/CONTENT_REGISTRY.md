@@ -104,6 +104,14 @@ detecte esa contradicción.
 
 ---
 
+### Pilar
+
+| Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
+|----------|------|--------|-----|---------|--------|-----------------|
+| Pilar | Pilar SEO | Georadar: qué es, cómo funciona y cuándo usar GPR en Chile | `/georadar/` | `georadar/index.html` | PUBLICADO | Monitorear Search Console 4-8 semanas tras publicación. Gabriel debe agregar link desde georadarchile.cl. |
+
+---
+
 ### Glosario
 
 | Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
