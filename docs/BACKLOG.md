@@ -174,7 +174,9 @@ Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como
 
 3. **Workflow de deploy** — migrado a GitHub Actions el 2026-07-05 (`/.github/workflows/deploy.yml`). El sistema anterior (`pages-build-deployment`) fallaba de forma intermitente. El nuevo workflow es mas estable. Sin deuda activa.
 
-4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) en estado Propuesto, pendiente de aprobacion.
+4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) ejecutado en rama, pendiente de merge.
+
+5. **Referencias históricas a calculadora-profundidad en docs internos** — `BACKLOG.md`, `ARCHITECTURE.md` y `SEO_BASELINE.md` contienen menciones a la URL `/herramientas/calculadora-profundidad/` en contexto histórico o descriptivo. No son operativas y no generan enlaces rotos. Revisar en tarea de mantenimiento posterior para aclarar que la URL fue reemplazada por `/herramientas/calculadora-viabilidad-gpr/`.
 
 ---
 
