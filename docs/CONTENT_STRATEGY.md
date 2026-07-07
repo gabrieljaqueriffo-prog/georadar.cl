@@ -21,6 +21,38 @@ es abismal.
 
 ---
 
+## Principio editorial
+
+> **ATLAS no busca convertirse en la mayor biblioteca sobre GPR. Busca
+> convertirse en la fuente de mayor criterio sobre el uso del GPR.**
+>
+> Publicamos únicamente el conocimiento necesario para que un profesional
+> comprenda mejor un problema del subsuelo y tome mejores decisiones. La
+> interpretación experta, la experiencia acumulada y la metodología
+> propietaria forman parte del servicio profesional, no del contenido
+> abierto.
+
+Una biblioteca organiza información. ATLAS organiza experiencia. La
+diferencia no es de tamaño: es de naturaleza. Por eso "más artículos" nunca
+es, por sí solo, el objetivo de una tarea editorial; "más criterio
+desarrollado en quien consulta" sí lo es.
+
+> **GeoRadar Chile vende experiencia. ATLAS desarrolla criterio. La
+> interpretación profesional sigue siendo el puente entre ambos.**
+
+Este principio es estrategia editorial, no la visión del producto (eso lo
+responde `PROJECT_VISION.md`) ni el criterio de decisión entre dos
+alternativas (eso lo responde `NORTH_STAR.md`). Es la lente con la que se
+filtra qué se publica y qué no, y explica por qué:
+
+- no se publican todos los radargramas ni un interpretador automático;
+- un caso real muestra el problema y la decisión que habilitó, pero nunca
+  la cadena completa de razonamiento que llevó a la conclusión (ver §1.5);
+- la mentoría 1:1 existe como el espacio donde sí se transfiere criterio,
+  de forma directa y acotada, en vez de regalarlo como contenido abierto.
+
+---
+
 ## 1. Filosofía editorial
 
 ### 1.1 Autoridad primero
@@ -407,6 +439,18 @@ Todo activo editorial debe cumplir antes de pasar a estado PUBLICADO:
 - [ ] Al menos un enlace saliente hacia activo estratégico.
 - [ ] Deuda de contenido evaluada: ¿qué necesitará en su próxima evolución?
 - [ ] Estado inicial asignado en BACKLOG.
+- [ ] Sin rayas de interrupción tipo "—X—" o "&mdash;X&mdash;" dentro de una frase (ver nota debajo).
+
+**Nota sobre rayas de interrupción y patrones de escritura IA (2026-06-30, ampliado 2026-07-03):**
+
+Patrones prohibidos porque son marcas reconocibles de texto generado por IA:
+
+1. **Raya de inciso doble:** "frase &mdash;aclaración&mdash; resto" → reescribir con coma o separar en dos oraciones.
+2. **Raya de remate explicativo:** "descripción &mdash; y eso X" / "descripción &mdash; lo que significa X" / "descripción &mdash; esto cambia X" → el guión largo seguido de una consecuencia que explica lo anterior. Reescribir como oración separada o con punto y seguido.
+3. **Estructura "no es X: es Y"** usada para rematar con la verdad revelada: "no es una limitación: es información crítica". Permitida solo si la tensión es genuina y no decorativa.
+4. **Tricolon con consecuencia:** tres elementos paralelos seguidos de una frase que los sintetiza introduced por "eso significa que" o "en definitiva". Separar o eliminar la síntesis si es obvia.
+
+La prueba de cualquier frase: ¿sonaría raro en una conversación técnica real entre especialistas? Si sí, reescribir.
 
 ### 8.3 Cadencia
 
@@ -558,7 +602,13 @@ El Canon inicial de Georadar:
 3. **Glosario GPR en español** — vocabulario de referencia del dominio.
 4. **Caso real: detección en minería** — prueba en el sector de mayor valor.
 5. **Caso real: localización de servicios utilities** — prueba en el sector más frecuente.
-6. **Caso real: arqueología no invasiva** — prueba en el sector más visual y difundible.
+6. **Caso real: estudio no invasivo en sitio patrimonial o de memoria** —
+   reformulado el 2026-06-30 desde "arqueología no invasiva": el sitio no
+   tiene un sector de arqueología propio ni evidencia de proyectos de ese
+   tipo en `docs/REGISTRO_EXPERIENCIA.md`. El ítem se satisface evolucionando
+   el caso real ya publicado de `/forense/casos/sitio-iran-3037-venda-sexy/`
+   (estudio de subsuelo no invasivo en un sitio de memoria protegido), en
+   vez de crear contenido nuevo sin evidencia (`CLAUDE.md §6`).
 7. **Guía de selección de antena** — herramienta de decisión que todos los
    técnicos necesitan.
 
@@ -566,6 +616,169 @@ El Canon inicial de Georadar:
 y actualización sobre cualquier otro. Nunca se archivan sin aprobación explícita
 y un plan de reemplazo. La deuda de contenido en un activo del Canon es
 emergencia editorial.
+
+---
+
+## 14. Evidencia Técnica — flujo editorial desde literatura científica
+
+Esta sección define cómo ATLAS incorpora conocimiento científico externo
+(papers, tesis, informes institucionales, manuales técnicos) de forma segura,
+útil y coherente con el principio editorial de `§1.5`.
+
+### 14.1 Principio rector
+
+ATLAS no republica papers. ATLAS transforma literatura técnica en explicación
+original, citada y útil para decisiones reales.
+
+La diferencia no es cosmética: un paper tiene un propósito académico. Una
+síntesis de ATLAS tiene un propósito editorial específico: ayudar a alguien
+a comprender mejor el subsuelo antes de intervenirlo (`NORTH_STAR`).
+
+### 14.2 Flujo editorial
+
+```
+Fuente encontrada (paper, tesis, DOI, abstract, PDF)
+        │
+        ▼
+content/research/intake/        ← entrada cruda, sin procesar
+        │  triage: relevancia, licencia, nivel de riesgo
+        ▼
+content/research/papers/        ← ficha editorial limpia por fuente
+        │  clasificación obligatoria de nivel de frontera (1–4)
+        ▼
+content/research/themes/        ← agrupación por problema técnico
+        │  mapa de lo que se sabe colectivamente
+        ▼
+content/research/synthesis/     ← síntesis original de ATLAS
+        │  revisión de Gabriel → aprobación explícita
+        ▼
+Contenido público               ← artículo, FAQ, herramienta, glosario
+```
+
+**Regla absoluta:** solo desde `synthesis/` se genera contenido público.
+Nunca desde el paper crudo, nunca desde la ficha de intake.
+
+### 14.3 Clasificación de niveles de frontera
+
+Toda fuente científica que ingresa al sistema se clasifica en uno de estos
+niveles. El nivel determina qué puede hacerse públicamente con el material.
+
+| Nivel | Qué contiene | ¿Genera contenido público? |
+|-------|-------------|---------------------------|
+| **1 — Fundamento público** | Física del GPR, velocidad, frecuencia, atenuación, permitividad | Sí, sin restricción |
+| **2 — Aplicación técnica general** | Efecto de humedad, penetración por tipo de suelo, limitaciones generales | Sí, con explicación controlada |
+| **3 — Interpretación avanzada** | Reconocimiento de patrones, clasificación de anomalías, procesado avanzado | No — solo uso interno |
+| **4 — Know-how sensible** | Protocolos propietarios, heurísticas de campo, criterios de diagnóstico operativo | Nunca |
+
+Esta clasificación es idéntica a los niveles A/B/C de `§1.5`, expresada
+en términos del tipo de fuente externa.
+
+### 14.4 Reglas de copyright y uso permitido
+
+| Tipo de fuente | Regla de uso |
+|----------------|-------------|
+| Open Access con licencia CC BY | Citar, analizar y reutilizar con atribución y enlace al original |
+| Open Access sin licencia clara | Citar y enlazar. No copiar tablas, figuras ni texto extenso |
+| Paper en editorial cerrada / paywall | Solo referencia interna. No republicar nada |
+| Preprint (arXiv, repositorio universitario) | Enlazar al original. Verificar licencia antes de reutilizar |
+| Tesis o informe institucional | Verificar permisos. Citar y enlazar. No asumir libre reutilización |
+
+**Regla de seguridad:** si la licencia no es clara, tratar la fuente como
+material de referencia interna. "Disponible online" no equivale a "libre
+para reutilizar".
+
+**Lo que nunca hace ATLAS:**
+- Publicar PDFs de terceros.
+- Copiar párrafos, tablas o figuras sin licencia clara.
+- Traducir papers completos.
+- Publicar resúmenes que sustituyan al original.
+- Insinuar que autores externos respaldan a Geo Radar Chile.
+- Convertir hallazgos de un estudio específico en reglas universales.
+
+### 14.5 La página pública `/evidencia-tecnica/`
+
+Esta sección pública no existe todavía. Se creará cuando exista al menos una
+síntesis aprobada por Gabriel lista para publicar. Requiere una decisión
+separada de estructura y navegación (`CLAUDE.md §3`).
+
+Cuando se cree, contendrá explicaciones propias de ATLAS basadas en síntesis
+revisadas, con citas a fuentes originales. Nunca contendrá papers crudos ni
+resúmenes directos de terceros.
+
+### 14.6 Conexión futura con BADR
+
+ATLAS y BADR son sistemas separados con funciones distintas. ATLAS mira hacia
+afuera: construye autoridad y confianza pública. BADR mira hacia adentro:
+registra qué confianza se convirtió en oportunidad y qué aprendizaje debe
+volver a ATLAS.
+
+La conexión prevista:
+
+```
+Papers → Evidencia Técnica ATLAS → contenido público → confianza → leads → BADR
+                                                                        ↓
+                                                         aprendizaje operativo
+                                                                        ↓
+                                                          nuevas preguntas para ATLAS
+```
+
+En esta fase, las síntesis incluyen un campo de anotación de intención
+para BADR. No hay integración técnica implementada.
+
+---
+
+## 15. Norma de estilo: prohibición de guiones largos y redacción tipo IA
+
+ATLAS escribe como una empresa técnica chilena de prospección no destructiva.
+No como un asistente de lenguaje.
+
+### 15.1 Prohibición absoluta
+
+No usar nunca:
+
+- El carácter `—` (guion largo o raya).
+- Incisos entre rayas: `—texto adicional—`.
+- Frases con ritmo artificial del tipo: "ocurrió esto —explicación— y luego...".
+- Aclaraciones que suenen insertadas por un modelo de lenguaje.
+
+### 15.2 Reemplazo obligatorio
+
+Cuando exista una aclaración o inciso, aplicar esta decisión en orden:
+
+1. Si la segunda idea **explica** la primera: usar dos puntos.
+2. Si la segunda idea es una **consecuencia**: usar punto seguido.
+3. Si la segunda idea es una **precisión breve**: usar coma o paréntesis.
+4. Si la frase queda artificial con cualquier opción: dividirla en dos oraciones simples.
+
+Ejemplos:
+
+| Prohibido | Correcto |
+|-----------|----------|
+| "la señal no llegó —el radargrama no muestra lo que se buscaba—" | "La señal no llegó a la profundidad esperada. El radargrama no muestra evidencia del elemento buscado." |
+| "el área fue inspeccionada —sin evidencia concluyente— mediante georradar" | "El área fue inspeccionada mediante georradar, sin evidencia concluyente de estructuras enterradas." |
+| "el resultado fue negativo —aunque no descarta la presencia de estructuras—" | "El resultado fue negativo: no se descarta la presencia de estructuras, pero no hay evidencia directa." |
+
+### 15.3 Principios de estilo técnico
+
+- Frases claras, sobrias y directas.
+- Sin adornos narrativos.
+- Sin dramatizar resultados.
+- Sin estructuras literarias.
+- Sin conectores innecesarios.
+- Precisión técnica antes que efecto retórico.
+
+### 15.4 Control obligatorio antes de entregar cualquier texto
+
+Antes de entregar cualquier artículo, caso, descripción, informe o bloque de
+texto, verificar:
+
+- [ ] ¿Existe algún `—` en el texto? Si sí, eliminarlo.
+- [ ] ¿Hay frases entre guiones? Si sí, reescribirlas.
+- [ ] ¿Alguna frase suena a IA? Si sí, simplificarla.
+- [ ] ¿El texto suena como informe técnico real? Si no, corregir.
+
+Esta regla es prioritaria sobre cualquier preferencia estética anterior. No hay
+excepciones en textos públicos.
 
 ---
 

@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glosario GPR | Términos técnicos de georradar | Geo Radar Chile</title>
 <meta name="description" content="Glosario de términos técnicos de georradar (GPR): hipérbola, socavón, atenuación, velocidad de propagación, antena y espesador, explicados por especialistas con 29 años de experiencia.">
@@ -17,7 +19,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Glosario GPR | Términos técnicos de georradar">
 <meta name="twitter:description" content="Términos técnicos de georradar (GPR) explicados por especialistas con 29 años de experiencia.">
-<link rel="stylesheet" href="/assets/css/shared.css?v=5">
+<link rel="stylesheet" href="/assets/css/shared.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,8 +63,10 @@
     <ul class="nav-links" id="nav-menu">
       <li><a href="/mineria/" aria-label="Ir a minería">Minería</a></li>
       <li><a href="/utilities/" aria-label="Ir a utilities">Utilities</a></li>
+      <li><a href="/construccion/" aria-label="Ir a construcción">Construcción</a></li>
       <li><a href="/forense/" aria-label="Ir a forense">Forense</a></li>
       <li><a href="/biblioteca/" aria-label="Ir a biblioteca técnica">Biblioteca</a></li>
+      <li><a href="/mentoria/" aria-label="Ir a mentorías">Mentorías</a></li>
       <li><a href="/herramientas/" aria-label="Ir a herramientas">Herramientas</a></li>
       <li><a href="https://georadarchile.cl" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Solicitar estudio GPR">Solicitar estudio GPR</a></li>
     </ul>
@@ -80,75 +84,172 @@
 <section>
   <div class="container">
 
-    <article id="georradar" class="faq-item reveal">
-      <h2>Georradar (GPR)</h2>
-      <p>Equipo de prospección no destructiva que emite ondas electromagnéticas hacia el subsuelo o una estructura y registra cómo regresan. La sigla GPR corresponde a <em>Ground Penetrating Radar</em>.</p>
-      <p><strong>Por qué importa:</strong> permite detectar estructuras, ductos, cavidades y otras anomalías sin necesidad de excavar ni intervenir la superficie, reduciendo riesgo y costo antes de cualquier obra.</p>
-      <p>Relacionado: <a href="#radargrama">Radargrama</a> &middot; <a href="#antena">Antena (GPR)</a> &middot; Artículo: <a href="/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/">Cómo tomar decisiones correctas antes de intervenir el subsuelo</a> &middot; Herramienta: <a href="/herramientas/necesito-gpr/">¿Necesito un estudio GPR?</a></p>
-    </article>
+    <div class="glossary-controls">
+      <div class="glossary-filter-wrap">
+        <label for="glossary-filter" class="sr-only">Filtrar términos</label>
+        <input type="search" id="glossary-filter" class="glossary-filter" placeholder="Filtrar términos…" aria-label="Filtrar términos del glosario" autocomplete="off">
+      </div>
+      <nav class="glossary-alpha" aria-label="Índice alfabético del glosario">
+        <a href="#letra-A">A</a>
+        <a href="#letra-C">C</a>
+        <a href="#letra-E">E</a>
+        <a href="#letra-F">F</a>
+        <a href="#letra-G">G</a>
+        <a href="#letra-H">H</a>
+        <a href="#letra-P">P</a>
+        <a href="#letra-R">R</a>
+        <a href="#letra-S">S</a>
+        <a href="#letra-V">V</a>
+      </nav>
+      <p class="glossary-count" id="glossary-count" aria-live="polite"></p>
+    </div>
 
-    <article id="radargrama" class="faq-item reveal">
-      <h2>Radargrama</h2>
-      <p>Registro gráfico de las reflexiones electromagnéticas captadas por el georradar durante un barrido. Cada material del subsuelo refleja la onda de forma distinta, y esa diferencia es lo que el radargrama representa visualmente.</p>
-      <p><strong>Por qué importa:</strong> es la evidencia técnica detrás de cualquier hallazgo, pero su lectura correcta requiere el análisis conjunto de cientos de perfiles y la experiencia del equipo, no la interpretación de una sola imagen aislada.</p>
-      <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; <a href="#georradar">Georradar (GPR)</a></p>
-    </article>
+    <div class="glossary-letter-group" id="grupo-A">
+      <h2 class="glossary-letter-heading" id="letra-A">A</h2>
 
-    <article id="socavon" class="faq-item reveal">
-      <h2>Socavón</h2>
-      <p>Cavidad o vacío en el subsuelo o bajo una estructura, generado por pérdida o erosión de material. En el radargrama se reconoce por ausencia de reflexiones organizadas, distorsión de las capas adyacentes y bordes irregulares de alta amplitud.</p>
-      <p><strong>Por qué importa:</strong> intervenir una estructura con un socavón no detectado puede provocar colapso parcial o total. Es la anomalía que con más frecuencia justifica una prospección GPR antes de obras civiles o mineras.</p>
-      <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
-    </article>
+      <article id="antena" class="faq-item reveal">
+        <h3>Antena (GPR)</h3>
+        <p>Componente que emite y recibe las ondas electromagnéticas que recorren el subsuelo. La frecuencia de la antena (medida en MHz) define el balance entre profundidad de detección y resolución de la imagen.</p>
+        <p><strong>Por qué importa:</strong> una antena de 600 MHz entrega alta resolución para detectar enfierradura y vacíos cercanos a la superficie en losas y estructuras; una de 200 MHz alcanza mayor profundidad con menor detalle. Elegir mal la antena compromete todo el estudio.</p>
+        <p>Relacionado: <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a> &middot; Herramienta: <a href="/herramientas/selector-antena/">Selector de antena GPR</a> &middot; Herramienta: <a href="/herramientas/calculadora-viabilidad-gpr/">Calculadora de viabilidad GPR</a></p>
+      </article>
 
-    <article id="hiperbola" class="faq-item reveal">
-      <h2>Hipérbola</h2>
-      <p>Curva característica que deja un objeto puntual (ducto, roca, cavidad pequeña) en el radargrama al ser detectado desde varias posiciones de la antena durante el barrido.</p>
-      <p><strong>Por qué importa:</strong> una hipérbola simétrica y nítida, que se repite en la misma posición entre pasadas, es la señal más confiable de un objeto real y no de ruido del subsuelo.</p>
-      <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#socavon">Socavón</a></p>
-    </article>
+      <article id="atenuacion" class="faq-item reveal">
+        <h3>Atenuación</h3>
+        <p>Pérdida de energía de la onda electromagnética a medida que avanza por el subsuelo. Varía según el tipo de material: la arcilla y el agua atenúan más que la roca seca o el hormigón. La curva de atenuación de la señal a lo largo de un perfil también contiene información sobre las propiedades del medio, como el contenido de humedad.</p>
+        <p><strong>Por qué importa:</strong> la atenuación limita la profundidad máxima de detección confiable. Un buen diagnóstico GPR siempre considera el material del sitio antes de prometer una profundidad de detección.</p>
+        <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#conductividad">Conductividad eléctrica del suelo</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a></p>
+      </article>
+    </div>
 
-    <article id="antena" class="faq-item reveal">
-      <h2>Antena (GPR)</h2>
-      <p>Componente que emite y recibe las ondas electromagnéticas que recorren el subsuelo. La frecuencia de la antena (medida en MHz) define el balance entre profundidad de detección y resolución de la imagen.</p>
-      <p><strong>Por qué importa:</strong> una antena de 600 MHz entrega alta resolución para detectar enfierradura y vacíos cercanos a la superficie en losas y estructuras; una de 200 MHz alcanza mayor profundidad con menor detalle. Elegir mal la antena compromete todo el estudio.</p>
-      <p>Relacionado: <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a> &middot; Herramienta: <a href="/herramientas/calculadora-profundidad/">Calculadora de viabilidad GPR</a></p>
-    </article>
+    <div class="glossary-letter-group" id="grupo-C">
+      <h2 class="glossary-letter-heading" id="letra-C">C</h2>
 
-    <article id="atenuacion" class="faq-item reveal">
-      <h2>Atenuación</h2>
-      <p>Pérdida de energía de la onda electromagnética a medida que avanza por el subsuelo. Varía según el tipo de material: la arcilla y el agua atenúan más que la roca seca o el hormigón.</p>
-      <p><strong>Por qué importa:</strong> la atenuación limita la profundidad máxima de detección confiable. Un buen diagnóstico GPR siempre considera el material del sitio antes de prometer una profundidad de detección.</p>
-      <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a></p>
-    </article>
+      <article id="conductividad" class="faq-item reveal">
+        <h3>Conductividad eléctrica del suelo</h3>
+        <p>Capacidad de un material del subsuelo de permitir el paso de corriente eléctrica. En el contexto del georradar, determina en gran medida cuánta energía de la señal se disipa por unidad de distancia recorrida.</p>
+        <p><strong>Por qué importa:</strong> suelos con alta conductividad, como arcillas húmedas, terrenos saturados o zonas con sales, absorben la señal GPR con rapidez, reduciendo la profundidad de penetración efectiva. Es el factor limitante más frecuente en estudios donde el terreno no es favorable. La conductividad del suelo también correlaciona con el contenido de humedad: a mayor humedad, mayor conductividad y mayor atenuación.</p>
+        <p>Relacionado: <a href="#atenuacion">Atenuación</a> &middot; <a href="#permitividad">Permitividad dieléctrica</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a> &middot; Artículo: <a href="/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/">Qué hace que un suelo sea difícil para el GPR</a></p>
+      </article>
 
-    <article id="velocidad-propagacion" class="faq-item reveal">
-      <h2>Velocidad de propagación</h2>
-      <p>Rapidez con la que la onda electromagnética viaja a través de un material. Varía según el tipo de suelo, roca u hormigón, y es la base del cálculo que convierte tiempo de viaje de la onda en profundidad real.</p>
-      <p><strong>Por qué importa:</strong> sin una velocidad de propagación calibrada para el sitio, la profundidad estimada de cualquier anomalía puede tener un error significativo.</p>
-      <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#atenuacion">Atenuación</a></p>
-    </article>
+      <article id="cadena-de-custodia" class="faq-item reveal">
+        <h3>Cadena de custodia</h3>
+        <p>Registro documentado y trazable de cada etapa del trabajo en terreno: qué se midió, dónde, cuándo y con qué protocolo. En el contexto de prospecciones GPR para peritajes judiciales, implica que cada grilla, cada registro y cada hallazgo puede rastrearse desde el informe final hasta la adquisición original.</p>
+        <p><strong>Por qué importa:</strong> un informe técnico sin cadena de custodia documentada no puede incorporarse formalmente a una causa judicial. La trazabilidad del proceso es lo que le da valor legal a los resultados, independientemente de su solidez técnica.</p>
+        <p>Relacionado: <a href="#georreferenciacion">Georreferenciación</a> &middot; <a href="#grilla-prospeccion">Grilla de prospección</a> &middot; Caso real: <a href="/forense/casos/cip-san-joaquin-cerro-chena/">Prospección en CIP San Joaquín y Cerro Chena</a> &middot; Caso real: <a href="/forense/casos/sitio-iran-3037-venda-sexy/">Estudio en Sitio de Memoria Irán 3037</a></p>
+      </article>
+    </div>
 
-    <article id="espesador" class="faq-item reveal">
-      <h2>Espesador (industrial)</h2>
-      <p>Estructura de proceso minero usada para separar sólidos de líquidos por sedimentación, habitual en plantas concentradoras. Suele construirse sobre losas y fundaciones de hormigón sometidas a cargas y humedad constantes.</p>
-      <p><strong>Por qué importa:</strong> la pérdida de material o filtraciones en un espesador puede generar socavones bajo la losa sin señales visibles en superficie, lo que hace crítica la prospección GPR antes de cualquier intervención estructural.</p>
-      <p>Relacionado: <a href="#socavon">Socavón</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
-    </article>
+    <div class="glossary-letter-group" id="grupo-E">
+      <h2 class="glossary-letter-heading" id="letra-E">E</h2>
 
-    <article id="grilla-prospeccion" class="faq-item reveal">
-      <h2>Grilla de prospección</h2>
-      <p>Área delimitada sobre la que se ejecuta un barrido sistemático con georradar, con líneas longitudinales y transversales a un espaciamiento definido, para asegurar cobertura completa de la zona de interés.</p>
-      <p><strong>Por qué importa:</strong> una grilla bien diseñada evita puntos ciegos en el área de estudio; muestrear solo un sector puede dejar sin detectar anomalías localizadas en otra parte de la misma estructura.</p>
-      <p>Relacionado: <a href="#georradar">Georradar (GPR)</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
-    </article>
+      <article id="espesador" class="faq-item reveal">
+        <h3>Espesador (industrial)</h3>
+        <p>Estructura de proceso minero usada para separar sólidos de líquidos por sedimentación, habitual en plantas concentradoras. Suele construirse sobre losas y fundaciones de hormigón sometidas a cargas y humedad constantes.</p>
+        <p><strong>Por qué importa:</strong> la pérdida de material o filtraciones en un espesador puede generar socavones bajo la losa sin señales visibles en superficie, lo que hace crítica la prospección GPR antes de cualquier intervención estructural.</p>
+        <p>Relacionado: <a href="#socavon">Socavón</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
+      </article>
+    </div>
 
-    <article id="georreferenciacion" class="faq-item reveal">
-      <h2>Georreferenciación</h2>
-      <p>Asignación de coordenadas geográficas exactas a cada hallazgo detectado por el georradar, de modo que la ubicación pueda trasladarse a un plano CAD, un informe técnico o un peritaje judicial.</p>
-      <p><strong>Por qué importa:</strong> sin georreferenciación precisa, un hallazgo detectado en terreno no puede ubicarse con la exactitud necesaria para intervenir, judicializar o documentar legalmente un resultado.</p>
-      <p>Relacionado: <a href="#georradar">Georradar (GPR)</a></p>
-    </article>
+    <div class="glossary-letter-group" id="grupo-F">
+      <h2 class="glossary-letter-heading" id="letra-F">F</h2>
+
+      <article id="frecuencia-dominante" class="faq-item reveal">
+        <h3>Frecuencia dominante</h3>
+        <p>Frecuencia central del espectro de la señal GPR en un punto o segmento del perfil. A diferencia de la frecuencia nominal de la antena, la frecuencia dominante varía según el material atravesado: en medios con mayor atenuación, las altas frecuencias se disipan antes, desplazando el espectro hacia valores más bajos.</p>
+        <p><strong>Por qué importa:</strong> el desplazamiento de la frecuencia dominante a lo largo de un perfil es un indicador de las propiedades eléctricas del terreno. Su análisis forma parte de la interpretación cuantitativa de señales GPR, complementando la lectura visual del radargrama.</p>
+        <p>Relacionado: <a href="#antena">Antena (GPR)</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a> &middot; Artículo: <a href="/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/">Qué puede decirnos una señal GPR además de una imagen</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-G">
+      <h2 class="glossary-letter-heading" id="letra-G">G</h2>
+
+      <article id="georradar" class="faq-item reveal">
+        <h3>Georradar (GPR)</h3>
+        <p>Equipo de prospección no destructiva que emite ondas electromagnéticas hacia el subsuelo o una estructura y registra cómo regresan. La sigla GPR corresponde a <em>Ground Penetrating Radar</em>.</p>
+        <p><strong>Por qué importa:</strong> permite detectar estructuras, ductos, cavidades y otras anomalías sin necesidad de excavar ni intervenir la superficie, reduciendo riesgo y costo antes de cualquier obra.</p>
+        <p>Relacionado: <a href="#radargrama">Radargrama</a> &middot; <a href="#antena">Antena (GPR)</a> &middot; Artículo: <a href="/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/">Cómo tomar decisiones correctas antes de intervenir el subsuelo</a> &middot; Herramienta: <a href="/herramientas/necesito-gpr/">¿Necesito un estudio GPR?</a> &middot; <a href="/georadar/">Qué es el georadar GPR</a></p>
+      </article>
+
+      <article id="georreferenciacion" class="faq-item reveal">
+        <h3>Georreferenciación</h3>
+        <p>Asignación de coordenadas geográficas exactas a cada hallazgo detectado por el georradar, de modo que la ubicación pueda trasladarse a un plano CAD, un informe técnico o un peritaje judicial.</p>
+        <p><strong>Por qué importa:</strong> sin georreferenciación precisa, un hallazgo detectado en terreno no puede ubicarse con la exactitud necesaria para intervenir, judicializar o documentar legalmente un resultado.</p>
+        <p>Relacionado: <a href="#georradar">Georradar (GPR)</a> &middot; <a href="#cadena-de-custodia">Cadena de custodia</a> &middot; Caso real: <a href="/forense/casos/cip-san-joaquin-cerro-chena/">Prospección en CIP San Joaquín y Cerro Chena</a> &middot; Caso real: <a href="/forense/casos/sitio-iran-3037-venda-sexy/">Estudio en Sitio de Memoria Irán 3037</a></p>
+      </article>
+
+      <article id="grilla-prospeccion" class="faq-item reveal">
+        <h3>Grilla de prospección</h3>
+        <p>Área delimitada sobre la que se ejecuta un barrido sistemático con georradar, con líneas longitudinales y transversales a un espaciamiento definido, para asegurar cobertura completa de la zona de interés.</p>
+        <p><strong>Por qué importa:</strong> una grilla bien diseñada evita puntos ciegos en el área de estudio; muestrear solo un sector puede dejar sin detectar anomalías localizadas en otra parte de la misma estructura.</p>
+        <p>Relacionado: <a href="#georradar">Georradar (GPR)</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-H">
+      <h2 class="glossary-letter-heading" id="letra-H">H</h2>
+
+      <article id="hiperbola" class="faq-item reveal">
+        <h3>Hipérbola</h3>
+        <p>Curva característica que deja un objeto puntual (ducto, roca, cavidad pequeña) en el radargrama al ser detectado desde varias posiciones de la antena durante el barrido.</p>
+        <p><strong>Por qué importa:</strong> la hipérbola es uno de los patrones más reconocibles del radargrama, pero su correcta interpretación requiere el análisis de múltiples pasadas y el criterio del especialista.</p>
+        <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#socavon">Socavón</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-P">
+      <h2 class="glossary-letter-heading" id="letra-P">P</h2>
+
+      <article id="permitividad" class="faq-item reveal">
+        <h3>Permitividad dieléctrica</h3>
+        <p>Propiedad eléctrica de un material que describe su capacidad de almacenar energía electromagnética. En el georradar, junto con la conductividad, determina la velocidad a la que viaja la señal y el grado de reflexión que se produce en cada interfaz entre materiales distintos. También se denomina constante dieléctrica.</p>
+        <p><strong>Por qué importa:</strong> la permitividad del agua libre es muy alta (aproximadamente 80 veces mayor que la del aire), lo que hace que el contenido de humedad sea el factor que más modifica la velocidad de propagación de la señal en el subsuelo. Un suelo húmedo no solo atenúa más: también cambia la velocidad, lo que afecta la estimación de profundidades si no se calibra correctamente.</p>
+        <p>Relacionado: <a href="#conductividad">Conductividad eléctrica del suelo</a> &middot; <a href="#velocidad-propagacion">Velocidad de propagación</a> &middot; <a href="#atenuacion">Atenuación</a> &middot; Artículo: <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">Por qué la profundidad del georradar depende del terreno</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-R">
+      <h2 class="glossary-letter-heading" id="letra-R">R</h2>
+
+      <article id="radargrama" class="faq-item reveal">
+        <h3>Radargrama</h3>
+        <p>Registro gráfico de las reflexiones electromagnéticas captadas por el georradar durante un barrido. Cada material del subsuelo refleja la onda de forma distinta, y esa diferencia es lo que el radargrama representa visualmente. La señal también contiene parámetros cuantitativos (amplitud, distribución de frecuencias, curva de atenuación) que van más allá de la imagen visual.</p>
+        <p><strong>Por qué importa:</strong> es la evidencia técnica detrás de cualquier hallazgo, pero su lectura correcta requiere el análisis conjunto de cientos de perfiles y la experiencia del equipo, no la interpretación de una sola imagen aislada.</p>
+        <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; <a href="#georradar">Georradar (GPR)</a> &middot; Artículo: <a href="/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/">Qué puede decirnos una señal GPR además de una imagen</a></p>
+      </article>
+
+      <article id="resolucion-vertical" class="faq-item reveal">
+        <h3>Resolución vertical</h3>
+        <p>Distancia mínima entre dos interfaces o reflectores que el georradar puede distinguir como entidades separadas en el radargrama. Depende principalmente de la longitud de onda de la señal: a mayor frecuencia de antena, menor longitud de onda y mayor resolución vertical.</p>
+        <p><strong>Por qué importa:</strong> si dos capas o dos objetos están más próximos que la resolución vertical del equipo en ese material, aparecerán fusionados en el radargrama y no podrán diferenciarse. Este límite físico no se supera cambiando el equipo de marca: solo se modifica ajustando la frecuencia de la antena.</p>
+        <p>Relacionado: <a href="#antena">Antena (GPR)</a> &middot; <a href="#frecuencia-dominante">Frecuencia dominante</a> &middot; Artículo: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">Cómo influye la frecuencia de una antena GPR en los resultados</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-S">
+      <h2 class="glossary-letter-heading" id="letra-S">S</h2>
+
+      <article id="socavon" class="faq-item reveal">
+        <h3>Socavón</h3>
+        <p>Cavidad o vacío en el subsuelo o bajo una estructura, generado por pérdida o erosión de material. Su detección mediante GPR requiere el análisis conjunto de múltiples perfiles y el criterio de un especialista: una anomalía aislada en el radargrama no es suficiente para confirmar su presencia.</p>
+        <p><strong>Por qué importa:</strong> intervenir una estructura con un socavón no detectado puede provocar colapso parcial o total. Es la anomalía que con más frecuencia justifica una prospección GPR antes de obras civiles o mineras.</p>
+        <p>Relacionado: <a href="#hiperbola">Hipérbola</a> &middot; Caso real: <a href="/mineria/casos/socavones-espesador-t5/">Detección de socavones en Espesador T5</a></p>
+      </article>
+    </div>
+
+    <div class="glossary-letter-group" id="grupo-V">
+      <h2 class="glossary-letter-heading" id="letra-V">V</h2>
+
+      <article id="velocidad-propagacion" class="faq-item reveal">
+        <h3>Velocidad de propagación</h3>
+        <p>Rapidez con la que la onda electromagnética viaja a través de un material. Varía según el tipo de suelo, roca u hormigón, y es la base del cálculo que convierte tiempo de viaje de la onda en profundidad real.</p>
+        <p><strong>Por qué importa:</strong> sin una velocidad de propagación calibrada para el sitio, la profundidad estimada de cualquier anomalía puede tener un error significativo.</p>
+        <p>Relacionado: <a href="#antena">Antena</a> &middot; <a href="#atenuacion">Atenuación</a></p>
+      </article>
+    </div>
+
+    <p class="glossary-empty" id="glossary-empty" hidden>No se encontraron términos para esa búsqueda.</p>
 
   </div>
 </section>
@@ -163,6 +264,7 @@
 
 <footer>
   <div class="container">
+    <p class="footer-logo">GeoRadar.cl</p>
     <div class="footer-grid">
       <div>
         <h4>Servicios</h4>
@@ -170,8 +272,10 @@
           <li><a href="/">Inicio</a></li>
           <li><a href="/mineria/">Minería</a></li>
           <li><a href="/utilities/">Utilities</a></li>
+          <li><a href="/construccion/">Construcción</a></li>
           <li><a href="/forense/">Forense</a></li>
           <li><a href="/biblioteca/">Biblioteca</a></li>
+          <li><a href="/mentoria/">Mentorías</a></li>
           <li><a href="/herramientas/">Herramientas</a></li>
         </ul>
       </div>
@@ -183,7 +287,7 @@
         <h4>Geo Radar Chile</h4>
         <ul><li>Empresa desde 2011</li><li>Experiencia desde 1997</li></ul>
       </div>
-      <div>
+      <div class="footer-contact">
         <h4>Contacto</h4>
         <ul>
           <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">Solicitar cotización</a></li>
@@ -197,5 +301,100 @@
 </footer>
 
 <script src="/assets/js/main.js"></script>
+<style>
+.glossary-controls {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.glossary-filter-wrap { position: relative; }
+.glossary-filter {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--color-border, #e2e8f0);
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.glossary-filter:focus { border-color: var(--color-accent, #0070f3); }
+.glossary-alpha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.glossary-alpha a {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  background: var(--color-surface-alt, #f1f5f9);
+  color: var(--color-text, #1e293b);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.glossary-alpha a:hover { background: var(--color-accent, #0070f3); color: #fff; }
+.glossary-alpha a[aria-current="true"] { background: var(--color-accent, #0070f3); color: #fff; }
+.glossary-count {
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #64748b);
+  min-height: 1.2em;
+}
+.glossary-letter-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent, #0070f3);
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-border, #e2e8f0);
+}
+.glossary-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-muted, #64748b);
+}
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+<script>
+(function () {
+  var input = document.getElementById('glossary-filter');
+  var count = document.getElementById('glossary-count');
+  var empty = document.getElementById('glossary-empty');
+  var groups = document.querySelectorAll('.glossary-letter-group');
+  var total = document.querySelectorAll('.glossary-letter-group .faq-item').length;
+
+  function update(q) {
+    q = q.toLowerCase().trim();
+    var visible = 0;
+    groups.forEach(function (group) {
+      var items = group.querySelectorAll('.faq-item');
+      var groupVisible = 0;
+      items.forEach(function (item) {
+        var text = item.textContent.toLowerCase();
+        var match = !q || text.indexOf(q) !== -1;
+        item.hidden = !match;
+        if (match) groupVisible++;
+      });
+      group.hidden = groupVisible === 0;
+      visible += groupVisible;
+    });
+    empty.hidden = visible > 0;
+    count.textContent = q ? (visible + ' de ' + total + ' términos') : '';
+  }
+
+  input.addEventListener('input', function () { update(this.value); });
+})();
+</script>
 </body>
 </html>

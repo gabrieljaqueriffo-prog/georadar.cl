@@ -231,7 +231,7 @@ Además de todos los criterios de su tipo, deben cumplir:
 
 - [ ] Revisión adicional de profundidad técnica: ¿es el mejor recurso disponible en español sobre este tema?
 - [ ] Al menos cinco enlaces entrantes desde activos existentes (no dos).
-- [ ] Contenido en estado EXPANDIDO antes de ser declarado MADURO.
+- [ ] Contenido en estado OPTIMIZACIÓN antes de ser declarado MADURO (corregido 2026-06-30: alineado con los estados reales de `ARCHITECTURE.md §4`, que no define un estado "EXPANDIDO").
 - [ ] Plan de actualización anual anotado: quién revisa, cuándo y qué criterios de desactualización.
 - [ ] Nunca se archiva sin un reemplazo planificado y aprobado.
 

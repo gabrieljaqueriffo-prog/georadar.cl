@@ -1,0 +1,667 @@
+AUDITORÍA INTEGRAL GPOS — PROTECCIÓN DEL CAPITAL INTELECTUAL
+Georadar.cl · Junio 2026
+================================================================================
+
+Autoridad aplicada: NORTH_STAR.md §Frontera del conocimiento · PROJECT_VISION.md §3
+                    CONTENT_STRATEGY.md · DEFINITION_OF_DONE.md
+
+Alcance: 17 páginas HTML inspeccionadas desde el repositorio.
+El sitio en producción (georadar.cl) no está accesible desde este entorno por
+restricción de red; la auditoría se ejecutó sobre los archivos publicados en el
+repositorio, que son el origen canónico del sitio.
+
+Páginas no accesibles: ninguna — todos los archivos están disponibles.
+
+================================================================================
+ANÁLISIS POR PÁGINA
+================================================================================
+
+--------------------------------------------------------------------------------
+1. / — Portada
+--------------------------------------------------------------------------------
+Propósito: presentar el producto, los sectores de servicio y las herramientas.
+
+Tipo de conocimiento: Tipo A (fundamentos, descripción de servicios) + credenciales.
+
+Distribución estimada:
+  Ciencia pública:       50%
+  Metodología pública:   20%
+  Experiencia propietaria: 10% (como credenciales, no como metodología)
+
+Riesgo editorial: VERDE — Seguro
+
+La portada no explica cómo se interpreta: enumera qué se puede detectar, muestra
+sectores y presenta evidencia de trayectoria. El simulador GPR interactivo (#gpr-sim)
+muestra una señal tipo radargrama pero la pregunta que acompaña la imagen —"¿Sabría
+interpretar esta señal?"— no responde la pregunta, la invierte: señala que esa
+interpretación requiere experiencia. La inversión funciona bien como frontera.
+
+Radargramas: el SVG de fondo del hero es decorativo (curvas abstractas), no un
+radargrama real interpretable.
+
+CTA: alineado. "Solicitar estudio GPR" conduce a servicio, no después de entregar
+metodología.
+
+Coherencia GPOS: cumple. Foco en la decisión del cliente, no en el proceso técnico.
+Cumple NORTH_STAR.md §La pregunta única.
+
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+2. /biblioteca/ — Índice de biblioteca
+--------------------------------------------------------------------------------
+Propósito: directorio de artículos técnicos.
+Tipo: Tipo A (índice, sin contenido editorial propio).
+Riesgo: VERDE — Seguro. Es un índice, sin exposición interpretativa.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+3. /biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/
+--------------------------------------------------------------------------------
+Propósito: explicar qué es el GPR, qué detecta, cuándo es necesario y qué preguntas
+preparar antes de contratar.
+
+Tipo de conocimiento: Tipo A puro.
+
+Distribución:
+  Ciencia pública:       60%
+  Metodología pública:   30%
+  Experiencia propietaria: 5%
+
+Riesgo editorial: VERDE — Seguro
+
+Este artículo tiene el fragmento de protección más explícito y mejor redactado de
+todo el sitio:
+
+  "Este artículo no le enseña a interpretar un radargrama ni a operar un equipo GPR.
+  Esa interpretación combina múltiples señales, contexto del sitio y años de
+  experiencia en terreno: es el criterio profesional que un especialista certificado
+  aporta, no algo que se resuma en una guía."
+
+Ese párrafo aplica perfectamente el test operativo de NORTH_STAR.md §Frontera del
+conocimiento. Sirve como modelo para otros activos.
+
+CTA: perfectamente alineado. "Conversemos antes de que decida cómo intervenir."
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+4. /biblioteca/como-influye-la-frecuencia-de-antena-gpr/
+--------------------------------------------------------------------------------
+Propósito: explicar la relación física entre frecuencia de antena, profundidad y
+resolución.
+
+Tipo de conocimiento: Tipo A puro — física del método, compromisos físicos.
+
+Distribución:
+  Ciencia pública:       75%
+  Metodología pública:   20%
+  Experiencia propietaria: 5%
+
+Riesgo editorial: VERDE — Seguro
+
+La distinción frecuencia baja/alta y el efecto del terreno son física pública
+(cualquier manual GPR los cubre). El artículo enseña correctamente que existe
+la decisión de selección de antena y por qué es compleja, sin enseñar el criterio:
+
+  "La selección final, que incluye una antena específica, su configuración y la
+  metodología de barrido, es trabajo de un especialista, porque combina estas
+  variables con información de terreno que no se puede capturar en un formulario."
+
+Este artículo es un ejemplo canónico de Tipo A bien ejecutado.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+5. /glosario/
+--------------------------------------------------------------------------------
+Propósito: diccionario de términos técnicos GPR.
+
+Tipo: Mixto — los términos son Tipo A, pero algunas definiciones incluyen criterios
+de reconocimiento que rozan el Tipo B.
+
+Distribución:
+  Ciencia pública:       55%
+  Metodología pública:   30%
+  Experiencia propietaria: 15%
+
+Riesgo editorial: AMARILLO — Revisar
+
+Dos entradas cruzan o rozan la frontera:
+
+  #socavon:
+  "En el radargrama se reconoce por ausencia de reflexiones organizadas, distorsión
+  de las capas adyacentes y bordes irregulares de alta amplitud."
+
+  Esta frase enseña los criterios de reconocimiento de un socavón en un radargrama.
+  No es solo "qué es" un socavón: es cómo identificarlo desde la imagen. Eso es
+  Tipo B — es el mismo conocimiento que forma parte del criterio experto de
+  interpretación.
+
+  #hiperbola:
+  "una hipérbola simétrica y nítida, que se repite en la misma posición entre
+  pasadas, es la señal más confiable de un objeto real y no de ruido del subsuelo."
+
+  Esta frase enseña el criterio primario de calidad de señal — cómo distinguir
+  una señal real del ruido. Es una heurística de interpretación. Pertenece al Tipo B:
+  un competidor que no la conociera puede aprenderla aquí.
+
+El resto del glosario (georradar, radargrama, atenuación, velocidad de propagación,
+espesador, grilla, georreferenciación) es Tipo A limpio.
+
+Radargramas: no hay radargramas reales en el glosario.
+
+Acción: Reducir detalle en #socavon e #hiperbola. Mantener la definición conceptual.
+Eliminar los criterios de reconocimiento visual específicos.
+
+--------------------------------------------------------------------------------
+6. /herramientas/ — Índice de herramientas
+--------------------------------------------------------------------------------
+Propósito: directorio de herramientas disponibles.
+Tipo: Tipo A (índice).
+Riesgo: VERDE — Seguro.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+7. /herramientas/calculadora-profundidad/
+--------------------------------------------------------------------------------
+Propósito: estimar la viabilidad de un estudio GPR según profundidad, terreno y
+precisión.
+
+Tipo de conocimiento: Tipo A — basada en física pública del método.
+
+Distribución:
+  Ciencia pública:       70%
+  Metodología pública:   25%
+  Experiencia propietaria: 5%
+
+Riesgo editorial: VERDE — Seguro
+
+El algoritmo visible en el código JS (score = 100 - profundidad * 6 - attenIndex * 12)
+es una simplificación heurística basada en física pública, no en el criterio real de
+selección que usa Geo Radar Chile en terreno. No revela metodología propietaria.
+
+Los labels ("Escenario favorable", "Escenario con condiciones a verificar", "Escenario
+exigente") evitan lenguaje diagnóstico. La lista de verificación del especialista
+refuerza que la herramienta orienta sin sustituir el criterio experto.
+
+Herramienta evaluada: no reemplaza interpretación profesional. No automatiza criterio
+experto. No entrega conclusiones definitivas.
+Clasificación: herramienta de orientación Tipo A. Correctamente diseñada.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+8. /herramientas/necesito-gpr/
+--------------------------------------------------------------------------------
+Propósito: árbol de decisión de cuatro preguntas para saber si el GPR es el método
+adecuado.
+
+Tipo de conocimiento: Tipo A — criterios generales de aplicabilidad del método.
+
+Distribución:
+  Ciencia pública:       65%
+  Metodología pública:   30%
+  Experiencia propietaria: 5%
+
+Riesgo editorial: VERDE — Seguro
+
+La lógica del árbol (acceso a superficie → tipo de material → uso del resultado) es
+conocimiento general sobre condiciones de aplicabilidad del GPR, no criterio experto
+de planificación de estudio. La advertencia final es explícita:
+
+  "La decisión final sobre el método y la metodología debe tomarla un especialista
+  durante la planificación, considerando información del sitio que este árbol de
+  decisión no contempla."
+
+Herramienta evaluada: orienta sin diagnosticar.
+Clasificación: herramienta de orientación Tipo A. Correctamente diseñada.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+9. /mineria/ — Página de sector
+--------------------------------------------------------------------------------
+Propósito: presentar el servicio GPR para minería, con trayectoria y proceso técnico.
+
+Tipo: Mixto — credenciales (Tipo A), descripción de proceso (Tipo A).
+
+Distribución:
+  Ciencia pública:       25%
+  Metodología pública:   40%
+  Experiencia propietaria: 35% (como credenciales, no como metodología)
+
+Riesgo editorial: VERDE — Seguro
+
+La página de sector no entra en interpretación de radargramas ni en criterios de
+diagnóstico. Describe tipos de anomalías detectadas (ductos, interferencias, cavidades)
+sin explicar cómo se distinguen.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+10. /mineria/casos/socavones-espesador-t5/
+--------------------------------------------------------------------------------
+Propósito: caso real de detección de socavones bajo el Espesador T5 de Codelco
+Chuquicamata.
+
+Tipo: Mixto — contexto y resultado (Tipo A), lecciones con heurísticas específicas
+(Tipo B parcial).
+
+Distribución:
+  Ciencia pública:       20%
+  Metodología pública:   45%
+  Experiencia propietaria: 35%
+
+Riesgo editorial: AMARILLO — Revisar
+
+Fragmento de riesgo 1 — sección "Lecciones":
+  "Combinar antena GPR con localizador electromagnético (LEM) evita interpretar como
+  vacío lo que en realidad es un elemento energizado o metálico."
+
+  Esta frase revela una heurística operativa específica: la combinación GPR+LEM como
+  protocolo de verificación cruzada para evitar falsos positivos en la identificación
+  de vacíos. Es conocimiento de terreno acumulado que pertenece al Tipo B.
+
+Fragmento protector — sección "Evidencia del estudio":
+  "La interpretación final no depende de un único radargrama, sino del análisis
+  conjunto de cientos de perfiles, las condiciones del terreno y la experiencia del
+  equipo."
+  Este fragmento está bien colocado.
+
+Radargramas: se muestran dos imágenes (radargrama-d.jpg, radargrama-b.jpg). Las
+etiquetas son genéricas ("Socavón confirmado", "Deterioro incipiente"). Los pies de
+foto aclaran que la interpretación no depende de una imagen aislada. Sin anotaciones
+técnicas — nivel adecuado.
+
+Lo que este caso hace bien: la sección "¿Qué buscábamos / qué encontramos" distingue
+cuatro condiciones de subsuelo sin describir cómo se reconoce cada una en el
+radargrama. El diagnóstico se afirma sin explicar el razonamiento.
+
+Acción: Reducir detalle en la lección GPR+LEM. El principio general puede mantenerse;
+el mecanismo específico (LEM evita confundir elementos energizados con vacíos) podría
+simplificarse.
+
+--------------------------------------------------------------------------------
+11. /utilities/ — Página de sector
+--------------------------------------------------------------------------------
+Propósito: presentar el servicio GPR para utilities/infraestructura urbana.
+Tipo: Mixto — credenciales y descripción de aplicaciones. Sin interpretación.
+Riesgo: VERDE — Seguro.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+12. /utilities/casos/accesos-metro-de-santiago/
+--------------------------------------------------------------------------------
+Propósito: caso real de localización de servicios subterráneos en accesos de Metro
+de Santiago.
+
+Tipo: Mixto — contexto y decisiones (Tipo A/B límite en lecciones).
+
+Distribución:
+  Ciencia pública:       15%
+  Metodología pública:   50%
+  Experiencia propietaria: 35%
+
+Riesgo editorial: AMARILLO — Revisar (menor)
+
+Fragmento de riesgo 1 — sección "Lecciones":
+  "Un protocolo de prospección estandarizado, repetido en múltiples accesos similares,
+  permite comparar resultados y mantener el mismo nivel de confianza en cada entrega,
+  sin perder velocidad de ejecución."
+
+  Revela que Geo Radar Chile tiene un protocolo estandarizado y describe una de sus
+  ventajas competitivas (comparabilidad entre accesos). Borderline: no describe cómo
+  es el protocolo, pero sí que existe y produce comparabilidad.
+
+Fragmento de riesgo 2 — sección "Lecciones":
+  "Combinar antena GPR con localizador electromagnético (LEM) es clave cuando
+  coexisten servicios metálicos energizados y otros materiales en el mismo tramo."
+
+  Misma heurística GPR+LEM que aparece en el caso de minería. La repetición en dos
+  casos le da más peso editorial y la convierte en práctica visible públicamente.
+
+El caso hace bien: el resultado está en términos de decisión del cliente ("definir
+por dónde sí y por dónde no excavar"), no en cómo se interpretó el radargrama.
+No hay radargramas en este caso. Correcto.
+
+Acción: Reducir detalle en las lecciones GPR+LEM y protocolo estandarizado.
+
+--------------------------------------------------------------------------------
+13. /forense/ — Página de sector
+--------------------------------------------------------------------------------
+Propósito: presentar el servicio GPR forense, con casos documentados y mención CIDH.
+Tipo: Tipo A — credenciales y descripción del servicio. Sin interpretación.
+Riesgo: VERDE — Seguro
+
+La mención a la Resolución 48/2025 de la CIDH/OAS es la demostración de autoridad
+más poderosa del sitio: credencial pública, verificable, sin exposición metodológica.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+14. /forense/casos/cip-san-joaquin-cerro-chena/
+--------------------------------------------------------------------------------
+Propósito: caso real de prospección en CIP San Joaquín y Cerro Chena.
+
+Tipo: Tipo A + protección activa de Tipo B.
+
+Distribución:
+  Ciencia pública:       20%
+  Metodología pública:   50%
+  Experiencia propietaria: 30% (protegida activamente)
+
+Riesgo editorial: VERDE — Seguro. Modelo de cómo proteger Tipo B correctamente.
+
+  "Los resultados de la prospección forman parte de causas judiciales activas y,
+  por su naturaleza, no se publican ni se detallan en este sitio."
+
+Esta es la mejor implementación del principio "Vendemos la experiencia de aplicarla"
+en todo el sitio. Se demuestra que se hizo el trabajo, se explica por qué se hizo y
+qué habilitó, sin revelar nada de lo que se encontró.
+
+El diagrama SVG (grilla esquemática) muestra el tipo de metodología sin coordenadas,
+sin resultados, sin interpretación. Nivel perfecto.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+15. /forense/casos/sitio-iran-3037-venda-sexy/
+--------------------------------------------------------------------------------
+Propósito: caso real del Sitio de Memoria Irán 3037.
+Tipo: idéntico al caso CIP. Protección activa de Tipo B.
+Riesgo: VERDE — Seguro
+
+Mismo nivel de protección que CIP. Los dos casos forenses son el modelo más claro
+del sitio de cómo demostrar autoridad sin regalar criterio.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+16. /construccion/ — Página de sector
+--------------------------------------------------------------------------------
+Propósito: presentar el servicio GPR para construcción, con proyectos y proceso.
+
+Tipo: Mixto — proyectos (credenciales), proceso técnico (Tipo A), FAQ (Tipo A).
+
+Distribución:
+  Ciencia pública:       30%
+  Metodología pública:   45%
+  Experiencia propietaria: 25% (como credenciales)
+
+Riesgo editorial: VERDE — Seguro
+
+La página lista proyectos concretos (AMB, Chacalluta, Tobalaba, Vespucio Oriente,
+Costanera Puerto Montt, Las Condes) como evidencia de trayectoria, no como
+metodología. El proceso técnico de 5 pasos describe la secuencia de trabajo en
+términos que el cliente puede seguir, sin revelar criterios de interpretación.
+Acción: Sin cambios.
+
+--------------------------------------------------------------------------------
+17. /mentoria/ — Mentoría GPR 1:1
+--------------------------------------------------------------------------------
+Propósito: vender la mentoría especializada. Describir qué se trabaja, para quién
+tiene sentido y cómo funciona.
+
+Tipo: Mixto con exposición significativa de Tipo B en la sección "Qué se trabaja".
+
+Distribución:
+  Ciencia pública:       30%
+  Metodología pública:   30%
+  Experiencia propietaria: 40% (expuesto parcialmente en el syllabus)
+
+Riesgo editorial: ROJO — Exposición alta
+
+Esta es la página con mayor concentración de Tipo B expuesto en todo el sitio.
+
+Fragmento crítico 1 — espectro de antenas con aplicaciones:
+  "desde antenas de muy baja frecuencia (16-80 MHz) para prospección geológica
+  profunda, pasando por las de baja frecuencia (100-200 MHz) para ductos y
+  estructuras a varios metros de profundidad, las de rango medio (400-600 MHz)
+  que equilibran profundidad y resolución para uso general en utilities y
+  estructuras, hasta las de alta frecuencia (900 MHz a 2,6 GHz) para enfierradura
+  y defectos cercanos a la superficie en losas de hormigón."
+
+  La lista de frecuencias es Tipo A (física pública). El mapeo de cada rango a su
+  caso de uso específico es criterio de selección que el especialista aplica en
+  terreno. Eso pertenece al Tipo B.
+
+  "Qué sacrifica cada elección, cómo afecta a la resolución y a la profundidad
+  real, y cómo combinar dos antenas en el mismo estudio cuando un solo rango no
+  basta."
+
+  Esta frase revela que Geo Radar Chile usa combinaciones de antenas y cuándo las
+  usa. Eso es criterio experto, no física pública.
+
+Fragmento crítico 2 — interpretación de anomalías:
+  "Interpretación de anomalías: hipérbolas, reflexiones planas, zonas de sombra,
+  firmas de ductos versus cavidades versus rellenos."
+
+  Este fragmento enumera las categorías interpretativas que el especialista usa para
+  clasificar anomalías. "Firmas de ductos versus cavidades versus rellenos" es
+  exactamente el tipo de heurística que NORTH_STAR.md §Frontera del conocimiento
+  define como protegida. Un competidor que lea esto conoce el vocabulario
+  clasificatorio de Geo Radar Chile.
+
+Fragmento crítico 3 — diseño de grillas:
+  "Diseño de grillas de prospección: densidad de líneas, orientación, cobertura
+  mínima para distintos tipos de anomalías."
+
+  Esto revela que existen criterios de diseño de grilla dependientes del tipo de
+  anomalía buscada, lo que es metodología propia.
+
+Coherencia GPOS: esta página entra en conflicto con NORTH_STAR.md §Frontera del
+conocimiento. Los tres fragmentos arriba cumplen la segunda pregunta del test
+operativo: "¿Esto enseña el criterio experto acumulado en terreno?" La respuesta
+es sí — y por tanto el contenido debe replantearse antes de publicarse.
+
+Acción: Cambiar lenguaje. Demostrar la profundidad del criterio sin transferirlo.
+
+================================================================================
+MATRIZ DE RESULTADOS
+================================================================================
+
+Página                                        | TipoA | TipoB     | Ciencia% | Exp.% | Riesgo   | Acción
+----------------------------------------------|-------|-----------|----------|-------|----------|------------------
+/                                             | A     | —         | 50%      | 10%   | VERDE    | Sin cambios
+/biblioteca/                                  | A     | —         | 100%     | 0%    | VERDE    | Sin cambios
+/biblioteca/como-tomar-decisiones.../         | A     | —         | 60%      | 5%    | VERDE    | Sin cambios
+/biblioteca/como-influye-la-frecuencia.../    | A     | —         | 75%      | 5%    | VERDE    | Sin cambios
+/glosario/                                    | Mixto | Parcial   | 55%      | 15%   | AMARILLO | Reducir detalle
+/herramientas/                                | A     | —         | 100%     | 0%    | VERDE    | Sin cambios
+/herramientas/calculadora-profundidad/        | A     | —         | 70%      | 5%    | VERDE    | Sin cambios
+/herramientas/necesito-gpr/                   | A     | —         | 65%      | 5%    | VERDE    | Sin cambios
+/mineria/                                     | Mixto | —         | 25%      | 35%   | VERDE    | Sin cambios
+/mineria/casos/socavones-espesador-t5/        | Mixto | Parcial   | 20%      | 35%   | AMARILLO | Reducir detalle
+/utilities/                                   | Mixto | —         | 25%      | 35%   | VERDE    | Sin cambios
+/utilities/casos/accesos-metro-de-santiago/   | Mixto | Parcial   | 15%      | 35%   | AMARILLO | Reducir detalle
+/forense/                                     | A     | —         | 30%      | 40%   | VERDE    | Sin cambios
+/forense/casos/cip-san-joaquin-cerro-chena/   | A     | Protegido | 20%      | 30%   | VERDE    | Sin cambios
+/forense/casos/sitio-iran-3037-venda-sexy/    | A     | Protegido | 20%      | 30%   | VERDE    | Sin cambios
+/construccion/                                | Mixto | —         | 30%      | 25%   | VERDE    | Sin cambios
+/mentoria/                                    | Mixto | Expuesto  | 30%      | 40%   | ROJO     | Cambiar lenguaje
+
+================================================================================
+RESPUESTAS A LAS PREGUNTAS FINALES
+================================================================================
+
+------------------------------------------------------------------------
+1. Las 10 páginas con mayor riesgo de exponer know-how
+   (ordenadas de mayor a menor riesgo)
+------------------------------------------------------------------------
+
+1.  /mentoria/ — "firmas de ductos versus cavidades versus rellenos",
+    criterios de selección por rango de frecuencia, diseño de grillas
+    según tipo de anomalía. Triple exposición Tipo B.
+
+2.  /glosario/#socavon — criterios de reconocimiento visual del socavón
+    en radargrama.
+
+3.  /glosario/#hiperbola — criterio de calidad de señal para distinguir
+    objeto real de ruido.
+
+4.  /mineria/casos/socavones-espesador-t5/ §Lecciones — heurística
+    GPR+LEM para evitar falsos positivos en vacíos.
+
+5.  /utilities/casos/accesos-metro-de-santiago/ §Lecciones — misma
+    heurística GPR+LEM; existencia de protocolo estandarizado con
+    comparabilidad entre accesos.
+
+6-17. Las 12 páginas restantes no presentan exposición significativa
+      según el análisis realizado.
+
+------------------------------------------------------------------------
+2. Las 10 páginas mejor alineadas con el NORTH_STAR
+------------------------------------------------------------------------
+
+1.  /forense/casos/cip-san-joaquin-cerro-chena/ — demuestra autoridad
+    máxima sin revelar nada. Cita judicial activa como razón de silencio.
+    Modelo perfecto.
+
+2.  /forense/casos/sitio-iran-3037-venda-sexy/ — mismo nivel. Los dos
+    casos forenses son el espejo de lo que el sitio debería ser.
+
+3.  /biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/
+    — cierra con la frase protectora más clara de todo el sitio.
+
+4.  /biblioteca/como-influye-la-frecuencia-de-antena-gpr/ — enseña la
+    ciencia sin enseñar la decisión.
+
+5.  /herramientas/calculadora-profundidad/ — orienta, no diagnostica.
+    Los nuevos labels lo consolidan.
+
+6.  /herramientas/necesito-gpr/ — árbol correcto, protección activa al
+    final.
+
+7.  /forense/ — credencial CIDH como demostración de autoridad sin
+    metodología.
+
+8.  /construccion/ — credenciales de obra, proceso en términos del
+    cliente.
+
+9.  / — el simulador invierte la pregunta correctamente.
+
+10. /mineria/ — lista de clientes sin interpretación.
+
+------------------------------------------------------------------------
+3. Páginas que demuestran experiencia sin regalarla
+------------------------------------------------------------------------
+
+Las dos páginas forenses son el modelo de referencia. La estructura es:
+existe un problema sensible → el cliente eligió el método no invasivo →
+el resultado fue entregado → qué pasa con ese resultado no es asunto del
+sitio. Esa estructura demuestra tres cosas sin enseñar ninguna: que se
+sabe hacer, que el método funciona, y que la confianza está depositada en
+el equipo por organismos con estándares altos (Subsecretaría, CIDH).
+
+El caso Metro de Santiago también lo hace bien en las secciones de
+contexto y resultado, con riesgo solo en las lecciones.
+
+------------------------------------------------------------------------
+4. Páginas que enseñan más de lo que deberían
+------------------------------------------------------------------------
+
+Una sola página supera la frontera con claridad: /mentoria/. El problema
+no es que exista un syllabus — es la forma en que está escrito. En su
+estado actual, la sección "Qué se trabaja" transfiere el vocabulario
+clasificatorio experto ("firmas de ductos versus cavidades versus
+rellenos", "zonas de sombra") y la estructura de decisión de selección
+de antena antes de que el alumno pague un peso.
+
+El glosario tiene dos entradas que cruzan la frontera de forma más
+discreta: #socavon e #hiperbola enseñan criterios de reconocimiento que
+son heurísticas del experto, no física pública.
+
+------------------------------------------------------------------------
+5. Oportunidades para reforzar autoridad sin aumentar exposición
+------------------------------------------------------------------------
+
+1. El caso T5 puede reforzar su cierre. La sección de resultado es
+   fuerte, pero podría agregar una frase equivalente a la de los casos
+   forenses que indique que el informe completo fue entregado al cliente
+   y allí vive la interpretación, no en este sitio.
+
+2. La página de mentoría puede demostrar profundidad sin listar el
+   syllabus. En lugar de enumerar qué se interpreta, puede describir el
+   tipo de preguntas que los alumnos terminan sabiendo hacer, sin nombrar
+   las categorías de anomalías.
+
+3. El glosario puede convertirse en una demostración de autoridad más
+   potente si los términos de reconocimiento se reformulan para decir que
+   existe un patrón reconocible, sin describir el patrón. El glosario
+   describe conceptos; quien quiera saber cómo reconocerlos necesita la
+   mentoría o el servicio.
+
+------------------------------------------------------------------------
+6. Contradicciones entre el sitio y el GPOS
+------------------------------------------------------------------------
+
+Conflicto 1
+  Página:    /mentoria/
+  Fragmento: "firmas de ductos versus cavidades versus rellenos"
+  Conflicto: La mentoría expone criterios de interpretación de anomalías
+             que el GPOS clasifica como Tipo B.
+  Documento: NORTH_STAR.md §Frontera del conocimiento, test operativo
+             pregunta 2.
+
+Conflicto 2
+  Página:    /mentoria/
+  Fragmento: "desde antenas de muy baja frecuencia (16-80 MHz)...
+             qué sacrifica cada elección... cómo combinar dos antenas"
+  Conflicto: La mentoría describe el criterio de selección de antena por
+             rango y aplicación, que es juicio profesional.
+  Documento: NORTH_STAR.md §Frontera del conocimiento.
+
+Conflicto 3
+  Página:    /glosario/#socavon
+  Fragmento: "se reconoce por ausencia de reflexiones organizadas,
+             distorsión de las capas adyacentes y bordes irregulares de
+             alta amplitud"
+  Conflicto: El glosario enseña criterios de reconocimiento visual de
+             anomalías.
+  Documento: NORTH_STAR.md §Frontera del conocimiento, test operativo
+             pregunta 2.
+
+Conflicto 4
+  Página:    /glosario/#hiperbola
+  Fragmento: "hipérbola simétrica y nítida, que se repite en la misma
+             posición entre pasadas, es la señal más confiable"
+  Conflicto: El glosario enseña el criterio primario de calidad de señal.
+  Documento: NORTH_STAR.md §Frontera del conocimiento, test operativo
+             pregunta 2.
+
+Conflicto 5
+  Páginas:   /mineria/casos/socavones-espesador-t5/
+             /utilities/casos/accesos-metro-de-santiago/
+  Fragmento: "evita interpretar como vacío lo que en realidad es un
+             elemento energizado o metálico"
+  Conflicto: Heurística GPR+LEM publicada dos veces en casos.
+  Documento: NORTH_STAR.md §Frontera del conocimiento.
+
+------------------------------------------------------------------------
+7. Orden para revisar páginas, de mayor a menor riesgo
+------------------------------------------------------------------------
+
+1. /mentoria/ — triple exposición Tipo B. Prioridad inmediata.
+2. /glosario/ — dos entradas específicas (#socavon, #hiperbola).
+   Ajuste quirúrgico.
+3. /mineria/casos/socavones-espesador-t5/ — lección GPR+LEM.
+4. /utilities/casos/accesos-metro-de-santiago/ — misma lección +
+   protocolo estandarizado.
+5. Todas las demás — sin acción requerida en esta auditoría.
+
+================================================================================
+CONCLUSIÓN
+================================================================================
+
+El sitio está bien construido sobre Tipo A. La mayoría de las páginas pasan el
+test operativo de NORTH_STAR.md §Frontera del conocimiento. Las páginas de la
+biblioteca y las herramientas son modelos de cómo enseñar la ciencia sin regalar
+la experiencia. Los dos casos forenses son la mejor implementación del principio
+en todo el sitio.
+
+Los cinco conflictos detectados son localizados y quirúrgicos — no sistémicos.
+El problema no es la arquitectura del sitio: es que tres páginas (mentoria,
+glosario, dos casos) tienen fragmentos específicos que cruzan la frontera. Pueden
+ajustarse sin cambiar la estructura de las páginas.
+
+El activo más expuesto es /mentoria/, paradójicamente la página que más debería
+proteger el know-how, ya que su propósito es vender acceso a ese know-how. La
+tensión entre mostrar suficiente para vender y no regalar lo que se vende es la
+tensión editorial más importante que el GPOS debe resolver allí.
+
+================================================================================
+Fin del documento · AUDITORIA-GPOS-2026-06.txt
+================================================================================

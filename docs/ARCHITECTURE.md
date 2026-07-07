@@ -71,6 +71,27 @@ una función dentro del ecosistema.
 - **Flujo de entrada:** Desde biblioteca técnica y herramientas (confianza previa).
 - **Flujo de salida:** Formulario de contacto para mentoría.
 
+### 1.6 Subcapacidad de soporte: Evidencia Técnica
+- **Objetivo:** Incorporar literatura científica externa (papers, tesis, informes) como
+  fuente de conocimiento sin republicar material protegido ni revelar criterio propietario.
+- **Naturaleza:** Interna. No es una capacidad pública por sí misma. Es la capa de
+  investigación que alimenta la Capacidad Conocimiento (§1.2) con fundamentos técnicos
+  trazables y clasificados.
+- **Módulos:** intake / papers / themes / synthesis (ver `content/research/`).
+- **Flujo de entrada:** Papers, DOIs, tesis, informes, PDFs internos, notas de Gabriel.
+- **Flujo de salida:** Síntesis originales → artículos de biblioteca, FAQ, mejoras de
+  herramientas, términos de glosario, futura sección `/evidencia-tecnica/`.
+- **Relación con Biblioteca técnica:** la Biblioteca publica; Evidencia Técnica investiga.
+  Un artículo de biblioteca puede citar síntesis de Evidencia Técnica, pero Evidencia
+  Técnica no genera contenido público directamente.
+- **Relación con Casos Reales:** Evidencia Técnica puede contextualizar el método sin
+  revelar razonamiento propietario. Un caso puede mencionar que condiciones de humedad
+  afectan la señal "como también describe la literatura técnica", con cita, sin tutorial.
+- **Relación con Herramientas:** síntesis de nivel 1-2 pueden alimentar advertencias,
+  variables de entrada o explicaciones educativas en calculadoras.
+- **Relación con BADR:** no hay integración técnica todavía. Las síntesis incluyen un
+  campo de anotación de intención para cuando BADR esté operativo. Ver `ADR-005`.
+
 ---
 
 ## 2. Flujo de navegación y enlaces internos
@@ -127,6 +148,7 @@ interno y garantiza que cada nuevo activo sepa exactamente a qué red pertenece.
 | **Glosario** | Biblioteca técnica, Herramientas |
 | **Academia / Mentorías** | Biblioteca técnica, Herramientas |
 | **Servicios** | Casos reales, Biblioteca técnica *(solo como respaldo técnico)* |
+| **Evidencia Técnica** | Biblioteca técnica, Herramientas, Glosario *(solo como input, nunca público directo)* |
 
 **Lectura de la matriz:** los Servicios son destino principal de conversión, no
 origen de exploración técnica. Un artículo de biblioteca puede enlazar a un
@@ -225,8 +247,17 @@ georadar.cl/
 │   │   └── by-problem/
 │   ├── tools/                       ← Capacidad: Herramientas
 │   │   └── calculators/
-│   └── mentorship/                  ← Capacidad: Academia
-│       └── resources/
+│   ├── mentorship/                  ← Capacidad: Academia
+│   │   └── resources/
+│   └── research/                    ← Subcapacidad: Evidencia Técnica (§1.6)
+│       ├── intake/                  ← Entradas crudas: links, DOIs, abstracts, PDFs
+│       │   └── templates/
+│       ├── papers/                  ← Fichas editoriales limpias por fuente
+│       │   └── templates/
+│       ├── themes/                  ← Agrupaciones temáticas (humedad, cavidades…)
+│       │   └── templates/
+│       └── synthesis/               ← Síntesis originales listas para publicación
+│           └── templates/
 │
 ├── assets/
 │   ├── images/
@@ -241,6 +272,78 @@ georadar.cl/
     ├── tools/
     └── mentorship/
 ```
+
+**Nota importante:** el árbol anterior es la arquitectura objetivo y el patrón conceptual del sistema. No representa la estructura física actual del repositorio. Las carpetas `components/`, `content/services/`, `content/library/`, `content/cases/`, `content/tools/`, `content/mentorship/` y `pages/` no existen en disco. Crear esas carpetas sin una tarea explícita aprobada es un error de ejecución.
+
+### 5.1 Estructura actual del repositorio
+
+Esta es la estructura física real a 2026-07-04:
+
+```
+georadar.cl/
+│
+├── CLAUDE.md
+├── index.html                          ← Inicio
+├── robots.txt
+├── sitemap.xml
+├── favicon.svg
+├── favicon.png
+│
+├── docs/                               ← Documentos de gobernanza del GPOS
+│   ├── PROJECT_VISION.md
+│   ├── NORTH_STAR.md
+│   ├── DECISION_FRAMEWORK.md
+│   ├── ARCHITECTURE.md
+│   ├── DESIGN_SYSTEM.md
+│   ├── CONTENT_STRATEGY.md
+│   ├── ROADMAP.md
+│   ├── BACKLOG.md
+│   ├── DECISIONS.md
+│   ├── CHANGELOG.md
+│   ├── KNOWLEDGE_MAP.json              ← Mapa de rutas para audit.js
+│   └── adr/
+│
+├── content/
+│   └── research/                       ← Evidencia Técnica (sistema ATLAS interno)
+│       ├── intake/
+│       ├── papers/
+│       ├── themes/
+│       └── synthesis/
+│
+├── assets/
+│   ├── css/
+│   │   └── shared.css
+│   └── js/
+│       └── main.js
+│
+├── scripts/
+│   └── audit.js                        ← Pre-commit: valida links, glosario, KNOWLEDGE_MAP
+│
+├── mineria/
+│   └── casos/socavones-espesador-t5/
+├── utilities/
+│   └── casos/accesos-metro-de-santiago/
+├── construccion/
+│   └── casos/prospeccion-aeropuerto-chacalluta/
+├── forense/
+│   ├── casos/cip-san-joaquin-cerro-chena/
+│   └── casos/sitio-iran-3037-venda-sexy/
+├── biblioteca/
+│   ├── como-tomar-decisiones-antes-de-intervenir-el-subsuelo/
+│   ├── como-influye-la-frecuencia-de-antena-gpr/
+│   ├── que-hace-que-un-suelo-sea-dificil-para-el-gpr/
+│   ├── por-que-la-profundidad-del-georradar-depende-del-terreno/
+│   ├── que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/
+│   └── como-afecta-la-humedad-al-georradar/
+├── glosario/
+├── herramientas/
+│   ├── calculadora-profundidad/
+│   ├── necesito-gpr/
+│   └── selector-antena/
+└── mentoria/
+```
+
+Cada ruta pública sirve un `index.html` estático. No hay build step ni generador de páginas. Todos los activos comparten `/assets/css/shared.css` y `/assets/js/main.js`.
 
 ---
 

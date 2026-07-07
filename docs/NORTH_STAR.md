@@ -50,6 +50,67 @@ El orden importa: nunca sacrifiques el nivel 1 por el nivel 4.
 
 ---
 
+## Frontera del conocimiento
+
+> **Enseñamos la ciencia del GPR. Vendemos la experiencia de aplicarla.**
+
+Esta frase define el límite de lo que publicamos libremente y lo que es el núcleo de nuestro negocio.
+
+**Contenido Tipo A — publicable:** física, frecuencias, atenuación, principios del método. Todo lo que cualquier manual de GPR podría enseñar. Publicarlo construye autoridad sin ceder ventaja competitiva.
+
+**Contenido Tipo B — protegido:** criterio experto acumulado en terreno. Cómo interpretar una anomalía específica, por qué se descartó una hipótesis, qué metodología se eligió para un suelo con interferencias. Esto es el producto. No se hace contenido exhaustivo sobre ello.
+
+### Filtro de tres niveles
+
+La frontera no depende de cuánto se muestra. Depende de qué se muestra. Un radargrama completo puede publicarse sin riesgo si no hay razonamiento debajo. Un párrafo de tres líneas puede regalar el negocio si explica el criterio de descarte. La variable crítica es la **profundidad del razonamiento**, no la cantidad de contenido.
+
+| Nivel | Contenido | Regla |
+|-------|-----------|-------|
+| **1 — Hechos** | Frecuencia, velocidad, profundidad, limitaciones, resolución, física del método | Se publica siempre |
+| **2 — Buenas prácticas** | Cuándo usar GPR, cuándo no sirve, errores comunes, cómo planificar una campaña, criterios generales de aplicabilidad | Se publica |
+| **3 — Juicio profesional** | Por qué se descartó una anomalía, cómo se priorizaron hipótesis, cómo se interpretaron varias señales simultáneamente, qué peso tuvo cada evidencia, por qué se eligió excavar allí | Nunca se publica |
+
+**Regla de acción:** no "reducir detalle" — **eliminar razonamiento, mantener evidencia**. El trabajo se muestra. El criterio que llevó a la conclusión no.
+
+### Test operativo antes de publicar cualquier activo
+
+Antes de publicar cualquier página, artículo, herramienta o caso, pregunta:
+
+1. **¿Esto ayuda a comprender el método?** → Si sí, publicar.
+2. **¿Esto enseña el criterio experto acumulado en terreno?** → Si sí, el contenido debe replantearse.
+
+Si la segunda respuesta es sí, el activo no se publica en su forma actual. Puede transformarse: mostrar *que existe* ese criterio y *por qué importa*, sin entregarlo como tutorial.
+
+---
+
+## Sobre la evidencia científica
+
+La literatura técnica externa (papers, tesis, informes) puede fortalecer la
+confianza de ATLAS cuando se usa para clarificar el método: explicar física
+pública, contextualizar limitaciones, respaldar explicaciones con fuentes.
+
+Pero la evidencia científica nunca debe usarse para:
+
+- **Aparentar autoridad que no existe.** Citar un paper no reemplaza experiencia
+  de terreno. ATLAS cita fuentes para respaldar explicaciones propias, no para
+  tomar prestada la credibilidad de los autores.
+- **Revelar criterio propietario.** Un paper puede enseñar cómo afecta la
+  humedad a la señal GPR (Nivel 1-2). Usarlo para inferir y publicar cómo
+  Geo Radar Chile interpreta esas condiciones en campo (Nivel 3-4) rompe la
+  frontera de conocimiento.
+- **Exagerar conclusiones.** Un hallazgo de un estudio en un suelo específico
+  no es una regla universal. Toda cita debe contextualizarse y limitarse.
+
+La pregunta de validación no cambia:
+
+> **¿Esto ayuda a alguien a comprender mejor el subsuelo antes de intervenirlo,
+> y por tanto a confiar más en nosotros?**
+
+Si la respuesta es "ayuda a aparentar autoridad" en lugar de "ayuda a comprender",
+el uso de esa fuente está desalineado.
+
+---
+
 ## La regla inquebrantable
 
 **Nunca cambiamos confianza de largo plazo por conversión de corto plazo.**

@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>¿Necesito un estudio GPR? | Árbol de decisión y checklist | Geo Radar Chile</title>
 <meta name="description" content="Responda 4 preguntas para saber si el georradar (GPR) es el método correcto para su proyecto, y obtenga un checklist de qué preparar antes de contactar a un especialista.">
@@ -17,7 +19,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="¿Necesito un estudio GPR? | Árbol de decisión y checklist">
 <meta name="twitter:description" content="Responda 4 preguntas para saber si el georradar es el método correcto para su proyecto.">
-<link rel="stylesheet" href="/assets/css/shared.css?v=5">
+<link rel="stylesheet" href="/assets/css/shared.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,7 +47,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://georadar.cl/" },
-        { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://georadar.cl/herramientas/calculadora-profundidad/" },
+        { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://georadar.cl/herramientas/" },
         { "@type": "ListItem", "position": 3, "name": "¿Necesito un estudio GPR?", "item": "https://georadar.cl/herramientas/necesito-gpr/" }
       ]
     }
@@ -68,6 +70,7 @@
       <li><a href="/utilities/" aria-label="Ir a utilities">Utilities</a></li>
       <li><a href="/forense/" aria-label="Ir a forense">Forense</a></li>
       <li><a href="/biblioteca/" aria-label="Ir a biblioteca técnica">Biblioteca</a></li>
+      <li><a href="/mentoria/" aria-label="Ir a mentorías">Mentorías</a></li>
       <li><a href="/herramientas/" aria-label="Ir a herramientas">Herramientas</a></li>
       <li><a href="https://georadarchile.cl" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Solicitar estudio GPR">Solicitar estudio GPR</a></li>
     </ul>
@@ -78,7 +81,7 @@
   <div class="container hero-content">
     <p class="eyebrow">Herramientas &middot; Árbol de decisión</p>
     <h1>¿Necesito un estudio GPR?</h1>
-    <p class="lead">Responda cuatro preguntas sobre su proyecto para saber si el georradar es el método adecuado, y obtenga un checklist de qué preparar antes de contactar a un especialista. Gratuita, sin registro, no reemplaza la evaluación de un especialista.</p>
+    <p class="lead">Responda cuatro preguntas sobre su proyecto para saber si el <a href="/georadar/">georradar</a> es el método adecuado, y obtenga un checklist de qué preparar antes de contactar a un especialista. Gratuita, sin registro, no reemplaza la evaluación de un especialista.</p>
   </div>
 </header>
 
@@ -154,7 +157,7 @@
     </div>
     <div class="faq-item reveal">
       <h3>Este árbol no sustituye la planificación del estudio</h3>
-      <p>El resultado orienta si GPR es razonable para el escenario descrito. La <a href="/herramientas/calculadora-profundidad/">calculadora de viabilidad GPR</a> profundiza en la relación entre profundidad, terreno y precisión una vez que GPR ya es la opción correcta.</p>
+      <p>El resultado orienta si GPR es razonable para el escenario descrito. La <a href="/herramientas/calculadora-viabilidad-gpr/">calculadora de viabilidad GPR</a> profundiza en la relación entre profundidad, terreno y precisión una vez que GPR ya es la opción correcta.</p>
     </div>
   </div>
 </section>
@@ -195,6 +198,7 @@
 
 <footer>
   <div class="container">
+    <p class="footer-logo">GeoRadar.cl</p>
     <div class="footer-grid">
       <div>
         <h4>Servicios</h4>
@@ -204,6 +208,7 @@
           <li><a href="/utilities/">Utilities</a></li>
           <li><a href="/forense/">Forense</a></li>
           <li><a href="/biblioteca/">Biblioteca</a></li>
+          <li><a href="/mentoria/">Mentorías</a></li>
           <li><a href="/herramientas/">Herramientas</a></li>
         </ul>
       </div>
@@ -215,7 +220,7 @@
         <h4>Geo Radar Chile</h4>
         <ul><li>Empresa desde 2011</li><li>Experiencia desde 1997</li></ul>
       </div>
-      <div>
+      <div class="footer-contact">
         <h4>Contacto</h4>
         <ul>
           <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">Solicitar cotización</a></li>
@@ -258,7 +263,7 @@
     } else {
       tier = 'Sí, GPR es probablemente el método correcto';
       tierClass = 'tier-alta';
-      mensaje = 'El escenario descrito —objetivo no metálico o desconocido, con acceso a la superficie— es el caso de uso típico del georradar. El siguiente paso es estimar la viabilidad según profundidad y terreno con la calculadora, y luego coordinar la planificación con un especialista.';
+      mensaje = 'El escenario descrito, con objetivo no metálico o desconocido y acceso a la superficie, es el caso de uso típico del georradar. El siguiente paso es estimar la viabilidad según profundidad y terreno con la calculadora, y luego coordinar la planificación con un especialista.';
     }
 
     var checklist = ['Plano o referencia del área, con dimensiones aproximadas'];
