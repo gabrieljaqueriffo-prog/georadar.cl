@@ -72,15 +72,15 @@
 2. **Como influye la frecuencia de una antena GPR en los resultados**
    - `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`
    - Estado: OPTIMIZACION
-   - Entrantes: `/biblioteca/`, `/herramientas/calculadora-profundidad/`, `/glosario/#antena`, `/mineria/`, `/utilities/`, `/mentoria/`
-   - Salientes: `/glosario/`, `/herramientas/calculadora-profundidad/`, `/herramientas/selector-antena/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`, `/mentoria/`
+   - Entrantes: `/biblioteca/`, `/herramientas/calculadora-viabilidad-gpr/`, `/glosario/#antena`, `/mineria/`, `/utilities/`, `/mentoria/`
+   - Salientes: `/glosario/`, `/herramientas/calculadora-viabilidad-gpr/`, `/herramientas/selector-antena/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`, `/mentoria/`
    - Cambio 2026-07-05: agregado enlace saliente a `/mentoria/`
 
 3. **Por que la profundidad del georradar depende del terreno**
    - `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`
    - Estado: PUBLICADO
    - Entrantes: `/biblioteca/`, `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`, `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`, `/biblioteca/como-afecta-la-humedad-al-georradar/`, `/glosario/`
-   - Salientes: `/glosario/`, `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`, `/biblioteca/como-afecta-la-humedad-al-georradar/`, `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`, `/herramientas/calculadora-profundidad/`
+   - Salientes: `/glosario/`, `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`, `/biblioteca/como-afecta-la-humedad-al-georradar/`, `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`, `/herramientas/calculadora-viabilidad-gpr/`
    - Cambio 2026-07-05: agregado enlace a articulo de humedad en seccion "Para seguir aprendiendo"
 
 4. **Que puede decirnos una senal GPR ademas de una imagen**
@@ -93,7 +93,7 @@
 5. **Como afecta la humedad del suelo a un estudio con georradar**
    - `/biblioteca/como-afecta-la-humedad-al-georradar/`
    - Estado: PUBLICADO
-   - Entrantes: `/biblioteca/`, `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`, `/herramientas/calculadora-profundidad/`
+   - Entrantes: `/biblioteca/`, `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`, `/herramientas/calculadora-viabilidad-gpr/`
    - Salientes: `/glosario/`, `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`, `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`
 
 6. **Que hace que un suelo sea dificil para el GPR**
@@ -123,7 +123,7 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 - **Estado:** PUBLICADO — `/herramientas/`
 
 #### Calculadora de viabilidad GPR
-- **Estado:** PUBLICADO — `/herramientas/calculadora-viabilidad-gpr/` (URL anterior `/herramientas/calculadora-profundidad/` redirige con meta-refresh)
+- **Estado:** PUBLICADO — `/herramientas/calculadora-viabilidad-gpr/` (URL anterior `/herramientas/calculadora-viabilidad-gpr/` redirige con meta-refresh)
 - **ADR-006:** ejecutado en rama `atlas/adr-006-calculadora-viabilidad-gpr` el 2026-07-06. Pendiente merge a main por Gabriel. Monitorear Search Console 4-6 semanas después del merge.
 
 #### Necesito un estudio GPR (arbol de decision)
@@ -131,8 +131,8 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 
 #### Selector de antena GPR
 - **Estado:** PUBLICADO — `/herramientas/selector-antena/`
-- **Riesgo SEO:** canibalizacion media con `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`. Ver `SEO_BASELINE.md`.
-- **Riesgo editorial:** evaluar si expone criterio Nivel C (`CONTENT_STRATEGY.md §1.5`). Requiere decision de Gabriel antes de optimizar.
+- **Auditoría 2026-07-09:** lenguaje condicional correcto en todos los resultados; disclaimer prominente en lead y en resultado; sin claims absolutos; sin criterio Nivel C expuesto (los rangos de frecuencia son física pública). Cross-links completos: necesito-gpr, calculadora-viabilidad-gpr, georadar, glosario.
+- **Riesgo SEO:** canibalizacion media con `/biblioteca/como-influye-la-frecuencia-de-antena-gpr/`. Ver `SEO_BASELINE.md`. Diferenciación actual suficiente (herramienta vs. artículo explicativo). Monitorear.
 
 ---
 
@@ -150,7 +150,7 @@ Gabriel no dispone de informacion suficiente para desarrollarlo como caso o refe
 Estado: PUBLICADO — REQUIERE AUDITORÍA. Tipo: caso real de construcción. La página existe en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`. La tarea pendiente ya no es intake sino auditoría del caso publicado. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`. Ajustes aplicados 2026-07-06: footer actualizado a "Prospección GPR en obras civiles", enlace al artículo de frecuencia de antena añadido en sección de método. Pendiente: evaluar si el H1 y el title incorporan "GPR" de forma explícita para alineación con keyword del vertical.
 
 **Prioridad 4 — Ejecutar ADR-006 (rename calculadora)**
-`docs/adr/ADR-006-rename-calculadora-profundidad.md` en estado Aprobado conceptualmente. Ejecucion pendiente de confirmacion explicita de Gabriel. No ejecutar cambio de URL hasta esa confirmacion. Crear rama separada, implementar redirect 301, actualizar enlaces internos, verificar ausencia de referencias a "profundidad garantizada" y preparar monitoreo en Search Console.
+URL activa: `/herramientas/calculadora-viabilidad-gpr/`. Redirect meta-refresh desde URL anterior. Pendiente: confirmar transferencia de señal SEO en Search Console ~agosto 2026.
 
 **Prioridad 5 — Semi-caso Codelco Division Andina**
 Primer caso de mineria a desarrollar como pagina tipo semi-caso. Patron minimo: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado obtenido, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion de Gabriel.
@@ -176,7 +176,7 @@ Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como
 
 4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) ejecutado en rama, pendiente de merge.
 
-5. **Referencias históricas a calculadora-profundidad en docs internos** — `BACKLOG.md`, `ARCHITECTURE.md` y `SEO_BASELINE.md` contienen menciones a la URL `/herramientas/calculadora-profundidad/` en contexto histórico o descriptivo. No son operativas y no generan enlaces rotos. Revisar en tarea de mantenimiento posterior para aclarar que la URL fue reemplazada por `/herramientas/calculadora-viabilidad-gpr/`.
+5. **Referencias históricas a calculadora-profundidad en docs internos** — RESUELTO 2026-07-09. `BACKLOG.md`, `ARCHITECTURE.md` y `SEO_BASELINE.md` actualizados para reflejar la URL activa `/herramientas/calculadora-viabilidad-gpr/`.
 
 ---
 
