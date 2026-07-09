@@ -139,6 +139,14 @@
       "footer_keyword": "Biblioteca técnica GPR"
     },
     {
+      "path": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "file": "biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/index.html",
+      "title": "Qué puede detectar el georradar en infraestructura ferroviaria",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
       "path": "/mentoria/",
       "file": "mentoria/index.html",
       "title": "Mentoría GPR",
@@ -409,6 +417,16 @@
       "from": "/glosario/",
       "to": "/georadar/",
       "note": "glosario debe enlazar a la página pilar desde entrada #georradar"
+    },
+    {
+      "from": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "to": "/glosario/",
+      "note": "artículo usa términos del glosario"
+    },
+    {
+      "from": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
     }
   ],
   "min_incoming_links": {
