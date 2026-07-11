@@ -147,6 +147,14 @@
       "footer_keyword": "Biblioteca técnica GPR"
     },
     {
+      "path": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "file": "biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/index.html",
+      "title": "Cómo detecta el georradar objetos y vacíos dentro del hormigón",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR en hormigón"
+    },
+    {
       "path": "/mentoria/",
       "file": "mentoria/index.html",
       "title": "Mentoría GPR",
@@ -427,6 +435,31 @@
       "from": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
       "to": "/georadar/",
       "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/glosario/",
+      "note": "artículo usa términos del glosario"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/construccion/",
+      "note": "artículo enlaza al vertical de construcción"
+    },
+    {
+      "from": "/construccion/",
+      "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "note": "vertical de construcción enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "note": "entrada permitividad enlaza al artículo de hormigón"
     }
   ],
   "min_incoming_links": {

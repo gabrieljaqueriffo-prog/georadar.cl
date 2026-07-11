@@ -337,7 +337,7 @@ georadar.cl/
 │   └── como-afecta-la-humedad-al-georradar/
 ├── glosario/
 ├── herramientas/
-│   ├── calculadora-profundidad/
+│   ├── calculadora-viabilidad-gpr/
 │   ├── necesito-gpr/
 │   └── selector-antena/
 └── mentoria/
