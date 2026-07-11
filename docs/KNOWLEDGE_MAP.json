@@ -27,6 +27,14 @@
       "footer_keyword": "Georradar minería Chile"
     },
     {
+      "path": "/mineria/casos/liberacion-areas-division-andina/",
+      "file": "mineria/casos/liberacion-areas-division-andina/index.html",
+      "title": "Liberación de áreas División Andina",
+      "section": "mineria",
+      "type": "case",
+      "footer_keyword": "Georradar minería Chile"
+    },
+    {
       "path": "/utilities/",
       "file": "utilities/index.html",
       "title": "Utilities",
@@ -460,6 +468,31 @@
       "from": "/glosario/",
       "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
       "note": "entrada permitividad enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/mineria/",
+      "note": "caso enlaza al vertical de minería"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/georadar/",
+      "note": "caso enlaza a la guía del método"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "note": "caso enlaza al artículo de decisiones"
+    },
+    {
+      "from": "/mineria/",
+      "to": "/mineria/casos/liberacion-areas-division-andina/",
+      "note": "vertical de minería enlaza al caso División Andina"
+    },
+    {
+      "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "to": "/mineria/casos/liberacion-areas-division-andina/",
+      "note": "artículo de decisiones enlaza al caso División Andina"
     }
   ],
   "min_incoming_links": {
