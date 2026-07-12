@@ -203,6 +203,14 @@
       "footer_keyword": "Selector de antena georradar"
     },
     {
+      "path": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "file": "biblioteca/como-elegir-empresa-de-georradar/index.html",
+      "title": "Cómo elegir una empresa de georradar en Chile",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
       "path": "/georadar/",
       "file": "georadar/index.html",
       "title": "Georadar: qué es, cómo funciona y cuándo usar GPR en Chile",
@@ -468,6 +476,26 @@
       "from": "/glosario/",
       "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
       "note": "entrada permitividad enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "to": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "note": "artículo enlaza al artículo de decisiones"
+    },
+    {
+      "from": "/biblioteca/",
+      "to": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "note": "biblioteca enlaza al nuevo artículo empresa"
+    },
+    {
+      "from": "/georadar/",
+      "to": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "note": "pilar enlaza al artículo empresa"
     },
     {
       "from": "/mineria/casos/liberacion-areas-division-andina/",
