@@ -101,6 +101,7 @@ detecte esa contradicción.
 | Biblioteca | Artículo | Qué puede decirnos una señal GPR además de una imagen | `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/` | `biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/index.html` | PUBLICADO | Ninguna bloqueante |
 | Biblioteca | Artículo | Cómo afecta la humedad del suelo a un estudio con georradar | `/biblioteca/como-afecta-la-humedad-al-georradar/` | `biblioteca/como-afecta-la-humedad-al-georradar/index.html` | PUBLICADO | Ninguna bloqueante |
 | Biblioteca | Artículo | Qué hace que un suelo sea difícil para el GPR | `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/` | `biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/index.html` | PUBLICADO | Ninguna bloqueante |
+| Biblioteca | Artículo | Qué puede detectar el georradar en infraestructura ferroviaria | `/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/` | `biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/index.html` | PUBLICADO | Sin caso propio todavía. Cuando haya proyecto ferroviario ejecutado, enlazar como caso desde este artículo. Monitorear Search Console 4-8 semanas. |
 
 ---
 

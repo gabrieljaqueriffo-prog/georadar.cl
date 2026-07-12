@@ -27,6 +27,14 @@
       "footer_keyword": "Georradar minería Chile"
     },
     {
+      "path": "/mineria/casos/liberacion-areas-division-andina/",
+      "file": "mineria/casos/liberacion-areas-division-andina/index.html",
+      "title": "Liberación de áreas División Andina",
+      "section": "mineria",
+      "type": "case",
+      "footer_keyword": "Georradar minería Chile"
+    },
+    {
       "path": "/utilities/",
       "file": "utilities/index.html",
       "title": "Utilities",
@@ -139,6 +147,22 @@
       "footer_keyword": "Biblioteca técnica GPR"
     },
     {
+      "path": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "file": "biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/index.html",
+      "title": "Qué puede detectar el georradar en infraestructura ferroviaria",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
+    },
+    {
+      "path": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "file": "biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/index.html",
+      "title": "Cómo detecta el georradar objetos y vacíos dentro del hormigón",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR en hormigón"
+    },
+    {
       "path": "/mentoria/",
       "file": "mentoria/index.html",
       "title": "Mentoría GPR",
@@ -177,6 +201,14 @@
       "section": "herramientas",
       "type": "tool",
       "footer_keyword": "Selector de antena georradar"
+    },
+    {
+      "path": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "file": "biblioteca/como-elegir-empresa-de-georradar/index.html",
+      "title": "Cómo elegir una empresa de georradar en Chile",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
     },
     {
       "path": "/georadar/",
@@ -409,6 +441,86 @@
       "from": "/glosario/",
       "to": "/georadar/",
       "note": "glosario debe enlazar a la página pilar desde entrada #georradar"
+    },
+    {
+      "from": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "to": "/glosario/",
+      "note": "artículo usa términos del glosario"
+    },
+    {
+      "from": "/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/glosario/",
+      "note": "artículo usa términos del glosario"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "to": "/construccion/",
+      "note": "artículo enlaza al vertical de construcción"
+    },
+    {
+      "from": "/construccion/",
+      "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "note": "vertical de construcción enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/glosario/",
+      "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
+      "note": "entrada permitividad enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "to": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "note": "artículo enlaza al artículo de decisiones"
+    },
+    {
+      "from": "/biblioteca/",
+      "to": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "note": "biblioteca enlaza al nuevo artículo empresa"
+    },
+    {
+      "from": "/georadar/",
+      "to": "/biblioteca/como-elegir-empresa-de-georradar/",
+      "note": "pilar enlaza al artículo empresa"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/mineria/",
+      "note": "caso enlaza al vertical de minería"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/georadar/",
+      "note": "caso enlaza a la guía del método"
+    },
+    {
+      "from": "/mineria/casos/liberacion-areas-division-andina/",
+      "to": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "note": "caso enlaza al artículo de decisiones"
+    },
+    {
+      "from": "/mineria/",
+      "to": "/mineria/casos/liberacion-areas-division-andina/",
+      "note": "vertical de minería enlaza al caso División Andina"
+    },
+    {
+      "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
+      "to": "/mineria/casos/liberacion-areas-division-andina/",
+      "note": "artículo de decisiones enlaza al caso División Andina"
     }
   ],
   "min_incoming_links": {
