@@ -25,20 +25,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://georadar.cl/construccion/#service",
-      "serviceType": "Prospección GPR en obras civiles",
-      "provider": { "@id": "https://georadar.cl/#organization" },
-      "areaServed": "CL",
-      "description": "Servicio de prospección no destructiva con georradar GPR en obras civiles en Chile: detección de interferencias, vacíos, humedad y cambios de material en pavimentos, losas y estructuras existentes."
-    },
-    {
       "@type": "WebPage",
       "@id": "https://georadar.cl/construccion/#webpage",
       "url": "https://georadar.cl/construccion/",
       "name": "Prospección GPR en Obras Civiles Chile | Geo Radar Chile",
       "isPartOf": { "@id": "https://georadar.cl/#website" },
-      "about": { "@id": "https://georadar.cl/construccion/#service" },
+      "about": {
+        "@type": "Service",
+        "name": "Prospección GPR en obras civiles",
+        "url": "https://www.georadarchile.cl/servicios",
+        "areaServed": "CL"
+      },
       "inLanguage": "es-CL"
     },
     {

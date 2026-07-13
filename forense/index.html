@@ -25,27 +25,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://georadar.cl/forense/#service",
-      "serviceType": "Peritaje forense con georradar (GPR)",
-      "provider": { "@id": "https://georadar.cl/#organization" },
-      "areaServed": "CL",
-      "description": "Servicio de peritaje técnico con georradar GPR para Fiscalía, PDI y causas judiciales, incluyendo investigaciones de derechos humanos."
-    },
-    {
-      "@type": "LegalService",
-      "@id": "https://georadar.cl/forense/#legalservice",
-      "name": "Peritaje GPR Forense - Geo Radar Chile",
-      "areaServed": "CL",
-      "sameAs": ["https://georadarchile.cl", "https://georadar.cl"]
-    },
-    {
       "@type": "WebPage",
       "@id": "https://georadar.cl/forense/#webpage",
       "url": "https://georadar.cl/forense/",
       "name": "Peritaje Georradar Chile | GPR Forense Judicial | Geo Radar Chile",
       "isPartOf": { "@id": "https://georadar.cl/#website" },
-      "about": { "@id": "https://georadar.cl/forense/#service" },
+      "about": {
+        "@type": "Service",
+        "name": "Peritaje forense con georradar (GPR)",
+        "url": "https://www.georadarchile.cl/servicios",
+        "areaServed": "CL"
+      },
       "inLanguage": "es-CL"
     },
     {

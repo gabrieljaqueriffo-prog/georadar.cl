@@ -25,20 +25,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://georadar.cl/mineria/#service",
-      "serviceType": "Georradar para minería (GPR)",
-      "provider": { "@id": "https://georadar.cl/#organization" },
-      "areaServed": "CL",
-      "description": "Servicio de prospección subterránea con georradar GPR para faenas mineras en Chile."
-    },
-    {
       "@type": "WebPage",
       "@id": "https://georadar.cl/mineria/#webpage",
       "url": "https://georadar.cl/mineria/",
       "name": "Georradar Minería Chile | GPR Faenas Mineras | Geo Radar Chile",
       "isPartOf": { "@id": "https://georadar.cl/#website" },
-      "about": { "@id": "https://georadar.cl/mineria/#service" },
+      "about": {
+        "@type": "Service",
+        "name": "Georradar para minería (GPR)",
+        "url": "https://www.georadarchile.cl/servicios",
+        "areaServed": "CL"
+      },
       "inLanguage": "es-CL"
     },
     {
