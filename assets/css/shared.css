@@ -309,6 +309,14 @@ section {
    10. CLIENTES
    ============================================================ */
 
+.clients-context {
+  font-size: 13px;
+  color: var(--texto-suave);
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
 .clients-strip {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
