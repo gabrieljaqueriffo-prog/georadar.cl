@@ -93,12 +93,73 @@ footerTagline: "Biblioteca técnica GPR."
         <li><strong>Frecuencias altas (varios cientos de MHz):</strong> entregan alta resolución de detalles pequeños, pero alcanzan menor profundidad. Útiles para enfierradura, ductos delgados o defectos cercanos a la superficie.</li>
       </ul>
       <p>No es una limitación de fabricación que una mejor antena pueda resolver. Es una propiedad física de cómo se propagan las ondas electromagnéticas: a mayor frecuencia, mayor atenuación por distancia recorrida. Ninguna antena "gana" en ambas variables a la vez.</p>
+
+      <div class="table-wrapper" style="overflow-x:auto; margin-top:1.5rem;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.92rem; line-height:1.5;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--color-border, #ddd);">
+              <th style="text-align:left; padding:0.5rem 0.75rem;">Rango de frecuencia</th>
+              <th style="text-align:left; padding:0.5rem 0.75rem;">Profundidad típica</th>
+              <th style="text-align:left; padding:0.5rem 0.75rem;">Resolución</th>
+              <th style="text-align:left; padding:0.5rem 0.75rem;">Objetivos habituales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--color-border, #eee);">
+              <td style="padding:0.5rem 0.75rem;">25–100 MHz</td>
+              <td style="padding:0.5rem 0.75rem;">hasta 20–30 m (en roca seca)</td>
+              <td style="padding:0.5rem 0.75rem;">Baja: objetos grandes</td>
+              <td style="padding:0.5rem 0.75rem;">Estratos geológicos, fallas, cavidades profundas</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border, #eee);">
+              <td style="padding:0.5rem 0.75rem;">100–400 MHz</td>
+              <td style="padding:0.5rem 0.75rem;">2–8 m en suelo seco; 1–3 m en suelo húmedo</td>
+              <td style="padding:0.5rem 0.75rem;">Media: ductos y tuberías</td>
+              <td style="padding:0.5rem 0.75rem;">Servicios subterráneos, rellenos, fundaciones</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border, #eee);">
+              <td style="padding:0.5rem 0.75rem;">400–900 MHz</td>
+              <td style="padding:0.5rem 0.75rem;">0.5–2 m en condiciones favorables</td>
+              <td style="padding:0.5rem 0.75rem;">Alta: detalle en primeros metros</td>
+              <td style="padding:0.5rem 0.75rem;">Enfierradura, ductos delgados, defectos en losa</td>
+            </tr>
+            <tr>
+              <td style="padding:0.5rem 0.75rem;">1–2 GHz</td>
+              <td style="padding:0.5rem 0.75rem;">0–0.5 m</td>
+              <td style="padding:0.5rem 0.75rem;">Muy alta: milimétrica</td>
+              <td style="padding:0.5rem 0.75rem;">Espesores de pavimento, fisuras superficiales, losas delgadas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:0.75rem; font-size:0.88rem; color:var(--color-text-secondary, #666);">Las profundidades indicadas corresponden a condiciones favorables (suelo seco, baja conductividad). En terrenos con alto contenido de agua, arcilla o sales, pueden reducirse significativamente.</p>
     </article>
 
     <article class="faq-item reveal">
       <h2>El terreno cambia el resultado tanto como la antena</h2>
       <p>La misma antena, en dos sitios distintos, puede alcanzar profundidades de detección muy diferentes. La <a href="/glosario/#atenuacion">atenuación</a> de la señal depende del material: el agua y la arcilla absorben energía electromagnética con fuerza, mientras que la roca seca o el hormigón en buen estado la atenúan mucho menos.</p>
       <p>Esto significa que la pregunta "¿hasta qué profundidad detecta esta antena?" no tiene una respuesta única: depende del sitio, no solo del equipo. La <a href="/glosario/#velocidad-propagacion">velocidad de propagación</a> real del material también afecta cómo se traduce el tiempo de viaje de la onda en una profundidad estimada.</p>
+
+      <h3 style="margin-top:1.25rem;">Condiciones que reducen la penetración de forma severa</h3>
+      <ul>
+        <li><strong>Arcillas saturadas:</strong> la arcilla húmeda es uno de los materiales más atenuantes para el GPR. Una antena de 200 MHz puede quedar limitada al primer metro en suelos arcillosos con alta humedad, cuando en arena seca alcanzaría 4 o más metros.</li>
+        <li><strong>Suelos con sales solubles:</strong> los ambientes costeros o mineros con presencia de sales aumentan la <a href="/glosario/#conductividad">conductividad</a> del terreno y disipan la señal rápidamente. El caliche salado del norte de Chile es un ejemplo habitual en estudios de prospección.</li>
+        <li><strong>Rellenos heterogéneos:</strong> los materiales de relleno con mezcla de escombros, tierra y humedad generan dispersión de la señal antes de que llegue al objetivo. Los <a href="/glosario/#radargrama">radargramas</a> en estas zonas muestran "ruido de fondo" que dificulta la interpretación.</li>
+        <li><strong>Hormigón deteriorado o húmedo:</strong> el hormigón con fisuras abiertas o presencia de agua en su interior atenúa más que el hormigón sano. Esta diferencia importa en evaluaciones de losas o pavimentos con filtraciones.</li>
+      </ul>
+      <p>Cuando un sitio presenta estas condiciones, el especialista puede optar por una frecuencia más baja para maximizar la penetración disponible, asumir que la cobertura en profundidad será limitada, o documentar explícitamente la restricción en el informe.</p>
+    </article>
+
+    <article class="faq-item reveal">
+      <h2>Ejemplos por tipo de objetivo</h2>
+      <p>La misma profundidad puede requerir antenas muy distintas según el tamaño, el material y el contraste del objetivo con el entorno:</p>
+      <ul>
+        <li><strong>Enfierradura en losa de hormigón:</strong> barras de 10–20 mm a 5–15 cm de profundidad. Se requiere alta resolución: antenas de 600 MHz a 2 GHz. La penetración no es el factor limitante; sí lo es la resolución para distinguir barras contiguas.</li>
+        <li><strong>Tuberías de servicio a 1–2 m:</strong> ductos de 50–300 mm en suelo urbano. Antenas de 200–600 MHz son habituales. Si el suelo tiene alta humedad, la antena de 200 MHz garantiza mayor penetración a costa de menor resolución en diámetro.</li>
+        <li><strong>Cavidades o fallas geológicas a 3–10 m:</strong> objetivos de gran tamaño pero bajo contraste en algunos suelos. Se necesita baja frecuencia (50–200 MHz) para alcanzar esa profundidad. La cavidad es detectable si genera contraste de velocidad suficiente respecto al material circundante.</li>
+        <li><strong>Espesores de capas en pavimento:</strong> capas de 3–15 cm. Se trabaja con antenas de 1–2 GHz. La penetración es de pocos centímetros, pero la resolución permite distinguir la interfaz entre carpeta asfáltica, base granular y subbase.</li>
+      </ul>
+      <p>En estudios que combinan objetivos a distintas profundidades, como los de localización de servicios en zonas con enfierradura superficial, el especialista puede usar dos frecuencias de forma complementaria. Cada una resuelve lo que la otra no puede.</p>
     </article>
 
     <article class="faq-item reveal">
