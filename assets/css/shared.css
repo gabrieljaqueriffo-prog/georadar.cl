@@ -1,4 +1,5 @@
 /* GeoRadar.cl - sistema de diseno compartido */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
 
 
 /* ============================================================
@@ -13,9 +14,13 @@
   --texto: #1A1A1A;
   --texto-suave: #4A4A4A;
   --borde: #D4C9BC;
+  --grafito: #111110;
+  --acento: #E8A020;
 
   --font-display: Georgia, 'Times New Roman', serif;
+  --font-condensed: 'Barlow Condensed', system-ui, sans-serif;
   --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-data: ui-monospace, 'SF Mono', 'Cascadia Code', 'Courier New', monospace;
 }
 
 
@@ -90,6 +95,8 @@ h3 { font-size: 24px; }
   text-transform: uppercase;
   color: var(--terracota);
   font-weight: 600;
+  font-family: var(--font-data);
+  margin-bottom: 12px;
 }
 
 
@@ -268,53 +275,89 @@ h3 { font-size: 24px; }
 
 .hero {
   position: relative;
-  padding: 96px 0 72px;
+  padding: 104px 0 80px;
   overflow: hidden;
-  background: var(--siena);
-  border-bottom: none;
+  background: var(--grafito);
+  border-bottom: 3px solid var(--siena);
+  background-image:
+    linear-gradient(rgba(245, 240, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 240, 235, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.hero h1,
+.hero h1 {
+  font-family: var(--font-condensed);
+  font-size: clamp(44px, 7vw, 88px);
+  color: var(--hueso);
+  letter-spacing: -0.01em;
+  line-height: 1.0;
+  margin-bottom: .4em;
+}
+
 .hero h2,
 .hero .eyebrow {
   color: var(--hueso);
 }
 
+.hero .eyebrow {
+  color: var(--acento);
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: .14em;
+  margin-bottom: 16px;
+}
+
 .hero p,
 .hero .lead {
-  color: rgba(245, 240, 235, 0.85);
+  color: rgba(245, 240, 235, 0.75);
+  font-size: 17px;
+  max-width: 600px;
+}
+
+.hero a {
+  color: var(--acento);
+}
+
+.hero a:hover {
+  color: var(--hueso);
 }
 
 .hero .btn-primary {
-  background: var(--hueso);
-  color: var(--siena);
-  border-color: var(--hueso);
+  background: var(--acento);
+  color: var(--grafito);
+  border-color: var(--acento);
+  font-weight: 700;
 }
 
 .hero .btn-primary:hover {
-  background: var(--hueso-oscuro);
-  color: var(--siena);
+  background: #f0ae30;
+  border-color: #f0ae30;
+  color: var(--grafito);
+  text-decoration: none;
 }
 
 .hero .btn-outline {
-  border-color: var(--hueso);
+  border-color: rgba(245, 240, 235, 0.4);
   color: var(--hueso);
 }
 
 .hero .btn-outline:hover {
-  background: var(--hueso);
-  color: var(--siena);
+  background: rgba(245, 240, 235, 0.1);
+  border-color: var(--hueso);
+  color: var(--hueso);
+  text-decoration: none;
 }
 
 .hero .btn-whatsapp {
-  border-color: rgba(245, 240, 235, 0.5);
-  color: var(--hueso);
+  border-color: rgba(245, 240, 235, 0.3);
+  color: rgba(245, 240, 235, 0.75);
 }
 
 .hero .btn-whatsapp:hover {
-  background: var(--hueso);
-  color: var(--siena);
   border-color: var(--hueso);
+  color: var(--hueso);
+  background: transparent;
+  text-decoration: none;
 }
 
 .hero-bg {
@@ -349,8 +392,26 @@ section {
 
 .section-alt {
   background: var(--hueso-oscuro);
-  border-top: 3px solid var(--siena);
+  border-top: 1px solid var(--borde);
   border-bottom: 1px solid var(--borde);
+}
+
+.section-dark {
+  background: var(--grafito);
+  color: var(--hueso);
+}
+
+.section-dark h2 {
+  color: var(--hueso);
+}
+
+.section-dark .eyebrow {
+  color: var(--acento);
+  font-family: var(--font-data);
+}
+
+.section-dark p {
+  color: rgba(245, 240, 235, 0.75);
 }
 
 
@@ -359,45 +420,38 @@ section {
    ============================================================ */
 
 .clients-context {
-  font-size: 13px;
+  font-family: var(--font-data);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
   color: var(--texto-suave);
-  text-align: center;
-  margin-bottom: 8px;
-  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .clients-strip {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  padding: 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
   border-top: 1px solid var(--borde);
-  border-bottom: 1px solid var(--borde);
+  border-left: 1px solid var(--borde);
 }
 
 .client-name {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-family: var(--font-display);
-  font-size: 16px;
+  font-family: var(--font-data);
+  font-size: 13px;
   color: var(--texto-suave);
-  font-weight: 700;
-  letter-spacing: .02em;
-  background: var(--hueso-oscuro);
-  border: 1px solid var(--borde);
-  border-radius: 8px;
-  padding: 14px 10px;
-}
-
-@media (min-width: 640px) {
-  .clients-strip { grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .client-name { font-size: 18px; }
-}
-
-@media (min-width: 1024px) {
-  .clients-strip { grid-template-columns: repeat(6, 1fr); }
+  font-weight: 400;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 18px 24px;
+  border-right: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
+  background: transparent;
+  flex-grow: 1;
+  white-space: nowrap;
 }
 
 
@@ -408,31 +462,39 @@ section {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 0;
+  border-top: 1px solid var(--borde);
 }
 
 .stat-card {
-  text-align: center;
-  padding: 28px 16px;
+  text-align: left;
+  padding: 32px 24px 28px;
   border: none;
-  border-top: 3px solid var(--terracota);
+  border-right: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
   border-radius: 0;
-  background: var(--hueso);
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+  background: transparent;
+}
+
+.stat-card:last-child {
+  border-right: none;
 }
 
 .stat-num {
-  font-family: var(--font-display);
-  font-size: 48px;
+  font-family: var(--font-data);
+  font-size: 52px;
   color: var(--siena);
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .stat-label {
   font-size: 13px;
   color: var(--texto-suave);
-  margin-top: 4px;
+  margin-top: 10px;
+  line-height: 1.4;
+  max-width: 140px;
 }
 
 
@@ -509,7 +571,65 @@ section {
 
 
 /* ============================================================
-   13. ETIQUETAS DE CASO
+   13. LISTA NUMERADA EDITORIAL
+   ============================================================ */
+
+.num-list {
+  margin-top: 40px;
+}
+
+.num-list-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--borde);
+  align-items: start;
+}
+
+.num-list-item:last-child {
+  border-bottom: 1px solid var(--borde);
+}
+
+.num-list-index {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--terracota);
+  padding-top: 6px;
+}
+
+.num-list-body h3 {
+  font-size: 22px;
+  margin-bottom: .3em;
+}
+
+.num-list-body p {
+  color: var(--texto-suave);
+  margin: 0 0 .8em;
+}
+
+.num-list-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.num-list-links a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--siena);
+}
+
+.num-list-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   14. ETIQUETAS DE CASO
    ============================================================ */
 
 .case-tags {
@@ -1353,6 +1473,13 @@ footer a:hover {
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .num-list-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
