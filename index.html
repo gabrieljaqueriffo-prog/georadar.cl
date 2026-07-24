@@ -22,7 +22,7 @@ footerTagline: "Georradar GPR Chile."
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Georradar Chile | Georadar GPR Chile">
 <meta name="twitter:description" content="Plataforma de conocimiento técnico sobre georradar (GPR) en Chile. Biblioteca técnica, casos documentados y herramientas de evaluación.">
-<link rel="stylesheet" href="/assets/css/shared.css?v=7">
+<link rel="stylesheet" href="/assets/css/shared.css?v=8">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,59 +104,52 @@ footerTagline: "Georradar GPR Chile."
   </svg>
   <div class="container hero-content">
     <p class="eyebrow">GEO RADAR CHILE &middot; PROSPECCIÓN GPR NO DESTRUCTIVA &middot; DESDE 1997</p>
-    <h1>29 años viendo lo que hay bajo tierra</h1>
+    <h1>29 años leyendo el subsuelo</h1>
     <p class="lead">GeoRadar.cl es la plataforma de conocimiento técnico de Geo Radar Chile: empresa de prospección subterránea no destructiva con experiencia en <a href="/georadar/">georadar GPR</a> desde 1997. Documentamos proyectos de minería, utilities, construcción y peritaje forense en todo el país.</p>
     <div class="hero-ctas">
-      <a href="https://georadarchile.cl" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Solicitar cotización en georadarchile.cl">Solicitar cotización</a>
-      <a href="#aplicaciones" class="btn btn-outline" aria-label="Ver aplicaciones del georradar">Ver aplicaciones</a>
-      <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-whatsapp" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">
+      <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-primary" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.4.2-.6.1-1.4-.6-2.7-1.7-3.6-3.1-.1-.2-.1-.4.1-.6l.6-.7c.1-.2.2-.4.1-.6l-.7-1.7c-.2-.4-.4-.3-.6-.3h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.6.2 1.9 1.6 3.8 3.1 5.1 1.7 1.5 3.7 2.3 5.5 2.4.9 0 1.7-.3 2.3-1 .2-.2.3-.5.2-.7l-.3-.6c-.1-.1-.2-.2-.4-.3zM12 21a9 9 0 1 1 9-9c0 1.6-.4 3.1-1.2 4.4L21 21l-4.7-1.2A9 9 0 0 1 12 21z"/></svg>
         Hablar por WhatsApp
       </a>
     </div>
+    <p class="hero-services-link">Servicios en terreno: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a></p>
   </div>
 </header>
 
-<section style="padding:32px 0;">
-  <div class="container">
-    <p class="clients-context">Casos documentados en proyectos para:</p>
-    <div class="clients-strip">
-      <span class="client-name">CODELCO</span>
-      <span class="client-name">BHP</span>
-      <span class="client-name">SQM</span>
-      <span class="client-name">Albemarle</span>
-      <span class="client-name">Minera Centinela</span>
-      <span class="client-name">Minera Collahuasi</span>
-      <span class="client-name">Minera Los Pelambres</span>
-      <span class="client-name">ENAP</span>
-      <span class="client-name">Metro de Santiago</span>
-      <span class="client-name">Aeropuerto AMB</span>
-      <span class="client-name">Finning CAT</span>
-      <span class="client-name">PDI</span>
-    </div>
-  </div>
-</section>
 
-<section style="padding:48px 0 56px;">
+<section class="section-dark gpr-sim" id="gpr-sim">
   <div class="container">
-    <p class="eyebrow">01 / TRAYECTORIA</p>
-    <div class="stats-grid">
-      <div class="stat-card reveal">
-        <div class="stat-num">+220</div>
-        <div class="stat-label">Proyectos documentados en la biblioteca</div>
+    <p class="eyebrow">01 / SIMULADOR GPR</p>
+    <h2>Así "ve" el georradar lo que hay bajo tierra</h2>
+    <p class="lead">Deslice el control para mover la antena GPR sobre el subsuelo y revele el radargrama en tiempo real.</p>
+    <div class="sim-wrap" data-gpr-sim>
+      <div class="sim-readout">
+        <span>Simulador GPR</span>
+        <span class="sim-readout-value"><span class="sim-distance">0.0</span> m recorridos</span>
       </div>
-      <div class="stat-card reveal">
-        <div class="stat-num">29+</div>
-        <div class="stat-label">Años de experiencia en GPR</div>
+      <div class="sim-surface">
+        <div class="sim-surface-track"></div>
+        <input type="range" class="sim-slider" min="0" max="100" value="0" aria-label="Deslice para mover la antena del georradar sobre el subsuelo y revelar el radargrama">
       </div>
-      <div class="stat-card reveal">
-        <div class="stat-num">4</div>
-        <div class="stat-label">Industrias con casos documentados</div>
+      <div class="sim-screen">
+        <div class="sim-stage">
+          <div class="sim-beam"></div>
+          <img class="sim-radargram-img" src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR real con múltiples anomalías hiperbólicas detectadas" width="1400" height="460">
+          <div class="sim-marker" style="left:12.9%;top:37%;" data-trigger="12.9" data-label="Probable ducto encontrado a 1.1 m de profundidad"></div>
+          <div class="sim-marker" style="left:23.6%;top:30.4%;" data-trigger="23.6" data-label="Probable ducto encontrado a 0.9 m de profundidad"></div>
+          <div class="sim-marker" style="left:40%;top:43.5%;" data-trigger="40" data-label="Probable ducto encontrado a 1.3 m de profundidad"></div>
+          <div class="sim-marker" style="left:54.3%;top:23.9%;" data-trigger="54.3" data-label="Probable ducto encontrado a 0.7 m de profundidad"></div>
+          <div class="sim-marker" style="left:70%;top:25%;" data-trigger="70" data-label="Probable ducto encontrado a 0.8 m de profundidad"></div>
+          <div class="sim-marker" style="left:84.3%;top:38%;" data-trigger="84.3" data-label="Probable ducto encontrado a 1.1 m de profundidad"></div>
+          <div class="sim-axis">
+            <span>0m</span><span>1m</span><span>2m</span><span>3m</span>
+          </div>
+          <div class="sim-veil"></div>
+        </div>
+        <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
       </div>
-      <div class="stat-card reveal">
-        <div class="stat-num">1</div>
-        <div class="stat-label">Única certificación IDS GeoRadar en Chile</div>
-      </div>
+      <p class="sim-caption">Arrastre el control para simular el barrido del GPR sobre una línea soterrada. Cada curva en "U" es un objeto real detectado bajo tierra.</p>
+      <p class="sim-learn"><a href="/glosario/">Glosario GPR &rarr;</a></p>
     </div>
   </div>
 </section>
@@ -214,47 +207,35 @@ footerTagline: "Georradar GPR Chile."
   </div>
 </section>
 
-<section class="section-dark gpr-sim" id="gpr-sim">
+<section style="padding:48px 0 56px;">
   <div class="container">
-    <p class="eyebrow">03 / SIMULADOR GPR</p>
-    <h2>Así "ve" el georradar lo que hay bajo tierra</h2>
-    <p class="lead">Deslice el control para mover la antena GPR sobre el subsuelo y revele el radargrama en tiempo real.</p>
-    <div class="sim-wrap" data-gpr-sim>
-      <div class="sim-readout">
-        <span>Simulador GPR</span>
-        <span class="sim-readout-value"><span class="sim-distance">0.0</span> m recorridos</span>
+    <div class="stats-grid stats-grid--home">
+      <div class="stat-card reveal">
+        <div class="stat-num">+220</div>
+        <div class="stat-label">Proyectos documentados en la biblioteca</div>
       </div>
-      <div class="sim-surface">
-        <div class="sim-surface-track"></div>
-        <input type="range" class="sim-slider" min="0" max="100" value="0" aria-label="Deslice para mover la antena del georradar sobre el subsuelo y revelar el radargrama">
+      <div class="stat-card reveal">
+        <div class="stat-num stat-num--secondary">29+</div>
+        <div class="stat-label">Años de experiencia en GPR</div>
       </div>
-      <div class="sim-screen">
-        <div class="sim-stage">
-          <div class="sim-beam"></div>
-          <img class="sim-radargram-img" src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR real con múltiples anomalías hiperbólicas detectadas" width="1400" height="460">
-          <div class="sim-marker" style="left:12.9%;top:37%;" data-trigger="12.9" data-label="Probable ducto encontrado a 1.1 m de profundidad"></div>
-          <div class="sim-marker" style="left:23.6%;top:30.4%;" data-trigger="23.6" data-label="Probable ducto encontrado a 0.9 m de profundidad"></div>
-          <div class="sim-marker" style="left:40%;top:43.5%;" data-trigger="40" data-label="Probable ducto encontrado a 1.3 m de profundidad"></div>
-          <div class="sim-marker" style="left:54.3%;top:23.9%;" data-trigger="54.3" data-label="Probable ducto encontrado a 0.7 m de profundidad"></div>
-          <div class="sim-marker" style="left:70%;top:25%;" data-trigger="70" data-label="Probable ducto encontrado a 0.8 m de profundidad"></div>
-          <div class="sim-marker" style="left:84.3%;top:38%;" data-trigger="84.3" data-label="Probable ducto encontrado a 1.1 m de profundidad"></div>
-          <div class="sim-axis">
-            <span>0m</span><span>1m</span><span>2m</span><span>3m</span>
-          </div>
-          <div class="sim-veil"></div>
+      <div class="stat-card reveal">
+        <div class="stat-num stat-num--support">4</div>
+        <div class="stat-label">Industrias con casos documentados</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-cert">
+          <p class="stat-cert-title">Certificación IDS GeoRadar</p>
+          <p class="stat-cert-name">Gabriel Jaque Riffo</p>
+          <p class="stat-cert-detail">Pisa, Italia &middot; 2016</p>
         </div>
-        <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
       </div>
-      <p class="sim-caption">Arrastre el control para simular el barrido del GPR sobre una línea soterrada. Cada curva en "U" es un objeto real detectado bajo tierra.</p>
-
-      <p class="sim-learn"><a href="/glosario/">Glosario GPR &rarr;</a></p>
     </div>
   </div>
 </section>
 
 <section class="timeline-section">
   <div class="container">
-    <p class="eyebrow" style="color:var(--acento); font-family:var(--font-data)">04 / HISTORIA</p>
+    <p class="eyebrow">03 / HISTORIA</p>
     <h2>De la experiencia técnica a la empresa familiar</h2>
     <div class="timeline">
       <div class="timeline-item reveal">
@@ -267,7 +248,7 @@ footerTagline: "Georradar GPR Chile."
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-year">2016</div>
-        <div class="timeline-text">Gabriel Jaque Riffo obtiene en Pisa, Italia, la única certificación IDS GeoRadar de Chile.</div>
+        <div class="timeline-text">Gabriel Jaque Riffo obtiene la certificación IDS GeoRadar en Pisa, Italia.</div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-year">Hoy</div>
@@ -279,7 +260,7 @@ footerTagline: "Georradar GPR Chile."
 
 <section class="section-alt">
   <div class="container">
-    <p class="eyebrow">05 / GLOSARIO TÉCNICO</p>
+    <p class="eyebrow">04 / GLOSARIO TÉCNICO</p>
     <h2>Términos clave del georradar (GPR)</h2>
     <div class="cards-grid">
       <div class="card reveal">
@@ -312,7 +293,7 @@ footerTagline: "Georradar GPR Chile."
 
 <section>
   <div class="container">
-    <p class="eyebrow">06 / PREGUNTAS FRECUENTES</p>
+    <p class="eyebrow">05 / PREGUNTAS FRECUENTES</p>
     <h2>Sobre el georradar y nuestros servicios</h2>
     <div class="faq-item reveal">
       <h3>¿Qué es el georradar o GPR?</h3>
@@ -324,7 +305,7 @@ footerTagline: "Georradar GPR Chile."
     </div>
     <div class="faq-item reveal">
       <h3>¿Por qué elegir Geo Radar Chile?</h3>
-      <p>Por su experiencia desde 1997, su trayectoria de +220 proyectos para clientes como Codelco, BHP y SQM, y por contar con la única certificación IDS GeoRadar de Chile. Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
+      <p>Por su experiencia desde 1997, su trayectoria de +220 proyectos para clientes como Codelco, BHP y SQM, y por las certificaciones GSSI (1997) e IDS GeoRadar (Pisa, Italia, 2016). Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
     </div>
     <div class="faq-item reveal">
       <h3>¿En qué se diferencia "georadar" de "georradar"?</h3>
@@ -336,9 +317,8 @@ footerTagline: "Georradar GPR Chile."
 <section class="cta-final">
   <div class="container">
     <h2>¿El georradar es el método adecuado para su proyecto?</h2>
-    <p>Una revisión inicial de antecedentes permite orientar la viabilidad técnica antes de cotizar un servicio en terreno.</p>
+    <p>Una conversación inicial permite evaluar la viabilidad técnica antes de cotizar un servicio en terreno.</p>
     <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-white" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">Hablar por WhatsApp</a>
-    <a href="https://georadarchile.cl" class="btn btn-outline" target="_blank" rel="noopener" aria-label="Solicitar cotización en georadarchile.cl">Solicitar cotización &rarr;</a>
   </div>
 </section>
 
