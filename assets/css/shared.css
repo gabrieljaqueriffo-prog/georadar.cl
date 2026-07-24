@@ -515,11 +515,10 @@ section {
   border-radius: 0;
   padding: 28px;
   background: var(--hueso);
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
 }
 
 .card:hover {
-  box-shadow: 0 4px 24px rgba(133, 55, 27, 0.13);
+  border-left-color: var(--acento);
 }
 
 .card h3 {
@@ -682,7 +681,7 @@ section {
 }
 
 .timeline-year {
-  font-family: var(--font-display);
+  font-family: var(--font-data);
   font-size: 28px;
   font-weight: 700;
 }
@@ -1548,4 +1547,44 @@ footer a:hover {
   .sim-compare {
     grid-template-columns: 1fr;
   }
+  .stats-grid--home {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+/* 23 — Stats grid home (asymmetric) */
+.stats-grid--home {
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: auto auto;
+}
+.stats-grid--home .stat-card:nth-child(1),
+.stats-grid--home .stat-card:nth-child(2) {
+  border-bottom: 1px solid var(--borde);
+}
+.stats-grid--home .stat-card:nth-child(2),
+.stats-grid--home .stat-card:nth-child(4) {
+  border-right: none;
+}
+.stats-grid--home .stat-card:nth-child(1) .stat-num {
+  font-size: clamp(48px, 6vw, 80px);
+}
+.stat-num--secondary { font-size: clamp(42px, 5vw, 64px); }
+.stat-num--support { font-size: clamp(36px, 4vw, 52px); }
+.stat-cert { padding-top: 6px; }
+.stat-cert-title { font-family: var(--font-data); font-size: 11px; font-weight: 600; color: var(--siena); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 10px; }
+.stat-cert-name { font-size: 15px; color: var(--texto); font-weight: 600; line-height: 1.2; margin: 0 0 5px; }
+.stat-cert-detail { font-family: var(--font-data); font-size: 11px; color: var(--texto-suave); letter-spacing: .04em; margin: 0; }
+
+/* 24 — Hero single CTA */
+.hero .btn-primary { display: inline-flex; align-items: center; gap: 8px; }
+.hero .btn-primary svg { width: 18px; height: 18px; flex-shrink: 0; }
+.hero-services-link { margin-top: 14px; font-size: 13px; }
+.hero-services-link a { color: rgba(245, 240, 235, 0.45); text-decoration: none; }
+.hero-services-link a:hover { color: rgba(245, 240, 235, 0.75); text-decoration: none; }
+
+/* 25 — Nav external link */
+.nav-link-external { font-size: 13px; color: var(--texto-suave); opacity: .7; }
+.nav-link-external:hover { opacity: 1; color: var(--texto); }
+
+/* 26 — Timeline eyebrow acento */
+.timeline-section .eyebrow { color: var(--acento); font-family: var(--font-data); }
