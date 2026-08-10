@@ -1193,6 +1193,119 @@ footer a:hover {
   opacity: .85;
 }
 
+/* Footer v2 — cierre compacto compartido */
+.footer-v2 {
+  padding: 0;
+  background: #181614;
+  color: #eee7de;
+  font-size: 14px;
+}
+
+.footer-v2-main {
+  display: grid;
+  grid-template-columns: 1.05fr 1.15fr .8fr;
+  gap: clamp(46px, 7vw, 100px);
+  padding-top: 68px;
+  padding-bottom: 58px;
+}
+
+.footer-v2-logo {
+  color: #fff9f1;
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer-v2-logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-v2-brand p,
+.footer-v2-contact p {
+  max-width: 340px;
+  margin: 16px 0 0;
+  color: #aaa197;
+  line-height: 1.65;
+}
+
+.footer-v2-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+}
+
+.footer-v2 h4 {
+  margin: 0 0 18px;
+  color: #8f867c;
+  font-family: var(--font-data);
+  font-size: 10px;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.footer-v2-nav a {
+  display: block;
+  margin: 0 0 10px;
+  color: #ded6cd;
+}
+
+.footer-v2-nav a:hover {
+  color: #fff;
+}
+
+.footer-v2-external {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 22px;
+  color: #e2a646;
+  font-weight: 700;
+}
+
+.footer-v2-external:hover {
+  color: #ffd58c;
+}
+
+.footer-v2-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border-top: 1px solid #39342f;
+  color: #8f867c;
+  font-size: 12px;
+}
+
+.footer-v2-bottom a {
+  color: #aaa197;
+}
+
+@media (max-width: 800px) {
+  .footer-v2-main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-v2-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-v2-main {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding-top: 54px;
+    padding-bottom: 46px;
+  }
+  .footer-v2-brand {
+    grid-column: auto;
+  }
+  .footer-v2-bottom {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+
 
 /* ============================================================
    20. HERRAMIENTAS (formulario y resultado)
