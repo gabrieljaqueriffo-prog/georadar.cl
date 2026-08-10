@@ -88,33 +88,73 @@ footerTagline: "Georradar GPR Chile."
 
 {% include "nav.html" %}
 
-<header class="hero">
-  <svg class="hero-bg" viewBox="0 0 1200 400" preserveAspectRatio="none" role="img" aria-label="Radargrama GPR estilizado, hipérbolas de reflexión">
-    <g fill="none" stroke="rgba(245,240,235,0.10)" stroke-width="1">
-      <path d="M0,40 Q100,80 200,40 T400,40 T600,40 T800,40 T1000,40 T1200,40"/>
-      <path d="M0,90 Q100,140 200,90 T400,90 T600,90 T800,90 T1000,90 T1200,90"/>
-      <path d="M0,140 Q100,210 200,140 T400,140 T600,140 T800,140 T1000,140 T1200,140"/>
-      <path d="M0,190 Q100,270 200,190 T400,190 T600,190 T800,190 T1000,190 T1200,190"/>
-      <path d="M0,240 Q100,330 200,240 T400,240 T600,240 T800,240 T1000,240 T1200,240"/>
-      <path d="M0,290 Q100,370 200,290 T400,290 T600,290 T800,290 T1000,290 T1200,290"/>
-    </g>
-    <g fill="none" stroke="rgba(232,160,32,0.15)" stroke-width="1.5">
-      <path d="M0,190 Q100,270 200,190 T400,190 T600,190 T800,190 T1000,190 T1200,190"/>
-    </g>
-  </svg>
-  <div class="container hero-content">
-    <p class="eyebrow">GEO RADAR CHILE &middot; PROSPECCIÓN GPR NO DESTRUCTIVA &middot; DESDE 1997</p>
-    <h1>29 años leyendo el subsuelo</h1>
-    <p class="lead">GeoRadar.cl es la plataforma de conocimiento técnico de Geo Radar Chile: empresa de prospección subterránea no destructiva con experiencia en <a href="/georadar/">georadar GPR</a> desde 1997. Documentamos proyectos de minería, utilities, construcción y peritaje forense en todo el país.</p>
-    <div class="hero-ctas">
-      <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-primary" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.4.2-.6.1-1.4-.6-2.7-1.7-3.6-3.1-.1-.2-.1-.4.1-.6l.6-.7c.1-.2.2-.4.1-.6l-.7-1.7c-.2-.4-.4-.3-.6-.3h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.6.2 1.9 1.6 3.8 3.1 5.1 1.7 1.5 3.7 2.3 5.5 2.4.9 0 1.7-.3 2.3-1 .2-.2.3-.5.2-.7l-.3-.6c-.1-.1-.2-.2-.4-.3zM12 21a9 9 0 1 1 9-9c0 1.6-.4 3.1-1.2 4.4L21 21l-4.7-1.2A9 9 0 0 1 12 21z"/></svg>
-        Hablar por WhatsApp
-      </a>
+<header class="hero hero-editorial">
+  <div class="container hero-layout">
+    <div class="hero-copy">
+      <p class="field-note">Archivo de campo · GPR en Chile · desde 1997</p>
+      <h1>29 años leyendo<br>el subsuelo</h1>
+      <p class="hero-deck">Antes de excavar, perforar o intervenir, hay preguntas que deben responderse. Aquí compartimos conocimiento, herramientas y casos reales para entender qué puede aportar el georradar —y cuáles son sus límites.</p>
+      <div class="hero-ctas">
+        <a href="#orientacion" class="btn btn-primary">Empezar por una pregunta</a>
+        <a href="/biblioteca/" class="text-link">Explorar la biblioteca <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hero-service-note">¿Ya tienes un proyecto? <a href="https://georadarchile.cl" target="_blank" rel="noopener">Servicios en terreno en Geo Radar Chile</a>.</p>
     </div>
-    <p class="hero-services-link">Servicios en terreno: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a></p>
+    <figure class="hero-evidence">
+      <div class="evidence-frame">
+        <img src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR con múltiples reflexiones hiperbólicas" width="1400" height="460">
+        <span class="evidence-mark evidence-mark-a" aria-hidden="true"></span>
+        <span class="evidence-mark evidence-mark-b" aria-hidden="true"></span>
+      </div>
+      <figcaption><span>Lectura 01</span> Reflexiones hiperbólicas · registro GPR</figcaption>
+    </figure>
   </div>
 </header>
+
+<aside class="proof-line" aria-label="Trayectoria documentada">
+  <div class="container proof-line-inner">
+    <p><strong>+220</strong> proyectos documentados</p>
+    <p><strong>29 años</strong> de experiencia técnica</p>
+    <p><strong>6</strong> divisiones de Codelco atendidas</p>
+    <p><strong>1</strong> certificación IDS GeoRadar en Chile</p>
+  </div>
+</aside>
+
+<section class="orientation" id="orientacion">
+  <div class="container orientation-layout">
+    <div class="section-intro">
+      <p class="field-note">Punto de partida</p>
+      <h2>¿Qué necesitas comprender antes de intervenir?</h2>
+      <p>No hace falta conocer la tecnología para empezar. Elige la pregunta más cercana a tu proyecto.</p>
+    </div>
+    <div class="question-list">
+      <a href="/herramientas/necesito-gpr/"><span class="question-number">01</span><span><strong>¿El GPR sirve para mi problema?</strong><small>Evalúa el método antes de solicitar un estudio.</small></span><span aria-hidden="true">→</span></a>
+      <a href="/georadar/#que-puede-detectar"><span class="question-number">02</span><span><strong>¿Qué puede detectar realmente?</strong><small>Objetos, vacíos, cambios de material y restricciones.</small></span><span aria-hidden="true">→</span></a>
+      <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/"><span class="question-number">03</span><span><strong>¿A qué profundidad puede llegar?</strong><small>Por qué no existe una cifra universal.</small></span><span aria-hidden="true">→</span></a>
+      <a href="/herramientas/"><span class="question-number">04</span><span><strong>Quiero evaluar mi proyecto</strong><small>Calculadoras y herramientas gratuitas, sin registro.</small></span><span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-case">
+  <div class="container case-layout">
+    <div class="case-visual reveal">
+      <img src="/assets/img/casos/socavones-espesador-t5/radargrama-b.jpg" alt="Evidencia de radargrama obtenida durante la evaluación de posibles vacíos bajo una estructura minera" width="900" height="506" loading="lazy">
+      <p class="technical-caption"><span>GPR / evidencia de terreno</span><span>Chuquicamata · Chile</span></p>
+    </div>
+    <div class="case-copy">
+      <p class="field-note">Caso documentado · Minería</p>
+      <h2>Cuando detenerse también es una decisión técnica</h2>
+      <p>En una estructura operacional T5, la prospección buscaba reducir la incertidumbre asociada a posibles vacíos antes de intervenir. El valor del estudio no estuvo en producir una imagen, sino en entregar evidencia útil para decidir cómo continuar.</p>
+      <dl class="case-facts">
+        <div><dt>Problema</dt><dd>Posibles vacíos bajo una estructura operacional</dd></div>
+        <div><dt>Método</dt><dd>Prospección GPR con registro documentado</dd></div>
+        <div><dt>Resultado</dt><dd>Información para planificar la intervención</dd></div>
+      </dl>
+      <a class="text-link" href="/mineria/casos/socavones-espesador-t5/">Leer el caso completo <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
 
 
 <section class="section-dark gpr-sim" id="gpr-sim">
