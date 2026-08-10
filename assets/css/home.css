@@ -476,8 +476,9 @@
 }
 
 .next-option {
+  position: relative;
   min-height: 150px;
-  padding: 24px;
+  padding: 24px 52px 24px 24px;
   border: 1px solid #564e46;
   color: #f4ece3;
 }
@@ -485,6 +486,16 @@
 .next-option:hover { border-color: #c98b35; background: #332e29; color: #fff; text-decoration: none; }
 .next-option strong { display: block; margin-bottom: 10px; font-family: var(--font-display); font-size: 21px; }
 .next-option span { color: #bbb1a6; font-size: 12px; }
+.next-arrow {
+  position: absolute;
+  right: 22px;
+  bottom: 21px;
+  color: #e2a646;
+  font-size: 17px;
+  font-weight: 500;
+  transition: transform .18s ease;
+}
+.next-option:hover .next-arrow { transform: translate(2px, -2px); }
 
 @media (max-width: 900px) {
   .atlas-hero-grid,
