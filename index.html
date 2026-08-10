@@ -1,3 +1,6 @@
+---
+footerTagline: "Georradar GPR Chile."
+---
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,19 +9,19 @@
   <link rel="apple-touch-icon" href="/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Georradar Chile | Georadar GPR Chile | Geo Radar Chile</title>
-<meta name="description" content="Geo Radar Chile: empresa de georradar (GPR) con más experiencia en Chile. Empresa desde 2011, experiencia desde 1997. Prospección subterránea no destructiva para minería, utilities, construcción y peritaje forense. Codelco, BHP, SQM, PDI.">
+<meta name="description" content="Plataforma de conocimiento técnico sobre georradar (GPR) en Chile, por Geo Radar Chile. Biblioteca técnica, casos documentados, herramientas de evaluación y glosario GPR. Empresa desde 2011, experiencia desde 1997.">
 <link rel="canonical" href="https://georadar.cl/">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="es_CL">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Georradar Chile | Georadar GPR Chile">
-<meta property="og:description" content="Empresa de georradar GPR con más experiencia en Chile. Empresa desde 2011, experiencia desde 1997.">
+<meta property="og:description" content="Plataforma de conocimiento técnico sobre georradar (GPR) en Chile, por Geo Radar Chile. Biblioteca técnica, casos documentados, herramientas de evaluación y glosario GPR.">
 <meta property="og:url" content="https://georadar.cl/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Georradar Chile | Georadar GPR Chile">
-<meta name="twitter:description" content="Empresa de georradar GPR con más experiencia en Chile. Empresa desde 2011, experiencia desde 1997.">
+<meta name="twitter:description" content="Plataforma de conocimiento técnico sobre georradar (GPR) en Chile. Biblioteca técnica, casos documentados y herramientas de evaluación.">
 <link rel="stylesheet" href="/assets/css/shared.css?v=8">
 <script type="application/ld+json">
 {
@@ -30,6 +33,7 @@
       "name": "Geo Radar Chile",
       "alternateName": ["Georradar Chile", "GeoRadar Chile", "GPR Chile", "Geo Radar Chile"],
       "url": "https://georadar.cl/",
+      "mainEntityOfPage": "https://www.georadarchile.cl",
       "sameAs": ["https://georadarchile.cl", "https://georadar.cl"],
       "foundingDate": "2011",
       "description": "Empresa chilena de prospección de subsuelo no destructiva mediante georradar (GPR / Ground Penetrating Radar), con experiencia técnica desde 1997.",
@@ -82,112 +86,40 @@
 
 <div class="topbar">Conocimiento técnico y casos reales de georradar · Chile</div>
 
-<nav class="nav" aria-label="Navegación principal">
-  <div class="container">
-    <span class="logo">GeoRadar.cl</span>
-    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="/mineria/" aria-label="Ir a minería">Minería</a></li>
-      <li><a href="/utilities/" aria-label="Ir a utilities">Utilities</a></li>
-      <li><a href="/construccion/" aria-label="Ir a construcción">Construcción</a></li>
-      <li><a href="/forense/" aria-label="Ir a forense">Forense</a></li>
-      <li><a href="/biblioteca/" aria-label="Ir a biblioteca técnica">Biblioteca</a></li>
-      <li><a href="/mentoria/" aria-label="Ir a mentorías">Mentorías</a></li>
-      <li><a href="/herramientas/" aria-label="Ir a herramientas">Herramientas</a></li>
-      <li><a href="https://georadarchile.cl" class="nav-service-link" target="_blank" rel="noopener" aria-label="Ver servicios en terreno en georadarchile.cl">Servicios en terreno ↗</a></li>
-    </ul>
-  </div>
-</nav>
+{% include "nav.html" %}
 
-<header class="hero hero-editorial">
-  <div class="container hero-layout">
-    <div class="hero-copy">
-      <p class="field-note">Archivo de campo · GPR en Chile · desde 1997</p>
-      <h1>29 años leyendo<br>el subsuelo</h1>
-      <p class="hero-deck">Antes de excavar, perforar o intervenir, hay preguntas que deben responderse. Aquí compartimos conocimiento, herramientas y casos reales para entender qué puede aportar el georradar —y cuáles son sus límites.</p>
-      <div class="hero-ctas">
-        <a href="#orientacion" class="btn btn-primary">Empezar por una pregunta</a>
-        <a href="/biblioteca/" class="text-link">Explorar la biblioteca <span aria-hidden="true">↗</span></a>
-      </div>
-      <p class="hero-service-note">¿Ya tienes un proyecto? <a href="https://georadarchile.cl" target="_blank" rel="noopener">Servicios en terreno en Geo Radar Chile</a>.</p>
+<header class="hero">
+  <svg class="hero-bg" viewBox="0 0 1200 400" preserveAspectRatio="none" role="img" aria-label="Radargrama GPR estilizado, hipérbolas de reflexión">
+    <g fill="none" stroke="rgba(245,240,235,0.10)" stroke-width="1">
+      <path d="M0,40 Q100,80 200,40 T400,40 T600,40 T800,40 T1000,40 T1200,40"/>
+      <path d="M0,90 Q100,140 200,90 T400,90 T600,90 T800,90 T1000,90 T1200,90"/>
+      <path d="M0,140 Q100,210 200,140 T400,140 T600,140 T800,140 T1000,140 T1200,140"/>
+      <path d="M0,190 Q100,270 200,190 T400,190 T600,190 T800,190 T1000,190 T1200,190"/>
+      <path d="M0,240 Q100,330 200,240 T400,240 T600,240 T800,240 T1000,240 T1200,240"/>
+      <path d="M0,290 Q100,370 200,290 T400,290 T600,290 T800,290 T1000,290 T1200,290"/>
+    </g>
+    <g fill="none" stroke="rgba(232,160,32,0.15)" stroke-width="1.5">
+      <path d="M0,190 Q100,270 200,190 T400,190 T600,190 T800,190 T1000,190 T1200,190"/>
+    </g>
+  </svg>
+  <div class="container hero-content">
+    <p class="eyebrow">GEO RADAR CHILE &middot; PROSPECCIÓN GPR NO DESTRUCTIVA &middot; DESDE 1997</p>
+    <h1>29 años leyendo el subsuelo</h1>
+    <p class="lead">GeoRadar.cl es la plataforma de conocimiento técnico de Geo Radar Chile: empresa de prospección subterránea no destructiva con experiencia en <a href="/georadar/">georadar GPR</a> desde 1997. Documentamos proyectos de minería, utilities, construcción y peritaje forense en todo el país.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-primary" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.4.2-.6.1-1.4-.6-2.7-1.7-3.6-3.1-.1-.2-.1-.4.1-.6l.6-.7c.1-.2.2-.4.1-.6l-.7-1.7c-.2-.4-.4-.3-.6-.3h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.6.2 1.9 1.6 3.8 3.1 5.1 1.7 1.5 3.7 2.3 5.5 2.4.9 0 1.7-.3 2.3-1 .2-.2.3-.5.2-.7l-.3-.6c-.1-.1-.2-.2-.4-.3zM12 21a9 9 0 1 1 9-9c0 1.6-.4 3.1-1.2 4.4L21 21l-4.7-1.2A9 9 0 0 1 12 21z"/></svg>
+        Hablar por WhatsApp
+      </a>
     </div>
-    <figure class="hero-evidence">
-      <div class="evidence-frame">
-        <img src="/assets/img/radargram-sim.jpg" alt="Radargrama GPR con múltiples reflexiones hiperbólicas" width="1400" height="460">
-        <span class="evidence-mark evidence-mark-a" aria-hidden="true"></span>
-        <span class="evidence-mark evidence-mark-b" aria-hidden="true"></span>
-      </div>
-      <figcaption><span>Lectura 01</span> Reflexiones hiperbólicas · registro GPR</figcaption>
-    </figure>
+    <p class="hero-services-link">Servicios en terreno: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a></p>
   </div>
 </header>
 
-<aside class="proof-line" aria-label="Trayectoria documentada">
-  <div class="container proof-line-inner">
-    <p><strong>+220</strong> proyectos documentados</p>
-    <p><strong>29 años</strong> de experiencia técnica</p>
-    <p><strong>6</strong> divisiones de Codelco atendidas</p>
-    <p><strong>1</strong> certificación IDS GeoRadar en Chile</p>
-  </div>
-</aside>
 
-<section class="orientation" id="orientacion">
-  <div class="container orientation-layout">
-    <div class="section-intro">
-      <p class="field-note">Punto de partida</p>
-      <h2>¿Qué necesitas comprender antes de intervenir?</h2>
-      <p>No hace falta conocer la tecnología para empezar. Elige la pregunta más cercana a tu proyecto.</p>
-    </div>
-    <div class="question-list">
-      <a href="/herramientas/necesito-gpr/">
-        <span class="question-number">01</span>
-        <span><strong>¿El GPR sirve para mi problema?</strong><small>Evalúa el método antes de solicitar un estudio.</small></span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a href="/georadar/#que-puede-detectar">
-        <span class="question-number">02</span>
-        <span><strong>¿Qué puede detectar realmente?</strong><small>Objetos, vacíos, cambios de material y restricciones.</small></span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a href="/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/">
-        <span class="question-number">03</span>
-        <span><strong>¿A qué profundidad puede llegar?</strong><small>Por qué no existe una cifra universal.</small></span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a href="/herramientas/">
-        <span class="question-number">04</span>
-        <span><strong>Quiero evaluar mi proyecto</strong><small>Calculadoras y herramientas gratuitas, sin registro.</small></span>
-        <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="featured-case">
-  <div class="container case-layout">
-    <div class="case-visual reveal">
-      <img src="/assets/img/casos/socavones-espesador-t5/radargrama-b.jpg" alt="Evidencia de radargrama obtenida durante la evaluación de posibles vacíos bajo una estructura minera" width="900" height="506" loading="lazy">
-      <p class="technical-caption"><span>GPR / evidencia de terreno</span><span>Chuquicamata · Chile</span></p>
-    </div>
-    <div class="case-copy">
-      <p class="field-note">Caso documentado · Minería</p>
-      <h2>Cuando detenerse también es una decisión técnica</h2>
-      <p>En una estructura operacional T5, la prospección buscaba reducir la incertidumbre asociada a posibles vacíos antes de intervenir. El valor del estudio no estuvo en producir una imagen, sino en entregar evidencia útil para decidir cómo continuar.</p>
-      <dl class="case-facts">
-        <div><dt>Problema</dt><dd>Posibles vacíos bajo una estructura operacional</dd></div>
-        <div><dt>Método</dt><dd>Prospección GPR con registro documentado</dd></div>
-        <div><dt>Resultado</dt><dd>Información para planificar la intervención</dd></div>
-      </dl>
-      <a class="text-link" href="/mineria/casos/socavones-espesador-t5/">Leer el caso completo <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="section-alt gpr-sim" id="gpr-sim">
+<section class="section-dark gpr-sim" id="gpr-sim">
   <div class="container">
-    <p class="eyebrow">Pruébelo usted mismo</p>
+    <p class="eyebrow">01 / SIMULADOR GPR</p>
     <h2>Así "ve" el georradar lo que hay bajo tierra</h2>
     <p class="lead">Deslice el control para mover la antena GPR sobre el subsuelo y revele el radargrama en tiempo real.</p>
     <div class="sim-wrap" data-gpr-sim>
@@ -217,15 +149,93 @@
         <div class="sim-callout">Detectado: ducto a 1.8 m de profundidad</div>
       </div>
       <p class="sim-caption">Arrastre el control para simular el barrido del GPR sobre una línea soterrada. Cada curva en "U" es un objeto real detectado bajo tierra.</p>
-
       <p class="sim-learn"><a href="/glosario/">Glosario GPR &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="aplicaciones" class="section-alt">
+  <div class="container">
+    <p class="eyebrow">02 / INDUSTRIAS</p>
+    <h2>Prospección GPR por industria</h2>
+    <div class="num-list">
+      <div class="num-list-item reveal">
+        <div class="num-list-index">01&nbsp;/&nbsp;MINERÍA</div>
+        <div class="num-list-body">
+          <h3>Minería</h3>
+          <p>Georradar para faenas mineras: detección de interferencias subterráneas y prospección en Codelco, BHP, SQM.</p>
+          <div class="num-list-links">
+            <a href="/mineria/" aria-label="Ver servicio de georradar minería">Ver servicio &rarr;</a>
+            <a href="/mineria/casos/socavones-espesador-t5/" aria-label="Ver caso real de detección de socavones en Codelco Chuquicamata">Ver caso real &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="num-list-item reveal">
+        <div class="num-list-index">02&nbsp;/&nbsp;UTILITIES</div>
+        <div class="num-list-body">
+          <h3>Utilities</h3>
+          <p>Detección de líneas soterradas: agua, gas, electricidad y telecomunicaciones sin necesidad de excavar.</p>
+          <div class="num-list-links">
+            <a href="/utilities/" aria-label="Ver servicio de detección de líneas soterradas">Ver servicio &rarr;</a>
+            <a href="/utilities/casos/accesos-metro-de-santiago/" aria-label="Ver caso real de detección de líneas soterradas en accesos del Metro de Santiago">Ver caso real &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="num-list-item reveal">
+        <div class="num-list-index">03&nbsp;/&nbsp;CONSTRUCCIÓN</div>
+        <div class="num-list-body">
+          <h3>Construcción</h3>
+          <p>Estudios de subsuelo previos a obras civiles para evitar interferencias con ductos y estructuras enterradas.</p>
+          <div class="num-list-links">
+            <a href="/construccion/" aria-label="Ver servicio de georradar para construcción">Ver servicio &rarr;</a>
+            <a href="/construccion/casos/prospeccion-aeropuerto-chacalluta/" aria-label="Ver caso real Aeropuerto Chacalluta">Ver caso real &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="num-list-item reveal">
+        <div class="num-list-index">04&nbsp;/&nbsp;FORENSE</div>
+        <div class="num-list-body">
+          <h3>Forense</h3>
+          <p>Peritaje técnico con georradar para Fiscalía, PDI y causas de derechos humanos, con validez judicial.</p>
+          <div class="num-list-links">
+            <a href="/forense/" aria-label="Ver servicio de peritaje forense con georradar">Ver servicio &rarr;</a>
+            <a href="/forense/casos/cip-san-joaquin-cerro-chena/" aria-label="Ver caso real de peritaje forense en CIP San Joaquín / Cerro Chena">Ver caso real &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:48px 0 56px;">
+  <div class="container">
+    <div class="stats-grid stats-grid--home">
+      <div class="stat-card reveal">
+        <div class="stat-num">+220</div>
+        <div class="stat-label">Proyectos documentados en la biblioteca</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-num stat-num--secondary">29+</div>
+        <div class="stat-label">Años de experiencia en GPR</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-num stat-num--support">4</div>
+        <div class="stat-label">Industrias con casos documentados</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-cert">
+          <p class="stat-cert-title">Certificación IDS GeoRadar</p>
+          <p class="stat-cert-name">Gabriel Jaque Riffo</p>
+          <p class="stat-cert-detail">Pisa, Italia &middot; 2016</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="timeline-section">
   <div class="container">
-    <p class="eyebrow" style="color:#F5F0EB">Historia</p>
+    <p class="eyebrow">03 / HISTORIA</p>
     <h2>De la experiencia técnica a la empresa familiar</h2>
     <div class="timeline">
       <div class="timeline-item reveal">
@@ -238,7 +248,7 @@
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-year">2016</div>
-        <div class="timeline-text">Gabriel Jaque Riffo obtiene en Pisa, Italia, la única certificación IDS GeoRadar de Chile.</div>
+        <div class="timeline-text">Gabriel Jaque Riffo obtiene la certificación IDS GeoRadar en Pisa, Italia.</div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-year">Hoy</div>
@@ -248,21 +258,9 @@
   </div>
 </section>
 
-<section class="seo-text">
-  <div class="container">
-    <p class="eyebrow">Georradar en Chile</p>
-    <h2>Qué es el georradar y por qué Geo Radar Chile es el referente</h2>
-    <p>El <strong>georradar</strong> (también escrito <strong>georadar</strong>, del inglés Ground Penetrating Radar o GPR) es una tecnología de prospección subterránea no destructiva que permite detectar estructuras, ductos y anomalías bajo la superficie sin necesidad de excavar. En Chile, la demanda de <strong>georradar Chile</strong> ha crecido junto con la minería, la construcción de infraestructura urbana y los procesos judiciales que requieren peritaje técnico del subsuelo.</p>
-    <p>Geo Radar Chile es una empresa familiar fundada en 2011, pero con experiencia en <strong>georradar GPR Chile</strong> que se remonta a 1997, cuando Agustín Omar Jaque Lafuente obtuvo su certificación GSSI en Estados Unidos y comenzó a operar equipos de <strong>ground penetrating radar Chile</strong> en proyectos mineros e industriales. Hoy, Gabriel Jaque Riffo, Director Comercial y Analista GPR Senior, posee la única certificación IDS GeoRadar de Chile, obtenida en Pisa, Italia, en 2016.</p>
-    <p>La empresa ha ejecutado +220 proyectos documentados para clientes como Codelco (en 6 de sus divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, la PDI y la Fiscalía Regional de Los Ríos. Geo Radar Chile opera con equipo GPR propio IDS GeoRadar RIS MF Hi-Mod de doble antena (200 MHz para profundidad y 600 MHz para resolución), procesado con software GRED HD y entregado mediante la plataforma cloud GEOLITIX.</p>
-    <p>A diferencia de empresas que venden equipos de <strong>detección de ductos soterrados</strong>, Geo Radar Chile se posiciona como asesor técnico: presta servicios de prospección, no comercializa hardware. Esta es la razón por la que sigue siendo la <strong>empresa de georradar con más experiencia en Chile</strong> para proyectos de minería, construcción, detección de servicios subterráneos y peritaje forense.</p>
-    <p>El uso de <strong>georradar minería construcción Chile</strong> se ha extendido a lo largo de todo el país: desde faenas en el norte minero hasta obras de infraestructura urbana en Santiago. Cualquier organización que necesite contratar una <strong>empresa de georradar con más experiencia en Chile</strong> encuentra en Geo Radar Chile un equipo certificado, con +220 proyectos documentados y la trayectoria técnica más larga del rubro en el país.</p>
-  </div>
-</section>
-
 <section class="section-alt">
   <div class="container">
-    <p class="eyebrow">Glosario técnico</p>
+    <p class="eyebrow">04 / GLOSARIO TÉCNICO</p>
     <h2>Términos clave del georradar (GPR)</h2>
     <div class="cards-grid">
       <div class="card reveal">
@@ -295,7 +293,7 @@
 
 <section>
   <div class="container">
-    <p class="eyebrow">Preguntas frecuentes</p>
+    <p class="eyebrow">05 / PREGUNTAS FRECUENTES</p>
     <h2>Sobre el georradar y nuestros servicios</h2>
     <div class="faq-item reveal">
       <h3>¿Qué es el georradar o GPR?</h3>
@@ -307,7 +305,7 @@
     </div>
     <div class="faq-item reveal">
       <h3>¿Por qué elegir Geo Radar Chile?</h3>
-      <p>Por su experiencia desde 1997, su trayectoria de +220 proyectos para clientes como Codelco, BHP y SQM, y por contar con la única certificación IDS GeoRadar de Chile. Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
+      <p>Por su experiencia desde 1997, su trayectoria de +220 proyectos para clientes como Codelco, BHP y SQM, y por las certificaciones GSSI (1997) e IDS GeoRadar (Pisa, Italia, 2016). Geo Radar Chile actúa como asesor técnico, no como vendedor de equipos.</p>
     </div>
     <div class="faq-item reveal">
       <h3>¿En qué se diferencia "georadar" de "georradar"?</h3>
@@ -318,55 +316,13 @@
 
 <section class="cta-final">
   <div class="container">
-    <h2>Solicite un estudio de georradar para su proyecto</h2>
-    <p>Conozca cómo la prospección con GPR puede resolver su necesidad técnica en minería, construcción, utilities o peritaje forense.</p>
-    <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20consultar%20por%20un%20servicio%20de%20georradar." class="btn btn-white" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">Hablar por WhatsApp</a>
-    <a href="https://georadarchile.cl" class="btn btn-outline" target="_blank" rel="noopener" aria-label="Solicitar cotización en georadarchile.cl">Solicitar cotización &rarr;</a>
+    <h2>¿El georradar es el método adecuado para su proyecto?</h2>
+    <p>Una conversación inicial permite evaluar la viabilidad técnica antes de cotizar un servicio en terreno.</p>
+    <a href="https://wa.me/56975909836?text=Hola%2C%20quiero%20evaluar%20si%20el%20georradar%20es%20adecuado%20para%20mi%20proyecto." class="btn btn-white" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">Hablar por WhatsApp</a>
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <p class="footer-logo">GeoRadar.cl</p>
-    <div class="footer-grid">
-      <div>
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/mineria/" aria-label="Ir a minería">Minería</a></li>
-          <li><a href="/utilities/" aria-label="Ir a utilities">Utilities</a></li>
-          <li><a href="/construccion/" aria-label="Ir a construcción">Construcción</a></li>
-          <li><a href="/forense/" aria-label="Ir a forense">Forense</a></li>
-          <li><a href="/biblioteca/" aria-label="Ir a biblioteca técnica">Biblioteca</a></li>
-          <li><a href="/mentoria/" aria-label="Ir a mentorías">Mentorías</a></li>
-      <li><a href="/herramientas/" aria-label="Ir a herramientas">Herramientas</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Sitio oficial</h4>
-        <ul>
-          <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Geo Radar Chile</h4>
-        <ul>
-          <li>Empresa desde 2011</li>
-          <li>Experiencia desde 1997</li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contacto</h4>
-        <ul>
-          <li><a href="https://georadarchile.cl" target="_blank" rel="noopener">Solicitar cotización</a></li>
-          <li><a href="https://wa.me/56975909836" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">WhatsApp: +56 9 7590 9836</a></li>
-          <li><a href="mailto:gabriel@georadarchile.cl">gabriel@georadarchile.cl</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">&copy; 2026 Geo Radar Chile. Georradar GPR Chile.</div>
-  </div>
-</footer>
+{% include "footer.html" %}
 
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/gpr-sim.js"></script>

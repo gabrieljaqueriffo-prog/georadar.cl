@@ -2,7 +2,7 @@
 
 > Registro de activos publicados, deuda de contenido y deuda técnica.
 > Ver `CLAUDE.md §5` y `DEFINITION_OF_DONE.md` para el proceso de estados.
-> Ultima actualizacion: 2026-07-05. Sitio: 23 URLs publicas.
+> Ultima actualizacion: 2026-07-19. Sitio: 24 URLs publicas.
 
 ---
 
@@ -22,8 +22,10 @@
 
 #### Mineria
 - **Estado:** PUBLICADO — `/mineria/`
-- **Casos publicados con pagina propia:** Espesador T5 (Codelco Chuquicamata)
-- **Deuda:** Codelco Division Andina, BHP, SQM, Centinela, Albemarle, Collahuasi tienen cards verificadas pero sin pagina de caso real completa.
+- **Casos publicados con pagina propia:**
+  - Espesador T5 (Codelco Chuquicamata) — `/mineria/casos/socavones-espesador-t5/`
+  - Division Andina (Codelco) — `/mineria/casos/liberacion-areas-division-andina/` — PUBLICADO 2026-07-19. 8 grillas, Tranque Ovejeria, LEM + REX + GPR, tabla de grilla completa del informe GPR-178-24-IF-01-REV.1.
+- **Deuda:** BHP, SQM, Centinela, Albemarle, Collahuasi tienen cards verificadas pero sin pagina de caso real completa.
 
 #### Utilities
 - **Estado:** PUBLICADO — `/utilities/`
@@ -43,7 +45,7 @@
   - **Enlaces entrantes:** `/construccion/`, `/index.html`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
   - **Enlaces salientes:** `/construccion/`, `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/`
 - **Deuda:** Costanera Puerto Montt, edificacion Las Condes — sin pagina de caso propia. Aeródromo Tobalaba descartado temporalmente (sin material).
-- **Chacalluta:** PUBLICADO — REQUIERE AUDITORÍA. Caso real publicado en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`. La tarea pendiente es auditoría editorial, técnica y SEO, no intake. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
+- **Chacalluta:** PUBLICADO — AUDITADO 2026-07-19. Auditoria editorial, tecnica y SEO completada. Correcciones aplicadas: frecuencias de antena corregidas de 250/700 MHz a 200/600 MHz (equipo real: IDS GeoRadar RIS MF Hi-Mod); CTA WhatsApp actualizado a lenguaje de evaluacion de viabilidad. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`.
 - **Deuda SEO:** diferenciacion aplicada 2026-07-05. Keyword "prospeccion GPR en obras civiles". Monitorear Search Console en 4 a 6 semanas.
 
 ---
@@ -57,8 +59,9 @@
 
 ### Biblioteca tecnica
 
-- **Estado modulo:** OPTIMIZACION (Canon completo segun `CONTENT_STRATEGY.md §13`, no MADURO — ver criterio pendiente)
+- **Estado modulo:** OPTIMIZACION — todas las acciones del benchmark completadas 2026-07-19. Pendiente: validacion de Gabriel para declarar MADURO. Ver `docs/QUALITY_BENCHMARK_GPR_ES.md`.
 - **Ubicacion landing:** `/biblioteca/`
+- **Cambio 2026-07-19:** seccion "Rutas por sector" añadida — cuatro tarjetas con rutas de lectura por perfil (obra civil, mineria, utilities, forense), cada una con secuencia de articulos y enlace a caso real.
 
 **Articulos publicados (6):**
 
@@ -75,6 +78,7 @@
    - Entrantes: `/biblioteca/`, `/herramientas/calculadora-viabilidad-gpr/`, `/glosario/#antena`, `/mineria/`, `/utilities/`, `/mentoria/`
    - Salientes: `/glosario/`, `/herramientas/calculadora-viabilidad-gpr/`, `/herramientas/selector-antena/`, `/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/`, `/mentoria/`
    - Cambio 2026-07-05: agregado enlace saliente a `/mentoria/`
+   - Cambio 2026-07-19: tabla comparativa por rango de frecuencia (MHz, profundidad tipica, resolucion, objetivos habituales); seccion de condiciones que reducen penetracion (arcilla, sales, rellenos, hormigon humedo); seccion de ejemplos por tipo de objetivo (enfierradura, tuberias, cavidades, espesores de pavimento). Cubre todas las acciones del benchmark para este articulo.
 
 3. **Por que la profundidad del georradar depende del terreno**
    - `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`
@@ -102,16 +106,17 @@
    - Entrantes: `/biblioteca/`, `/biblioteca/que-puede-decirnos-una-senal-gpr-ademas-de-una-imagen/`, `/biblioteca/como-afecta-la-humedad-al-georradar/`, `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`, `/construccion/casos/prospeccion-aeropuerto-chacalluta/`, `/glosario/`
    - Salientes: `/glosario/`, `/biblioteca/como-afecta-la-humedad-al-georradar/`, `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`, `/construccion/casos/prospeccion-aeropuerto-chacalluta/`
 
-**Criterio pendiente para Canon MADURO (compartido por articulos 2 y 3, y Glosario):**
-Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere revision humana de Gabriel. Hasta que ocurra, el modulo queda en OPTIMIZACION — estado correcto, no bloqueante.
+**Criterio pendiente para MADURO:**
+Las tres acciones del benchmark completadas (frecuencia, glosario, biblioteca). Pendiente: validacion humana de Gabriel para declarar MADURO. Ver `docs/QUALITY_BENCHMARK_GPR_ES.md`.
 
 ---
 
 ### Glosario GPR
 
-- **Estado:** OPTIMIZACION (no MADURO — criterio pendiente compartido con Biblioteca)
+- **Estado:** OPTIMIZACION (no MADURO — pendiente validacion de Gabriel, compartido con Biblioteca)
 - **Ubicacion:** `/glosario/`
 - **Terminos publicados (13):** Georradar, Radargrama, Socavon, Hiperbola, Antena, Atenuacion, Velocidad de propagacion, Espesador, Grilla de prospeccion, Georreferenciacion, Conductividad, Permitividad dielectrica, Frecuencia dominante, Resolucion vertical.
+- **Cambio 2026-07-19:** añadidos parrafos "Error frecuente" y contexto de terreno en cuatro terminos: Georradar (contraste electromagnetico, ausencia de señal no implica ausencia de objeto), Grilla de prospeccion (ejemplo Division Andina, error de perfiles en una sola direccion), Hiperbola (error de identificar cualquier arco como ducto), Radargrama (error de interpretar imagen aislada como diagnostico). Enlace de Grilla a caso real Division Andina añadido.
 - **Entrantes:** 10+ paginas distintas (nav/footer + contextuales).
 - **Plan de actualizacion anual:** marzo, Gabriel + Claude. Criterio de desactualizacion: termino nuevo usado en caso o articulo sin entrada propia; enlace roto; mas de 12 meses sin revision.
 
@@ -140,20 +145,20 @@ Comparacion externa con el mejor recurso GPR disponible en espanol. Requiere rev
 
 Orden de prioridad (2026-07-05):
 
-**Prioridad 1 — Completar benchmark GPR en español**
-`docs/QUALITY_BENCHMARK_GPR_ES.md` — estructura creada, comparacion pendiente. Gabriel debe identificar los recursos GPR en espanol a comparar y completar la matriz de 9 criterios. Hasta que este documento este completo y aprobado, ninguno de los activos afectados (Glosario, articulo de frecuencia, modulo Biblioteca) puede declararse MADURO. No urgente para el sitio, pero es deuda declarada.
+**Prioridad 1 — Validacion del benchmark por Gabriel**
+`docs/QUALITY_BENCHMARK_GPR_ES.md` — PRELIMINAR VALIDADO. Estado: ATLAS Biblioteca 24/27, ATLAS Glosario 20/27. Las tres acciones editoriales derivadas del benchmark estan completas (articulo de frecuencia, glosario, rutas de lectura en biblioteca). Pendiente: revision humana de Gabriel para declarar los activos afectados en estado MADURO. No urgente para el sitio, pero es deuda declarada.
 
 **Prioridad 2 — Aeródromo Tobalaba: descartado temporalmente**
 Gabriel no dispone de informacion suficiente para desarrollarlo como caso o referencia. No usar en articulos ni en paginas de caso hasta tener material documentado. Registrado en `content/research/themes/theme-gpr-pavimentos.md`.
 
-**Prioridad 3 — Aeródromo Chacalluta: auditoría editorial, técnica y SEO**
-Estado: PUBLICADO — REQUIERE AUDITORÍA. Tipo: caso real de construcción. La página existe en `/construccion/casos/prospeccion-aeropuerto-chacalluta/`. La tarea pendiente ya no es intake sino auditoría del caso publicado. Ver `content/research/cases/case-construccion-aeropuerto-chacalluta.md`. Ajustes aplicados 2026-07-06: footer actualizado a "Prospección GPR en obras civiles", enlace al artículo de frecuencia de antena añadido en sección de método. Pendiente: evaluar si el H1 y el title incorporan "GPR" de forma explícita para alineación con keyword del vertical.
+**Prioridad 3 — Aeródromo Chacalluta: AUDITADO**
+Estado: PUBLICADO — AUDITADO 2026-07-19. Frecuencias corregidas a 200/600 MHz; CTA WhatsApp actualizado; auditoria editorial y tecnica completa. Sin deuda activa en este caso.
 
 **Prioridad 4 — Ejecutar ADR-006 (rename calculadora)**
 URL activa: `/herramientas/calculadora-viabilidad-gpr/`. Redirect meta-refresh desde URL anterior. Pendiente: confirmar transferencia de señal SEO en Search Console ~agosto 2026.
 
-**Prioridad 5 — Semi-caso Codelco Division Andina**
-Primer caso de mineria a desarrollar como pagina tipo semi-caso. Patron minimo: contexto, objetivo tecnico, condicion de terreno, metodo aplicado, tipo de resultado obtenido, limites de interpretacion, valor para la operacion. No agregar radargramas, cifras ni hallazgos especificos sin documentacion de Gabriel.
+**Prioridad 5 — RESUELTO: Codelco Division Andina publicado**
+Caso real publicado en `/mineria/casos/liberacion-areas-division-andina/` el 2026-07-19. 8 grillas, Tranque Ovejeria, LEM + REX + GPR, tabla de grilla del informe GPR-178-24-IF-01-REV.1. Sin deuda activa. Siguiente caso minero prioritario: SQM o BHP (ver Prioridad 8).
 
 **Prioridad 6 — Caso forense Cementerio Rio Chico**
 URL propuesta: `/forense/casos/cementerio-rio-chico/`. Titulo: "Caso forense con georradar en Cementerio Rio Chico". Tono: sobrio, tecnico y pericial, sin sensacionalismo. No crear hasta tener: contexto del encargo, objetivo de prospeccion, condiciones del sitio, metodologia y hallazgos o anomalias documentadas.
@@ -176,20 +181,48 @@ Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como
 
 3. **Workflow de deploy** — migrado a GitHub Actions el 2026-07-05 (`/.github/workflows/deploy.yml`). El sistema anterior (`pages-build-deployment`) fallaba de forma intermitente. El nuevo workflow es mas estable. Sin deuda activa.
 
-4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica) completos. ADR-006 (rename calculadora) ejecutado en rama, pendiente de merge.
+4. **`docs/adr/`** — ADR-001 (CSS vanilla), ADR-002 (WhatsApp primario), ADR-003 (mentorias 1:1), ADR-004 (arquitectura dos dominios), ADR-005 (evidencia tecnica), ADR-007 (Eleventy) completos. ADR-006 (rename calculadora) ejecutado en rama, pendiente de merge.
 
 5. **Referencias históricas a calculadora-profundidad en docs internos** — RESUELTO 2026-07-09. `BACKLOG.md`, `ARCHITECTURE.md` y `SEO_BASELINE.md` actualizados para reflejar la URL activa `/herramientas/calculadora-viabilidad-gpr/`.
 
+6. **Eleventy build step** — IMPLEMENTADO 2026-07-19. ADR-007 aprobado y ejecutado. Nav y footer son ahora partials en `_includes/`. El sitio se construye con `npm run build` (Eleventy v3) hacia `_site/`. Cambios globales de nav/footer ahora requieren editar un solo archivo. Pre-commit hook actualizado para ejecutar el build antes de la auditoria. Ver `docs/adr/ADR-007-eleventy-build.md`.
+
+7. **Footer heading corregido** — RESUELTO 2026-07-19. `<h4>Servicios</h4>` reemplazado por `<h4>Contenido</h4>` en el footer compartido (`_includes/footer.html`). Aplicado a las 29 paginas publicas via el partial de Eleventy.
+
+8. **Schema.org mainEntityOfPage** — APLICADO 2026-07-19. Nodo Organization en home ahora incluye `"mainEntityOfPage": "https://www.georadarchile.cl"` para señalar la presencia web principal de la empresa. Sin deuda activa.
+
+9. **Sección SEO relleno en home** — PENDIENTE. Cinco parrafos de keywords al final del home identificados como anti-patron. Eliminacion pendiente de aprobacion de Gabriel.
+
+10. **Timeline pioneer claim** — PENDIENTE. Frase "introduce el uso de GPR en Chile" en pagina Quienes Somos / home pendiente de reemplazo por formulacion factual basada solo en certificacion GSSI 1997. Pendiente aprobacion de Gabriel.
+
 ---
 
-## Documentos internos actualizados (2026-07-05)
+## Documentos internos actualizados
 
+### 2026-07-05
 - `docs/SEO_BASELINE.md` — linea base SEO de las 23 URLs publicas.
 - `docs/INTERNAL_LINKING_AUDIT.md` — 23/23 paginas en cumplimiento (100%).
 - `docs/CHANGELOG.md` — normalizado con formato estructurado.
-- `docs/BACKLOG.md` — este archivo, auditado y actualizado.
+- `docs/BACKLOG.md` — auditado y actualizado.
 - `docs/QUALITY_BENCHMARK_GPR_ES.md` — benchmark creado. Recursos y puntajes pendientes de revision de Gabriel.
 - `docs/adr/ADR-006-rename-calculadora-profundidad.md` — propuesto, pendiente de aprobacion.
 - `content/research/themes/theme-gpr-pavimentos.md` — estado actualizado a LISTO PARA ARTICULO BASE.
 - `construccion/index.html` — diferenciacion SEO aplicada (keyword, H1, lead, seo-text).
 - `herramientas/selector-antena/index.html` — titulo, disclaimer y enlace cruzado al articulo de frecuencia actualizados.
+
+### 2026-07-19
+- `docs/BACKLOG.md` — este archivo, actualizado con todo el trabajo de la sesion.
+- `docs/adr/ADR-007-eleventy-build.md` — ADR aprobado y ejecutado.
+- `_includes/nav.html` — partial de navegacion compartido (nuevo).
+- `_includes/footer.html` — partial de footer compartido con `{{ footerTagline }}` (nuevo).
+- `.eleventy.js` — configuracion del build step (nuevo).
+- `package.json` / `package-lock.json` — dependencia Eleventy v3 añadida.
+- `.github/workflows/deploy.yml` — workflow actualizado para ejecutar `npm run build` antes del deploy.
+- `scripts/audit.js` — auditoria apuntada a `_site/` (output de Eleventy).
+- `.git/hooks/pre-commit` — hook actualizado para ejecutar build antes de auditoria.
+- `mineria/casos/liberacion-areas-division-andina/index.html` — caso Division Andina publicado (nuevo).
+- `construccion/casos/prospeccion-aeropuerto-chacalluta/index.html` — frecuencias corregidas, CTA actualizado.
+- `biblioteca/como-influye-la-frecuencia-de-antena-gpr/index.html` — tabla, advertencias de terreno, ejemplos por objetivo.
+- `glosario/index.html` — errores frecuentes y contexto de terreno en cuatro terminos.
+- `biblioteca/index.html` — seccion de rutas de lectura por sector añadida.
+- `index.html` — stat actualizado, twitter:description actualizado, mainEntityOfPage en schema.

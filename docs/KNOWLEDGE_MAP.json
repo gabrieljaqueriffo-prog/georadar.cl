@@ -203,6 +203,14 @@
       "footer_keyword": "Selector de antena georradar"
     },
     {
+      "path": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "file": "biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/index.html",
+      "title": "Cómo el georradar reduce el riesgo en faenas mineras",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Georradar minería Chile"
+    },
+    {
       "path": "/biblioteca/como-elegir-empresa-de-georradar/",
       "file": "biblioteca/como-elegir-empresa-de-georradar/index.html",
       "title": "Cómo elegir una empresa de georradar en Chile",
@@ -476,6 +484,36 @@
       "from": "/glosario/",
       "to": "/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/",
       "note": "entrada permitividad enlaza al artículo de hormigón"
+    },
+    {
+      "from": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "to": "/mineria/",
+      "note": "artículo enlaza al vertical de minería"
+    },
+    {
+      "from": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "to": "/georadar/",
+      "note": "artículo enlaza a la página pilar del método"
+    },
+    {
+      "from": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "to": "/mineria/casos/liberacion-areas-division-andina/",
+      "note": "artículo enlaza al caso División Andina"
+    },
+    {
+      "from": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "to": "/mineria/casos/socavones-espesador-t5/",
+      "note": "artículo enlaza al caso Espesador T5"
+    },
+    {
+      "from": "/mineria/",
+      "to": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "note": "vertical de minería enlaza al artículo de riesgo"
+    },
+    {
+      "from": "/biblioteca/",
+      "to": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "note": "biblioteca enlaza al nuevo artículo"
     },
     {
       "from": "/biblioteca/como-elegir-empresa-de-georradar/",

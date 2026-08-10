@@ -21,24 +21,25 @@
 const fs   = require('fs');
 const path = require('path');
 
-const ROOT   = path.resolve(__dirname, '..');
-const MAP    = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/KNOWLEDGE_MAP.json'), 'utf8'));
-const STRICT = process.argv.includes('--strict');
+const ROOT      = path.resolve(__dirname, '..');
+const SITE_ROOT = path.join(ROOT, '_site');
+const MAP       = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/KNOWLEDGE_MAP.json'), 'utf8'));
+const STRICT    = process.argv.includes('--strict');
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
 function readFile(rel) {
-  const abs = path.join(ROOT, rel);
+  const abs = path.join(SITE_ROOT, rel);
   return fs.existsSync(abs) ? fs.readFileSync(abs, 'utf8') : null;
 }
 
 function fileExistsForPath(urlPath) {
-  if (urlPath === '/') return fs.existsSync(path.join(ROOT, 'index.html'));
+  if (urlPath === '/') return fs.existsSync(path.join(SITE_ROOT, 'index.html'));
   const clean = urlPath.replace(/^\//, '').replace(/\/$/, '');
   return (
-    fs.existsSync(path.join(ROOT, clean))          ||
-    fs.existsSync(path.join(ROOT, clean + '.html'))||
-    fs.existsSync(path.join(ROOT, clean, 'index.html'))
+    fs.existsSync(path.join(SITE_ROOT, clean))          ||
+    fs.existsSync(path.join(SITE_ROOT, clean + '.html'))||
+    fs.existsSync(path.join(SITE_ROOT, clean, 'index.html'))
   );
 }
 
@@ -84,7 +85,7 @@ for (const p of MAP.pages) {
   pages[p.path] = { ...p, html, exists: html !== null };
 }
 
-// load glosario anchors once
+// load glosario anchors once (from built output)
 const glosarioHtml   = readFile('glosario/index.html') || '';
 const glosarioAnchors = extractAnchors(glosarioHtml);
 
