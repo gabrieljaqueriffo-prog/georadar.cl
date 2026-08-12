@@ -1,14 +1,9 @@
 /* Sistema Atlas global — páginas interiores */
 
 body.page-atlas {
-  --atlas-ink: #201d19;
-  --atlas-muted: #655e56;
-  --atlas-paper: #faf8f4;
-  --atlas-stone: #eee8df;
-  --atlas-line: #d8cec1;
-  --atlas-earth: #82391f;
-  --atlas-earth-dark: #562819;
-  --atlas-amber: #d99016;
+  /* Las paginas interiores conservan su tipografia hasta su propia fase D4. */
+  --font-display: var(--font-display-legacy);
+  --font-body: var(--font-body-legacy);
   background: var(--atlas-paper);
   color: var(--atlas-ink);
   font-size: 16px;
