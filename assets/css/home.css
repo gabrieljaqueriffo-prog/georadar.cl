@@ -374,7 +374,7 @@
 
 .case-radar-window {
   overflow: hidden;
-  aspect-ratio: 1.78 / 1;
+  aspect-ratio: 685 / 239;
   border: var(--rule-standard);
   background: var(--color-inverse);
 }
