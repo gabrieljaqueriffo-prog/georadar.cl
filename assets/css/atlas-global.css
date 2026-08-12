@@ -1,9 +1,9 @@
 /* Sistema Atlas global — páginas interiores */
 
 body.page-atlas {
-  /* Las paginas interiores conservan su tipografia hasta su propia fase D4. */
-  --font-display: var(--font-display-legacy);
-  --font-body: var(--font-body-legacy);
+  /* Las páginas interiores usan la misma voz tipográfica que la portada. */
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
   background: var(--atlas-paper);
   color: var(--atlas-ink);
   font-size: 16px;
@@ -81,7 +81,7 @@ body.page-atlas .nav-link-external {
 
 /* Hero interior */
 body.page-atlas .hero {
-  padding: clamp(76px, 9vw, 118px) 0 clamp(68px, 8vw, 98px);
+  padding: clamp(64px, 7vw, 88px) 0 clamp(56px, 6vw, 76px);
   border: 0;
   border-bottom: 1px solid var(--atlas-line);
   background: var(--atlas-paper);
@@ -93,7 +93,7 @@ body.page-atlas .hero-bg {
 }
 
 body.page-atlas .hero-content {
-  max-width: 900px;
+  max-width: 820px;
   margin-left: 0;
 }
 
@@ -113,21 +113,21 @@ body.page-atlas .hero .eyebrow a {
 }
 
 body.page-atlas .hero h1 {
-  max-width: 900px;
-  margin-bottom: 26px;
+  max-width: 15ch;
+  margin-bottom: 22px;
   color: var(--atlas-ink);
   font-family: var(--font-display);
-  font-size: clamp(46px, 6.2vw, 78px);
-  font-weight: 700;
+  font-size: clamp(44px, 5.4vw, 68px);
+  font-weight: 580;
   letter-spacing: -.045em;
   line-height: .99;
 }
 
 body.page-atlas .hero p,
 body.page-atlas .hero .lead {
-  max-width: 790px;
+  max-width: 46rem;
   color: var(--atlas-muted);
-  font-size: clamp(17px, 1.8vw, 21px);
+  font-size: clamp(17px, 1.45vw, 19px);
   line-height: 1.58;
 }
 
@@ -240,7 +240,7 @@ body.page-atlas .cards-grid {
 body.page-atlas .card {
   position: relative;
   padding: 30px;
-  border-color: var(--atlas-line);
+  border: 1px solid var(--atlas-line);
   border-radius: 0;
   background: rgba(255, 253, 250, .72);
   box-shadow: none;
@@ -406,6 +406,16 @@ body.page-case .lessons-list {
 /* Herramientas */
 body.page-tool .hero {
   background: #f4efe8;
+  padding-block: clamp(52px, 6vw, 72px);
+}
+
+body.page-tool .hero h1 {
+  max-width: 13ch;
+  font-size: clamp(42px, 4.8vw, 62px);
+}
+
+body.page-tool .hero + section {
+  padding-top: clamp(48px, 5vw, 64px);
 }
 
 body.page-tool .tool-layout {
