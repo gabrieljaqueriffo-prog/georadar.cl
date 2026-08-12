@@ -386,6 +386,11 @@
   color: #f5eee6;
 }
 
+.resource-card--dark .atlas-kicker,
+.atlas-next .atlas-kicker {
+  color: #f1b75a;
+}
+
 .resource-card h3 {
   max-width: 520px;
   margin: 0 0 16px;
