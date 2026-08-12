@@ -65,8 +65,7 @@ body.page-atlas .nav .container {
 }
 
 body.page-atlas .logo {
-  color: var(--atlas-earth);
-  font-size: 22px;
+  width: 176px;
 }
 
 body.page-atlas .nav-links a {

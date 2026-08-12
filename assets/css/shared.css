@@ -160,16 +160,21 @@ h3 { font-size: 24px; }
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--siena);
+  display: block;
+  width: 176px;
+  flex: 0 0 auto;
   text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .logo:hover {
   text-decoration: none;
-  color: var(--terracota);
+  opacity: .82;
 }
 
 .nav-links {
@@ -1212,14 +1217,18 @@ footer a:hover {
 }
 
 .footer-v2-logo {
-  color: #fff9f1;
-  font-family: var(--font-display);
-  font-size: 25px;
-  font-weight: 700;
+  display: block;
+  width: min(220px, 100%);
+}
+
+.footer-v2-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .footer-v2-logo:hover {
-  color: #fff;
+  opacity: .84;
   text-decoration: none;
 }
 
@@ -1293,6 +1302,9 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  .logo {
+    width: 152px;
+  }
   .footer-v2-main {
     grid-template-columns: 1fr;
     gap: 42px;
