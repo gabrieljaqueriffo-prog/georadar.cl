@@ -220,6 +220,34 @@ body.page-sector .hero-media img {
   object-position: center;
 }
 
+body.page-guide .hero-media img {
+  object-position: center 48%;
+}
+
+body.page-mentoria .hero-media-technical img {
+  height: clamp(17rem, 22vw, 20rem);
+  object-fit: contain;
+  background: #1a1a1a;
+}
+
+body.page-case .hero-case-split h1 {
+  max-width: 12ch;
+  font-size: clamp(3.25rem, 4.8vw, 4.75rem);
+}
+
+body.page-case .hero-case-split .hero-media img {
+  object-position: center;
+}
+
+body.page-case .hero-case-long h1 {
+  max-width: 14ch;
+  font-size: clamp(2.75rem, 4vw, 4.1rem);
+}
+
+body.page-atlas .hero-media-conceptual img {
+  object-position: 62% center;
+}
+
 body.page-atlas .hero-media figcaption {
   display: grid;
   grid-template-columns: 7.25rem 1fr;
