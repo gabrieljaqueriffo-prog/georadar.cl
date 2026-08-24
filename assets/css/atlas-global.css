@@ -165,6 +165,89 @@ body.page-atlas .hero-ctas {
   margin-top: 32px;
 }
 
+/* Hero editorial para índices y sectores: la portada conserva la escala
+   manifiesto; las páginas interiores priorizan lectura, contexto y recorrido. */
+body.page-atlas .hero-split {
+  padding: clamp(4.5rem, 7vw, 6.75rem) 0;
+}
+
+body.page-atlas .hero-split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.03fr) minmax(24rem, .97fr);
+  gap: clamp(3.5rem, 7vw, 7rem);
+  align-items: center;
+}
+
+body.page-atlas .hero-split .hero-content {
+  width: auto;
+  margin: 0;
+}
+
+body.page-atlas .hero-split h1,
+body.page-library .hero h1,
+body.page-sector .hero h1 {
+  max-width: 13ch;
+  font-size: clamp(3.75rem, 5.6vw, 5.25rem);
+  line-height: .96;
+}
+
+body.page-atlas .hero-split .lead {
+  max-width: 34rem;
+  font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
+  line-height: 1.58;
+}
+
+body.page-atlas .hero-media {
+  margin: 0;
+  overflow: hidden;
+  border: var(--rule-light);
+  background: var(--color-surface);
+}
+
+body.page-atlas .hero-media img {
+  display: block;
+  width: 100%;
+  height: clamp(20rem, 27vw, 24rem);
+  object-fit: cover;
+  object-position: center;
+}
+
+body.page-library .hero-media img {
+  object-position: center 54%;
+}
+
+body.page-sector .hero-media img {
+  object-position: center;
+}
+
+body.page-atlas .hero-media figcaption {
+  display: grid;
+  grid-template-columns: 7.25rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 1.125rem 1.125rem;
+  border-top: var(--rule-light);
+  color: var(--color-ink-soft);
+  font-size: .8125rem;
+  line-height: 1.45;
+}
+
+body.page-atlas .hero-media figcaption strong {
+  color: var(--color-earth);
+  font-family: var(--font-ui);
+  font-size: .625rem;
+  font-weight: 750;
+  letter-spacing: .13em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+body.page-case .hero h1 {
+  max-width: 14ch;
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  line-height: .96;
+}
+
 body.page-atlas .btn {
   min-height: 46px;
   padding: 12px 19px;
@@ -619,7 +702,7 @@ body.page-article-visual .article-text-link {
 
 /* Corrección ATLAS: el artículo comparte la retícula y la jerarquía de portada. */
 body.page-article-visual .article-hero {
-  padding: clamp(5rem, 9vw, 8.25rem) 0 clamp(4.5rem, 8vw, 7rem);
+  padding: clamp(4.5rem, 7vw, 6.75rem) 0;
 }
 
 body.page-article-visual .article-hero-grid {
@@ -628,9 +711,9 @@ body.page-article-visual .article-hero-grid {
 }
 
 body.page-article-visual .article-hero h1 {
-  max-width: 10.5ch;
+  max-width: 12ch;
   margin-bottom: var(--space-6);
-  font-size: var(--text-h1);
+  font-size: clamp(3.75rem, 5.6vw, 5.25rem);
   font-weight: 610;
   letter-spacing: -.052em;
   line-height: .94;
@@ -765,6 +848,18 @@ body.page-article-visual .article-evidence-copy p:not(.eyebrow) {
 /* Casos */
 body.page-case .hero {
   background: #f4efe8;
+  padding: clamp(4.5rem, 7vw, 6.75rem) 0;
+}
+
+body.page-case .hero h1 {
+  max-width: 17ch;
+  font-size: clamp(3.5rem, 5vw, 4.75rem);
+  line-height: .97;
+}
+
+body.page-case .hero p,
+body.page-case .hero .lead {
+  max-width: 46rem;
 }
 
 body.page-case section > .container > p:not(.eyebrow) {
@@ -966,6 +1061,16 @@ body.page-atlas .cta-final .btn-outline:hover {
 }
 
 @media (max-width: 900px) {
+  body.page-atlas .hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  body.page-atlas .hero-split .hero-content {
+    max-width: 46rem;
+  }
+  body.page-atlas .hero-media {
+    max-width: 46rem;
+  }
   body.page-article-visual .article-hero-grid,
   body.page-article-visual .article-evidence-grid {
     grid-template-columns: 1fr;
@@ -1039,6 +1144,9 @@ body.page-atlas .cta-final .btn-outline:hover {
   body.page-atlas .hero {
     padding: 58px 0 62px;
   }
+  body.page-atlas .hero-split-grid {
+    gap: 2.25rem;
+  }
   body.page-atlas .hero h1,
   body.page-article .hero h1 {
     font-size: clamp(40px, 13vw, 55px);
@@ -1047,6 +1155,13 @@ body.page-atlas .cta-final .btn-outline:hover {
   body.page-atlas .hero p,
   body.page-atlas .hero .lead {
     font-size: 16px;
+  }
+  body.page-atlas .hero-media img {
+    height: min(68vw, 17rem);
+  }
+  body.page-atlas .hero-media figcaption {
+    grid-template-columns: 1fr;
+    gap: .35rem;
   }
   body.page-article-visual .article-hero {
     padding: 46px 0 52px;
