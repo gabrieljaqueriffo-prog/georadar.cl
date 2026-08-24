@@ -380,6 +380,223 @@ body.page-article section:first-of-type .faq-item h2 {
   font-size: clamp(28px, 3.2vw, 40px);
 }
 
+/* Artículo visual: fotografía de terreno, lectura guiada y evidencia */
+body.page-article-visual .article-hero {
+  padding: clamp(58px, 6vw, 82px) 0;
+}
+
+body.page-article-visual .article-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(500px, 1.12fr);
+  gap: clamp(42px, 5vw, 72px);
+  align-items: center;
+}
+
+body.page-article-visual .article-hero-copy {
+  min-width: 0;
+}
+
+body.page-article-visual .article-hero h1 {
+  max-width: 11ch;
+  margin-bottom: 26px;
+  font-size: clamp(48px, 4.6vw, 66px);
+}
+
+body.page-article-visual .article-hero .lead {
+  max-width: 36rem;
+  margin-bottom: 28px;
+}
+
+body.page-article-visual .article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding-top: 17px;
+  border-top: 1px solid var(--atlas-line);
+  color: var(--atlas-muted);
+  font-family: var(--font-data);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+body.page-article-visual .article-meta span + span::before {
+  content: "·";
+  margin-right: 24px;
+  color: var(--atlas-earth);
+}
+
+body.page-article-visual .article-hero-figure,
+body.page-article-visual .article-inline-figure,
+body.page-article-visual .article-radargram {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--atlas-line);
+  background: #fffdfa;
+}
+
+body.page-article-visual .article-hero-figure img,
+body.page-article-visual .article-inline-figure img,
+body.page-article-visual .article-radargram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body.page-article-visual .article-hero-figure img {
+  aspect-ratio: 4 / 3;
+}
+
+body.page-article-visual .article-hero-figure figcaption,
+body.page-article-visual .article-inline-figure figcaption,
+body.page-article-visual .article-radargram figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 9px;
+  color: var(--atlas-muted);
+  font-family: var(--font-data);
+  font-size: 8px;
+  letter-spacing: .06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+body.page-article-visual .article-main {
+  padding: clamp(70px, 8vw, 108px) 0;
+}
+
+body.page-article-visual .article-main > .article-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 760px);
+  gap: clamp(54px, 7vw, 90px);
+  justify-content: center;
+  max-width: 1120px;
+}
+
+body.page-article-visual .article-sidebar {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  padding-top: 4px;
+}
+
+body.page-article-visual .article-sidebar .eyebrow {
+  margin-bottom: 16px;
+}
+
+body.page-article-visual .article-sidebar nav {
+  display: grid;
+  border-top: 1px solid var(--atlas-line);
+}
+
+body.page-article-visual .article-sidebar nav a {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--atlas-line);
+  color: var(--atlas-muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+body.page-article-visual .article-sidebar nav a:hover {
+  color: var(--atlas-earth);
+}
+
+body.page-article-visual .article-sidebar-note {
+  margin-top: 28px;
+  padding-left: 15px;
+  border-left: 2px solid var(--atlas-earth);
+  color: var(--atlas-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+body.page-article-visual .article-copy {
+  min-width: 0;
+}
+
+body.page-article-visual .article-copy .faq-item {
+  padding: 52px 0 14px;
+}
+
+body.page-article-visual .article-copy .faq-item:first-child {
+  padding-top: 0;
+}
+
+body.page-article-visual .article-copy .faq-item + .faq-item,
+body.page-article-visual .article-inline-figure + .faq-item {
+  margin-top: 38px;
+  border-top: 1px solid var(--atlas-line);
+}
+
+body.page-article-visual .article-copy .faq-item h2 {
+  max-width: 15ch;
+  margin-bottom: 24px;
+  font-size: clamp(32px, 3.4vw, 44px);
+}
+
+body.page-article-visual .article-copy .faq-item h3 {
+  margin-top: 32px;
+  margin-bottom: 9px;
+  font-size: clamp(21px, 2vw, 25px);
+}
+
+body.page-article-visual .article-copy .faq-item p,
+body.page-article-visual .article-copy .faq-item li {
+  max-width: 44rem;
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+body.page-article-visual .article-copy .faq-item ul {
+  margin: 22px 0;
+}
+
+body.page-article-visual .article-inline-figure {
+  margin: 54px 0 14px;
+}
+
+body.page-article-visual .article-inline-figure img {
+  aspect-ratio: 16 / 9;
+}
+
+body.page-article-visual .article-evidence {
+  padding: clamp(78px, 8vw, 108px) 0;
+}
+
+body.page-article-visual .article-evidence-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
+  gap: clamp(44px, 6vw, 82px);
+  align-items: center;
+}
+
+body.page-article-visual .article-radargram img {
+  aspect-ratio: 4 / 3;
+}
+
+body.page-article-visual .article-evidence-copy h2 {
+  max-width: 12ch;
+  margin-bottom: 26px;
+}
+
+body.page-article-visual .article-evidence-copy p:not(.eyebrow) {
+  max-width: 35rem;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+body.page-article-visual .article-text-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--atlas-earth);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
 /* Casos */
 body.page-case .hero {
   background: #f4efe8;
@@ -584,6 +801,37 @@ body.page-atlas .cta-final .btn-outline:hover {
 }
 
 @media (max-width: 900px) {
+  body.page-article-visual .article-hero-grid,
+  body.page-article-visual .article-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  body.page-article-visual .article-hero-copy {
+    max-width: 720px;
+  }
+  body.page-article-visual .article-hero h1 {
+    max-width: 13ch;
+  }
+  body.page-article-visual .article-hero-figure img {
+    aspect-ratio: 16 / 9;
+  }
+  body.page-article-visual .article-main > .article-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 800px;
+  }
+  body.page-article-visual .article-sidebar {
+    position: static;
+  }
+  body.page-article-visual .article-sidebar nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+  }
+  body.page-article-visual .article-sidebar-note {
+    max-width: 36rem;
+  }
+  body.page-article-visual .article-evidence-copy {
+    max-width: 720px;
+  }
   body.page-atlas .steps {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -626,6 +874,59 @@ body.page-atlas .cta-final .btn-outline:hover {
   body.page-atlas .hero p,
   body.page-atlas .hero .lead {
     font-size: 16px;
+  }
+  body.page-article-visual .article-hero {
+    padding: 46px 0 52px;
+  }
+  body.page-article-visual .article-hero-grid {
+    gap: 34px;
+  }
+  body.page-article-visual .article-meta {
+    display: grid;
+    gap: 6px;
+  }
+  body.page-article-visual .article-meta span + span::before {
+    content: none;
+  }
+  body.page-article-visual .article-hero-figure,
+  body.page-article-visual .article-inline-figure,
+  body.page-article-visual .article-radargram {
+    padding: 7px;
+  }
+  body.page-article-visual .article-hero-figure figcaption,
+  body.page-article-visual .article-inline-figure figcaption,
+  body.page-article-visual .article-radargram figcaption {
+    display: grid;
+    gap: 2px;
+  }
+  body.page-article-visual .article-main {
+    padding: 58px 0 70px;
+  }
+  body.page-article-visual .article-main > .article-layout {
+    gap: 42px;
+  }
+  body.page-article-visual .article-sidebar nav {
+    grid-template-columns: 1fr;
+  }
+  body.page-article-visual .article-sidebar-note {
+    margin-top: 22px;
+  }
+  body.page-article-visual .article-copy .faq-item {
+    padding-top: 42px;
+  }
+  body.page-article-visual .article-copy .faq-item + .faq-item,
+  body.page-article-visual .article-inline-figure + .faq-item {
+    margin-top: 30px;
+  }
+  body.page-article-visual .article-copy .faq-item h2 {
+    font-size: clamp(30px, 10vw, 38px);
+  }
+  body.page-article-visual .article-copy .faq-item p,
+  body.page-article-visual .article-copy .faq-item li {
+    font-size: 16px;
+  }
+  body.page-article-visual .article-inline-figure {
+    margin-top: 44px;
   }
   body.page-atlas .hero-ctas {
     align-items: stretch;

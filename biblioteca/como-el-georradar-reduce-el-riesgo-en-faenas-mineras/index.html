@@ -17,9 +17,11 @@ footerTagline: "Georradar minería Chile."
 <meta property="og:title" content="Cómo el georradar reduce el riesgo en faenas mineras">
 <meta property="og:description" content="Qué riesgos concretos elimina el georradar antes de excavar, perforar o detonar en una faena minera.">
 <meta property="og:url" content="https://georadar.cl/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/">
+<meta property="og:image" content="https://georadar.cl/assets/images/mineria/prospeccion-georadar-faena-minera.jpg">
+<meta property="og:image:alt" content="Prospección con georradar en una instalación minera en operación">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cómo el georradar reduce el riesgo en faenas mineras">
 <meta name="twitter:description" content="Qué riesgos concretos elimina el georradar antes de excavar, perforar o detonar en una faena minera.">
 <link rel="stylesheet" href="/assets/css/shared.css?v=10">
@@ -34,7 +36,8 @@ footerTagline: "Georradar minería Chile."
       "description": "Qué riesgos concretos elimina el georradar antes de excavar, perforar o detonar en una faena minera: interferencias enterradas, utilities no documentados y zonas de subsidencia.",
       "inLanguage": "es-CL",
       "author": { "@type": "Organization", "name": "Geo Radar Chile" },
-      "publisher": { "@type": "Organization", "name": "Geo Radar Chile" }
+      "publisher": { "@type": "Organization", "name": "Geo Radar Chile" },
+      "image": "https://georadar.cl/assets/images/mineria/prospeccion-georadar-faena-minera.jpg"
     },
     {
       "@type": "WebPage",
@@ -57,31 +60,59 @@ footerTagline: "Georradar minería Chile."
 }
 </script>
 </head>
-<body class="page-atlas page-article">
+<body class="page-atlas page-article page-article-visual">
 
 <div class="topbar">Sitio oficial: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a> &middot; Empresa desde 2011, experiencia desde 1997</div>
 
 {% include "nav.html" %}
 
-<header class="hero">
-  <div class="container hero-content">
-    <p class="eyebrow"><a href="/biblioteca/">Biblioteca técnica</a> &middot; <a href="/mineria/">Minería</a></p>
-    <h1>Cómo el georradar reduce el riesgo en faenas mineras</h1>
-    <p class="lead">Lo que aprenderá: qué peligros concretos existen bajo la superficie de una faena activa, por qué los planos de instalación existentes no son suficientes para garantizar una intervención segura, y cómo la prospección con <a href="/georadar/">georradar</a> permite detectar interferencias antes de excavar, perforar o detonar.</p>
+<header class="hero article-hero">
+  <div class="container article-hero-grid">
+    <div class="article-hero-copy">
+      <p class="eyebrow"><a href="/biblioteca/">Biblioteca técnica</a> &middot; <a href="/mineria/">Minería</a></p>
+      <h1>Cómo el georradar reduce el riesgo en faenas mineras</h1>
+      <p class="lead">Qué peligros existen bajo una faena activa, por qué los planos no bastan y cómo la prospección GPR aporta evidencia antes de excavar, perforar o detonar.</p>
+      <div class="article-meta" aria-label="Datos del artículo">
+        <span>Guía técnica</span>
+        <span>Seguridad operacional</span>
+      </div>
+    </div>
+    <figure class="article-hero-figure">
+      <img src="/assets/images/mineria/prospeccion-georadar-faena-minera.jpg" width="1920" height="1080" alt="Operador realizando una prospección con georradar en una instalación minera" fetchpriority="high">
+      <figcaption><span>Prospección GPR en terreno</span><span>Faena minera · Chile</span></figcaption>
+    </figure>
   </div>
 </header>
 
-<section>
-  <div class="container">
+<section class="article-main">
+  <div class="container article-layout">
+    <aside class="article-sidebar" aria-label="Contenido del artículo">
+      <p class="eyebrow">En esta guía</p>
+      <nav>
+        <a href="#problema">El problema</a>
+        <a href="#riesgos">Riesgos que reduce</a>
+        <a href="#planos">Límites de los planos</a>
+        <a href="#ejecucion">Cómo se ejecuta</a>
+        <a href="#limitaciones">Limitaciones del GPR</a>
+      </nav>
+      <p class="article-sidebar-note">La decisión técnica se construye con antecedentes, medición en terreno e interpretación profesional.</p>
+    </aside>
 
-    <article class="faq-item reveal">
+    <div class="article-copy">
+
+    <article class="faq-item reveal" id="problema">
       <h2>El problema que el georradar resuelve en minería</h2>
       <p>Una faena minera en operación acumula décadas de instalaciones subterráneas: ductos de proceso, cables de alta tensión, tuberías de agua, líneas de aire comprimido, cañerías de combustible. Muchas de estas instalaciones tienen planos. Algunas no los tienen. Y las que los tienen suelen tener planos que no reflejan modificaciones posteriores, empalmes no registrados o desvíos de trazado ejecutados en terreno sin actualizar la documentación.</p>
       <p>Cuando se programa una excavación, una perforación o una voladura en ese entorno, la pregunta crítica no es si hay algo enterrado. La pregunta es dónde está exactamente, a qué profundidad, y si el trazado actual coincide con lo que dice el plano.</p>
       <p>El <a href="/glosario/#georradar">georradar</a> responde esas preguntas de forma no destructiva, sin detener la operación y sin necesidad de abrir zanjas exploratorias.</p>
     </article>
 
-    <article class="faq-item reveal">
+    <figure class="article-inline-figure reveal">
+      <img src="/assets/images/mineria/operador-georradar-en-terreno.jpg" width="1210" height="681" alt="Especialista operando un equipo GPR para localizar interferencias bajo la superficie" loading="lazy">
+      <figcaption><span>Adquisición en terreno</span><span>Equipo GPR de doble frecuencia</span></figcaption>
+    </figure>
+
+    <article class="faq-item reveal" id="riesgos">
       <h2>Qué tipos de riesgo reduce la prospección GPR en una faena</h2>
 
       <h3>Interferencias eléctricas</h3>
@@ -97,7 +128,7 @@ footerTagline: "Georradar minería Chile."
       <p>En faenas con larga historia operativa, es frecuente que existan instalaciones enterradas que no aparecen en ningún plano, porque fueron ejecutadas en épocas anteriores, por contratistas distintos o en condiciones de emergencia. La prospección GPR no depende de la documentación existente: mapea lo que está en el terreno, independientemente de si hay registro escrito o no.</p>
     </article>
 
-    <article class="faq-item reveal">
+    <article class="faq-item reveal" id="planos">
       <h2>Por qué los planos existentes no son suficientes</h2>
       <p>Los planos de instalaciones subterráneas tienen tres limitaciones frecuentes en el contexto de faenas mineras en operación:</p>
       <ul>
@@ -108,29 +139,36 @@ footerTagline: "Georradar minería Chile."
       <p>La prospección con georradar no reemplaza los planos existentes: los complementa con información medida en terreno en el momento del estudio.</p>
     </article>
 
-    <article class="faq-item reveal">
+    <article class="faq-item reveal" id="ejecucion">
       <h2>Cómo se ejecuta un estudio GPR en una faena activa</h2>
       <p>Un estudio de georradar para minería no requiere detener la operación. El equipo se desplaza sobre la superficie a evaluar con el sistema GPR, definiendo <a href="/glosario/#grilla-prospeccion">grillas de prospección</a> que cubren el área de intervención programada. Los datos se adquieren, procesan e interpretan en terreno o en oficina según el plazo del proyecto.</p>
       <p>El resultado es un informe técnico con los <a href="/glosario/#radargrama">radargramas</a> procesados y un plano <a href="/glosario/#georreferenciacion">georreferenciado</a> que indica la posición, profundidad estimada y tipo de interferencia detectada para cada elemento encontrado. Ese plano es el documento que permite al equipo de terreno definir dónde puede intervenir y dónde no.</p>
       <p>La selección de la <a href="/glosario/#antena">antena</a> depende del objetivo: a mayor profundidad de instalación, se usa menor frecuencia; a mayor resolución requerida, mayor frecuencia. En la mayoría de los proyectos en faenas mineras se trabaja con doble frecuencia para cubrir ambas necesidades.</p>
     </article>
 
-    <article class="faq-item reveal">
+    <article class="faq-item reveal" id="limitaciones">
       <h2>Cuándo un estudio GPR no es suficiente por sí solo</h2>
       <p>El georradar tiene limitaciones que el responsable técnico de la faena debe conocer. En terrenos con alta <a href="/glosario/#conductividad">conductividad eléctrica</a>, como suelos arcillosos saturados o zonas con presencia de agua salina, la señal se atenúa rápidamente y la profundidad confiable de detección se reduce. En esos casos, el especialista debe informar la limitación antes de ejecutar el estudio, no después.</p>
       <p>Además, el georradar detecta cambios de material, no identifica automáticamente qué es cada objeto. La interpretación de los <a href="/glosario/#radargrama">radargramas</a> requiere combinar la señal con el contexto del sitio: qué tipo de instalaciones existen en esa área, a qué profundidades típicas se encuentran y qué materiales predominan en el entorno. Por eso el criterio del operador certificado es parte del resultado, no solo el equipo.</p>
     </article>
 
+    </div>
   </div>
 </section>
 
-<section class="section-alt">
-  <div class="container">
-    <p class="eyebrow">Evidencia en terreno</p>
-    <h2>Casos reales en faenas mineras chilenas</h2>
-    <p>El caso de <a href="/mineria/casos/liberacion-areas-division-andina/">liberación de áreas con GPR en Codelco División Andina</a> muestra este proceso aplicado en una faena activa: 15 <a href="/glosario/#grilla-prospeccion">grillas de prospección</a> ejecutadas para localizar utilities antes de intervenir. El resultado fueron áreas liberadas con hallazgos documentados y cero accidentes. El caso del <a href="/mineria/casos/socavones-espesador-t5/">Espesador T5 en Codelco Chuquicamata</a> muestra el mismo criterio aplicado a la detección de <a href="/glosario/#socavon">socavones</a> bajo una estructura crítica antes de intervenir, donde el riesgo de colapso era el factor determinante.</p>
-    <p>En ambos casos el estudio GPR precedió a la intervención física. Esa secuencia, prospección antes de ejecución, es el uso que convierte al georradar en una herramienta de gestión de riesgo y no solo en un registro técnico.</p>
-    <p><strong>Lectura complementaria:</strong> Gabriel Jaque Riffo explica cómo se traduce este criterio en la preparación de un proyecto y qué limitaciones deben declararse antes de medir en <a href="https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir" target="_blank" rel="noopener">Georradar en minería: seguridad antes de excavar, perforar o intervenir&nbsp;&nearr;</a>.</p>
+<section class="section-alt article-evidence">
+  <div class="container article-evidence-grid">
+    <figure class="article-radargram">
+      <img src="/assets/images/home/radargrama-swath-6-2.png" width="2015" height="1358" alt="Radargrama con anomalías hiperbólicas detectadas durante una prospección GPR" loading="lazy">
+      <figcaption><span>Registro GPR</span><span>Distancia y profundidad estimada</span></figcaption>
+    </figure>
+    <div class="article-evidence-copy">
+      <p class="eyebrow">Evidencia en terreno</p>
+      <h2>Casos reales en faenas mineras chilenas</h2>
+      <p>El caso de <a href="/mineria/casos/liberacion-areas-division-andina/">liberación de áreas con GPR en Codelco División Andina</a> documenta 15 <a href="/glosario/#grilla-prospeccion">grillas de prospección</a> ejecutadas para localizar utilities antes de intervenir.</p>
+      <p>En el <a href="/mineria/casos/socavones-espesador-t5/">Espesador T5 en Codelco Chuquicamata</a>, el mismo criterio se aplicó a la detección de <a href="/glosario/#socavon">socavones</a> bajo una estructura crítica. En ambos casos, la prospección precedió a la intervención física.</p>
+      <a class="article-text-link" href="https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir" target="_blank" rel="noopener">Leer el análisis de Gabriel Jaque Riffo&nbsp;&nearr;</a>
+    </div>
   </div>
 </section>
 
