@@ -27,6 +27,26 @@ Cada entrada tiene los siguientes campos obligatorios:
 
 ---
 
+## 2026-08-23 · content (conexión artículo minería con ATLAS)
+
+- **Tipo:** content, seo, docs
+- **Archivos:** `mineria/index.html`,
+  `biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/index.html`,
+  `index.html`, `llms.txt`, `docs/REGISTRO_EXPERIENCIA.md`,
+  `docs/DECISIONS.md`, `docs/CHANGELOG.md`
+- **Motivo:** conectar el artículo firmado por Gabriel Jaque Riffo en el blog
+  de Geo Radar Chile con las rutas técnicas de minería de ATLAS, sin duplicar
+  el contenido entre dominios, y unificar la cifra pública de experiencia.
+- **Impacto:** el hub de minería y la guía de riesgo enlazan la perspectiva de
+  terreno publicada en Geo Radar Chile. La cifra pública pasa de "+220" a
+  "+250 proyectos" por confirmación explícita del cliente.
+- **Riesgo:** Bajo. Los enlaces externos son contextuales y la actualización
+  numérica está respaldada por el registro interno de 252 proyectos.
+- **Proxima accion:** solicitar indexación del artículo nuevo en Google Search
+  Console y distribuirlo desde LinkedIn con enlaces hacia las rutas de ATLAS.
+
+---
+
 ## 2026-07-05 · docs (normalizacion changelog)
 
 - **Tipo:** docs, refactor

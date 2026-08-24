@@ -102,6 +102,6 @@
 - Fundador: Agustín Omar Jaque Lafuente (certificado GSSI USA, 1997).
 - Director Comercial y Analista GPR Senior: Gabriel Ernesto Jaque Riffo (única certificación IDS GeoRadar de Chile, Pisa 2016).
 - Usar ambas grafías en contenido: "georadar" (marca) y "georradar" (búsqueda de alta intención, doble r).
-- Cifra de proyectos vigente: "+220" en contenido publicado. Decisión confirmada (2026-06-30): se mantiene "+220" sin actualizar a 252 por ahora.
+- Cifra de proyectos vigente: "+250" en contenido publicado. Decisión confirmada por Gabriel (2026-08-23), reemplaza la decisión anterior de mantener "+220".
 - Modelo de negocio: prestación de servicios de prospección, no venta de equipos ("asesores, no vendedores").
 - Autorización de mención pública (confirmado 2026-06-30): todos los casos y clientes listados en este registro, incluyendo los forenses/DDHH (CIP San Joaquín, Cerro Chena, Venda Sexy/Irán 3037, causas con ROL), pueden nombrarse públicamente en el sitio.

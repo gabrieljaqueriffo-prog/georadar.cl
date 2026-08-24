@@ -14,6 +14,24 @@
 
 ---
 
+## 2026-08-23 — Actualizar a "+250" la cifra pública de proyectos
+
+**Contexto:** el registro interno contiene 252 proyectos ejecutados y el
+cliente confirmó que la comunicación pública puede actualizarse a "+250".
+La decisión anterior mantenía "+220" por prudencia editorial.
+
+**Decisión:** se adopta "+250 proyectos" como cifra pública vigente en ATLAS
+y en los contenidos editoriales del ecosistema Geo Radar Chile.
+
+**Quién decidió:** Gabriel Jaque Riffo, explícitamente, durante la preparación
+del artículo sobre georradar en minería.
+
+**Implicancia:** esta decisión reemplaza la del 2026-06-30. Las páginas,
+metadatos y publicaciones futuras deben usar "+250" hasta una nueva
+confirmación explícita.
+
+---
+
 ## 2026-06-30 — Mantener "+220" como cifra pública de proyectos
 
 **Contexto:** el cliente entregó `docs/REGISTRO_EXPERIENCIA.md`, un registro
