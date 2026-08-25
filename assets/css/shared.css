@@ -1330,7 +1330,7 @@ footer a:hover {
   gap: 38px;
 }
 
-.footer-v2 h4 {
+.footer-v2-heading {
   margin: 0 0 18px;
   color: #8f867c;
   font-family: var(--font-data);

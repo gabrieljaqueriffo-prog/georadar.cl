@@ -533,6 +533,18 @@ body.page-article-visual .article-hero h1 {
   font-size: clamp(48px, 4.6vw, 66px);
 }
 
+body.page-article-visual .article-hero-compact h1 {
+  max-width: 16ch;
+  font-size: clamp(3rem, 4.5vw, 4.5rem);
+  line-height: .98;
+}
+
+body.page-article-visual .article-hero-figure-radar img {
+  object-fit: contain;
+  object-position: center;
+  background: var(--color-surface);
+}
+
 body.page-article-visual .article-hero .lead {
   max-width: 36rem;
   margin-bottom: 28px;

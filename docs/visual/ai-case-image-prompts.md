@@ -59,3 +59,13 @@ Color palette: charcoal, muted olive, sand, clay, off-white
 Constraints: match the reference GPR cart very closely; no police, no military, no crime-scene tape, no remains, no excavation, no logos, no text, no watermark; conceptual method image only, not evidence from CIP San Joaquín or Cerro Chena
 Avoid: thriller mood, yellow tape, grave imagery, weapons, dramatic fog, generic radar cart, sci-fi screens, distorted wheels or handles
 ```
+
+## Infraestructura ferroviaria
+
+Generada como apoyo editorial para un artículo técnico. No representa una campaña ejecutada por Geo Radar Chile y en el sitio se identifica como “Imagen conceptual”.
+
+Referencia de equipo: fotografía original `20190913_171350.jpg` del archivo de Geo Radar Chile.
+
+```text
+Crear una fotografía editorial documental, horizontal 16:10, para un artículo técnico chileno sobre georradar en infraestructura ferroviaria. Escena realista: un operador con casco blanco, protección auditiva y chaleco reflectante naranja utiliza junto a una vía férrea en mantenimiento el mismo sistema GPR de doble antena con carro, ruedas rojas y computador visible que aparece en la fotografía de referencia. El instrumento debe conservar fielmente su geometría, proporciones y configuración de dos módulos blancos; no inventar piezas ni deformar ruedas, manos o antenas. Entorno: vía industrial de carga en el norte de Chile, balasto, durmientes de hormigón, señalización de seguridad sobria y paisaje árido; trabajo ejecutado desde el costado seguro de la vía, sin tren circulando. Luz natural de mañana, color contenido, composición editorial premium y creíble, sin apariencia publicitaria ni futurista. Sin logotipos legibles, sin texto, sin marcas de agua. Debe entenderse como imagen conceptual técnica, no como registro de un proyecto real.
+```
