@@ -120,6 +120,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://georadar.cl/georadar/</loc>
