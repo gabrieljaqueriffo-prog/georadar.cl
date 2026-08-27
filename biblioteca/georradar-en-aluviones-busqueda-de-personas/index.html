@@ -1,0 +1,207 @@
+---
+footerTagline: "Biblioteca técnica GPR."
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Por qué el georradar no puede buscar personas en un aluvión | Georadar.cl</title>
+<meta name="description" content="El GPR detecta anomalías, no personas. En un aluvión, la señal se atenúa, las anomalías son incontables y no existe contraste dieléctrico útil. Explicamos las razones físicas y cómo reconocer una oferta sin respaldo técnico.">
+<link rel="canonical" href="https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="es_CL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Por qué el georradar no puede buscar personas en un aluvión">
+<meta property="og:description" content="El GPR detecta anomalías, no personas. En un aluvión, la señal se atenúa, las anomalías son incontables y no existe contraste dieléctrico útil.">
+<meta property="og:url" content="https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/">
+<meta name="geo.region" content="CL">
+<meta name="geo.placename" content="Chile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Por qué el georradar no puede buscar personas en un aluvión">
+<meta name="twitter:description" content="El GPR detecta anomalías, no personas. En un aluvión, la señal se atenúa, las anomalías son incontables y no existe contraste dieléctrico útil.">
+<link rel="stylesheet" href="/assets/css/shared.css?v=8">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/#article",
+      "headline": "Por qué el georradar no puede buscar personas en un aluvión",
+      "description": "El GPR detecta anomalías, no personas. En un aluvión, la señal se atenúa, las anomalías son incontables y no existe contraste dieléctrico útil.",
+      "author": { "@id": "https://georadar.cl/#organization" },
+      "publisher": { "@id": "https://georadar.cl/#organization" },
+      "inLanguage": "es-CL"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/#webpage",
+      "url": "https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/",
+      "name": "Por qué el georradar no puede buscar personas en un aluvión",
+      "isPartOf": { "@id": "https://georadar.cl/#website" },
+      "inLanguage": "es-CL"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://georadar.cl/" },
+        { "@type": "ListItem", "position": 2, "name": "Biblioteca técnica", "item": "https://georadar.cl/biblioteca/" },
+        { "@type": "ListItem", "position": 3, "name": "Por qué el georradar no puede buscar personas en un aluvión", "item": "https://georadar.cl/biblioteca/georradar-en-aluviones-busqueda-de-personas/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">Sitio oficial: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a> &middot; Empresa desde 2011, experiencia desde 1997</div>
+
+{% include "nav.html" %}
+
+<header class="hero">
+  <div class="container hero-content">
+    <p class="eyebrow"><a href="/biblioteca/">Biblioteca técnica</a> &rarr; Límites del método</p>
+    <h1>Por qué el georradar no puede buscar personas en un aluvión</h1>
+    <p class="lead">Cuando ocurre un aluvión y hay personas desaparecidas, el dolor de las familias es extremo. En ese contexto, algunos ofrecen el georradar como herramienta de búsqueda. Este artículo explica por qué eso no es técnicamente posible, cuáles son las razones físicas concretas y cómo reconocer una oferta que no tiene respaldo real.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <figure style="margin: 0 0 32px;">
+      <img src="/assets/img/aluvion-llaca-ancash-2025.jpg" alt="Cauce post-aluvión en la quebrada de Llaca, Áncash, Perú. Miles de bolones de distintos tamaños sin patrón uniforme." style="width:100%;height:auto;display:block;">
+      <figcaption style="font-family:var(--font-data);font-size:11px;color:var(--texto-suave);margin-top:8px;line-height:1.5;">
+        Foto: JimSPeru / Wikimedia Commons (CC BY-SA 4.0). Aluvión en la quebrada de Llaca, Áncash, Perú, abril 2025.<br>
+        El GPR opera en condiciones controladas: suelo seco, superficie uniforme, señal limpia. Un aluvión es lo opuesto en todos esos criterios.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="eyebrow">Condiciones de operación</p>
+    <h2>Qué necesita el GPR para funcionar</h2>
+    <p>El georradar detecta objetos enterrados porque emite ondas electromagnéticas que se reflejan cuando encuentran un cambio en las propiedades del material: la diferencia entre el suelo y una tubería, entre concreto y una cavidad de aire, entre tierra seca y una zona saturada. Esa diferencia se llama <a href="/glosario/#permitividad">contraste dieléctrico</a>.</p>
+    <p>Para que el método entregue información útil se requiere que:</p>
+    <ul class="lessons-list">
+      <li><strong>El suelo tenga conductividad baja.</strong> Suelos secos, arenosos, sin arcillas expansivas ni sales. La conductividad alta atenúa la señal antes de que alcance profundidades útiles.</li>
+      <li><strong>El objetivo tenga contraste dieléctrico claro.</strong> Debe existir una diferencia física medible entre el objeto buscado y el material que lo rodea.</li>
+      <li><strong>Las interferencias sean acotadas.</strong> Si el subsuelo contiene muchos elementos distintos, el radargrama se satura de anomalías y la interpretación se vuelve inviable.</li>
+      <li><strong>La superficie sea accesible y uniforme.</strong> El equipo debe poder desplazarse sobre el terreno con contacto constante para mantener la calidad de la señal.</li>
+    </ul>
+    <p>Un aluvión cumple exactamente lo contrario en todos esos criterios.</p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <p class="eyebrow">Análisis técnico</p>
+    <h2>Por qué un aluvión hace el método inútil</h2>
+
+    <h3 style="font-size:15px;font-weight:700;margin:28px 0 10px;">1. El material saturado atenúa la señal</h3>
+    <p>El agua aumenta la conductividad eléctrica del suelo. En suelos saturados, el GPR pierde penetración de forma drástica: la señal se atenúa antes de alcanzar profundidades útiles. En condiciones de alta conductividad, la profundidad efectiva puede reducirse a centímetros. Los estudios sobre GPR en suelos saturados documentan pérdida de resolución y señal hasta su extinción completa, dependiendo del contenido de agua y de sales disueltas.</p>
+
+    <h3 style="font-size:15px;font-weight:700;margin:28px 0 10px;">2. Las anomalías son incontables</h3>
+    <p>Un aluvión arrastra árboles, raíces, bolones, gravas de distintos tamaños, material orgánico, escombros, tuberías, estructuras fragmentadas y bolsas de aire atrapadas entre piedras. Cada uno de esos elementos genera una reflexión en el <a href="/glosario/#radargrama">radargrama</a>. El intérprete se enfrenta a cientos o miles de anomalías por línea de adquisición, sin criterio físico para distinguir cuál corresponde a qué.</p>
+    <p>En condiciones ideales de laboratorio, los restos humanos presentan bajo contraste dieléctrico respecto al suelo circundante, lo que los hace difíciles de detectar incluso sin interferencias. En un lecho de río post-aluvión, esa señal débil queda completamente enmascarada por el resto del material.</p>
+
+    <h3 style="font-size:15px;font-weight:700;margin:28px 0 10px;">3. El terreno no permite la adquisición sistemática</h3>
+    <p>El GPR requiere que el equipo se desplace sobre la superficie en líneas paralelas con contacto constante. Un cauce post-aluvión con bolones de distintos tamaños, zonas inundadas y material inestable hace imposible ese desplazamiento. No existe grilla de adquisición posible sobre ese tipo de superficie.</p>
+
+    <h3 style="font-size:15px;font-weight:700;margin:28px 0 10px;">4. No existe un escenario en que el método sea útil aquí</h3>
+    <p>La única situación teóricamente concebible sería que el cuerpo hubiera quedado enterrado en un punto conocido, a poca profundidad, en material fino y ya seco, sin interferencias circundantes. Esa situación no describe un aluvión. Describe una excavación controlada, donde la búsqueda directa es más eficiente que cualquier método geofísico.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="eyebrow">Alternativas reales</p>
+    <h2>Qué se usa en estos contextos</h2>
+    <p>Las operaciones de búsqueda en zonas de aluvión o lecho de río utilizan métodos distintos según la fase de la emergencia:</p>
+    <ul class="lessons-list">
+      <li><strong>Equipos especializados en búsqueda y rescate.</strong> Con entrenamiento específico en zonas de desastre y protocolos de búsqueda sistemática en terreno irregular.</li>
+      <li><strong>Perros de cadáver.</strong> Entrenados para detectar compuestos orgánicos volátiles de descomposición. Funcionan en terrenos donde ningún instrumento electrónico puede operar.</li>
+      <li><strong>Ecosonda y sonar de barrido lateral.</strong> En zonas con agua estancada o de baja velocidad, permiten prospección del fondo sin acceso físico.</li>
+      <li><strong>Prospección visual sistemática del cauce.</strong> Una vez que el caudal baja, equipos en terreno recorren el cauce con protocolo de búsqueda definido.</li>
+      <li><strong>Excavación asistida por maquinaria con supervisión forense.</strong> En etapas avanzadas, cuando hay indicios de localización.</li>
+    </ul>
+    <p>El georradar no figura en ningún protocolo reconocido de búsqueda en estas condiciones.</p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <p class="eyebrow">Señales de alerta</p>
+    <h2>Cómo reconocer una oferta sin respaldo</h2>
+    <p>Ante una emergencia, algunas señales de alerta ante quien ofrece georradar para buscar personas en un aluvión:</p>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <h3>Lo que no tiene respaldo</h3>
+        <ul>
+          <li>Se ofrece el georradar como método de localización sin mencionar ninguna limitación técnica.</li>
+          <li>No se explica por qué el método funcionaría en ese sustrato específico.</li>
+          <li>Se solicita pago anticipado antes de evaluar las condiciones del terreno.</li>
+          <li>No se presenta experiencia previa documentada en ese tipo de escenario.</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Lo que distingue a un especialista</h3>
+        <p>Un especialista serio evalúa primero las condiciones del terreno. Si el método no aplica, lo dice antes de cobrar. La honestidad técnica en este contexto no es una limitación comercial: es el criterio mínimo exigible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <figure style="margin: 0 0 8px;">
+      <img src="/assets/img/gpr-terreno-mineria-chile.jpg" alt="Operador GPR en terreno minero, norte de Chile. Condiciones controladas: suelo seco, superficie uniforme." style="width:100%;max-width:720px;height:auto;display:block;">
+      <figcaption style="font-family:var(--font-data);font-size:11px;color:var(--texto-suave);margin-top:8px;line-height:1.5;">
+        Prospección GPR en condiciones controladas, norte de Chile. Suelo seco, superficie accesible, señal limpia. Las condiciones de un aluvión son incompatibles con este tipo de operación.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <p class="eyebrow">Para seguir aprendiendo</p>
+    <h2>Recursos relacionados</h2>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <p class="eyebrow">Herramienta</p>
+        <h3><a href="/herramientas/necesito-gpr/">¿Necesito GPR para mi proyecto?</a></h3>
+        <p>Evaluador técnico interactivo. Ingresa las condiciones de tu proyecto y el sistema indica si el GPR aplica y con qué limitaciones.</p>
+      </div>
+      <div class="card reveal">
+        <p class="eyebrow">Glosario</p>
+        <h3><a href="/glosario/#permitividad">Permitividad dieléctrica</a></h3>
+        <p>Propiedad física que determina cómo se propaga la señal en distintos materiales y qué contraste es necesario para detectar un objeto.</p>
+      </div>
+      <div class="card reveal">
+        <p class="eyebrow">Artículo</p>
+        <h3><a href="/biblioteca/como-elegir-empresa-de-georradar/">Cómo elegir una empresa de georradar</a></h3>
+        <p>Qué certificaciones exigir, qué preguntar antes de contratar y cómo evaluar si una propuesta tiene respaldo técnico real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2>¿Tiene un proyecto de prospección?</h2>
+    <p>Evaluamos las condiciones técnicas antes de proponer cualquier método. Si el GPR no aplica para su caso, se lo decimos antes de cotizar.</p>
+    <a href="https://wa.me/56982904040?text=Hola%2C%20quiero%20evaluar%20si%20el%20GPR%20aplica%20para%20mi%20proyecto" class="btn btn-primary" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+  </div>
+</section>
+
+{% include "footer.html" %}
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
