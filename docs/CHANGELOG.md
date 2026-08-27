@@ -27,6 +27,31 @@ Cada entrada tiene los siguientes campos obligatorios:
 
 ---
 
+## 2026-08-27 · seo (primer sprint basado en Search Console)
+
+- **Tipo:** seo, content, docs
+- **Archivos:** `index.html`, `mineria/index.html`, `biblioteca/index.html`,
+  `biblioteca/como-elegir-empresa-de-georradar/index.html`,
+  `biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/index.html`,
+  `herramientas/index.html`, `herramientas/calculadora-viabilidad-gpr/index.html`,
+  `_includes/footer.html`, once páginas con enlaces comerciales contextuales,
+  `sitemap.xml`, `docs/SEO_BASELINE.md`, `docs/BACKLOG.md` y
+  `docs/CONTENT_REGISTRY.md`.
+- **Motivo:** la exportación de Search Console de julio mostró páginas con
+  impresiones y CTR bajo, especialmente `/georadar/`, empresa de georradar,
+  calculadora, profundidad del GPR y minería. La documentación SEO todavía no
+  incorporaba datos reales ni el inventario actual de 30 URLs.
+- **Impacto:** snippets más claros y dentro de rangos editoriales; refuerzo
+  interno de la página pilar desde portada y footer; mejor conexión entre ATLAS
+  y las páginas comerciales específicas de Geo Radar Chile; baseline actualizado
+  con 28 clics, 1.981 impresiones y CTR de 1,41% para georadar.cl.
+- **Riesgo:** Bajo. No se cambiaron URLs, H1 ni estructura visual. Los cambios
+  deben evaluarse con una ventana completa de 28 días antes de una nueva edición.
+- **Proxima accion:** publicar, solicitar reindexación de las páginas modificadas
+  y comparar CTR, posición e indexación tras 28 días completos.
+
+---
+
 ## 2026-08-23 · content (conexión artículo minería con ATLAS)
 
 - **Tipo:** content, seo, docs

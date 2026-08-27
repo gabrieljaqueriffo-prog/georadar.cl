@@ -102,6 +102,10 @@ detecte esa contradicción.
 | Biblioteca | Artículo | Cómo afecta la humedad del suelo a un estudio con georradar | `/biblioteca/como-afecta-la-humedad-al-georradar/` | `biblioteca/como-afecta-la-humedad-al-georradar/index.html` | PUBLICADO | Ninguna bloqueante |
 | Biblioteca | Artículo | Qué hace que un suelo sea difícil para el GPR | `/biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/` | `biblioteca/que-hace-que-un-suelo-sea-dificil-para-el-gpr/index.html` | PUBLICADO | Ninguna bloqueante |
 | Biblioteca | Artículo | Qué puede detectar el georradar en infraestructura ferroviaria | `/biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/` | `biblioteca/que-puede-detectar-el-georradar-en-infraestructura-ferroviaria/index.html` | PUBLICADO | Sin caso propio todavía. Cuando haya proyecto ferroviario ejecutado, enlazar como caso desde este artículo. Monitorear Search Console 4-8 semanas. |
+| Biblioteca | Artículo | Cómo detecta el georradar objetos en el hormigón | `/biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/` | `biblioteca/como-detecta-el-georradar-objetos-en-el-hormigon/index.html` | PUBLICADO | Monitorear consultas relacionadas con hormigón y construcción. |
+| Biblioteca | Artículo | Cómo el georradar reduce el riesgo en faenas mineras | `/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/` | `biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/index.html` | PUBLICADO | Conectado con la publicación firmada por Gabriel en Geo Radar Chile. |
+| Biblioteca | Artículo | Cómo elegir una empresa de georradar en Chile | `/biblioteca/como-elegir-empresa-de-georradar/` | `biblioteca/como-elegir-empresa-de-georradar/index.html` | OPTIMIZACIÓN | Snippet actualizado por oportunidad `empresa de georradar`; medir después de 28 días. |
+| Biblioteca | Artículo | ¿Puede el georradar buscar personas en un aluvión? | `/biblioteca/georradar-en-aluviones-busqueda-de-personas/` | `biblioteca/georradar-en-aluviones-busqueda-de-personas/index.html` | PUBLICADO | Solicitar indexación y monitorear consultas; mantener formulación técnica no absoluta. |
 
 ---
 
@@ -109,7 +113,7 @@ detecte esa contradicción.
 
 | Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
 |----------|------|--------|-----|---------|--------|-----------------|
-| Pilar | Pilar SEO | Georadar: qué es, cómo funciona y cuándo usar GPR en Chile | `/georadar/` | `georadar/index.html` | PUBLICADO | Monitorear Search Console 4-8 semanas tras publicación. Gabriel debe agregar link desde georadarchile.cl. |
+| Pilar | Pilar SEO | Georadar: qué es, cómo funciona y cuándo usar GPR en Chile | `/georadar/` | `georadar/index.html` | OPTIMIZACIÓN | Reforzada desde portada y footer. Registra 560 impresiones y 1 clic en julio; medir 28 días antes de nuevos cambios. Gabriel debe agregar enlace desde georadarchile.cl. |
 
 ---
 

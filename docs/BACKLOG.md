@@ -2,7 +2,21 @@
 
 > Registro de activos publicados, deuda de contenido y deuda técnica.
 > Ver `CLAUDE.md §5` y `DEFINITION_OF_DONE.md` para el proceso de estados.
-> Ultima actualizacion: 2026-07-19. Sitio: 24 URLs publicas.
+> Última actualización operativa: 2026-08-27. Sitio: 30 URLs públicas.
+
+## Actualización operativa — 2026-08-27
+
+- Publicadas 30 URLs: home, cuatro verticales, seis casos, once artículos de
+  biblioteca, página pilar, glosario, tres herramientas, sus índices y mentoría.
+- Search Console de julio incorporado a `docs/SEO_BASELINE.md`.
+- Sprint SEO en curso: optimización de snippets de páginas con impresiones,
+  refuerzo interno de `/georadar/` y enlaces contextuales hacia las páginas
+  comerciales correspondientes de `georadarchile.cl`.
+- Próxima acción medible: publicar el sprint y comparar CTR, posición e
+  indexación después de 28 días completos.
+- Deuda documental: el inventario histórico que sigue conserva estados de julio
+  y debe contrastarse con `docs/CONTENT_REGISTRY.md` y el árbol real antes de
+  iniciar nuevos activos.
 
 ---
 
@@ -12,7 +26,7 @@
 
 - **Estado:** PUBLICADO
 - **Ubicacion:** `/`
-- **H1:** "Conocimiento aplicado sobre georradar GPR en Chile"
+- **H1:** "Comprender el subsuelo antes de intervenirlo."
 - **Lead:** GeoRadar.cl como plataforma de conocimiento de Geo Radar Chile.
 - **Cambio 2026-07-05:** hero reposicionado para presentar ATLAS primero; "pionea" corregido a "introduce el uso de GPR en Chile".
 

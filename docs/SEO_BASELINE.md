@@ -1,7 +1,8 @@
 # SEO_BASELINE.md
 
-> Linea base SEO del sitio georadar.cl. Elaborada el 2026-07-05.
-> Cubre las 23 URLs publicas incluidas en `sitemap.xml`.
+> Linea base SEO del sitio georadar.cl. Elaborada el 2026-07-05 y actualizada
+> con datos de Google Search Console el 2026-08-27.
+> El sitio contiene 30 URLs publicas incluidas en `sitemap.xml`.
 > Proposito: registrar el estado actual antes de optimizaciones, identificar
 > riesgos de canibalizacion y servir de referencia para futuras decisiones
 > editoriales y de arquitectura.
@@ -12,6 +13,51 @@
 > Columnas:
 > - **Estado**: mantener / optimizar / expandir / fusionar / revisar.
 > - **Intencion**: informacional (I), comercial (C), transaccional (T), navegacional (N).
+
+---
+
+## Actualización con Search Console — 2026-08-27
+
+Periodo analizado: 1 al 31 de julio de 2026.
+
+| Propiedad | Clics | Impresiones | CTR | Posición media ponderada |
+|-----------|------:|------------:|----:|-------------------------:|
+| `georadar.cl` | 28 | 1.981 | 1,41% | 22,51 |
+| `georadarchile.cl` | 132 | 6.030 | 2,19% | 9,13 |
+
+### Oportunidades observadas en georadar.cl
+
+- La portada concentra 979 impresiones entre las variantes histórica con y sin
+  `www`. La redirección actual consolida correctamente `www` hacia el dominio
+  canónico sin `www`.
+- `/georadar/` registra 560 impresiones, 1 clic y 0,18% de CTR. Su posición
+  media de 55,20 indica que la prioridad es reforzar autoridad interna y esperar
+  maduración, no crear otra página competidora para la misma intención.
+- `/biblioteca/como-elegir-empresa-de-georradar/` registra 102 impresiones sin
+  clics. La consulta `empresa de georradar` aparece 156 veces en posición media
+  13,40: oportunidad directa de mejora de título y descripción.
+- `/herramientas/calculadora-viabilidad-gpr/` registra 88 impresiones sin clics.
+  Se debe mejorar la claridad del resultado de búsqueda y seguir monitoreando la
+  transferencia desde la URL anterior.
+- `/biblioteca/por-que-la-profundidad-del-georradar-depende-del-terreno/`
+  registra 72 impresiones sin clics. Se prioriza un título más directo sobre
+  profundidad y límites del GPR.
+- `/mineria/` registra 70 impresiones, 1 clic y posición media 13,36. Se mantiene
+  como hub sectorial y se alinea su snippet con aplicaciones y casos reales.
+
+### Intervención aplicada — 2026-08-27
+
+- Títulos y metadescripciones ajustados en portada, minería, biblioteca, índice
+  de herramientas, calculadora, empresa de georradar y profundidad del GPR.
+- Enlace directo a `/georadar/` incorporado desde el hero de portada y el footer
+  global para reforzar la página pilar sin modificar la navegación principal.
+- Enlaces comerciales desde once páginas de ATLAS dirigidos a páginas específicas
+  de `georadarchile.cl`, preservando la separación entre conocimiento y servicio.
+- Fechas `lastmod` actualizadas únicamente para las páginas modificadas.
+
+Próxima medición: comparar un periodo completo de 28 días después de la
+publicación. No volver a cambiar títulos antes de contar con esa ventana, salvo
+error técnico o editorial comprobable.
 
 ---
 
@@ -96,7 +142,9 @@ En orden de impacto estimado:
 
 ## Notas metodologicas
 
-- Esta linea base no incluye datos de trafico real, CTR ni posicion promedio en SERP: requeriria integracion con Google Search Console, que no esta disponible en este contexto.
+- La tabla original se construyó sin datos de tráfico. La actualización del
+  2026-08-27 incorpora la exportación de Search Console correspondiente a julio
+  de 2026; las filas históricas se conservan para comparar decisiones previas.
 - Las keywords principales y secundarias se determinaron a partir del contenido real de cada pagina, su meta description, su H1 y los terminos usados en el texto principal.
 - El volumen de busqueda no fue consultado directamente (sin acceso a herramientas como Semrush, Ahrefs o GSC). Las estimaciones de volumen ("alto / medio / bajo") son inferencias basadas en generalidad del termino y comportamiento tipico del sector B2B de GPR en Chile.
 - Proxima revision recomendada: al publicar un activo nuevo, al cambiar una URL, o trimestralmente si se integra GSC.
