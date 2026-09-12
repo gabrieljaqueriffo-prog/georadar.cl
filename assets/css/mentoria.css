@@ -1,0 +1,69 @@
+/* Página de capacitación: ritmo editorial basado en el sistema ATLAS. */
+.page-mentoria .hero-content {
+  max-width: 680px;
+}
+
+.page-mentoria .hero-split {
+  padding-bottom: 48px;
+}
+
+.page-mentoria .mentoria-facts {
+  padding-top: 0;
+  padding-bottom: 56px;
+}
+
+.page-mentoria .mentoria-facts .stats-grid {
+  margin-top: 0;
+}
+
+.page-mentoria .mentoria-facts .stat-num {
+  font-size: clamp(32px, 4vw, 52px);
+}
+
+.page-mentoria .mentoria-programa {
+  background: var(--hueso);
+}
+
+.page-mentoria .mentoria-programa > .container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.page-mentoria .mentoria-programa .faq-item {
+  min-height: 100%;
+  padding: 28px;
+  border: 1px solid var(--borde);
+  border-left: 3px solid var(--siena);
+  background: #fff;
+}
+
+.page-mentoria .mentoria-programa .faq-item:hover {
+  border-left-color: var(--acento);
+}
+
+.page-mentoria .mentoria-programa .faq-item h2 {
+  font-size: 24px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.page-mentoria .mentoria-programa .mentoria-intro,
+.page-mentoria .mentoria-programa .mentoria-format {
+  border-left-color: var(--grafito);
+}
+
+.page-mentoria .section-alt p,
+.page-mentoria .cta-final p {
+  max-width: 760px;
+}
+
+@media (max-width: 760px) {
+  .page-mentoria .mentoria-programa > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .page-mentoria .mentoria-programa .faq-item {
+    padding: 24px;
+  }
+}
