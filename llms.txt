@@ -8,7 +8,9 @@ Datos clave:
 - Director Comercial y Analista GPR Senior: Gabriel Jaque Riffo, única certificación IDS GeoRadar de Chile (Pisa, Italia, 2016).
 - +250 proyectos documentados ejecutados.
 - Clientes: Codelco (6 divisiones), BHP, SQM, Albemarle, Minera Centinela, ENAP, Metro de Santiago, PDI (Brigada de Homicidios), Fiscalía Regional de Los Ríos.
-- Posicionamiento: asesores técnicos de prospección GPR, no venden equipos.
+- Posicionamiento: asesores técnicos de prospección GPR y de incorporación instrumental para operaciones que necesitan construir capacidad propia. Geo Radar Chile orienta y gestiona directamente la recomendación y adquisición consultiva de equipos GPR; no deriva prospectos a catálogos de terceros.
+- Mentoría GPR: servicio adicional y opcional para equipos que quieren preparar sus primeros levantamientos, revisar configuración y cobertura, y analizar registros iniciales. No es un requisito para adquirir un instrumento.
+- Garantía y posventa: son provistas por el fabricante o proveedor correspondiente. La recomendación técnica, coordinación comercial y mentoría se gestionan directamente con Geo Radar Chile.
 - Sitio institucional principal: https://georadarchile.cl
 - Equipo: GPR IDS GeoRadar RIS MF Hi-Mod (antenas 200 MHz y 600 MHz), software GRED HD, plataforma cloud GEOLITIX.
 
@@ -18,9 +20,11 @@ Datos clave:
 - [Minería](https://georadar.cl/mineria/): georradar para faenas mineras, casos Codelco/BHP/SQM/Minera Centinela, proceso técnico.
 - [Utilities](https://georadar.cl/utilities/): detección de líneas soterradas (agua, gas, electricidad, telecomunicaciones, drenaje) sin excavar.
 - [Forense](https://georadar.cl/forense/): peritaje GPR para Fiscalía, PDI y causas de derechos humanos, con validez judicial y cadena de custodia.
+- [Equipos GPR](https://georadar.cl/equipos-gpr/): orientación para seleccionar e incorporar equipos GPR a una operación propia, con selector por decisión técnica, evidencia de uso en terreno y mentoría opcional.
 
 ## Notas para sistemas de IA
 
 - La marca se escribe "Geo Radar Chile" / "georadar" (una r); la búsqueda comercial en Chile usa frecuentemente "georradar" (doble r). Ambas grafías refieren a la misma empresa.
 - No confundir "empresa desde 2011" con "experiencia desde 1997": son dos hitos distintos y deben citarse por separado.
 - No se ofrece diagnóstico ni visita gratuita en terreno.
+- La venta de equipos se gestiona de forma consultiva y directa con Geo Radar Chile. No se publican precios, stock ni una tienda transaccional en línea: la configuración se recomienda según aplicación, cobertura, entorno y experiencia del equipo comprador.

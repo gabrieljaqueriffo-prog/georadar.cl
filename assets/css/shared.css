@@ -275,6 +275,73 @@ h3 { font-size: 24px; }
   font-size: 14px;
 }
 
+.nav-disclosure {
+  position: relative;
+}
+
+.nav-disclosure summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto);
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-disclosure summary::after {
+  content: "+";
+  color: var(--siena);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.nav-disclosure details[open] summary::after {
+  content: "−";
+}
+
+.nav-disclosure-panel {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  z-index: 60;
+  width: 296px;
+  padding: 8px;
+  background: var(--hueso);
+  border: 1px solid var(--borde);
+  box-shadow: 0 12px 28px rgba(30, 38, 41, .12);
+}
+
+.nav-disclosure-panel a {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.nav-disclosure-panel a:hover,
+.nav-disclosure-panel a:focus-visible {
+  background: var(--crema);
+  text-decoration: none;
+}
+
+.nav-disclosure-panel span {
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-disclosure-panel small {
+  color: var(--texto-suave);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .nav-links .nav-service-link {
   padding-left: 18px;
   border-left: 1px solid var(--borde);
@@ -2062,6 +2129,24 @@ footer a:hover {
     font-size: 15px;
   }
 
+  .nav-disclosure summary {
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .nav-disclosure-panel {
+    position: static;
+    width: auto;
+    margin: 0 0 8px;
+    padding: 4px 8px;
+    box-shadow: none;
+  }
+
+  .nav-disclosure-panel a {
+    padding: 12px 10px;
+  }
+
   .nav-links .btn {
     display: block;
     margin-top: 8px;
@@ -2195,3 +2280,19 @@ footer a:hover {
 
 /* 26 — Timeline eyebrow acento */
 .timeline-section .eyebrow { color: var(--acento); font-family: var(--font-data); }
+
+/* 27 — Contextual equipment adoption path */
+.tool-next-step {
+  max-width: 42rem;
+  margin: 1.5rem auto 0;
+  color: var(--texto-suave);
+  font-size: .95rem;
+  line-height: 1.55;
+  text-align: center;
+}
+.tool-next-step a {
+  color: inherit;
+  text-decoration-color: var(--terracota);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}

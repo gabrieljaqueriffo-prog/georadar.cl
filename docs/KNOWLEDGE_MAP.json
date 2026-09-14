@@ -171,6 +171,14 @@
       "footer_keyword": "Mentoría GPR especializada"
     },
     {
+      "path": "/equipos-gpr/",
+      "file": "equipos-gpr/index.html",
+      "title": "Equipos GPR con acompañamiento técnico",
+      "section": "servicios",
+      "type": "service",
+      "footer_keyword": "Equipos GPR"
+    },
+    {
       "path": "/herramientas/",
       "file": "herramientas/index.html",
       "title": "Herramientas",

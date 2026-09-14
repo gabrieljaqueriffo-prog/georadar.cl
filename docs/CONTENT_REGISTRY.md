@@ -144,6 +144,14 @@ detecte esa contradicción.
 
 ---
 
+### Servicios: incorporación instrumental
+
+| Vertical | Tipo | Nombre | URL | Archivo | Estado | Acción pendiente |
+|----------|------|--------|-----|---------|--------|-----------------|
+| Servicios | Servicio consultivo | Equipos GPR con acompañamiento técnico | `/equipos-gpr/` | `equipos-gpr/index.html` | PUBLICADO | Revisar referencias comerciales, disponibilidad e imágenes con cada actualización de la oferta. |
+
+---
+
 ## Inventario de contenido en backlog
 
 *Sin página propia publicada. Verificado contra árbol real.*

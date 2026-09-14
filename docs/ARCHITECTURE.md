@@ -37,7 +37,7 @@ una función dentro del ecosistema.
 ### 1.1 Capacidad: Servicios
 - **Objetivo:** Captura de leads de alto valor.
 - **Público primario:** Decisores de negocio (gerentes de proyecto, administradores de contrato).
-- **Módulos:** Servicio por tipo + Servicio por sector industrial.
+- **Módulos:** Servicio por tipo + Servicio por sector industrial + incorporación instrumental guiada.
 - **Flujo de entrada:** Desde casos reales, biblioteca técnica y herramientas.
 - **Flujo de salida:** WhatsApp / formulario de cotización.
 
