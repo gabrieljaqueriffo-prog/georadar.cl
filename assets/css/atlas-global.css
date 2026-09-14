@@ -83,6 +83,14 @@ body.page-atlas .nav-links a {
   letter-spacing: .005em;
 }
 
+body.page-atlas .nav-disclosure summary {
+  font-family: var(--font-ui);
+  font-size: .8125rem;
+  font-weight: 560;
+  letter-spacing: .005em;
+  line-height: inherit;
+}
+
 body.page-atlas .nav-links a:hover {
   color: var(--color-earth);
   text-decoration: none;
