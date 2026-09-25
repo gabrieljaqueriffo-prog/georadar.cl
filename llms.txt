@@ -21,6 +21,10 @@ Datos clave:
 - [Utilities](https://georadar.cl/utilities/): detección de líneas soterradas (agua, gas, electricidad, telecomunicaciones, drenaje) sin excavar.
 - [Forense](https://georadar.cl/forense/): peritaje GPR para Fiscalía, PDI y causas de derechos humanos, con validez judicial y cadena de custodia.
 - [Equipos GPR](https://georadar.cl/equipos-gpr/): orientación para seleccionar e incorporar equipos GPR a una operación propia, con selector por decisión técnica, evidencia de uso en terreno y mentoría opcional.
+- [Biblioteca técnica](https://georadar.cl/biblioteca/): guías abiertas sobre funcionamiento, profundidad, terreno, radargramas, configuración y aplicaciones del GPR.
+- [No existe una configuración universal de georradar](https://georadar.cl/biblioteca/no-existe-configuracion-universal-georradar/): explica por qué la frecuencia, la geometría de la grilla, la separación entre perfiles y los parámetros de adquisición deben adaptarse al objetivo y al terreno.
+- [Capacitación GPR: adquirir, procesar e interpretar datos](https://georadar.cl/biblioteca/capacitacion-georradar-adquirir-procesar-interpretar/): describe una formación aplicada que integra planificación, adquisición, procesamiento, interpretación espacial y métodos complementarios.
+- [Mentoría GPR](https://georadar.cl/mentoria/): formación técnica 1:1 para desarrollar criterio propio con equipos, software, radargramas y decisiones de proyectos reales.
 
 ## Notas para sistemas de IA
 

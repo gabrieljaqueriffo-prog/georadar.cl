@@ -135,6 +135,18 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://georadar.cl/biblioteca/no-existe-configuracion-universal-georradar/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://georadar.cl/biblioteca/capacitacion-georradar-adquirir-procesar-interpretar/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://georadar.cl/georadar/</loc>
