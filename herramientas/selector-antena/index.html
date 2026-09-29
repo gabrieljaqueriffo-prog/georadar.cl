@@ -8,20 +8,20 @@ footerTagline: "Selector de antena georradar."
   <link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="800x800">
   <link rel="apple-touch-icon" href="/favicon.png?v=2">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selector de antena georradar | Orientación inicial de frecuencia GPR | Geo Radar Chile</title>
-<meta name="description" content="Herramienta de orientación para estimar el rango de antena georradar según objetivo, profundidad esperada y condición de terreno. El resultado es orientación preliminar, no especificación de terreno. Sin registro.">
+  <title>Orientación inicial para una consulta GPR | Geo Radar Chile</title>
+  <meta name="description" content="Herramienta de orientación para identificar si un contexto GPR requiere una revisión técnica. El resultado no es una especificación de terreno.">
 <link rel="canonical" href="https://georadar.cl/herramientas/selector-antena/">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="es_CL">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Selector de antena georradar | Orientación inicial de frecuencia GPR">
-<meta property="og:description" content="Orientación preliminar para elegir antena GPR según objetivo, profundidad esperada y condición de terreno. El resultado no reemplaza una evaluación técnica del sitio.">
+  <meta property="og:title" content="Orientación inicial para una consulta GPR">
+  <meta property="og:description" content="Herramienta de orientación para identificar si un contexto GPR requiere una revisión técnica.">
 <meta property="og:url" content="https://georadar.cl/herramientas/selector-antena/">
 <meta name="geo.region" content="CL">
 <meta name="geo.placename" content="Chile">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Selector de antena georradar | Orientación inicial de frecuencia GPR">
-<meta name="twitter:description" content="Orientación preliminar para elegir antena GPR según objetivo, profundidad y terreno. No reemplaza evaluación técnica del sitio.">
+  <meta name="twitter:title" content="Orientación inicial para una consulta GPR">
+  <meta name="twitter:description" content="Herramienta de orientación para identificar si un contexto GPR requiere una revisión técnica.">
 <link rel="stylesheet" href="/assets/css/shared.css?v=13">
 <script type="application/ld+json">
 {
@@ -30,18 +30,18 @@ footerTagline: "Selector de antena georradar."
     {
       "@type": "WebApplication",
       "@id": "https://georadar.cl/herramientas/selector-antena/#app",
-      "name": "Selector de antena georradar",
+       "name": "Orientación inicial para una consulta GPR",
       "applicationCategory": "UtilityApplication",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CLP" },
-      "description": "Herramienta de orientación preliminar para estimar el rango de antena georradar compatible con un objetivo de detección, profundidad esperada y condición de terreno. El resultado no reemplaza una evaluación técnica del sitio.",
+       "description": "Herramienta de orientación preliminar para identificar si un contexto requiere una evaluación técnica GPR. El resultado no reemplaza una revisión del sitio.",
       "inLanguage": "es-CL"
     },
     {
       "@type": "WebPage",
       "@id": "https://georadar.cl/herramientas/selector-antena/#webpage",
       "url": "https://georadar.cl/herramientas/selector-antena/",
-      "name": "Selector de antena georradar | Orientación inicial de frecuencia GPR | Geo Radar Chile",
+       "name": "Orientación inicial para una consulta GPR | Geo Radar Chile",
       "isPartOf": { "@id": "https://georadar.cl/#website" },
       "about": { "@id": "https://georadar.cl/herramientas/selector-antena/#app" },
       "inLanguage": "es-CL"
@@ -51,7 +51,7 @@ footerTagline: "Selector de antena georradar."
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://georadar.cl/" },
         { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://georadar.cl/herramientas/" },
-        { "@type": "ListItem", "position": 3, "name": "Selector de antena GPR", "item": "https://georadar.cl/herramientas/selector-antena/" }
+        { "@type": "ListItem", "position": 3, "name": "Orientación GPR", "item": "https://georadar.cl/herramientas/selector-antena/" }
       ]
     }
   ]
@@ -66,9 +66,9 @@ footerTagline: "Selector de antena georradar."
 
 <header class="hero">
   <div class="container hero-content">
-    <p class="eyebrow">Herramientas &middot; Selector de antena georradar</p>
-    <h1>Selector de antena georradar</h1>
-    <p class="lead">Responda tres preguntas sobre su objetivo, la profundidad estimada y el tipo de terreno, y obtendrá el rango de frecuencia de antena que podría ser razonable como orientación inicial. El resultado no reemplaza una evaluación técnica del sitio: la elección real depende de variables adicionales que esta herramienta no contempla. Para entender por qué la frecuencia es una restricción física y no una preferencia, lea el <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">artículo sobre frecuencia de antena GPR</a>.</p>
+    <p class="eyebrow">Herramientas &middot; Orientación GPR</p>
+    <h1>Orientación inicial para una consulta GPR</h1>
+    <p class="lead">Responda tres preguntas sobre el contexto de su proyecto. La herramienta le indicará si la situación parece apta para una conversación técnica o si requiere una revisión previa. No entrega una especificación de antena, metodología ni cobertura.</p>
   </div>
 </header>
 
@@ -109,17 +109,14 @@ footerTagline: "Selector de antena georradar."
             <option value="mixto">Mixto o desconocido</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Ver orientación de rango</button>
+        <button type="submit" class="btn btn-primary">Ver orientación inicial</button>
       </form>
 
       <div class="tool-result" id="tool-result" hidden>
         <p class="tool-result-tier" id="result-tier"></p>
-        <p id="result-frecuencia" style="font-size:1.15em;margin-bottom:0.5rem"></p>
-        <p id="result-razon"></p>
-        <p id="result-limitacion"></p>
-        <p id="result-nota"></p>
-        <p><strong>El rango de frecuencia es la restricción física del problema. La antena específica, la metodología de adquisición y la cobertura de la grilla deben definirlas un especialista con información adicional del sitio que esta herramienta no contempla.</strong></p>
-        <p class="tool-disclaimer">Este selector no reemplaza una evaluación técnica. La elección real de antena depende del objetivo, material, humedad, conductividad, profundidad esperada, tamaño del blanco, ruido electromagnético y condiciones de acceso. El resultado debe entenderse como orientación preliminar, no como especificación de terreno. Para entender la física detrás de esta orientación, lea <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">cómo influye la frecuencia de una antena GPR en los resultados</a>.</p>
+        <p id="result-resumen"></p>
+        <p><strong>La definición de equipos, metodología y cobertura requiere información adicional del sitio y debe realizarla un especialista durante la planificación.</strong></p>
+        <p class="tool-disclaimer">Esta orientación no reemplaza una evaluación técnica. Las condiciones reales de acceso, material, humedad, interferencias y objetivo del proyecto pueden cambiar el alcance de un estudio GPR. Para conocer los fundamentos públicos, revise la <a href="/biblioteca/">biblioteca técnica</a>.</p>
       </div>
 
     </div>
@@ -128,20 +125,20 @@ footerTagline: "Selector de antena georradar."
 
 <section class="section-alt">
   <div class="container">
-    <p class="eyebrow">La física detrás de la herramienta</p>
-    <h2>Por qué la frecuencia es una restricción, no una preferencia</h2>
-    <p>Esta sección resume los principios físicos que determinan el resultado del selector. El <a href="/glosario/#georradar">georradar</a> emite pulsos electromagnéticos y mide el tiempo de retorno de las reflexiones: la frecuencia de la antena determina simultáneamente la profundidad máxima y la resolución de esa medición. Para una explicación completa, con ejemplos y consecuencias prácticas, lea el artículo de la biblioteca: <a href="/biblioteca/como-influye-la-frecuencia-de-antena-gpr/">cómo influye la frecuencia de una antena GPR en los resultados</a>.</p>
+    <p class="eyebrow">Antes de definir un estudio</p>
+    <h2>El contexto del sitio define el alcance</h2>
+    <p>El <a href="/glosario/#georradar">georradar</a> responde de forma distinta según las condiciones del sitio y el objetivo del proyecto. Por eso una conversación técnica debe comenzar por entender el contexto, no por fijar una configuración. Los principios públicos están disponibles en la <a href="/biblioteca/">biblioteca técnica</a>.</p>
     <div class="faq-item reveal">
-      <h3>El compromiso físico inevitable</h3>
-      <p>Toda <a href="/glosario/#antena">antena GPR</a> opera en una frecuencia determinada que fija simultáneamente dos variables: la profundidad máxima de penetración y la resolución mínima de la imagen. Aumentar una reduce la otra. No existe una antena que maximice ambas al mismo tiempo: es una consecuencia directa de la física electromagnética, no una limitación de diseño que los fabricantes puedan superar.</p>
+      <h3>Una orientación no es una especificación</h3>
+      <p>Las respuestas del formulario ayudan a identificar variables que deben revisarse. La selección de equipos y el diseño de la prospección corresponden a una evaluación técnica del proyecto.</p>
     </div>
     <div class="faq-item reveal">
-      <h3>El material cambia el margen disponible</h3>
-      <p>La <a href="/glosario/#atenuacion">atenuación</a> de la onda varía según el material. La arcilla y el suelo saturado absorben energía electromagnética con mucha más intensidad que la roca seca o el hormigón. En un sitio arcilloso, la profundidad máxima confiable puede reducirse a un tercio de lo que el mismo equipo alcanzaría en roca seca: el material no es solo contexto, es parte de la restricción técnica.</p>
+      <h3>El sitio importa</h3>
+      <p>El material, las condiciones de acceso y el objetivo del estudio influyen en el alcance posible. Esas variables deben revisarse en conjunto antes de comprometer un resultado.</p>
     </div>
     <div class="faq-item reveal">
-      <h3>Cuándo ninguna frecuencia resuelve el problema</h3>
-      <p>Hay combinaciones de profundidad y material donde ninguna antena disponible comercialmente puede garantizar detección confiable. En esos casos, el GPR puede no ser el método correcto, o debe combinarse con otra técnica. Esta herramienta lo indica explícitamente: una limitación honesta es más útil que una estimación optimista que no resiste el trabajo en terreno.</p>
+      <h3>Las limitaciones también orientan</h3>
+      <p>Cuando el contexto es exigente, una revisión previa permite decidir si el GPR puede aportar antecedentes o si corresponde evaluar otras alternativas.</p>
     </div>
   </div>
 </section>
@@ -153,19 +150,19 @@ footerTagline: "Selector de antena georradar."
     <div class="cards-grid">
       <div class="card reveal">
         <h3>¿Necesito un estudio GPR?</h3>
-        <p>Si todavía no tiene claro si el GPR es el método correcto para su proyecto, empiece por el <a href="/herramientas/necesito-gpr/">árbol de decisión</a> antes de evaluar qué antena usar.</p>
+        <p>Si todavía no tiene claro si el GPR es el método correcto para su proyecto, empiece por el <a href="/herramientas/necesito-gpr/">árbol de decisión</a>.</p>
       </div>
       <div class="card reveal">
         <h3>Calculadora de viabilidad</h3>
-        <p>Una vez que conoce la frecuencia aproximada, la <a href="/herramientas/calculadora-viabilidad-gpr/">calculadora de viabilidad GPR</a> estima si las condiciones del sitio son compatibles con la profundidad que necesita detectar.</p>
+        <p>La <a href="/herramientas/calculadora-viabilidad-gpr/">calculadora de viabilidad GPR</a> le ayuda a ordenar variables que conviene conversar antes de evaluar un estudio.</p>
       </div>
       <div class="card reveal">
         <h3>Qué es el georradar GPR</h3>
-        <p>Para entender de dónde viene la restricción física que esta herramienta refleja, lea la <a href="/georadar/">guía completa sobre qué es el georradar y cómo funciona el GPR</a>.</p>
+        <p>Para entender los fundamentos públicos del método, lea la <a href="/georadar/">guía completa sobre qué es el georradar y cómo funciona el GPR</a>.</p>
       </div>
       <div class="card reveal">
         <h3>Glosario de términos</h3>
-        <p>Los conceptos de <a href="/glosario/#antena">antena</a>, <a href="/glosario/#atenuacion">atenuación</a> y <a href="/glosario/#velocidad-propagacion">velocidad de propagación</a> son la base física de esta herramienta. En aplicaciones forenses, la <a href="/glosario/#georreferenciacion">georreferenciación</a> y la <a href="/glosario/#cadena-de-custodia">cadena de custodia</a> son requisitos del estudio. Para minería y obras civiles, los <a href="/glosario/#socavon">socavones</a> son uno de los objetivos más frecuentes. El <a href="/glosario/">glosario GPR</a> los explica en español.</p>
+        <p>El <a href="/glosario/">glosario GPR</a> explica en español los conceptos públicos asociados al método y ayuda a preparar una conversación técnica.</p>
       </div>
     </div>
   </div>
@@ -173,11 +170,11 @@ footerTagline: "Selector de antena georradar."
 
 <section class="cta-final">
   <div class="container">
-    <h2>¿Necesita elegir una antena para un proyecto real?</h2>
-    <p>Esta herramienta entrega el rango compatible con las condiciones del trabajo. La elección definitiva considera variables adicionales del sitio que requieren la evaluación de un especialista.</p>
+    <h2>¿Necesita revisar un proyecto real?</h2>
+    <p>Comparta el contexto general de su proyecto. Un especialista puede evaluar los antecedentes disponibles y definir si corresponde avanzar.</p>
     <a href="https://wa.me/56975909836?text=Hola%2C%20us%C3%A9%20el%20selector%20de%20antena%20GPR%20y%20quiero%20consultar%20por%20mi%20proyecto." class="btn btn-white" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +56 9 7590 9836">Hablar por WhatsApp</a>
     <a href="/herramientas/" class="btn btn-outline" aria-label="Ver todas las herramientas GPR">Ver todas las herramientas &rarr;</a>
-    <p class="tool-next-step">Si quiere incorporar GPR a su propia operación, revise las <a href="/equipos-gpr/">configuraciones instrumentales orientadas por aplicación</a>.</p>
+    <p class="tool-next-step">Si necesita incorporar GPR a su operación, conversemos primero sobre el contexto y las necesidades generales del proyecto.</p>
   </div>
 </section>
 
@@ -338,19 +335,16 @@ footerTagline: "Selector de antena georradar."
   };
 
   var LABELS_NIVEL = {
-    viable:       'Rango de frecuencia definido',
-    condicionado: 'Rango orientativo — condiciones a verificar',
-    critico:      'GPR tiene limitaciones severas en esta combinación',
-    noaplica:     'Esta combinación no aplica para el objetivo seleccionado'
+    viable:       'Contexto apto para una conversación técnica',
+    condicionado: 'Contexto con variables que deben revisarse',
+    critico:      'Contexto que requiere evaluación técnica previa',
+    noaplica:     'El contexto descrito requiere revisar el objetivo del estudio'
   };
 
   var form    = document.getElementById('selector-form');
   var result  = document.getElementById('tool-result');
   var tierEl  = document.getElementById('result-tier');
-  var frecEl  = document.getElementById('result-frecuencia');
-  var razonEl = document.getElementById('result-razon');
-  var limitEl = document.getElementById('result-limitacion');
-  var notaEl  = document.getElementById('result-nota');
+  var resumenEl = document.getElementById('result-resumen');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -369,27 +363,13 @@ footerTagline: "Selector de antena georradar."
     tierEl.textContent  = LABELS_NIVEL[r.nivel] || '';
     tierEl.className    = 'tool-result-tier tier-' + r.nivel;
 
-    if (r.rango && r.rango !== '—') {
-      frecEl.innerHTML = '<strong>Rango de frecuencia:</strong> ' + r.rango;
-      frecEl.hidden = false;
+    if (r.nivel === 'viable') {
+      resumenEl.textContent = 'La información descrita permite avanzar a una conversación técnica. La definición del estudio se realiza después de revisar las condiciones reales del sitio.';
+    } else if (r.nivel === 'condicionado') {
+      resumenEl.textContent = 'Existen variables que deben revisarse antes de definir un estudio. Una orientación inicial no permite establecer equipos ni metodología.';
     } else {
-      frecEl.hidden = true;
+      resumenEl.textContent = 'La información disponible no permite recomendar una configuración. Conviene revisar el caso con un especialista y evaluar alternativas si corresponde.';
     }
-
-    razonEl.textContent = r.razon || '';
-    razonEl.hidden      = !r.razon;
-
-    limitEl.textContent = r.limitacion || '';
-    limitEl.hidden      = !r.limitacion;
-
-    var nota = '';
-    if (r.nivel === 'condicionado' || r.nivel === 'critico') {
-      nota = 'Use también la calculadora de viabilidad GPR para verificar si las condiciones del sitio son compatibles con la profundidad que necesita.';
-    }
-    notaEl.innerHTML = nota
-      ? 'Herramienta relacionada: <a href="/herramientas/calculadora-viabilidad-gpr/">Calculadora de viabilidad GPR</a>. ' + nota
-      : '';
-    notaEl.hidden = !nota;
 
     result.hidden = false;
     result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
