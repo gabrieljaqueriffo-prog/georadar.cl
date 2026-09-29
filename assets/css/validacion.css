@@ -1,0 +1,128 @@
+/* Registro de validación: evidencia clara, sobria y trazable. */
+.page-validacion {
+  background: var(--paper);
+  color: var(--carbon);
+}
+
+.page-validacion .validation-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(56px, 8vw, 104px) 0 clamp(48px, 7vw, 88px);
+  background:
+    linear-gradient(90deg, rgba(250, 247, 242, .96), rgba(250, 247, 242, .86)),
+    url("/assets/images/field/mentoria-radargrama-ducto.webp") center / cover;
+  border-bottom: 1px solid var(--clay-line);
+}
+
+.page-validacion .validation-hero::after {
+  content: "";
+  position: absolute;
+  right: 7%;
+  bottom: 20px;
+  width: min(34vw, 360px);
+  height: 1px;
+  background: var(--acento);
+  box-shadow: -28px 8px 0 rgba(133, 55, 27, .24), -56px 16px 0 rgba(133, 55, 27, .12);
+  transform: skewY(-8deg);
+}
+
+.page-validacion .validation-hero-grid,
+.page-validacion .validation-record-grid,
+.page-validacion .validation-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: end;
+}
+
+.page-validacion .validation-hero h1 {
+  max-width: 780px;
+  margin-bottom: 18px;
+  color: var(--carbon);
+  font-size: clamp(42px, 6vw, 78px);
+  letter-spacing: -.025em;
+}
+
+.page-validacion .validation-lead {
+  max-width: 560px;
+  margin: 0;
+  color: var(--atlas-muted);
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.45;
+}
+
+.page-validacion .validation-status {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 190px;
+  padding: 15px 18px;
+  border-top: 2px solid var(--siena);
+  border-bottom: 1px solid var(--clay-line);
+  color: var(--siena);
+  background: rgba(255, 255, 255, .52);
+}
+
+.page-validacion .validation-status-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--siena);
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.page-validacion .validation-status strong,
+.page-validacion .validation-status small { display: block; }
+.page-validacion .validation-status strong { font-family: var(--font-display); font-size: 20px; }
+.page-validacion .validation-status small { margin-top: 2px; color: var(--atlas-muted); font-size: 12px; }
+
+.page-validacion .validation-record { padding: clamp(42px, 7vw, 86px) 0; }
+
+.page-validacion .validation-record-grid {
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+  align-items: start;
+}
+
+.page-validacion .validation-card {
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--clay-line);
+  border-left: 3px solid var(--siena);
+  background: #fff;
+}
+
+.page-validacion .validation-facts { margin: 24px 0 0; }
+.page-validacion .validation-facts > div {
+  display: grid;
+  grid-template-columns: minmax(130px, .42fr) 1fr;
+  gap: 18px;
+  padding: 13px 0;
+  border-top: 1px solid var(--atlas-line);
+}
+.page-validacion .validation-facts > div:last-child { border-bottom: 1px solid var(--atlas-line); }
+.page-validacion .validation-facts dt { color: var(--atlas-muted); font-size: 13px; }
+.page-validacion .validation-facts dd { margin: 0; color: var(--carbon); font-weight: 600; }
+.page-validacion .validation-facts > div:first-child dd { color: var(--siena); font-family: var(--font-data); font-size: 14px; }
+
+.page-validacion .validation-aside { padding: 8px 0 0 clamp(0px, 3vw, 42px); }
+.page-validacion .validation-aside-rule { width: 74px; height: 3px; margin-bottom: 28px; background: var(--acento); }
+.page-validacion .validation-aside h2 { margin-top: 18px; color: var(--carbon); font-size: clamp(28px, 3vw, 42px); }
+.page-validacion .validation-aside p:not(.eyebrow) { max-width: 360px; color: var(--atlas-muted); }
+.page-validacion .validation-note { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--clay-line); font-size: 13px; }
+
+.page-validacion .validation-footer-band { padding: 24px 0; background: var(--carbon); color: var(--hueso); }
+.page-validacion .validation-footer-grid { grid-template-columns: 1fr auto; align-items: center; }
+.page-validacion .validation-footer-grid p { max-width: 570px; margin: 0; color: var(--hueso); }
+.page-validacion .validation-footer-band .btn-outline { border-color: var(--hueso); color: var(--hueso); }
+.page-validacion .validation-footer-band .btn-outline:hover { background: var(--hueso); color: var(--carbon); }
+
+@media (max-width: 760px) {
+  .page-validacion .validation-hero-grid,
+  .page-validacion .validation-record-grid,
+  .page-validacion .validation-footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .page-validacion .validation-status { justify-self: start; }
+  .page-validacion .validation-aside { padding-left: 0; }
+  .page-validacion .validation-footer-grid .btn { justify-self: start; }
+}
