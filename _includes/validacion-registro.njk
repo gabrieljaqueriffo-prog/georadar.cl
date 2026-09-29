@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="800x800">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de certificado {{ folio }} | GeoRadar.cl</title>
+  <meta name="description" content="Validación del certificado de participación en Mentoría Técnica de Georradar GPR emitido por Geo Radar Chile.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://georadar.cl/validacion/{{ folio }}/">
+  <link rel="stylesheet" href="/assets/css/shared.css?v=13">
+  <link rel="stylesheet" href="/assets/css/validacion.css?v=2">
+</head>
+<body class="page-atlas page-validacion">
+  <div class="topbar">Sitio oficial: <a href="https://georadarchile.cl" target="_blank" rel="noopener">georadarchile.cl</a> · Empresa desde 2011, experiencia desde 1997</div>
+  {% include "nav.html" %}
+
+  <main>
+    <section class="validation-hero">
+      <div class="container validation-hero-grid">
+        <div>
+          <p class="eyebrow">Registro público de emisión</p>
+          <h1>Certificado válido</h1>
+          <p class="validation-lead">Este registro confirma la emisión del certificado de participación asociado al folio indicado.</p>
+          <p class="validation-hero-meta"><span>Folio verificado</span> {{ folio }}</p>
+        </div>
+        <div class="validation-status" aria-label="Estado del certificado">
+          <span class="validation-status-mark" aria-hidden="true">✓</span>
+          <span><strong>Vigente</strong><small>Folio verificado</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="validation-record">
+      <div class="container validation-record-grid">
+        <article class="validation-card">
+          <p class="eyebrow">Datos del registro</p>
+          <dl class="validation-facts">
+            <div><dt>Folio</dt><dd>{{ folio }}</dd></div>
+            <div><dt>Participante</dt><dd>{{ participant }}</dd></div>
+            <div><dt>Programa</dt><dd>Mentoría Técnica de Georradar GPR</dd></div>
+            <div><dt>Modalidad</dt><dd>Módulo Online</dd></div>
+            <div><dt>Duración</dt><dd>{{ hours }} horas de capacitación de {{ module }}</dd></div>
+            <div><dt>Entidad solicitante</dt><dd>INGESUD SRL</dd></div>
+            <div><dt>Fecha de emisión</dt><dd>Septiembre 2026</dd></div>
+            <div><dt>Emisor</dt><dd>Geo Radar Chile</dd></div>
+          </dl>
+        </article>
+
+        <aside class="validation-aside">
+          <div class="validation-aside-rule"></div>
+          <p class="eyebrow">Alcance acreditado</p>
+          <h2>Capacitación de {{ module }}</h2>
+          <p>{{ scope }}</p>
+          <p class="validation-note">Este registro acredita participación en la mentoría. No corresponde a una certificación de fabricante ni habilitación profesional.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="validation-footer-band">
+      <div class="container validation-footer-grid">
+        <p>Para consultas sobre este registro, contacte a Geo Radar Chile indicando el folio completo.</p>
+        <a class="btn btn-outline" href="/mentoria/">Conocer la mentoría GPR</a>
+      </div>
+    </section>
+  </main>
+
+  {% include "footer.html" %}
+</body>
+</html>
