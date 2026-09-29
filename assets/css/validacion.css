@@ -5,25 +5,9 @@
 }
 
 .page-validacion .validation-hero {
-  position: relative;
-  overflow: hidden;
-  padding: clamp(56px, 8vw, 104px) 0 clamp(48px, 7vw, 88px);
-  background:
-    linear-gradient(90deg, rgba(250, 247, 242, .96), rgba(250, 247, 242, .86)),
-    url("/assets/images/field/mentoria-radargrama-ducto.webp") center / cover;
+  padding: clamp(64px, 8vw, 112px) 0 clamp(58px, 7vw, 96px);
+  background: var(--paper);
   border-bottom: 1px solid var(--clay-line);
-}
-
-.page-validacion .validation-hero::after {
-  content: "";
-  position: absolute;
-  right: 7%;
-  bottom: 20px;
-  width: min(34vw, 360px);
-  height: 1px;
-  background: var(--acento);
-  box-shadow: -28px 8px 0 rgba(133, 55, 27, .24), -56px 16px 0 rgba(133, 55, 27, .12);
-  transform: skewY(-8deg);
 }
 
 .page-validacion .validation-hero-grid,
@@ -37,9 +21,9 @@
 
 .page-validacion .validation-hero h1 {
   max-width: 780px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   color: var(--carbon);
-  font-size: clamp(42px, 6vw, 78px);
+  font-size: clamp(48px, 7vw, 92px);
   letter-spacing: -.025em;
 }
 
@@ -51,16 +35,35 @@
   line-height: 1.45;
 }
 
+.page-validacion .validation-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: baseline;
+  margin: 32px 0 0;
+  color: var(--carbon);
+  font-family: var(--font-data);
+  font-size: 13px;
+  letter-spacing: .02em;
+}
+
+.page-validacion .validation-hero-meta span {
+  color: var(--atlas-muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
 .page-validacion .validation-status {
   display: flex;
   align-items: center;
   gap: 13px;
-  min-width: 190px;
-  padding: 15px 18px;
-  border-top: 2px solid var(--siena);
-  border-bottom: 1px solid var(--clay-line);
+  min-width: 208px;
+  padding: 22px 20px;
+  border: 1px solid var(--carbon);
   color: var(--siena);
-  background: rgba(255, 255, 255, .52);
+  background: #fff;
 }
 
 .page-validacion .validation-status-mark {
@@ -68,7 +71,7 @@
   place-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--siena);
+  border: 1px solid var(--carbon);
   border-radius: 50%;
   font-size: 17px;
   line-height: 1;
