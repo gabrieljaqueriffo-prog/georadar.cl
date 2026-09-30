@@ -2,6 +2,7 @@
 
 **Estado:** Aprobada
 **Fecha:** 2026-09-14
+**Actualización 2026-09-30:** ADR-012 cambia el nombre del grupo a "Equipos y aprendizaje" y reemplaza el destino "Mentoría GPR" por "Aprender GPR" (`/aprender-gpr/`).
 
 ## Contexto
 

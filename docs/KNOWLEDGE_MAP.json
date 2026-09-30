@@ -163,12 +163,12 @@
       "footer_keyword": "Biblioteca técnica GPR en hormigón"
     },
     {
-      "path": "/mentoria/",
-      "file": "mentoria/index.html",
-      "title": "Mentoría GPR",
-      "section": "mentoria",
-      "type": "service",
-      "footer_keyword": "Mentoría GPR especializada"
+      "path": "/aprender-gpr/",
+      "file": "aprender-gpr/index.html",
+      "title": "Cómo aprender GPR",
+      "section": "aprender",
+      "type": "index",
+      "footer_keyword": "Aprender GPR"
     },
     {
       "path": "/equipos-gpr/",
@@ -394,14 +394,14 @@
       "note": "glosario debe enlazar a casos reales"
     },
     {
-      "from": "/mentoria/",
+      "from": "/aprender-gpr/",
       "to": "/glosario/",
-      "note": "mentoría menciona términos técnicos"
+      "note": "la ruta de aprendizaje remite al glosario"
     },
     {
-      "from": "/mentoria/",
+      "from": "/aprender-gpr/",
       "to": "/biblioteca/",
-      "note": "mentoría remite a recursos previos"
+      "note": "la ruta de aprendizaje remite a la biblioteca"
     },
     {
       "from": "/biblioteca/como-influye-la-frecuencia-de-antena-gpr/",

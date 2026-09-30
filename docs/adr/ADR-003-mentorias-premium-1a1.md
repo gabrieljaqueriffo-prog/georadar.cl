@@ -1,6 +1,7 @@
 # ADR-003 — Mentorías premium, modelo 1:1
 
 **Estado:** Aprobado (documentado retroactivamente; el producto ya está publicado en `/mentoria/`)
+**Actualización 2026-09-30:** el lugar de venta queda reemplazado por ADR-012 (la venta ocurre en Geo Radar Chile). El modelo 1:1 premium descrito aquí sigue vigente.
 **Fecha de decisión original:** indeterminada (referenciada en `PROJECT_VISION.md §6` y `ARCHITECTURE.md §1.5` antes de este ADR)
 **Fecha de este documento:** 2026-06-30
 

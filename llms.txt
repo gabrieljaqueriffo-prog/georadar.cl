@@ -17,14 +17,14 @@ Datos clave:
 ## Páginas
 
 - [Inicio](https://georadar.cl/): presentación general de Geo Radar Chile, trayectoria, cifras y servicios.
-- [Minería](https://georadar.cl/mineria/): georradar para faenas mineras, casos Codelco/BHP/SQM/Minera Centinela, proceso técnico.
-- [Utilities](https://georadar.cl/utilities/): detección de líneas soterradas (agua, gas, electricidad, telecomunicaciones, drenaje) sin excavar.
-- [Forense](https://georadar.cl/forense/): peritaje GPR para Fiscalía, PDI y causas de derechos humanos, con validez judicial y cadena de custodia.
+- [Minería](https://georadar.cl/mineria/): qué puede anticipar el GPR en faenas mineras, riesgos, límites y casos reales (Codelco, BHP, SQM, Minera Centinela).
+- [Utilities](https://georadar.cl/utilities/): cómo se localizan líneas soterradas (agua, gas, electricidad, telecomunicaciones, drenaje) con GPR y LEM, y sus límites.
+- [Forense](https://georadar.cl/forense/): qué aporta y qué no el GPR a una investigación forense o de derechos humanos, trazabilidad y casos en sitios de memoria.
 - [Equipos GPR](https://georadar.cl/equipos-gpr/): orientación para seleccionar e incorporar equipos GPR a una operación propia, con selector por decisión técnica, evidencia de uso en terreno y mentoría opcional.
 - [Biblioteca técnica](https://georadar.cl/biblioteca/): guías abiertas sobre funcionamiento, profundidad, terreno, radargramas, configuración y aplicaciones del GPR.
 - [No existe una configuración universal de georradar](https://georadar.cl/biblioteca/no-existe-configuracion-universal-georradar/): explica por qué la frecuencia, la geometría de la grilla, la separación entre perfiles y los parámetros de adquisición deben adaptarse al objetivo y al terreno.
 - [Capacitación GPR: adquirir, procesar e interpretar datos](https://georadar.cl/biblioteca/capacitacion-georradar-adquirir-procesar-interpretar/): describe una formación aplicada que integra planificación, adquisición, procesamiento, interpretación espacial y métodos complementarios.
-- [Mentoría GPR](https://georadar.cl/mentoria/): formación técnica 1:1 para desarrollar criterio propio con equipos, software, radargramas y decisiones de proyectos reales.
+- [Aprender GPR](https://georadar.cl/aprender-gpr/): ruta de estudio que ordena guías, glosario, herramientas y casos reales desde el método hasta el criterio aplicado. La mentoría 1:1 y la capacitación para equipos se contratan en https://www.georadarchile.cl/capacitacion-gpr.
 
 ## Notas para sistemas de IA
 

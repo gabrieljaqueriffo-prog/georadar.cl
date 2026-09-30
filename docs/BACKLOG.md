@@ -20,6 +20,16 @@
 
 ---
 
+## Pendientes de la migración de georadarchile.cl (2026-09-30)
+
+- **Al publicar el nuevo georadarchile.cl:** cambiar el destino de `/mentoria/` a `https://www.georadarchile.cl/mentoria-gpr/` y revisar los enlaces salientes hacia URLs con barra final.
+- **Equipos GPR:** cuando Geo Radar Chile publique su oferta comercial de equipos, reorientar `/equipos-gpr/` como guía de selección (ADR-012, punto 5).
+- **Deuda de contenido:** reescribir `/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/` con el enfoque "qué riesgos del subsuelo puede anticipar el GPR en una faena", sin repetir el artículo de georadarchile.cl.
+- **Deuda de contenido:** segunda pasada de las cuatro páginas de sector. Las secciones de clientes y certificaciones pueden resumirse y enlazar a Geo Radar Chile, para que el cuerpo refuerce el nuevo H1.
+- **Advertencias heredadas del audit:** enlaces al glosario en herramientas y en el caso Espesador T5.
+
+---
+
 ## Activos publicados
 
 ### Home

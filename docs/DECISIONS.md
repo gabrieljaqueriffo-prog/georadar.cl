@@ -14,6 +14,24 @@
 
 ---
 
+## 2026-09-30: Roles de los dos dominios aplicados a lo publicado
+
+**Contexto:** la migración de georadarchile.cl (Wix a GitHub Pages) reveló que ATLAS competía con Geo Radar Chile en búsquedas de compra ("servicio de georradar", "estudio gpr", "empresa de georradar"), según la exportación de Search Console del 2026-09-29.
+
+**Decisión:**
+- Georadarchile.cl es dueño de las búsquedas de compra y de la venta de formación (ADR-012).
+- ATLAS es dueño de las búsquedas de aprendizaje. Las páginas de sector se reorientan como centros de casos y criterio técnico, con un solo enlace de conversión hacia el servicio equivalente de Geo Radar Chile.
+- `/georadar/` se reorienta a "qué puede detectar el georadar y cuáles son sus límites". El "qué es" y el "cómo funciona" quedan en los artículos de georadarchile.cl que ya posicionan.
+- Los títulos de ATLAS terminan en "| GeoRadar.cl", no en "| Geo Radar Chile", para que el buscador distinga ambos sitios.
+- La oferta comercial de equipos GPR pasará a Geo Radar Chile. La guía para elegir equipo queda en ATLAS.
+- La mentoría 1:1 tendrá URL propia en georadarchile.cl: `/mentoria-gpr/`.
+
+**Quién decidió:** Gabriel Jaque Riffo, explícitamente, al aprobar el mapa de la Etapa 1 de la migración.
+
+**Implicancia:** ADR-004 queda aplicado a lo ya publicado. Todo activo nuevo verifica primero la tabla de dueños por tema del mapa de la Etapa 1.
+
+---
+
 ## 2026-08-23 — Actualizar a "+250" la cifra pública de proyectos
 
 **Contexto:** el registro interno contiene 252 proyectos ejecutados y el

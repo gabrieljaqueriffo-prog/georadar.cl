@@ -27,6 +27,24 @@ Cada entrada tiene los siguientes campos obligatorios:
 
 ---
 
+## 2026-09-30 · architecture (aplicación de ADR-004 y ADR-012)
+
+- **Tipo:** architecture | seo | content
+- **Archivos:**
+  - `mineria/`, `construccion/`, `utilities/`, `forense/`, `georadar/`: nuevos title, description, H1, lead y CTA; schema `about` sin `Service`; se quita la pregunta "¿Cómo se contrata?".
+  - `aprender-gpr/index.html` (nuevo).
+  - `mentoria/` y `capacitacion-gpr/`: pasan a páginas de redirección.
+  - `_includes/nav.html`, `_includes/footer.html`, `_includes/validacion-registro.njk`, `index.html`, `equipos-gpr/`, `validacion/GPR-ING-2026-PS-014/`.
+  - Tres artículos de biblioteca y `como-elegir-empresa-de-georradar` (title).
+  - Titles de 11 páginas ("| GeoRadar.cl").
+  - `sitemap.xml`, `llms.txt`, `docs/KNOWLEDGE_MAP.json`, ADR-003, ADR-011, ADR-012, `DECISIONS.md`, `BACKLOG.md`.
+- **Motivo:** en Search Console, ATLAS aparecía en posiciones 38 a 72 para búsquedas de compra que pertenecen a georadarchile.cl, y la formación se vendía en cinco páginas repartidas en los dos dominios.
+- **Impacto:** cada búsqueda queda con una página dueña. ATLAS deriva la intención de compra con un enlace contextual por página.
+- **Riesgo:** Medio. Cambian titles y H1 de páginas con impresiones. `/mentoria/` tenía 6 clics en el período medido.
+- **Proxima accion:** medir 28 días. Al publicar el nuevo georadarchile.cl, cambiar el destino de `/mentoria/` a `/mentoria-gpr/` y actualizar enlaces a URLs con barra final.
+
+---
+
 ## 2026-08-27 · seo (primer sprint basado en Search Console)
 
 - **Tipo:** seo, content, docs
