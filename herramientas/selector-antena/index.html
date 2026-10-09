@@ -112,9 +112,10 @@ footerTagline: "Selector de antena georradar."
         <button type="submit" class="btn btn-primary">Ver orientación inicial</button>
       </form>
 
-      <div class="tool-result" id="tool-result" hidden>
+      <div class="tool-result" id="tool-result" aria-live="polite" hidden>
         <p class="tool-result-tier" id="result-tier"></p>
         <p id="result-resumen"></p>
+        <ul id="result-factores"></ul>
         <p><strong>La definición de equipos, metodología y cobertura requiere información adicional del sitio y debe realizarla un especialista durante la planificación.</strong></p>
         <p class="tool-disclaimer">Esta orientación no reemplaza una evaluación técnica. Las condiciones reales de acceso, material, humedad, interferencias y objetivo del proyecto pueden cambiar el alcance de un estudio GPR. Para conocer los fundamentos públicos, revise la <a href="/biblioteca/">biblioteca técnica</a>.</p>
       </div>
@@ -345,6 +346,28 @@ footerTagline: "Selector de antena georradar."
   var result  = document.getElementById('tool-result');
   var tierEl  = document.getElementById('result-tier');
   var resumenEl = document.getElementById('result-resumen');
+  var factoresEl = document.getElementById('result-factores');
+
+  var ORIENTACION_OBJETIVO = {
+    ducto: 'Para localizar ductos, tuberías o cables, reúna antecedentes sobre su diámetro, material y trazado esperado. El contraste con el terreno influye en su identificación.',
+    vacio: 'Para investigar cavidades o socavones, describa su tamaño esperado y los indicios observados en superficie. Una anomalía necesita interpretación y verificación antes de atribuirla a un vacío.',
+    enfierradura: 'Para revisar armaduras en hormigón, indique el espesor del elemento, el recubrimiento esperado y si existen varias capas de acero que puedan dificultar la lectura.',
+    estrato: 'Para estudiar capas geológicas, defina qué interfaces necesita reconocer y aporte antecedentes del terreno. Las capas deben presentar un contraste suficiente para distinguirse.',
+    forense: 'Para investigar objetos enterrados, describa su tamaño y el contexto de búsqueda. Las anomalías requieren interpretación especializada y un protocolo de documentación y verificación.'
+  };
+  var ORIENTACION_MATERIAL = {
+    hormigon: 'En hormigón, revise el espesor, la humedad y la densidad de armaduras; el acero puede ocultar elementos situados por debajo.',
+    seco: 'En suelo seco, arena o roca, confirme la humedad real y la presencia de arcillas o sales. La descripción general del terreno no garantiza una buena penetración.',
+    humedo: 'La humedad y las arcillas pueden atenuar la señal y reducir la profundidad útil. Conviene comprobar las condiciones del sitio antes de comprometer el alcance.',
+    mixto: 'El material mixto o desconocido añade incertidumbre: identifique rellenos, cambios de suelo y humedad para evaluar cómo puede variar la respuesta dentro del área.'
+  };
+  var ORIENTACION_PROFUNDIDAD = {
+    '0.5': 'A menos de 0,5 m, el tamaño del objetivo y la resolución necesaria son puntos centrales de la revisión.',
+    '1': 'Entre 0,5 y 1 m, revise el tamaño y contraste del objetivo junto con las condiciones que pueden atenuar la señal.',
+    '3': 'Entre 1 y 3 m, la penetración disponible y el tamaño del objetivo cobran mayor importancia; aporte antecedentes que permitan comprobar la profundidad estimada.',
+    '6': 'Entre 3 y 6 m, se necesita revisar con especial cuidado la penetración del terreno y el contraste del objetivo antes de plantear el estudio.',
+    '10': 'A más de 6 m, la profundidad constituye una exigencia importante. Un especialista debe evaluar si el GPR puede aportar información y si conviene complementarlo con otros métodos.'
+  };
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -363,13 +386,17 @@ footerTagline: "Selector de antena georradar."
     tierEl.textContent  = LABELS_NIVEL[r.nivel] || '';
     tierEl.className    = 'tool-result-tier tier-' + r.nivel;
 
-    if (r.nivel === 'viable') {
-      resumenEl.textContent = 'La información descrita permite avanzar a una conversación técnica. La definición del estudio se realiza después de revisar las condiciones reales del sitio.';
-    } else if (r.nivel === 'condicionado') {
-      resumenEl.textContent = 'Existen variables que deben revisarse antes de definir un estudio. Una orientación inicial no permite establecer equipos ni metodología.';
-    } else {
-      resumenEl.textContent = 'La información disponible no permite recomendar una configuración. Conviene revisar el caso con un especialista y evaluar alternativas si corresponde.';
+    resumenEl.textContent = ORIENTACION_OBJETIVO[objetivo];
+    factoresEl.replaceChildren();
+    var factores = [ORIENTACION_PROFUNDIDAD[profundidad], ORIENTACION_MATERIAL[material]];
+    if (r.nivel === 'noaplica') {
+      factores.unshift('La búsqueda de enfierradura corresponde a un elemento de hormigón. Si desea buscar metal enterrado en suelo, revise el objetivo seleccionado antes de continuar.');
     }
+    factores.forEach(function (texto) {
+      var item = document.createElement('li');
+      item.textContent = texto;
+      factoresEl.appendChild(item);
+    });
 
     result.hidden = false;
     result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
