@@ -241,6 +241,14 @@
       "section": "glosario",
       "type": "glossary",
       "footer_keyword": "Glosario GPR"
+    },
+    {
+      "path": "/biblioteca/localizar-fibra-optica-enterrada-con-georradar/",
+      "file": "biblioteca/localizar-fibra-optica-enterrada-con-georradar/index.html",
+      "title": "¿Se puede localizar fibra óptica enterrada con georradar?",
+      "section": "biblioteca",
+      "type": "article",
+      "footer_keyword": "Biblioteca técnica GPR"
     }
   ],
   "glosario_terms": {
@@ -567,6 +575,26 @@
       "from": "/biblioteca/como-tomar-decisiones-antes-de-intervenir-el-subsuelo/",
       "to": "/mineria/casos/liberacion-areas-division-andina/",
       "note": "artículo de decisiones enlaza al caso División Andina"
+    },
+    {
+      "from": "/biblioteca/",
+      "to": "/biblioteca/localizar-fibra-optica-enterrada-con-georradar/",
+      "note": "Artículo de fibra óptica conectado con el contenido técnico existente"
+    },
+    {
+      "from": "/biblioteca/como-el-georradar-reduce-el-riesgo-en-faenas-mineras/",
+      "to": "/biblioteca/localizar-fibra-optica-enterrada-con-georradar/",
+      "note": "Artículo de fibra óptica conectado con el contenido técnico existente"
+    },
+    {
+      "from": "/biblioteca/localizar-fibra-optica-enterrada-con-georradar/",
+      "to": "/georadar/",
+      "note": "Artículo de fibra óptica conectado con el contenido técnico existente"
+    },
+    {
+      "from": "/biblioteca/localizar-fibra-optica-enterrada-con-georradar/",
+      "to": "/utilities/",
+      "note": "Artículo de fibra óptica conectado con el contenido técnico existente"
     }
   ],
   "min_incoming_links": {

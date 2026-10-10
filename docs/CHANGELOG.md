@@ -27,6 +27,16 @@ Cada entrada tiene los siguientes campos obligatorios:
 
 ---
 
+## 2026-10-10 · content (fibra óptica enterrada)
+
+- **Tipo:** content | seo
+- **Archivos:** nuevo artículo `biblioteca/localizar-fibra-optica-enterrada-con-georradar/index.html`, dos imágenes WebP en `assets/images/editorial/`, biblioteca, artículo de riesgo minero, sitemap y registros de contenido.
+- **Motivo:** explicar la viabilidad y las restricciones de localizar fibra óptica antes de un próximo levantamiento.
+- **Impacto:** guía con fuentes técnicas, dos enlaces entrantes, recursos relacionados y metadatos para compartir. Las imágenes de IA se identifican y no se presentan como evidencia del proyecto.
+- **Revisión ATLAS:** fundamentos contrastados con US EPA, IDS GeoRadar y Radiodetection; precisiones sobre señal óptica, sondas, profundidad del ducto y combinación instrumental. Registro en `docs/REVISION_ATLAS_FIBRA_OPTICA.md`.
+- **Riesgo:** Bajo. No se atribuyen resultados al trabajo próximo ni se asumen los instrumentos definitivos.
+- **Próxima acción:** desplegar la versión revisada y documentar el caso cuando exista evidencia autorizada.
+
 ## 2026-09-30 · architecture (aplicación de ADR-004 y ADR-012)
 
 - **Tipo:** architecture | seo | content

@@ -250,3 +250,11 @@ Definir cual tiene mejor documentacion disponible antes de elegir. Mantener como
 - `glosario/index.html` — errores frecuentes y contexto de terreno en cuatro terminos.
 - `biblioteca/index.html` — seccion de rutas de lectura por sector añadida.
 - `index.html` — stat actualizado, twitter:description actualizado, mainEntityOfPage en schema.
+
+
+## 2026-10-10 · Fibra óptica enterrada
+
+- **Activo:** `/biblioteca/localizar-fibra-optica-enterrada-con-georradar/`.
+- **Estado:** PUBLICADO en el árbol local, despliegue pendiente. Guía técnica, evidencia nivel 1-2, vinculada a Utilities y Minería.
+- **Alcance:** cable frente a ducto, condiciones de detección y diferencia entre dos equipos GPR y métodos complementarios. Imágenes generadas con IA identificadas en sus leyendas.
+- **Próxima acción:** confirmar instrumentos y configuración del proyecto antes de añadir detalles específicos. Tras el levantamiento, incorporar evidencia autorizada y un caso real; no anticipar resultados.
