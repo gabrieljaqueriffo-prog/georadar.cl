@@ -1,0 +1,87 @@
+{
+  "project": {
+    "name": "AVO 1",
+    "idPrefix": "AVO-P5",
+    "length": 400,
+    "width": 3.5
+  },
+  "radargrams": [
+    "/assets/monitor-gpr/radargrama-referencia-1.jpg",
+    "/assets/monitor-gpr/radargrama-referencia-2.jpg",
+    "/assets/monitor-gpr/radargrama-referencia-3.jpg"
+  ],
+  "states": {
+    "unchanged": "Sin cambio observable",
+    "minor": "Cambio menor",
+    "significant": "Cambio significativo",
+    "new": "Nueva anomalía",
+    "absent": "No reproducida",
+    "verified": "Sector intervenido/verificado"
+  },
+  "anomalies": [
+    {
+      "pk": 48,
+      "offset": 0.65,
+      "depth": 0.54,
+      "state": "unchanged",
+      "radar": 0,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 96,
+      "offset": 2.2,
+      "depth": 0.71,
+      "state": "significant",
+      "radar": 1,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 134,
+      "offset": 1.1,
+      "depth": 0.66,
+      "state": "absent",
+      "radar": 2,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 182,
+      "offset": 1.35,
+      "depth": 0.82,
+      "state": "minor",
+      "radar": 0,
+      "interpretation": "Respuesta compatible con pérdida de soporte"
+    },
+    {
+      "pk": 231,
+      "offset": 2.75,
+      "depth": 0.61,
+      "state": "new",
+      "radar": 1,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 279,
+      "offset": 0.95,
+      "depth": 0.73,
+      "state": "verified",
+      "radar": 2,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 326,
+      "offset": 1.82,
+      "depth": 0.68,
+      "state": "new",
+      "radar": 1,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    },
+    {
+      "pk": 369,
+      "offset": 2.45,
+      "depth": 0.77,
+      "state": "minor",
+      "radar": 0,
+      "interpretation": "Anomalía interpretada en la respuesta GPR"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVO 1 · Monitor GPR de Pavimentos | ATLAS</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Demostración conceptual de monitoreo GPR multitemporal para la propuesta técnico-económica AVO 1.">
+<link rel="canonical" href="https://georadar.cl/herramientas/monitor-gpr-avo1/">
+<link rel="icon" href="/favicon.svg">
+
+<style>
+:root {
+  --siena:#85371B; --terracota:#A65325; --marfil:#F5EFE6; --hueso:#FBF8F2;
+  --carbon:#24201D; --gris:#6F6A65; --linea:#D8CEC2; --verde:#456B55;
+  --ambar:#9C6D1A; --rojo:#8F3A33; --azul:#3C5F73;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--hueso);color:var(--carbon)}
+header{background:linear-gradient(135deg,#2c2723,#40362f);color:#fff;padding:28px 34px 24px;border-bottom:5px solid var(--terracota)}
+.kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#ead9cc}
+h1{font-size:34px;line-height:1.08;margin:5px 0 6px}
+.sub{color:#ded4cd;font-size:14px}
+.demo{display:inline-block;margin-top:14px;padding:7px 11px;border-radius:999px;background:#fff0d7;color:#6c470d;font-weight:800;font-size:11px}
+main{max-width:1450px;margin:auto;padding:24px}
+.grid{display:grid;gap:16px}
+.metrics{grid-template-columns:repeat(6,1fr)}
+.card{background:#fff;border:1px solid var(--linea);border-radius:16px;box-shadow:0 8px 26px rgba(42,32,25,.05)}
+.metric{padding:17px}
+.metric small{display:block;color:var(--gris);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.metric b{display:block;font-size:27px;margin:5px 0 2px}
+.section{padding:20px}
+.section h2{margin:0 0 14px;font-size:20px}
+.two{grid-template-columns:1.35fr .85fr}
+.three{grid-template-columns:repeat(3,1fr)}
+.track{height:185px;border:7px solid #5b5752;border-radius:14px;background:#2b2926;position:relative;overflow:hidden}
+.track:before,.track:after{content:"";position:absolute;left:0;right:0;height:3px;background:#e9e2da;opacity:.65}
+.track:before{top:26%} .track:after{top:74%}
+.pk{position:absolute;top:5px;color:#eee;font-size:10px;transform:translateX(-50%)}
+.anom{position:absolute;width:16px;height:16px;border-radius:50%;border:3px solid white;transform:translate(-50%,-50%);box-shadow:0 0 0 2px rgba(0,0,0,.26);cursor:pointer}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;color:var(--gris);font-size:12px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+.note{background:#f7eee7;border-left:4px solid var(--terracota);padding:12px;border-radius:10px;font-size:12px;line-height:1.5}
+.detail-id{font-size:28px;color:var(--siena);font-weight:900;margin-bottom:8px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kv div{background:#f8f4ef;border-radius:10px;padding:9px}
+.kv small{display:block;color:var(--gris);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+.viewer{background:#111;border-radius:12px;overflow:hidden;border:1px solid #bfb6ae}
+.viewer img{display:block;width:100%;height:auto}
+.water{font-size:10px;color:#eee;background:#111;padding:5px 8px;text-align:right}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 14px}
+button,select{font:inherit;border:1px solid #cfc4b8;border-radius:9px;padding:8px 10px;background:#fff}
+button{background:var(--siena);color:#fff;border-color:var(--siena);font-weight:700;cursor:pointer}
+.table-wrap{overflow:auto;border:1px solid var(--linea);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:900px}
+th,td{font-size:12px;padding:9px 10px;border-bottom:1px solid #eee8e2;text-align:left}
+th{background:#f4ece5;color:#5c4639;font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+.compare{grid-template-columns:1fr 1fr 1fr}
+.box{border:1px solid var(--linea);border-radius:13px;padding:12px;background:#fff}
+.state{font-weight:800;color:var(--siena);font-size:18px;line-height:1.4}
+footer{padding:24px;text-align:center;color:#766d66;font-size:11px}
+@media(max-width:1050px){.metrics{grid-template-columns:repeat(3,1fr)}.two,.compare,.three{grid-template-columns:1fr}}
+@media(max-width:650px){main{padding:12px}header{padding:20px 16px}h1{font-size:27px}.metrics{grid-template-columns:repeat(2,1fr)}}
+</style>
+<link rel="stylesheet" href="/assets/monitor-gpr/monitor.css">
+</head>
+<body>
+<header>
+  <div class="kicker"><a class="atlas-brand" href="/">ATLAS <span>Geo Radar Chile</span></a> · Demo técnica de propuesta</div>
+  <h1>AVO 1 · Monitor GPR de Pavimentos</h1>
+  <div class="sub">Sistema digital para línea base, comparación temporal y trazabilidad de anomalías</div>
+  <div class="demo">DEMO VISUAL · RADARGRAMAS REALES APORTADOS COMO REFERENCIA · DATOS DE SEGUIMIENTO FICTICIOS</div>
+</header>
+
+<main>
+<aside class="note disclosure" aria-label="Alcance de la demostración">Demostración conceptual. Los datos de seguimiento, anomalías, profundidades y estados mostrados son ficticios y se utilizan exclusivamente para ilustrar el funcionamiento del sistema. Los radargramas corresponden a registros reales utilizados como referencia visual y no corresponden a mediciones realizadas en AVO 1.</aside>
+<div class="intro"><p class="eyebrow">MONITOREO MULTITEMPORAL · PK 0+000 → PK 0+400</p><h2>Una línea base digital. Un historial que se construye campaña a campaña.</h2><p>La primera campaña establece la línea base digital. Las campañas posteriores se incorporan al mismo sistema para repetir perfiles, comparar respuestas GPR, seguir anomalías, relacionar intervenciones con campañas posteriores y mantener trazabilidad histórica.</p></div>
+<div id="dashboard"><h2 class="module-title">Dashboard de campaña <span>Datos de ejemplo · Campaña 02</span></h2>
+<section class="grid metrics">
+  <div class="card metric"><small>Campaña</small><b>02</b><small>Post intervención</small></div>
+  <div class="card metric"><small>Longitud</small><b>400 m</b><small>Tramo monitoreado</small></div>
+  <div class="card metric"><small>Superficie</small><b>1.400 m²</b><small>Ancho 3,5 m</small></div>
+  <div class="card metric"><small>Anomalías registradas</small><b>8</b><small>Inventario técnico</small></div>
+  <div class="card metric"><small>Nuevas</small><b>2</b><small>vs. línea base</small></div>
+  <div class="card metric"><small>Con variación</small><b>3</b><small>requieren revisión</small></div>
+</section>
+
+</div>
+<section id="longitudinal" class="grid two" style="margin-top:16px">
+  <div class="card section">
+    <h2>1 · Vista longitudinal del tramo</h2>
+    <div class="track" id="track" role="group" aria-label="Seleccione una anomalía del tramo"></div>
+    <div class="legend">
+      <span><span class="dot" style="background:#A65325"></span>Nueva</span>
+      <span><span class="dot" style="background:#456B55"></span>Sin cambio</span>
+      <span><span class="dot" style="background:#9C6D1A"></span>Modificada</span>
+      <span><span class="dot" style="background:#3C5F73"></span>Intervenida</span>
+      <span><span class="dot" style="background:#8F3A33"></span>No reproducida</span>
+    </div>
+    <div class="note" style="margin-top:12px">
+      Cada hallazgo queda asociado a una progresiva y offset transversal reproducible. La Campaña 01 crea la línea base geométrica y técnica para futuras mediciones.
+    </div>
+  </div>
+  <div class="card section" id="anomaly-detail" aria-live="polite">
+    <h2>2 · Ficha permanente de anomalía</h2>
+    <div class="detail-id" id="id">AVO-P5-0182-A01</div>
+    <div class="kv">
+      <div><small>Progresiva</small><b id="pk">0+182,4</b></div>
+      <div><small>Offset</small><b id="off">1,35 m</b></div>
+      <div><small>Profundidad estimada</small><b id="dep">0,82 m</b></div>
+      <div><small>Estado comparativo</small><b id="status">Modificada</b></div>
+      <div><small>Interpretación</small><b id="interp">Respuesta compatible con pérdida de soporte</b></div>
+      <div><small>Confianza</small><b>Media–Alta</b></div>
+    </div><p class="note">Anomalía interpretada: puede requerir validación física o documental. La respuesta GPR no confirma por sí sola una cavidad.</p>
+  </div>
+</section>
+
+<section id="radargram" class="card section" style="margin-top:16px">
+  <h2>3 · Radargrama asociado</h2>
+  <div class="controls">
+    <label for="radarSel">Radargrama de referencia</label><select id="radarSel">
+      <option value="0">Referencia P4–P5</option>
+      <option value="1">Referencia P9–P10</option>
+      <option value="2">Referencia P17–P18</option>
+    </select>
+  </div>
+  <div class="viewer"><img alt="Radargrama real utilizado exclusivamente como referencia visual" id="radarImg" src="/assets/monitor-gpr/radargrama-referencia-1.jpg"><div class="water">Referencia visual de radargrama — no corresponde a medición AVO 1.</div></div>
+</section>
+
+<section id="temporal" class="card section" style="margin-top:16px">
+  <h2>4 · Comparador temporal</h2>
+  <p class="note">C01 y C02 representan el flujo conceptual de comparación. Las imágenes siguientes son referencias visuales independientes, no un par de mediciones repetidas de AVO 1. Las variaciones descritas son ficticias.</p><div class="grid compare">
+    <div class="box">
+      <h3>Campaña 01 · Línea Base</h3>
+      <div class="viewer"><img alt="Radargrama real utilizado exclusivamente como referencia visual" src="/assets/monitor-gpr/radargrama-referencia-1.jpg"><div class="water">Referencia visual de radargrama — no corresponde a medición AVO 1.</div></div>
+      <p style="font-size:12px;color:var(--gris)">Respuesta registrada y vinculada al sistema local de referencia.</p>
+    </div>
+    <div class="box">
+      <h3>Campaña 02 · Post intervención</h3>
+      <div class="viewer"><img alt="Radargrama real utilizado exclusivamente como referencia visual" src="/assets/monitor-gpr/radargrama-referencia-2.jpg"><div class="water">Referencia visual de radargrama — no corresponde a medición AVO 1.</div></div>
+      <p style="font-size:12px;color:var(--gris)">La campaña posterior se compara sobre la misma geometría de adquisición.</p>
+    </div>
+    <div class="box">
+      <h3>Interpretación del cambio</h3>
+      <div class="state" id="comparison-state"></div><p id="comparison-note"></p>
+      <div class="note" style="margin-top:12px">
+        El estado comparativo describe cambios observados en la respuesta electromagnética. No equivale por sí solo a una evaluación estructural ni a confirmación física de una cavidad.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card section" style="margin-top:16px">
+  <h2>5 · Matriz histórica de seguimiento</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>PK</th><th>Prof. estimada</th><th>C01</th><th>C02</th><th>C03</th><th>C04</th><th>Estado</th></tr></thead>
+      <tbody id="history">
+        <tr><td>AVO-P5-0048-A01</td><td>0+048</td><td>0,54 m</td><td>Detectada</td><td>Sin cambio</td><td>—</td><td>—</td><td>Seguimiento</td></tr>
+        <tr><td>AVO-P5-0096-A01</td><td>0+096</td><td>0,71 m</td><td>Detectada</td><td>Mayor amplitud</td><td>—</td><td>—</td><td>Modificada</td></tr>
+        <tr><td>AVO-P5-0182-A01</td><td>0+182</td><td>0,82 m</td><td>Detectada</td><td>Menor amplitud</td><td>—</td><td>—</td><td>Modificada</td></tr>
+        <tr><td>AVO-P5-0231-A01</td><td>0+231</td><td>0,61 m</td><td>—</td><td>Nueva</td><td>—</td><td>—</td><td>Nueva</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="card section" style="margin-top:16px">
+  <h2>6 · Tres capas de entrega</h2>
+  <div class="grid three">
+    <div class="box"><h3>Contractual</h3><p>Informe técnico PDF, plano DWG/PDF, tabla de anomalías, metodología y limitaciones.</p></div>
+    <div class="box"><h3>Técnica</h3><p>Radargramas asociados, perfiles de referencia, profundidad estimada, nivel de confianza y comparación temporal.</p></div>
+    <div class="box"><h3>Digital</h3><p>Monitor GPR acumulativo para seguimiento de anomalías, campañas, intervenciones y evolución histórica.</p></div>
+  </div>
+</section>
+</main>
+<footer>Demostración técnica desarrollada por Geo Radar Chile para ilustrar una metodología de monitoreo GPR multitemporal.</footer>
+<script src="/assets/monitor-gpr/monitor.js" defer></script>
+</body>
+</html>
